@@ -2,7 +2,7 @@
 
 import React from "react";
 import Titlecontent from "@/components/ReusableComponent/Titlecontent/Titlecontent";
-import ExpertiseSection from "@/components/ReusableComponent/OurExpertise/ExpertiseSection";
+import ExpertiseSection from "./ExpertiseSection";
 
 export default function VisionAndExpertise({ title, content, service = [] }) {
   return (
@@ -16,7 +16,7 @@ export default function VisionAndExpertise({ title, content, service = [] }) {
         </div>
 
         {/* Expertise Section */}
-        <div className="sm:mt-12 mt-6">
+        <div className="mt-5">
           <ExpertiseSection services={service} />
         </div>
       </div>

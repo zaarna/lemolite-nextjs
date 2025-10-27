@@ -3,7 +3,7 @@ import CtaSection from '@/components/ReusableComponent/Cta_Section/CtaSection';
 import VisionAndExpertise from '@/components/ReusableComponent/ExpertiseSection/VisionAndExpertise';
 import TailoredSolutions from '@/components/ReusableComponent/TailoredSolutions/TailoredSolutions';
 import TrustedByCliet_WhoWeAre from '@/components/ReusableComponent/TrustedByCliet_WhoWeAre/TrustedByCliet_WhoWeAre';
-import { logos, features, solutions } from '@/data/home';
+import { logos, features, solutions, services } from '@/data/home';
 import React from 'react';
 
 // This will be replaced with your actual HomePage component when migrated

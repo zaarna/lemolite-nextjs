@@ -9,14 +9,14 @@ const ExpertiseSection = ({ services = [] }) => {
         {services.map((service, index) => (
           <div
             key={index}
-            className="h-28 sm:h-36 experties--box relative sm:rounded-[32px] rounded-[12px] p-3 pb-6 
+            className="h-28 sm:h-36 experties--box relative sm:rounded-[28px] rounded-[12px] p-3
                        flex flex-col items-center justify-around 
                        transition-all duration-300 
                        sm:bg-white border border-[#BFD633] 
                        sm:hover:bg-gradient-to-r from-[#2EC4F3]/10 to-[#BFD633]/10 hover:border-[#2EC4F3]"
           >
             {/* Service Icon */}
-            <div className="relative w-14 h-14 sm:w-16 sm:h-16">
+            <div className="relative w-14 h-14">
               <Image
                 src={service.img}
                 alt={service.title}
@@ -28,7 +28,7 @@ const ExpertiseSection = ({ services = [] }) => {
             </div>
 
             {/* Service Title */}
-            <h3 className="text-center text-base sm:text-[20px] md:text-[20px] lg:text-[28px] font-medium">
+            <h3 className="text-center text-base sm:text-[20px] font-medium">
               {service.title}
             </h3>
           </div>
