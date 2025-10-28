@@ -28,7 +28,7 @@ const ExpertiseSection = ({ services = [] }) => {
             </div>
 
             {/* Service Title */}
-            <h3 className="text-center text-base sm:text-[20px] font-medium">
+            <h3 className="text-center text-base sm:text-[20px] font-bold">
               {service.title}
             </h3>
           </div>

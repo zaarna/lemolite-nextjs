@@ -28,3 +28,12 @@ body {
 {
   padding: 40px 0px;
 }
+/* Hide scrollbar for Chrome, Safari and Edge */
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Firefox */
+.scrollbar-none {
+  scrollbar-width: none;
+}

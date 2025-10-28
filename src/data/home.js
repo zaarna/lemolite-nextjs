@@ -77,56 +77,56 @@ export const services = [
   { title: "Automobile", img: "/automobile-small.svg" },
 ];
 
-// export const developers = [
-//   {
-//     img: python,
-//     alt: "Python",
-//     title: "Hire Python Developer",
-//     description:
-//       "Unlock the potential of Python with expert developers who create versatile, data-centric applications tailored to your industry and project needs.",
-//     link: "services/hire-python-developer",
-//   },
-//   {
-//     img: node,
-//     alt: "Node",
-//     title: "Hire Node Js Developer",
-//     description:
-//       "Get experienced Node JS developers to create robust, high-performance applications that offer real-time capabilities, enhancing your business operations and driving growth.",
-//     link: "services/hire-nodejs-developer",
-//   },
-//   {
-//     img: react,
-//     alt: "React",
-//     title: "Hire React Js Developer",
-//     description:
-//       "Boost your web applications with React JS developers who specialize in creating fast, interactive user interfaces and seamless user experiences.",
-//     link: "services/hire-reactjs-developer",
-//   },
-//   {
-//     img: php,
-//     alt: "PHP",
-//     title: "Hire PHP Developer",
-//     description:
-//       "Achieve reliable, scalable web development with PHP experts who deliver robust solutions, perfectly aligned with your business goals.",
-//     link: "services/hire-php-developer",
-//   },
-//   {
-//     img: laravel,
-//     alt: "Laravel",
-//     title: "Hire Laravel Developer",
-//     description:
-//       "Transform your ideas into reality with secure, efficient web applications built by experienced Laravel developers focused on scalability and performance.",
-//     link: "services/hire-laravel-developer",
-//   },
-//   {
-//     img: shopify,
-//     alt: "Shopify",
-//     title: "Hire Shopify Developers",
-//     description:
-//       "Enhance your eCommerce presence with Shopify developers who craft personalized, conversion-driven solutions to optimize your online store.",
-//     link: "services/hire-shopify-developer",
-//   },
-// ];
+export const developers = [
+  {
+    img: "/python.svg",
+    alt: "Python",
+    title: "Hire Python Developer",
+    description:
+      "Unlock the potential of Python with expert developers who create versatile, data-centric applications tailored to your industry and project needs.",
+    link: "services/hire-python-developer",
+  },
+  {
+    img: "node.svg",
+    alt: "Node",
+    title: "Hire Node Js Developer",
+    description:
+      "Get experienced Node JS developers to create robust, high-performance applications that offer real-time capabilities, enhancing your business operations and driving growth.",
+    link: "services/hire-nodejs-developer",
+  },
+  {
+    img: "react.svg",
+    alt: "React",
+    title: "Hire React Js Developer",
+    description:
+      "Boost your web applications with React JS developers who specialize in creating fast, interactive user interfaces and seamless user experiences.",
+    link: "services/hire-reactjs-developer",
+  },
+  {
+    img: "php.svg",
+    alt: "PHP",
+    title: "Hire PHP Developer",
+    description:
+      "Achieve reliable, scalable web development with PHP experts who deliver robust solutions, perfectly aligned with your business goals.",
+    link: "services/hire-php-developer",
+  },
+  {
+    img: "laravel.svg",
+    alt: "Laravel",
+    title: "Hire Laravel Developer",
+    description:
+      "Transform your ideas into reality with secure, efficient web applications built by experienced Laravel developers focused on scalability and performance.",
+    link: "services/hire-laravel-developer",
+  },
+  {
+    img: "shopify.svg",
+    alt: "Shopify",
+    title: "Hire Shopify Developers",
+    description:
+      "Enhance your eCommerce presence with Shopify developers who craft personalized, conversion-driven solutions to optimize your online store.",
+    link: "services/hire-shopify-developer",
+  },
+];
 
 // export const projects = [
 //   {
