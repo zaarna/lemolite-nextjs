@@ -1,7 +1,7 @@
 import Innerhero from "@/components/ReusableComponent/Innerhero/Innerhero";
 import Librariescomponent from "@/components/ReusableComponent/TechStack/LibrariesComponent";
 import { reacttech } from "@/data/breadcrumsdata";
-import { angularlibraries, allStats } from "../../../Datafolder/librariesdata";
+// import { angularlibraries, allStats } from "../../../Datafolder/librariesdata";
 import React from "react";
 
 const ReactJSDevelopmentPage = () => {
@@ -19,11 +19,11 @@ const ReactJSDevelopmentPage = () => {
         src={"/reactech.webp"}
         alt={"React JS Development Company"}
       />
-      <Librariescomponent
+      {/* <Librariescomponent
         libraries={angularlibraries}
         title="Top Angular Libraries"
         stats={allStats}
-      />
+      /> */}
     </div>
   );
 };
