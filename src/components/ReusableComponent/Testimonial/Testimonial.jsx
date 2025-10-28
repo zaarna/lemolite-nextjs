@@ -5,9 +5,42 @@ import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { usePathname } from "next/navigation";
 import Titlecontent from "../../ReusableComponent/Titlecontent/Titlecontent";
 
 export default function Testimonial({ testimonials = [], title }) {
+  const pathname = usePathname();
+
+  // ❌ Define excluded pages (no testimonial)
+  const excludedPaths = [
+    "/contact-us",
+    "/careers",
+    "/blog",
+    "/life-at-lemolite",
+
+    // Services without testimonial 👇
+
+    "/services/e-commerce",
+    "/services/web-development",
+    "/services/mobile-app-development",
+    "/services/custom-software-development",
+    "/services/ot-cybersecurity",
+    "/services/ai-ml-development",
+    "/services/chatbot-development",
+    "/services/voicebot-development",
+  ];
+
+  // ❌ Also exclude blog and career inner pages
+  const isBlogInner = pathname.startsWith("/blog/") && pathname !== "/blog";
+  const isCareerInner =
+    pathname.startsWith("/careers/") && pathname !== "/careers";
+
+  // ✅ Show testimonial only on specific pages
+  if (excludedPaths.includes(pathname) || isBlogInner || isCareerInner) {
+    return null;
+  }
+
+  // --- Carousel setup ---
   const autoplay = useRef(Autoplay({ delay: 4000, stopOnInteraction: false }));
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
     autoplay.current,
@@ -27,6 +60,7 @@ export default function Testimonial({ testimonials = [], title }) {
     () => emblaApi && emblaApi.scrollNext(),
     [emblaApi]
   );
+
   const onSelect = useCallback(() => {
     if (!emblaApi) return;
     setSelectedIndex(emblaApi.selectedScrollSnap());
@@ -45,9 +79,9 @@ export default function Testimonial({ testimonials = [], title }) {
         (window.innerWidth >= 640 &&
           window.innerWidth < 1024 &&
           testimonials.length > 2) ||
-        (window.innerWidth < 640 && testimonials.length > 1))) ??
-    false;
+        (window.innerWidth < 640 && testimonials.length > 1))) ?? false;
 
+  // --- Render Section ---
   return (
     <section className="top-bottom">
       <div className="container mx-auto px-4">
