@@ -1,26 +1,27 @@
-import React from 'react';
+import Innerhero from "@/components/ReusableComponent/Innerhero/Innerhero";
+import React from "react";
+import { python } from "@/data/breadcrumsdata";
+import { hireourteamphython } from "@/data/hiringDevelopers";
+import HireOurTeam from "@/components/ReusableComponent/HireDevelopers/HireOurTeam";
 
 const HirePythonDeveloperPage = () => {
   return (
     <div className="min-h-screen bg-gray-50">
-      <div className="container mx-auto px-4 py-8">
-        <h1 className="text-4xl font-bold text-center mb-8">
-          Hire Python Developers
-        </h1>
-        <div className="text-center">
-          <p className="text-lg text-gray-600 mb-4">
-            Expert Python developers for your projects
-          </p>
-          <p className="text-gray-500">
-            This is a placeholder for your Hire_python_developer component.
-            <br />
-            Migrate your Hire_python_developer component from React.js to replace this.
-          </p>
-        </div>
-      </div>
+      <Innerhero
+        padding="py-8 md:py-10 lg:py-20"
+        breadcrumbs={python}
+        title={"Hire Python Developers"}
+        content={
+          "Unlock the potential of your projects with our best Python developers, skilled in frameworks such as Django, Flask, and FastAPI. They specialize in creating scalable web applications and innovative AI/ML solutions, ensuring you receive robust, data-driven results."
+        }
+        btntext={"Get Started Today"}
+        link={"/contact-us"}
+        src={"/python.webp"}
+        alt={"Hire Python Developers"}
+      />
+      <HireOurTeam hireourteam={hireourteamphython} />
     </div>
   );
 };
 
 export default HirePythonDeveloperPage;
-

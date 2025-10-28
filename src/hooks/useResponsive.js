@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from "react";
 
 // Default breakpoints matching Tailwind CSS breakpoints
 const defaultBreakpoints = {
@@ -9,7 +9,7 @@ const defaultBreakpoints = {
   md: 768,
   lg: 1024,
   xl: 1280,
-  '2xl': 1536,
+  "2xl": 1536,
 };
 
 /**
@@ -18,48 +18,51 @@ const defaultBreakpoints = {
  * @returns {Object} Responsive state and utilities
  */
 export const useResponsive = (customBreakpoints = {}) => {
-  const breakpoints = { ...defaultBreakpoints, ...customBreakpoints };
-  
+  const breakpoints = useMemo(
+    () => ({ ...defaultBreakpoints, ...customBreakpoints }),
+    [customBreakpoints]
+  );
+
   const [windowSize, setWindowSize] = useState({
-    width: typeof window !== 'undefined' ? window.innerWidth : 0,
-    height: typeof window !== 'undefined' ? window.innerHeight : 0,
+    width: typeof window !== "undefined" ? window.innerWidth : 0,
+    height: typeof window !== "undefined" ? window.innerHeight : 0,
   });
 
-  const [currentBreakpoint, setCurrentBreakpoint] = useState('xs');
+  const [currentBreakpoint, setCurrentBreakpoint] = useState("xs");
 
   useEffect(() => {
-    // Function to update window size and breakpoint
     const handleResize = () => {
       const width = window.innerWidth;
       const height = window.innerHeight;
-      
-      setWindowSize({ width, height });
-      
-      // Determine current breakpoint
-      const sortedBreakpoints = Object.entries(breakpoints)
-        .sort(([, a], [, b]) => b - a);
-      
-      for (const [breakpoint, minWidth] of sortedBreakpoints) {
+
+      setWindowSize((prev) =>
+        prev.width !== width || prev.height !== height
+          ? { width, height }
+          : prev
+      );
+
+      const sortedBreakpoints = Object.entries(breakpoints).sort(
+        ([, a], [, b]) => b - a
+      );
+
+      for (const [bp, minWidth] of sortedBreakpoints) {
         if (width >= minWidth) {
-          setCurrentBreakpoint(breakpoint);
+          setCurrentBreakpoint((prev) => (prev !== bp ? bp : prev));
           break;
         }
       }
     };
 
-    // Set initial values
-    handleResize();
+    handleResize(); // initial call
+    window.addEventListener("resize", handleResize);
 
-    // Add event listener
-    window.addEventListener('resize', handleResize);
-
-    // Cleanup
-    return () => window.removeEventListener('resize', handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, [breakpoints]);
 
   // Helper functions for common responsive checks
   const isMobile = windowSize.width < breakpoints.md;
-  const isTablet = windowSize.width >= breakpoints.md && windowSize.width < breakpoints.lg;
+  const isTablet =
+    windowSize.width >= breakpoints.md && windowSize.width < breakpoints.lg;
   const isDesktop = windowSize.width >= breakpoints.lg;
   const isLargeDesktop = windowSize.width >= breakpoints.xl;
 
@@ -75,38 +78,46 @@ export const useResponsive = (customBreakpoints = {}) => {
 
   // Function to get responsive value based on breakpoints
   const getResponsiveValue = (values) => {
-    const sortedBreakpoints = Object.entries(breakpoints)
-      .sort(([, a], [, b]) => b - a);
-    
+    const sortedBreakpoints = Object.entries(breakpoints).sort(
+      ([, a], [, b]) => b - a
+    );
+
     for (const [breakpoint, minWidth] of sortedBreakpoints) {
       if (windowSize.width >= minWidth && values[breakpoint] !== undefined) {
         return values[breakpoint];
       }
     }
-    
+
     // Fallback to the smallest breakpoint value
-    return values.xs || values.sm || values.md || values.lg || values.xl || values['2xl'];
+    return (
+      values.xs ||
+      values.sm ||
+      values.md ||
+      values.lg ||
+      values.xl ||
+      values["2xl"]
+    );
   };
 
   return {
     // Window dimensions
     width: windowSize.width,
     height: windowSize.height,
-    
+
     // Current breakpoint
     breakpoint: currentBreakpoint,
-    
+
     // Device type checks
     isMobile,
     isTablet,
     isDesktop,
     isLargeDesktop,
-    
+
     // Breakpoint utilities
     isBreakpoint,
     isBelowBreakpoint,
     getResponsiveValue,
-    
+
     // All breakpoints for reference
     breakpoints,
   };

@@ -314,7 +314,10 @@ const Header = () => {
         {
           heading: "Staff Augmentation",
           items: [
-            { title: "Hire Python Developers", href: "/hire/python" },
+            {
+              title: "Hire Python Developers",
+              href: "/services/hire-python-developer",
+            },
             { title: "Hire MERN Developers", href: "/hire/mern" },
             { title: "Hire React JS Developers", href: "/hire/react" },
             { title: "Hire Node JS Developers", href: "/hire/node" },
@@ -798,7 +801,10 @@ const Header = () => {
                                 </h6>
                                 <ul className="space-y-1 list-disc list-inside marker:text-[#bfd633]">
                                   {col.items.map((item) => (
-                                    <li key={item.title} className="flex items-center gap-2">
+                                    <li
+                                      key={item.title}
+                                      className="flex items-center gap-2"
+                                    >
                                       <span className="w-1.5 h-1.5 bg-[#bfd633] rounded-full flex-shrink-0" />
                                       <Link
                                         href={item.href}
