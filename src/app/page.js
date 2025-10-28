@@ -1,9 +1,11 @@
 
 import CtaSection from '@/components/ReusableComponent/Cta_Section/CtaSection';
 import VisionAndExpertise from '@/components/ReusableComponent/ExpertiseSection/VisionAndExpertise';
+import Hire from '@/components/ReusableComponent/HireSection/Hire';
 import TailoredSolutions from '@/components/ReusableComponent/TailoredSolutions/TailoredSolutions';
+import TechnologyWeUse from '@/components/ReusableComponent/TechnologyWeUse/TechnologyWeUse';
 import TrustedByCliet_WhoWeAre from '@/components/ReusableComponent/TrustedByCliet_WhoWeAre/TrustedByCliet_WhoWeAre';
-import { logos, features, solutions, services } from '@/data/home';
+import { logos, features, solutions, services, developers } from '@/data/home';
 import React from 'react';
 
 // This will be replaced with your actual HomePage component when migrated
@@ -40,6 +42,16 @@ const HomePage = () => {
         content="We provide tailored custom software development services to drive innovation, improve efficiency, enhance customer experience, and support digital transformation, helping you achieve success and stay competitive."
         service={services}
       />
+      <Hire
+        developers={developers}
+        title={"Hire Innovators Who Build the Future"}
+        content={
+          "Elevate your business with innovative, custom-built digital solutions designed to meet today's challenges and drive future growth and success."
+        }
+        btntext="Talk to an Expert"
+        link={"/contact-us"}
+      />
+      <TechnologyWeUse />
       </div>
   );
 };
