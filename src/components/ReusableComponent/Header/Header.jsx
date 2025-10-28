@@ -318,14 +318,38 @@ const Header = () => {
               title: "Hire Python Developers",
               href: "/services/hire-python-developer",
             },
-            { title: "Hire MERN Developers", href: "/hire/mern" },
-            { title: "Hire React JS Developers", href: "/hire/react" },
-            { title: "Hire Node JS Developers", href: "/hire/node" },
-            { title: "Hire PHP Developers", href: "/hire/php" },
-            { title: "Hire Laravel Developers", href: "/hire/laravel" },
-            { title: "Hire Angular Developers", href: "/hire/angular" },
-            { title: "Hire Vue JS Developers", href: "/hire/vue" },
-            { title: "Hire Shopify Developers", href: "/hire/shopify" },
+            {
+              title: "Hire MERN Developers",
+              href: "/services/hire-mern-developer",
+            },
+            {
+              title: "Hire React JS Developers",
+              href: "/services/hire-reactjs-developer",
+            },
+            {
+              title: "Hire Node JS Developers",
+              href: "/services/hire-nodejs-developer",
+            },
+            {
+              title: "Hire PHP Developers",
+              href: "/services/hire-php-developer",
+            },
+            {
+              title: "Hire Laravel Developers",
+              href: "/services/hire-laravel-developer",
+            },
+            {
+              title: "Hire Angular Developers",
+              href: "/services/hire-angular-developer",
+            },
+            {
+              title: "Hire Vue JS Developers",
+              href: "/services/hire-vue-developer",
+            },
+            {
+              title: "Hire Shopify Developers",
+              href: "/services/hire-shopify-developer",
+            },
           ],
         },
       ],

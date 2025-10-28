@@ -3,6 +3,17 @@ import React from "react";
 import { python } from "@/data/breadcrumsdata";
 import { hireourteamphython } from "@/data/hiringDevelopers";
 import HireOurTeam from "@/components/ReusableComponent/HireDevelopers/HireOurTeam";
+import Hireproccess from "@/components/ReusableComponent/HireDevelopers/Hireprocess";
+import { hireprocesspython } from "@/data/hireprocess";
+import { whyhirepython } from "@/data/whyhiredev";
+import WhyHireSection from "@/components/ReusableComponent/HireDevelopers/WhyHireSections";
+import Ctasection from "@/components/ReusableComponent/Cta_Section/CtaSection";
+import { pythonbenifit } from "@/data/keybenifit";
+import Key_benifit from "@/components/ReusableComponent/HireDevelopers/key_benifit";
+import FAQ from "@/components/ReusableComponent/HireDevelopers/FAQ";
+import { hirefaqpython } from "@/data/faqhire";
+// import Testimonial from "@/components/ReusableComponent/HireDevelopers/Testimonial";
+import { testimonials } from "@/data/home";
 
 const HirePythonDeveloperPage = () => {
   return (
@@ -20,6 +31,42 @@ const HirePythonDeveloperPage = () => {
         alt={"Hire Python Developers"}
       />
       <HireOurTeam hireourteam={hireourteamphython} />
+      <Hireproccess
+        title={"How We Connect You with the Best Python Developers"}
+        steps={hireprocesspython}
+      />
+      <WhyHireSection
+        title={"Why Hire Python Developers from Lemolite?"}
+        content={
+          "Finding the right development talent can be challenging, but we simplify the process by connecting you with highly skilled Python developers, rigorously evaluated for technical expertise and project adaptability. Whether you require front-end, back-end, or full-stack specialists, our professionals seamlessly integrate into your workflow. From recruitment to onboarding and ongoing management, we handle every aspect, allowing you to focus on driving business success with scalable and cost-efficient development solutions."
+        }
+        btntext={"Hire Python Developers"}
+        link={"/contact-us"}
+        features={whyhirepython}
+      />
+      <Ctasection
+        bg="bg-gradient-to-r from-primary/30 to-secondry/30"
+        image={"/ctawhite.webp"}
+        title={" Ready to Work with Dedicated Python Developers?"}
+        text={"Start Your Project Today!"}
+        link={"/contact-us"}
+      />
+      <Key_benifit
+        title={"Key Benefits of Our Python Developers"}
+        benefits={pythonbenifit}
+      />
+      <Ctasection
+        bg="bg-gradient-to-r from-primary/30 to-secondry/30"
+        image={"/hirecta.webp"}
+        title={"Take Your Project to the Next Level!"}
+        text={"Start Now"}
+        link={"/contact-us"}
+      />
+      <FAQ questions={hirefaqpython} />
+      {/* <Testimonial
+        title="Hear from Our Happy Clients"
+        testimonials={testimonials}
+      /> */}
     </div>
   );
 };
