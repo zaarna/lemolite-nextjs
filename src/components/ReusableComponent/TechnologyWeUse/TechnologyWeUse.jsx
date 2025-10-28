@@ -140,11 +140,11 @@ const TechnologyWeUse = ({ padding = "top-bottom", bg = "bg-white" }) => {
                     key={category.id}
                     onClick={() => setActiveCategory(category.id)}
                     className={`group cursor-pointer flex items-center justify-between p-3 rounded-[15px] transition-all duration-300 
-        ${
-          activeCategory === category.id
-            ? "bg-white shadow-md border border-gray-200"
-            : "hover:bg-white/50"
-        }`}
+                    ${
+                    activeCategory === category.id
+                        ? "bg-white shadow-md border border-gray-200"
+                        : "hover:bg-white/50"
+                    }`}
                   >
                     <div className="flex items-center gap-3">
                       <Image

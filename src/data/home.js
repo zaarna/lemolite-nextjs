@@ -191,3 +191,67 @@ export const developers = [
 //     widthClass: "sm:w-1/2 md:w-5/12",
 //   },
 // ];
+
+export const testimonials = [
+  {
+    image: "/thehijabworld.svg",
+    quote:
+      "We wanted a fresh look for our website, and Lemolite delivered exactly that. Our customers noticed the change right away, and traffic has gone up. Even small edits are done without any fuss. Plus, they don’t overcharge, which is rare in this space.",
+    name: "The HIJAB world, UK",
+    title: "Executive",
+    alt: "The Hijab World - Testimonial",
+  },
+  {
+    image: "/KeepingBaby.svg",
+    quote:
+      "What I liked was that they just ‘got it.’ I didn’t have to explain things ten times. The project was finished on time, issues were fixed quickly, and honestly, I didn’t have to micromanage. That was a big relief.",
+    name: "Keeping Up with The Baby",
+    title: "CEO",
+    alt: "Keeping up with the Baby - Testimonial",
+  },
+  {
+    image: "/testiimg.svg",
+    quote:
+      "Setting up our combat sports brand online was new territory for me. The Lemolite team walked me through everything, stayed patient, and always answered quickly. The site went live smoothly, and I didn’t feel lost in the process.",
+    name: "Combat Sports Apparel Company",
+    title: "Founder",
+  },
+  
+];
+export const addresses = [
+  {
+    id: 1,
+    country: "India",
+    flag: "/india.png",
+    phone: "+91 93138 34815",
+    phoneLink: "tel:+91 9313834815",
+    email: "sales@lemolite.com",
+    emailLink: "mailto:sales@lemolite.com",
+    location:
+      "1101, 1103, 1104, Colonnade,<br /> Iskcon Cross Road, Satellite,<br /> Ahmedabad, Gujarat,<br /> INDIA - 380059",
+    locationLink: "https://maps.app.goo.gl/qRb2qjYm2kojAX8q8",
+  },
+  {
+    id: 2,
+    country: "UK",
+    flag: "/uk.png",
+    phone: "+44 7551 316937",
+    phoneLink: "tel:+447551316937",
+    location:
+      "6 Denmark Road,<br />Kingston Upon Thames, <br /> London, KT1 2RU",
+    locationLink: "https://maps.app.goo.gl/fWt4FLy272sCAkYU9",
+    email: "jainam@lemolite.com",
+    emailLink: "mailto:jainam@lemolite.com",
+  },
+  // {
+  //   id: 3,
+  //   country: "Canada",
+  //   flag: "/canada.png",
+  //   phone: "+1 22699 84440",
+  //   phoneLink: "tel:+1 2269984440",
+  //   email: "connect@lemolite.com",
+  //   emailLink: "mailto:connect@lemolite.com",
+  //   location: "1735 Parkhurst Avenue,<br /> London, Ontario N5V 2C4",
+  //   locationLink: "https://maps.app.goo.gl/5PMfcLmxPz92LYJK7",
+  // },
+];

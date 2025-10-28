@@ -37,3 +37,65 @@ body {
 .scrollbar-none {
   scrollbar-width: none;
 }
+.animated--background {
+  background: linear-gradient(320deg, rgba(46, 196, 243, 0.3), rgba(191, 214, 51, 0.3));
+  background-size: 500% 500%;
+  animation: colortransition 10s ease infinite;
+}
+
+
+@-webkit-keyframes colortransition {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@-moz-keyframes colortransition {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@-o-keyframes colortransition {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes colortransition {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}

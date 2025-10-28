@@ -3,6 +3,8 @@ import "./globals.css";
 import Header from "@/components/ReusableComponent/Header/Header";
 import Footer from "@/components/ReusableComponent/Footer/Footer";
 import { ToastContainer } from "react-toastify";
+import Contectinfo from "@/components/ReusableComponent/Contectinfo/Contectinfo";
+import { addresses } from "@/data/home";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,6 +30,14 @@ export default function RootLayout({ children }) {
         <Header />
         <ToastContainer />
         {children}
+        <Contectinfo
+        maintitle={"Let’s Transform Your Vision into Reality"}
+        subtitle={"Get in Touch!"}
+        content={
+          "Working on something big? Let’s chat! We’re excited to hear about your project and see how we can help."
+        }
+        addresses={addresses}
+      />
         <Footer />
       </body>
     </html>

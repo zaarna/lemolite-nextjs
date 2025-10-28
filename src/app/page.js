@@ -4,8 +4,9 @@ import VisionAndExpertise from '@/components/ReusableComponent/ExpertiseSection/
 import Hire from '@/components/ReusableComponent/HireSection/Hire';
 import TailoredSolutions from '@/components/ReusableComponent/TailoredSolutions/TailoredSolutions';
 import TechnologyWeUse from '@/components/ReusableComponent/TechnologyWeUse/TechnologyWeUse';
+import Testimonial from '@/components/ReusableComponent/Testimonial/Testimonial';
 import TrustedByCliet_WhoWeAre from '@/components/ReusableComponent/TrustedByCliet_WhoWeAre/TrustedByCliet_WhoWeAre';
-import { logos, features, solutions, services, developers } from '@/data/home';
+import { logos, features, solutions, services, developers, testimonials } from '@/data/home';
 import React from 'react';
 
 // This will be replaced with your actual HomePage component when migrated
@@ -52,6 +53,15 @@ const HomePage = () => {
         link={"/contact-us"}
       />
       <TechnologyWeUse />
+      <CtaSection title={"Take Your Project to the Next Level!"}
+        text={"Start Now"}
+        link={"/contact-us"}
+        image="/ctawhite.webp"
+        bg='bg-gradient-to-r from-[#2ec4f3]/30 to-[#bfd633]/30' />
+        <Testimonial
+        title="Hear from Our Happy Clients"
+        testimonials={testimonials}
+      />
       </div>
   );
 };

@@ -9,12 +9,17 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "embla-carousel-autoplay": "^8.6.0",
+    "embla-carousel-react": "^8.6.0",
     "framer-motion": "^12.23.22",
+    "libphonenumber-js": "^1.12.25",
     "lucide-react": "^0.545.0",
     "next": "15.5.4",
     "react": "19.1.0",
     "react-countup": "^6.5.3",
-    "react-dom": "19.1.0"
+    "react-dom": "19.1.0",
+    "react-phone-number-input": "^3.4.13",
+    "react-toastify": "^11.0.5"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
