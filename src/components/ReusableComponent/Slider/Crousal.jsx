@@ -1,98 +1,88 @@
 "use client";
 
-import { useState } from "react";
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
+import React, { useCallback, useEffect, useState } from "react";
+import useEmblaCarousel from "embla-carousel-react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import SliderCard from "../Card/SliderCard";
 
 export default function Crousal({ slides = [] }) {
-  const [currentSlide, setCurrentSlide] = useState(0);
+  const [emblaRef, emblaApi] = useEmblaCarousel({
+    loop: false,
+    align: "start",
+    skipSnaps: false,
+  });
 
-  const responsive = {
-    desktop: {
-      breakpoint: { max: 1920, min: 1140 },
-      items: 3,
-      centerMode: false,
-      partialVisibilityGutter: 50,
-    },
-    tablet: {
-      breakpoint: { max: 1140, min: 678 },
-      items: 2,
-      centerMode: false,
-      partialVisibilityGutter: 0,
-    },
-    mobile: {
-      breakpoint: { max: 678, min: 0 },
-      items: 1,
-      centerMode: false,
-      partialVisibilityGutter: 0,
-    },
-  };
+  const [canScrollPrev, setCanScrollPrev] = useState(false);
+  const [canScrollNext, setCanScrollNext] = useState(false);
 
-  const totalSlides = slides.length;
+  const scrollPrev = useCallback(() => emblaApi?.scrollPrev(), [emblaApi]);
+  const scrollNext = useCallback(() => emblaApi?.scrollNext(), [emblaApi]);
 
-  const ButtonGroup = ({ next, previous, carouselState }) => {
-    const { currentSlide } = carouselState;
-    const maxSlideIndex = totalSlides - carouselState.slidesToShow;
+  const onSelect = useCallback(() => {
+    if (!emblaApi) return;
+    setCanScrollPrev(emblaApi.canScrollPrev());
+    setCanScrollNext(emblaApi.canScrollNext());
+  }, [emblaApi]);
 
-    return (
-      <div className="techstack-slider flex justify-between items-center">
-        {/* Left Arrow */}
-        <button
-          className={`custom--arrow arrow-left ${
-            currentSlide === 0 ? "opacity-50 cursor-not-allowed" : ""
-          }`}
-          onClick={currentSlide > 0 ? previous : null}
-          aria-label="Previous Slide"
-        >
-          <ChevronLeft
-            className={`m-auto block md:w-8 w-5 ${
-              currentSlide === 0 ? "opacity-40" : "text-gray-800"
-            }`}
-          />
-        </button>
-
-        {/* Right Arrow */}
-        <button
-          className={`custom--arrow arrow-right ${
-            currentSlide >= maxSlideIndex ? "opacity-50 cursor-not-allowed" : ""
-          }`}
-          onClick={currentSlide < maxSlideIndex ? next : null}
-          aria-label="Next Slide"
-        >
-          <ChevronRight
-            className={`m-auto block md:w-8 w-5 ${
-              currentSlide >= maxSlideIndex ? "opacity-40" : "text-gray-800"
-            }`}
-          />
-        </button>
-      </div>
-    );
-  };
+  useEffect(() => {
+    if (!emblaApi) return;
+    emblaApi.on("select", onSelect);
+    onSelect();
+  }, [emblaApi, onSelect]);
 
   return (
-    <Carousel
-      responsive={responsive}
-      containerClass="teck-padding-slide"
-      arrows={false}
-      customButtonGroup={<ButtonGroup />}
-      afterChange={(previousSlide, { currentSlide }) =>
-        setCurrentSlide(currentSlide)
-      }
-    >
-      {slides.map((slide, index) => (
-        <div key={index} className="h-full flex items-stretch">
-          <SliderCard
-            image={slide.image}
-            title={slide.title}
-            description={slide.description}
-            hoverbg="bg-[#2EC4F3]"
-            hovercolor="text-white"
-            hoverinvert="invert"
-          />
+    <section className="relative w-full">
+      <div className="container mx-auto">
+        {/* Embla Viewport */}
+        <div className="overflow-hidden" ref={emblaRef}>
+          <div className="flex">
+            {slides.map((slide, index) => (
+              <div
+                key={index}
+                className="
+                  flex-[0_0_100%]
+                  sm:flex-[0_0_50%]
+                  lg:flex-[0_0_33.333%]
+                "
+              >
+                <SliderCard
+                  image={slide.image}
+                  title={slide.title}
+                  description={slide.description}
+                  variant="option1"
+                />
+              </div>
+            ))}
+          </div>
         </div>
-      ))}
-    </Carousel>
+
+        {/* Arrows centered below the carousel */}
+        {slides.length > 1 && (
+          <div className="flex justify-center items-center gap-8 mt-10">
+            {/* Previous */}
+            <button
+              onClick={scrollPrev}
+              disabled={!canScrollPrev}
+              className={`bg-white shadow-md rounded-full p-3 transition-all duration-300
+                ${canScrollPrev ? "hover:bg-gray-100" : "opacity-40 cursor-not-allowed"}`}
+              aria-label="Previous Slide"
+            >
+              <ChevronLeft className="w-6 h-6 text-gray-800" />
+            </button>
+
+            {/* Next */}
+            <button
+              onClick={scrollNext}
+              disabled={!canScrollNext}
+              className={`bg-white shadow-md rounded-full p-3 transition-all duration-300
+                ${canScrollNext ? "hover:bg-gray-100" : "opacity-40 cursor-not-allowed"}`}
+              aria-label="Next Slide"
+            >
+              <ChevronRight className="w-6 h-6 text-gray-800" />
+            </button>
+          </div>
+        )}
+      </div>
+    </section>
   );
 }

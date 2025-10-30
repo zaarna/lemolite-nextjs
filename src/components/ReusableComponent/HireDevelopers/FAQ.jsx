@@ -16,7 +16,7 @@ function FAQ({
   return (
     <section className={`faq-accordion ${padding} ${bg}`}>
       <div className="container">
-        <div className="title--head md:pb-10 sm:pb-6 pb-7 text-center">
+        <div className="pb-5 text-center">
           <Titlecontent title="Frequently Asked Questions" />
         </div>
         <div className=" mx-auto max-w-screen-xl">
@@ -24,19 +24,19 @@ function FAQ({
             {questions.map((item, index) => (
               <div
                 key={index}
-                className={`border-[#D2D2D2] border-[1px] mb-5 rounded-lg md:rounded-2xl transition ease-linear duration-75 ${
+                className={`border-[#D2D2D2] border-[1px] mb-4 rounded-lg md:rounded-2xl transition ease-linear duration-75 ${
                   openIndex === index ? "bg-white border-0 drop-shadow-md" : " "
                 }`}
               >
                 <div id={`accordion-flush-heading-${index}`}>
                   <button
                     type="button"
-                    className={`flex justify-between items-center rounded-lg md:rounded-2xl w-full p-3 md:p-4 lg:px-6 lg:py-4 2xl:px-8 2xl:py-6 font-medium text-left focus:outline-none bg-[#F5F5F5] border-black ${
+                    className={`flex justify-between items-center rounded-lg md:rounded-2xl w-full text-left p-4 focus:outline-none bg-[#F5F5F5] border-black ${
                       openIndex === index ? "bg-white" : " dark:text-gray-400"
                     }`}
                     onClick={() => toggleAccordion(index)}
                   >
-                    <span className="text-[18px] sm:text-[22px] md:text-[24px] lg:text-[28px] font-medium">
+                    <span className="text-lg md:text-[20px] font-semibold">
                       {item.question}
                     </span>
                     <svg
@@ -63,7 +63,7 @@ function FAQ({
                   aria-labelledby={`accordion-flush-heading-${index}`}
                 >
                   <div className=" py-2 text-left border-t-[#D0D0D0] border-t">
-                    <p className="text-[16px] md:text-[20px] font-light content-start">
+                    <p className="text-base md:text-lg font-light content-start">
                       {item.answer}
                     </p>
                   </div>
