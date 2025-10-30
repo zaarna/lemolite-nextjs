@@ -211,3 +211,26 @@ export const hirefaqshopify = [
       "The cost of hiring a Shopify developer depends on their experience, project complexity, and required customizations. Simple tasks like theme tweaks are more affordable, while custom apps and advanced integrations require a larger budget.",
   },
 ];
+
+export const techstackmainfaqData = [
+  {
+    question: "Why is choosing the right tech stack important?",
+    answer:
+      "The right tech stack influences your project’s scalability, performance, and development speed, directly impacting its success.",
+  },
+  {
+    question: "What factors should I consider when selecting a tech stack?",
+    answer:
+      "Consider project requirements, team skills, long-term goals, and community support for the technologies you’re evaluating.",
+  },
+  {
+    question: "How can a tech stack impact my budget?",
+    answer:
+      "The choice of tech stack can affect development time and maintenance costs, so selecting the right technologies can lead to significant savings.",
+  },
+  {
+    question: "Are there industry standards for tech stacks?",
+    answer:
+      "While there are popular stacks for specific applications, the best choice depends on your unique project needs and goals.",
+  },
+];

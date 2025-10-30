@@ -1,26 +1,31 @@
-import React from 'react';
+import Devlopmentprocess from "@/components/ReusableComponent/DevelopmentProcess/Devlopmentprocess";
+import ExpertiseSection from "@/components/ReusableComponent/ExpertiseSection/ExpertiseSection";
+import Innerhero from "@/components/ReusableComponent/Innerhero/Innerhero";
+import { uiux } from "@/data/breadcrumsdata";
+import { uiuxprocessSteps } from "@/data/services";
 
 const UIUXDesignPage = () => {
   return (
-    <div className="min-h-screen bg-gray-50">
-      <div className="container mx-auto px-4 py-8">
-        <h1 className="text-4xl font-bold text-center mb-8">
-          UI/UX Design
-        </h1>
-        <div className="text-center">
-          <p className="text-lg text-gray-600 mb-4">
-            Beautiful and intuitive user interfaces
-          </p>
-          <p className="text-gray-500">
-            This is a placeholder for your Uiux component.
-            <br />
-            Migrate your Uiux component from React.js to replace this.
-          </p>
-        </div>
-      </div>
+    <div className="min-h-screen">
+      <Innerhero
+        padding="py-8 md:py-10 lg:py-20"
+        breadcrumbs={uiux}
+        title={" UI/UX Design Services"}
+        content={
+          "Experience design that speaks to your audience. Our UI/UX design services combine deep user insights with sleek, purposeful design, crafting interfaces that not only look stunning but feel effortless to navigate."
+        }
+        btntext={"Boost Your Brand"}
+        link={"/contact-us"}
+        src={"/ui.webp"}
+        alt={"UI/UX Design Services"}
+      />
+      <ExpertiseSection />
+      <Devlopmentprocess
+        title={"Our Design Process"}
+        processSteps={uiuxprocessSteps}
+      />
     </div>
   );
 };
 
 export default UIUXDesignPage;
-

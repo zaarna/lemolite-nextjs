@@ -1,26 +1,28 @@
-import React from 'react';
-
+import Devlopmentprocess from "@/components/ReusableComponent/DevelopmentProcess/Devlopmentprocess";
+import Innerhero from "@/components/ReusableComponent/Innerhero/Innerhero";
+import { web } from "@/data/breadcrumsdata";
+import { webprocessSteps } from "@/data/services";
 const WebDevelopmentPage = () => {
   return (
-    <div className="min-h-screen bg-gray-50">
-      <div className="container mx-auto px-4 py-8">
-        <h1 className="text-4xl font-bold text-center mb-8">
-          Web Development
-        </h1>
-        <div className="text-center">
-          <p className="text-lg text-gray-600 mb-4">
-            Modern web applications and websites
-          </p>
-          <p className="text-gray-500">
-            This is a placeholder for your Web component.
-            <br />
-            Migrate your Web component from React.js to replace this.
-          </p>
-        </div>
-      </div>
+    <div className="min-h-screen">
+      <Innerhero
+        padding="py-8 md:py-10 lg:py-20"
+        breadcrumbs={web}
+        title={" Web Development Services"}
+        content={
+          "At Lemolite, we create dynamic and engaging websites tailored to your business objectives. Whether you are looking to enhance your digital presence or launch a full-scale web application, our web app development services focus on functionality, performance, and user experience."
+        }
+        btntext={" Code Your Dreams!"}
+        link={"/contact-us"}
+        src={"/webservices.webp"}
+        alt={"Web Development Services"}
+      />
+      <Devlopmentprocess
+        title={"Our Development Process"}
+        processSteps={webprocessSteps}
+      />
     </div>
   );
 };
 
 export default WebDevelopmentPage;
-

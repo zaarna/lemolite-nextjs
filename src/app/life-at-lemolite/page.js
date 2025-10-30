@@ -1,10 +1,13 @@
 "use client";
 import Grediantbutton from "@/components/ReusableComponent/Button/Grediantbutton";
+import Contectinfo from "@/components/ReusableComponent/Contectinfo/Contectinfo";
+import Cta_life from "@/components/ReusableComponent/Cta_Section/Cta_life";
 import Ctasection from "@/components/ReusableComponent/Cta_Section/CtaSection";
 import AllEvent from "@/components/ReusableComponent/Life/AllEvent";
 import AwardSection from "@/components/ReusableComponent/Life/AwardSection";
 import MainGallery from "@/components/ReusableComponent/Life/MainGallery";
 import Titlecontent from "@/components/ReusableComponent/Titlecontent/Titlecontent";
+import { addresses } from "@/data/home";
 import { awd, imageUrls } from "@/data/imagesdata";
 import React from "react";
 import { useRef } from "react";
@@ -36,27 +39,7 @@ const LifeAtLemolitePage = () => {
       </section>
       <AwardSection awdimages={awd} />
       <AllEvent />
-      <Ctasection
-        title={"Take Your Project to the Next Level!"}
-        text={"Start Now"}
-        link={"/contact-us"}
-        image="/ctawhite.webp"
-        bg="bg-gradient-to-r from-[#2ec4f3]/30 to-[#bfd633]/30"
-      />
-
-      {/* 
-     
-      <div ref={footerRef}>
-        <Contectinfo
-          maintitle={"Let’s Transform Your Vision into Reality"}
-          subtitle={"Get in Touch!"}
-          content={
-            "Working on something big? Let’s chat! We’re excited to hear about your project and see how we can help."
-          }
-          addresses={addresses}
-        />
-      </div>{" "}
-      */}
+      <Cta_life />
     </>
   );
 };
