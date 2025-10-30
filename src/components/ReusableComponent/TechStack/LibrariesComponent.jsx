@@ -16,11 +16,11 @@ function Libraries({ src, srcname, text }) {
   );
 }
 
-function Librariescomponent({ title, libraries, allStats }) {
+function Librariescomponent({ title, libraries, stats }) {
   return (
     <section className="pb-8 md:pb-16 lg:pb-20">
       <div className="container ">
-        <div className="title--head text-center phython--libraries bg-gradient-to-r from-primary/20 to-secondry/20 rounded-[20px] md:rounded-[32px] py-5 sm:py-8 md:py-10">
+        <div className="title--head text-center phython--libraries bg-gradient-to-r from-[#2ec4f3]/30 to-[#bfd633]/30 rounded-[20px] md:rounded-[32px] py-5 sm:py-8 md:py-10">
           <div className="">
             <Titlecontent title={title} />
           </div>
@@ -36,7 +36,7 @@ function Librariescomponent({ title, libraries, allStats }) {
           </div>
         </div>
         <div className="phython--funfact md:pt-10 pt-5 ">
-          <FunFactTecjstack stats={allStats} width={"md:w-1/4"} />
+          <FunFactTecjstack stats={stats} width={"md:w-1/4"} />
         </div>
       </div>
     </section>

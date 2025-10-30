@@ -384,7 +384,7 @@ const Header = () => {
           items: [
             {
               title: "Node JS Development",
-              href: "/techstack/Nodejs-development",
+              href: "/techstack/nodejs-development",
             },
             {
               title: "Laravel Development",
@@ -394,7 +394,7 @@ const Header = () => {
             { title: "MERN Development", href: "/techstack/mern-development" },
             {
               title: "Python Development",
-              href: "/techstack/Python-development",
+              href: "/techstack/python-development",
             },
             {
               title: "Shopify Development",

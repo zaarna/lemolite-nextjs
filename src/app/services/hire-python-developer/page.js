@@ -17,7 +17,7 @@ import { testimonials } from "@/data/home";
 
 const HirePythonDeveloperPage = () => {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen">
       <Innerhero
         padding="py-8 md:py-10 lg:py-20"
         breadcrumbs={python}
@@ -45,7 +45,7 @@ const HirePythonDeveloperPage = () => {
         features={whyhirepython}
       />
       <Ctasection
-        bg="bg-gradient-to-r from-primary/30 to-secondry/30"
+        bg="bg-gradient-to-r from-[#2ec4f3]/30 to-[#bfd633]/30"
         image={"/ctawhite.webp"}
         title={" Ready to Work with Dedicated Python Developers?"}
         text={"Start Your Project Today!"}
@@ -56,11 +56,11 @@ const HirePythonDeveloperPage = () => {
         benefits={pythonbenifit}
       />
       <Ctasection
-        bg="bg-gradient-to-r from-primary/30 to-secondry/30"
         image={"/hirecta.webp"}
         title={"Take Your Project to the Next Level!"}
         text={"Start Now"}
         link={"/contact-us"}
+        bg="bg-[#F1F1F1]"
       />
       <FAQ questions={hirefaqpython} />
       {/* <Testimonial

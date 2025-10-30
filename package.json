@@ -19,6 +19,7 @@
     "react": "19.1.0",
     "react-countup": "^6.5.3",
     "react-dom": "19.1.0",
+    "react-multi-carousel": "^2.8.6",
     "react-phone-number-input": "^3.4.13",
     "react-toastify": "^11.0.5",
     "reactjs-popup": "^2.0.6"

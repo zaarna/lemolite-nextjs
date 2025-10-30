@@ -79,7 +79,8 @@ export default function Testimonial({ testimonials = [], title }) {
         (window.innerWidth >= 640 &&
           window.innerWidth < 1024 &&
           testimonials.length > 2) ||
-        (window.innerWidth < 640 && testimonials.length > 1))) ?? false;
+        (window.innerWidth < 640 && testimonials.length > 1))) ??
+    false;
 
   // --- Render Section ---
   return (

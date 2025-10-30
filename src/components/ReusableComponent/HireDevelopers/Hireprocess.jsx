@@ -20,8 +20,11 @@ function Hireproccess({ steps = [], title }) {
             {steps.map((step, index) => (
               <div
                 key={index}
-                onMouseEnter={() => setHoveredId(index)}
-                onMouseLeave={() => setHoveredId(0)}
+                // onMouseEnter={() => setHoveredId(index)}
+                // onMouseLeave={() => setHoveredId(0)}
+                onClick={() => {
+                  setHoveredId(index);
+                }}
                 className={`flex flex-col gap-4 cursor-pointer transition-all duration-300 ${
                   hoveredId === index
                     ? "bg-white shadow-md rounded-xl"

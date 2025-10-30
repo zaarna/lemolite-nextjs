@@ -15,7 +15,7 @@ export default function WhyHire({ features = [], layoutType = "first" }) {
 function FeatureCard({ feature, layoutType }) {
   return (
     <div className="group before-image relative p-[0.12rem] my-3 sm:my-5 transition duration-300">
-      <div className="relative bg-gradient-to-r from-primary/10 to-secondry/10 p-6 border rounded-[16px] md:rounded-[32px] border-[#BFD633] md:border-transparent md:hover:border-[#BFD633]">
+      <div className="relative  bg-gradient-to-r from-[#2EC4F3]/10 to-[#BFD633]/10 p-6 border rounded-[16px] md:rounded-[32px] border-[#BFD633] md:border-transparent md:hover:border-[#BFD633]">
         {/* Conditional Layout */}
         {layoutType === "first" ? (
           <>

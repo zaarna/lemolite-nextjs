@@ -1,26 +1,27 @@
-import React from 'react';
+import OurPresence from "@/components/ContactUs/OurPresence";
+import Innerhero from "@/components/ReusableComponent/Innerhero/Innerhero";
+import { contactus } from "@/data/breadcrumsdata";
+import React from "react";
 
 const ContactUsPage = () => {
   return (
-    <div className="min-h-screen bg-gray-50">
-      <div className="container mx-auto px-4 py-8">
-        <h1 className="text-4xl font-bold text-center mb-8">
-          Contact Us
-        </h1>
-        <div className="text-center">
-          <p className="text-lg text-gray-600 mb-4">
-            Get in touch with our team
-          </p>
-          <p className="text-gray-500">
-            This is a placeholder for your ContactUs component.
-            <br />
-            Migrate your ContactUs component from React.js to replace this.
-          </p>
-        </div>
-      </div>
+    <div className="min-h-screen">
+      <Innerhero
+        padding="py-8 md:py-10 lg:py-0 "
+        breadcrumbs={contactus}
+        title={"Contact Us"}
+        content={
+          "Our team is committed to providing personalized support and quick responses, ensuring a smooth, efficient experience. Whether you're looking to discuss a new project, have questions, or explore potential collaboration, we're here to assist you every step of the way. Ready to take the next step?"
+        }
+        btntext={"Book A Call"}
+        link={"https://calendly.com/lemolite-sales/product-demo?month=2025-06"}
+        targetBlank={true}
+        src={"/contactbanner.webp"}
+        alt={"Contact us"}
+      />
+      <OurPresence />
     </div>
   );
 };
 
 export default ContactUsPage;
-
