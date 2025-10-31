@@ -697,3 +697,181 @@ export const softwarefaqData = [
       "The cost depends on the project’s complexity, features, team size, and technology used. It can range from a few thousand to several hundred thousand dollars.",
   },
 ];
+export const aimlfaqData = [
+    {
+        question: 'What industries do you serve?',
+        answer: 'As an AI/ML development company, we provide solutions for healthcare, finance, retail, manufacturing, and more.'
+    },
+    {
+        question: 'How long does it take to develop an AI solution?',
+        answer: 'The timeline depends on the complexity of the project. Typically, AI & ML development services take anywhere from a few weeks to several months to fully develop and deploy.'
+    },
+    {
+        question: 'What is the cost of developing an AI or ML solution?',
+        answer: 'Pricing varies based on project scope, data requirements, and the complexity of the solution. Contact us for a customized quote based on your specific needs.'
+    },
+    {
+        question: 'Do you offer integration with existing systems?',
+        answer: 'Yes, our AI and ML developers ensure seamless integration of AI/ML solutions with your existing systems, ensuring minimal disruption to your business processes.'
+    },
+    {
+        question: 'Can you provide ongoing support and updates after deployment?',
+        answer: 'Absolutely! We offer comprehensive post-deployment support, including system monitoring, updates, and improvements to keep your AI/ML solution running optimally.'
+    }
+];
+export const aimlchoosedata = [
+    {
+      image: "/expert.png",
+      title: "Expert Team",
+      description:
+        "Our data scientists and engineers are experts in AI and ML, with a proven track record of implementing solutions using the latest tools and methodologies.",
+    },
+    {
+      image: "/solution.png",
+      title: "Tailored Solutions",
+      description:
+        "As an AI/ML development company, we understand that two businesses are not the same. That’s why we offer fully customized solutions to meet your unique goals and challenges.",
+    },
+    {
+      image: "/support.png",
+      title: "End-to-End Support",
+      description:
+        "From initial consultation through to deployment and post-launch support, we provide full-cycle services to ensure your AI project’s success.",
+    },
+    {
+      image: "/pruven.png",
+      title: "Proven Results",
+      description:
+        "We have consistently delivered AI-driven solutions that enhance operational efficiency, improve accuracy, and boost customer satisfaction across industries.",
+    },
+  ];
+  export const iotdata = [
+    {
+        step: '01',
+        question: 'IoT Application Development',
+        answer: 'As a leading IoT app development company, we build tailored applications for mobile, web, and wearables that enable seamless connectivity and control of IoT devices. These apps are designed to be user-friendly and scalable, ensuring they meet both current and future needs.'
+    },
+    {
+        step: '02',
+        question: 'Cloud Integration',
+        answer: 'Leverage cutting-edge cloud platforms to store, process, and analyze data in real time. Our cloud solutions provide enhanced security and reliability, allowing you to focus on growth.'
+    },
+    {
+        step: '03',
+        question: 'IoT Consulting & Strategy',
+        answer: 'Get personalized guidance on designing and implementing IoT solutions. From initial brainstorming to full-scale deployment, we ensure your projects align with your business goals.'
+    },
+    {
+        step: '04',
+        question: 'Sensor & Gateway Integration',
+        answer: 'Integrate sensors and gateways to create a unified IoT ecosystem. This ensures real-time communication and seamless operation across all connected devices.'
+    },
+    {
+        step: '05',
+        question: 'Data Analytics & Security',
+        answer: 'Extract actionable insights from your IoT data using advanced analytics. We also prioritize robust security measures to safeguard your systems against cyber threats.'
+    }
+];
+export const aimlData = [
+    {
+        step: '01',
+        question: 'Custom AI Solutions',
+        answer: 'As an AI/ML development company, We design and implement AI applications tailored to your business objectives, including intelligent automation, virtual assistants, and advanced analytics tools.'
+    },
+    {
+        step: '02',
+        question: 'Machine Learning Model Development',
+        answer: 'Our AI and ML developers specialize in data preprocessing, model development, and deployment, ensuring that your ML models provide accurate predictions and actionable insights for smarter decision-making.'
+    },
+    {
+        step: '03',
+        question: 'Natural Language Processing (NLP)',
+        answer: 'Transform customer interactions with NLP-powered chatbots and sentiment analysis tools that can understand, interpret, and respond to human language naturally and effectively.'
+    },
+    {
+        step: '04',
+        question: 'Predictive Analytics',
+        answer: 'Use past data to predict future trends and actions. Our predictive models help businesses make smarter decisions and plan ahead for success.'
+    },
+    {
+        step: '05',
+        question: 'Computer Vision',
+        answer: 'Apply AI to visual data with computer vision technologies for applications such as image recognition, object detection, and automated quality assurance.'
+    }
+];
+export const aimalexpert = [
+    {
+        texttitle: "Artificial Intelligence (AI)",
+        textcontent: "AI enables machines to simulate human intelligence and perform tasks like decision-making, problem-solving, and data analysis. As a leading AI software development services provider, we develop AI solutions that automate workflows, improve efficiency, and generate new insights for your business.",
+        image: "/ai.webp",
+        alt: 'Artificial Intelligence'
+    },
+    {
+        texttitle: "Machine Learning (ML)",
+        textcontent: "ML is a branch of AI that allows systems to learn from data, adapt, and improve over time. Our team of AI/ML developers builds custom ML models that deliver accurate predictions, optimize processes, and evolve with your business needs.",
+        image: "/ml.webp",
+        alt: 'Machine Learning'
+    },
+];
+export const iotfaqData = [  
+    {  
+        question: 'Can IoT solutions be customized for my business?',  
+        answer: 'Yes, we offer custom IoT app development services based on your specific business needs, ensuring they align with your goals and workflows.'  
+    },  
+    {  
+        question: 'How much does it cost to develop an IoT app?',  
+        answer: 'Costs depend on the app’s complexity, features, and platforms. Contact us for a custom quote on our IoT app development services.'  
+    },  
+    {  
+        question: 'How long does IoT development take?',  
+        answer: 'The development timeline varies depending on the scope and complexity of the project. We will provide a detailed estimate after we understand your needs.'  
+    },  
+    {  
+        question: 'How does IoT improve operational efficiency?',  
+        answer: 'IoT helps automate processes, provides real-time data insights, and reduces manual intervention, resulting in increased productivity and operational efficiency.'  
+    },  
+    {  
+        question: 'Which industries benefit most from IoT solutions?',  
+        answer: 'IoT is versatile and widely used in industries like healthcare, manufacturing, retail, transportation, agriculture, and smart cities.'  
+    }  ,
+
+];
+
+ export const iotsystem = [
+    {
+        image: "/iotsystem1.svg",
+        title: "Enhanced Operational Efficiency",
+        description:
+            "IoT systems make it easier to automate processes and reduce the need for manual work. By using real-time data, businesses can speed up workflows, reduce mistakes, and make better use of their resources. For example, factories can automate machines, and warehouses can keep track of stock automatically, leading to smoother operations and faster results.",
+    },
+    {
+        image: "/iotsystem2.svg",
+        title: "Cost Savings",
+        description:
+            "One of the biggest advantages of IoT is the potential for cost savings. By monitoring devices and systems in real time, businesses can spot problems before they become expensive issues. For example, IoT can predict when equipment is about to fail, allowing you to fix it before it breaks down. This helps businesses save money on repairs and reduce wasted energy and resources.",
+    },
+    {
+        image: "/iotsystem3.svg",
+        title: "Improved Decision-Making",
+        description:
+            "With IoT, businesses can access real-time data that helps them make better decisions. For example, a retail store can track inventory to make sure they don’t run out of popular products, or a manufacturer can monitor their production line to prevent downtime. IoT gives businesses the insights they need to react quickly and make smart choices.",
+    },
+    {
+        image: "/iotsystem4.svg",
+        title: "Better Customer Experiences",
+        description:
+            "IoT technology also helps businesses offer more personalized experiences to their customers. By collecting data on customer behavior and preferences, businesses can create customized products and services that meet their needs. For example, smart home devices can adjust settings based on what the user likes, and retail stores can offer personalized recommendations",
+    },
+    {
+        image: "/iotsystem5.svg",
+        title: "Increased Productivity and Automation",
+        description:
+            "IoT can help automate everyday tasks, which frees up employees to focus on more important work. Whether it’s managing office lighting or monitoring machinery, IoT systems can handle tasks automatically, allowing people to be more productive. Additionally, IoT systems can be controlled remotely, meaning businesses can monitor and manage their systems from anywhere.",
+    },
+    {
+        image: "/iotsystem6.svg",
+        title: "Scalability and Flexibility",
+        description:
+            "IoT systems are highly scalable, meaning businesses can easily expand their network of connected devices as they grow. This makes IoT a great long-term solution for businesses of any size. As your business changes and new needs arise, your IoT system can adapt to keep up.",
+    },
+];

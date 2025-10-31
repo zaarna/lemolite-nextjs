@@ -6,7 +6,12 @@ import SliderCard from "@/components/ReusableComponent/Card/SliderCard";
 import Titlecontent from "@/components/ReusableComponent/Titlecontent/Titlecontent";
 
 
-export default function Why_choose_us({data , title}) {
+export default function Why_choose_us({data , title, columns = 3}) {
+  const gridColsClass =
+    columns === 2
+      ? "grid-cols-1 md:grid-cols-2"
+      : "grid-cols-1 md:grid-cols-2 lg:grid-cols-3";
+
   return (
     <section className="why_choose_us top-bottom">
       <div className="container">
@@ -16,7 +21,7 @@ export default function Why_choose_us({data , title}) {
         </div>
 
         {/* Grid Layout */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className={`grid ${gridColsClass} gap-4`}>
           {data.map((item, index) => (
             <SliderCard
               key={index}

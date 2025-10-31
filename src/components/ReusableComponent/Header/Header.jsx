@@ -300,7 +300,7 @@ const Header = () => {
               title: "AI & ML Development",
               href: "/services/ai-ml-development",
             },
-            { title: "Internet of Things", href: "/services/iot" },
+            { title: "Internet of Things", href: "/services/internet-of-things" },
             {
               title: "Chatbot Development",
               href: "/services/chatbot-development",

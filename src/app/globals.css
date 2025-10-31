@@ -540,3 +540,61 @@ body {
 
 /* Smart Operation Section */
 
+
+
+
+
+.accordion-item {
+  position: relative;
+}
+
+.vertical-line {
+  position: absolute;
+  left: 35px;
+  top: 35%;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(100.63deg, #2ec4f3 9.94%, #bfd633 86.86%);
+  transition: height 0.3s ease;
+}
+
+.open .vertical-line {
+  height: 55%;
+}
+
+@media (max-width: 640px) {
+  .what--we--title--head {
+    text-align: center;
+    text-overflow: ellipsis;
+
+  }
+  .vertical-line {
+    display: none;
+  }
+  .open .horizontal-line {
+    height: 1px;
+    width: 100%;
+  }
+  .accordion-flush-heading-2 {
+    position: relative;
+  }
+  .horizontal-line {
+    display: block;  
+    position: absolute;  
+    width: 100%;  
+    background: linear-gradient(100.63deg, #2ec4f3 9.94%, #bfd633 86.86%);  
+    left: 0;  
+    height: 2px; /* Fixed height */  
+    transition: height 0.3s ease; 
+  }
+}
+
+@media (max-width: 314px) {
+    .horizontal-line {
+        top: calc(4rem + (var(--title-size-64) / 1));
+        left: 0;  
+        height: 2px; /* Fixed height */  
+        transition: height 0.3s ease; 
+      }
+}
+
