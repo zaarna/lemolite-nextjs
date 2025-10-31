@@ -254,3 +254,21 @@ export const addresses = [
   //   locationLink: "https://maps.app.goo.gl/5PMfcLmxPz92LYJK7",
   // },
 ];
+
+export const customservices = [
+  { title: "User-Friendly Interface", img: "/friendly.webp" },
+  { title: "Cross-Platform Compatibility", img: "/platform.webp" },
+  { title: "Cloud Integration", img: "/cloud.webp" },
+  { title: "Security & Data Privacy", img: "/security.webp" },
+  { title: "Third-Party API Support", img: "/api.webp" },
+  { title: "Real-Time Updates", img: "/update.webp" },
+  { title: "Custom Dashboards", img: "/dashbord.webp" },
+  { title: "Multi-language Support", img: "/support.webp" },
+  { title: "Social Media Integration", img: "/media.webp" },
+  { title: "Automated Reports", img: "/automated.webp" },
+  { title: "Collaboration Tools", img: "/tools.webp" },
+  { title: "Smart Analytics", img: "/analytics.webp" },
+  { title: "Mobile Optimization", img: "/optimization.webp" },
+  { title: "Payment Gateway Integration", img: "/paymet.webp" },
+  { title: "CRM Integration", img: "/crm.webp" },
+];

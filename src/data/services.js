@@ -644,3 +644,56 @@ export const webexpert = [
     },
 ];
 
+
+export const weblistItems = [
+  "Provide your project goals, vision, and roadmap (if available)",
+  "Share the main requirements for your project",
+  "Supply any project-specific documentation, such as software architecture, mockups, and deadlines",
+  "Be available for requirements-gathering sessions for a few hours per week",
+];
+
+export const mobilelistItems = [
+  "Define your project goals, vision, and roadmap to guide the mobile app development process (if available).",
+  "Share the primary requirements for your mobile app development.",
+  "Send any project-specific documentation, such as software architecture, mockups, and deadlines",
+  "Be available for requirements-gathering sessions for a few hours per week",
+];
+
+export const projectSteps = [
+  "Define the project scope and gather requirements, including UI/UX considerations.",
+  "Create a detailed plan and prioritize development tasks.",
+  "Launch a Minimum Viable Product (MVP) with core features.",
+  "Collect feedback and refine the product collaboratively.",
+  "Test thoroughly for quality and functionality assurance.",
+  "Deploy the final, polished product seamlessly.",
+  "Offer ongoing support and maintenance for continued performance.",
+];
+
+export const softwarefaqData = [
+  {
+    question: " What is the custom software development process?",
+    answer:
+      "It’s a step-by-step approach including requirement analysis, design, development, testing, deployment, and maintenance to create software tailored to your business needs.",
+  },
+  {
+    question: "How long does it take to develop custom software?",
+    answer:
+      "The timeline varies based on the project’s complexity but usually takes a few months to a year, depending on the scope and features.",
+  },
+  {
+    question: "How can custom software benefit my business?",
+    answer:
+      "It offers tailored solutions to meet specific needs, streamline workflows, boost productivity, improve scalability, and give you a competitive edge",
+  },
+  {
+    question:
+      "What should I consider when choosing a custom software development company?  ",
+    answer:
+      "Look for expertise, experience, past projects, client reviews, technology stack, and their ability to align with your business goals.",
+  },
+  {
+    question: "How much does custom software development cost?",
+    answer:
+      "The cost depends on the project’s complexity, features, team size, and technology used. It can range from a few thousand to several hundred thousand dollars.",
+  },
+];

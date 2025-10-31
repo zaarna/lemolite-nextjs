@@ -9,10 +9,10 @@ const ExpertiseSection = ({ services = [] }) => {
         {services.map((service, index) => (
           <div
             key={index}
-            className="h-28 sm:h-36 experties--box relative sm:rounded-[28px] rounded-[12px] p-3
+            className="h-28 experties--box relative sm:rounded-[28px] rounded-[12px] p-3
                        flex flex-col items-center justify-around 
                        transition-all duration-300 
-                       sm:bg-white border border-[#BFD633] 
+                       sm:bg-white border 
                        sm:hover:bg-gradient-to-r from-[#2EC4F3]/10 to-[#BFD633]/10 hover:border-[#2EC4F3]"
           >
             {/* Service Icon */}
