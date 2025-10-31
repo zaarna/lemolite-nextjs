@@ -423,3 +423,25 @@ export const aimlprocessSteps = [
     isFirst: false,
   },
 ];
+export const uiuxfaqData = [
+    {
+        question: ' How long does the UI/UX design process take?',
+        answer: 'The duration of the UI/UX design process depends on the complexity and scope of your project. It can range from a few weeks to several months. We work closely with you to set realistic timelines and milestones, ensuring timely delivery without compromising design quality.'
+    },
+    {
+        question: 'What qualifications and expertise do your UX/UI designers have?',
+        answer: 'Our UX/UI designers are skilled professionals with extensive experience. They understand user-centered design principles, follow industry best practices, and are proficient in the latest design tools and technologies. Their expertise ensures your vision is translated into visually appealing and user-friendly designs.'
+    },
+    {
+        question: 'Can I provide input and feedback during the UI/UX design process?',
+        answer: 'Absolutely! We encourage collaboration and welcome your input throughout the design process. There are multiple checkpoints for you to review designs, share feedback, and suggest changes, ensuring the final product aligns with your vision and meets user needs.'
+    },
+    {
+        question: 'Do you conduct user testing to validate the UI/UX design?',
+        answer: 'Yes, user testing is integral to our UI/UX design process. We conduct sessions with real users to gather insights and feedback, helping us uncover usability issues, validate design choices, and make data-driven improvements for a better user experience.'
+    },
+    {
+        question: 'Can you assist with implementing and developing the UI/UX design?',
+        answer: 'Certainly! As a top UI/UX development company, we collaborate closely with the development team to ensure the UI/UX design is implemented smoothly. Our experts provide guidance and support during development to ensure the design translates into a fully functional and visually appealing product.'
+    }
+];
