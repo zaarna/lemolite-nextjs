@@ -43,7 +43,7 @@ const ServicesPage = () => {
         image="/ctagreadiant.webp"
         bg="bg-[#F1F1F1]"
       />
-      <Why_choose_us data={whychoosedata} />
+      <Why_choose_us title={"Why Choose Lemolite as Your Trusted Partner?"} data={whychoosedata} />
       <TechnologyWeUse 
       bg="bg-[#F1F1F1]"/>
       <VisionAndExpertise

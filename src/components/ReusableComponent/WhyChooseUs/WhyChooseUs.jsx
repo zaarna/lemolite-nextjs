@@ -6,13 +6,13 @@ import SliderCard from "@/components/ReusableComponent/Card/SliderCard";
 import Titlecontent from "@/components/ReusableComponent/Titlecontent/Titlecontent";
 
 
-export default function Why_choose_us({data}) {
+export default function Why_choose_us({data , title}) {
   return (
     <section className="why_choose_us top-bottom">
       <div className="container">
         {/* Section Title */}
         <div className="title--head pb-6 lg:pb-12 md:pb-10 sm:pb-8 text-center">
-          <Titlecontent title="Why Choose Lemolite as Your Trusted Partner?" />
+          <Titlecontent title={title} />
         </div>
 
         {/* Grid Layout */}

@@ -1,54 +1,52 @@
-import Our_Expertise_ui_ux from "@/components/Our_Expertise_ui_ux";
+import E_Commerce_Success from "@/components/E_Commerce_Success";
+import E_empower from "@/components/E_empower";
 import Ctasection from "@/components/ReusableComponent/Cta_Section/CtaSection";
-import Devlopmentprocess from "@/components/ReusableComponent/DevelopmentProcess/Devlopmentprocess";
 import FAQ from "@/components/ReusableComponent/HireDevelopers/FAQ";
+import WhyHireSection from "@/components/ReusableComponent/HireDevelopers/WhyHireSections";
 import Innerhero from "@/components/ReusableComponent/Innerhero/Innerhero";
-import { uiux } from "@/data/breadcrumsdata";
-import { uiuxfaqData, uiuxprocessSteps } from "@/data/services";
+import Why_choose_us from "@/components/ReusableComponent/WhyChooseUs/WhyChooseUs";
+import { commarce } from "@/data/breadcrumsdata";
+import { commerceexpert, ecommercefaqData, InnovativeTechnologies, servicesempower } from "@/data/services";
 
 const ECommercePage = () => {
   return (
     <div className="min-h-screen">
-      <div className="container mx-auto px-4 py-8">
-        <h1 className="text-4xl font-bold text-center mb-8">
-          E-Commerce Development
-        </h1>
-        <div className="text-center">
-          <p className="text-lg text-gray-600 mb-4">
-            Online stores and e-commerce solutions
-          </p>
-          <p className="text-gray-500">
-            This is a placeholder for your E_commerce component.
-            <br />
-            Migrate your E_commerce component from React.js to replace this.
-          </p>
-        </div>
-      </div>
+
       <Innerhero
         padding="py-8 md:py-10 lg:py-20"
-        breadcrumbs={uiux}
-        title={" UI/UX Design Services"}
+        breadcrumbs={commarce}
+        title={"E-Commerce Services"}
         content={
-          "Experience design that speaks to your audience. Our UI/UX design services combine deep user insights with sleek, purposeful design, crafting interfaces that not only look stunning but feel effortless to navigate."
+          "Build a smooth, fast, and secure online store with the right features for your business. Whether you're just starting or looking to grow, we focus on making your e-commerce platform easy to use, efficient, and ready for success. Let’s make shopping simpler for your customers."
         }
-        btntext={"Boost Your Brand"}
+        btntext={"Sell Smarter Today!"}
         link={"/contact-us"}
-        src={"/ui.webp"}
-        alt={"UI/UX Design Services"}
+        src={"/ecom.webp"}
+        alt={"E-commerce Services"}
       />
-      <Our_Expertise_ui_ux />
-      <Devlopmentprocess
-        title={"Our Design Process"}
-        processSteps={uiuxprocessSteps}
+      <WhyHireSection
+        title={"Our Expertise"}
+        content={
+          "Our e-commerce development services are designed to do more than just power online sales. We help businesses create impactful digital storefronts, improve customer engagement, and streamline operations, ensuring a strong foundation for long-term growth and success."
+        }
+        btntext={"Launch Your Digital Store"}
+        link={"/contact-us"}
+        features={commerceexpert}
+        layoutType=""
+        bg="bg-[#F1F1F1]"
       />
+      <E_Commerce_Success />
       <Ctasection
-        title={"Ready to Elevate Your Design?"}
-        text={"Let's Create Together"}
+        title={"Don’t Just Sell Online"}
+        text={"Excel Online!"}
         link={"/contact-us"}
         image="/ctagreadiant.webp"
         bg="bg-[#F1F1F1]"
       />
-      <FAQ questions={uiuxfaqData} />
+      <E_empower servicesempower={servicesempower} />
+      
+      <Why_choose_us title={"Transform Your Store with Innovative Technologies"} data={InnovativeTechnologies} />
+      <FAQ questions={ecommercefaqData} padding="top-bottom" bg="bg-[#F1F1F1]"/>
     </div>
   );
 };

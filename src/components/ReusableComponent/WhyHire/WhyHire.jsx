@@ -15,7 +15,7 @@ export default function WhyHire({ features = [], layoutType = "first" }) {
 function FeatureCard({ feature, layoutType }) {
   return (
     <div className="group before-image relative p-[0.12rem] my-3 sm:my-5 transition duration-300">
-      <div className="relative  bg-gradient-to-r from-[#2EC4F3]/10 to-[#BFD633]/10 p-6 border rounded-[16px] md:rounded-[32px] border-[#BFD633] md:border-transparent md:hover:border-[#BFD633]">
+      <div className="relative  bg-gradient-to-r from-[#2EC4F3]/10 to-[#BFD633]/10 p-4 border rounded-[16px] md:rounded-[32px] border-[#BFD633] md:border-transparent md:hover:border-[#BFD633]">
         {/* Conditional Layout */}
         {layoutType === "first" ? (
           <>
@@ -29,32 +29,32 @@ function FeatureCard({ feature, layoutType }) {
               />
             </div>
             <div>
-              <h3 className="mb-1 text-[20px] sm:text-[24px] md:text-[28px] lg:text-[30px] font-medium">
+              <h3 className="text-[20px] md:text-[24px] font-bold mb-2">
                 {feature.title}
               </h3>
-              <p className="text-[16px] md:text-[20px] font-light">
+              <p className="text-[16px] md:text-lg font-light">
                 {feature.description}
               </p>
             </div>
           </>
         ) : (
           <>
-            <div className="flex justify-start items-center mb-3">
-              <div className="pr-4 w-1/5">
+            <div className="flex justify-start items-center mb-3 space-x-3">
+              <div className="">
                 <Image
                   src={feature.icon}
                   alt={feature.title}
-                  width={80}
-                  height={80}
-                  className="w-12 md:w-16 lg:w-20 h-auto"
+                  width={70}
+                  height={70}
+                  className="w-12"
                 />
               </div>
-              <h3 className="text-[20px] sm:text-[24px] md:text-[28px] lg:text-[30px] font-medium w-4/5">
+              <h3 className="text-[20px] md:text-[24px] font-bold">
                 {feature.title}
               </h3>
             </div>
             <div>
-              <p className="text-[16px] md:text-[20px] font-light">
+              <p className="text-[16px] md:text-lg font-light">
                 {feature.description}
               </p>
             </div>

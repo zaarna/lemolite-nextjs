@@ -52,7 +52,7 @@ export default function SliderCard({
 
           <h4
             className="
-              mt-4 text-[20px] sm:text-[24px] md:text-[26px] lg:text-[28px]
+              mt-4 text-lg md:text-xl
               font-bold text-gray-900 transition-all duration-300 ease-in-out
             "
           >
@@ -61,7 +61,7 @@ export default function SliderCard({
 
           <p
             className="
-              mt-2 text-[16px] md:text-[18px] font-normal text-gray-500 leading-relaxed
+              mt-2 text-base md:text-lg font-normal text-gray-500 leading-relaxed
               transition-all duration-300 ease-in-out
             "
           >
