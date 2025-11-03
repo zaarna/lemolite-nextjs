@@ -18,7 +18,7 @@ function Cta_life() {
             <div className="flex justify-center">
               <Grediantbutton
                 btntext={"Explore Opportunities"}
-                link={"/career"}
+                link={"/careers"}
                 variant="black"
               />
             </div>

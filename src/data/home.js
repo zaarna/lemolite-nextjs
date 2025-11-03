@@ -272,3 +272,38 @@ export const customservices = [
   { title: "Payment Gateway Integration", img: "/paymet.webp" },
   { title: "CRM Integration", img: "/crm.webp" },
 ];
+
+export const feaureoflg = [
+  { value: "Role", label: "Lead Generation", bgColor: "bg-[#2EC4F333]" },
+  { value: "Job Type", label: "Full-time", bgColor: "bg-[#BFD63333]" },
+  { value: "Experience Level ", label: "1+ YEARS", bgColor: "bg-[#2EC4F333]" },
+  { value: "Location", label: "Ahmedabad", bgColor: "bg-[#BFD63333]" },
+];
+export const feaureofbde = [
+  {
+    value: "Role",
+    label: "Business Development Executive",
+    bgColor: "bg-[#2EC4F333]",
+  },
+  { value: "Job Type", label: "Full-time", bgColor: "bg-[#BFD63333]" },
+  { value: "Experience Level ", label: "1-3 YEARS", bgColor: "bg-[#2EC4F333]" },
+  { value: "Location", label: "Ahmedabad", bgColor: "bg-[#BFD63333]" },
+];
+export const feaureofqa = [
+  { value: "Role", label: "Quality Assurance", bgColor: "bg-[#2EC4F333]" },
+  { value: "Job Type", label: "Full-time", bgColor: "bg-[#BFD63333]" },
+  { value: "Experience Level ", label: "1 YEARS", bgColor: "bg-[#2EC4F333]" },
+  { value: "Location", label: "Ahmedabad", bgColor: "bg-[#BFD63333]" },
+];
+export const feaureofba = [
+  { value: "Role", label: "Business Analyst", bgColor: "bg-[#2EC4F333]" },
+  { value: "Job Type", label: "Full-time", bgColor: "bg-[#BFD63333]" },
+  { value: "Experience Level ", label: "2+ YEARS", bgColor: "bg-[#2EC4F333]" },
+  { value: "Location", label: "Ahmedabad", bgColor: "bg-[#BFD63333]" },
+];
+export const feaureoffsd = [
+  { value: "Role", label: "Full Stack Developer", bgColor: "bg-[#2EC4F333]" },
+  { value: "Job Type", label: "Full-time", bgColor: "bg-[#BFD63333]" },
+  { value: "Experience Level ", label: "3-4 YEARS", bgColor: "bg-[#2EC4F333]" },
+  { value: "Location", label: "Ahmedabad", bgColor: "bg-[#BFD63333]" },
+];

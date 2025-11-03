@@ -1,5 +1,5 @@
-import BlogDynamicPage from '@/components/ReusableComponent/blog/BlogDynamicPage';
-import React from 'react';
+import BlogDynamicPage from "@/components/ReusableComponent/blog/BlogDynamicPage";
+import React from "react";
 
 // Dynamic blog page - [blogId] is a dynamic route parameter
 const DynamicBlogPage = ({ params }) => {
@@ -13,5 +13,3 @@ const DynamicBlogPage = ({ params }) => {
 };
 
 export default DynamicBlogPage;
-
-
