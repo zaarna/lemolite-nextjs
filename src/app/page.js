@@ -1,4 +1,5 @@
 
+import BlogCard from '@/components/ReusableComponent/blog/BlogCard';
 import CtaSection from '@/components/ReusableComponent/Cta_Section/CtaSection';
 import VisionAndExpertise from '@/components/ReusableComponent/ExpertiseSection/VisionAndExpertise';
 import Hire from '@/components/ReusableComponent/HireSection/Hire';
@@ -6,6 +7,7 @@ import TailoredSolutions from '@/components/ReusableComponent/TailoredSolutions/
 import TechnologyWeUse from '@/components/ReusableComponent/TechnologyWeUse/TechnologyWeUse';
 import Testimonial from '@/components/ReusableComponent/Testimonial/Testimonial';
 import TrustedByCliet_WhoWeAre from '@/components/ReusableComponent/TrustedByCliet_WhoWeAre/TrustedByCliet_WhoWeAre';
+import { blogCards } from '@/data/blogCards';
 import { logos, features, solutions, services, developers, testimonials } from '@/data/home';
 import React from 'react';
 
@@ -58,6 +60,7 @@ const HomePage = () => {
         link={"/contact-us"}
         image="/ctawhite.webp"
         bg='bg-gradient-to-r from-[#2ec4f3]/30 to-[#bfd633]/30' />
+        <BlogCard blogCards={blogCards} bg="bg--gray" padding="top-bottom" />
       </div>
   );
 };

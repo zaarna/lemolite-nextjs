@@ -875,3 +875,67 @@ export const iotfaqData = [
             "IoT systems are highly scalable, meaning businesses can easily expand their network of connected devices as they grow. This makes IoT a great long-term solution for businesses of any size. As your business changes and new needs arise, your IoT system can adapt to keep up.",
     },
 ];
+ export const slidesiot = [
+    {
+      image: "/iot1.svg",
+      title: "Expertise in Leading Platforms",
+      description:
+        "We know how to work with top cloud platforms like AWS, Azure, Google Cloud, and IBM Watson. This experience allows us to create IoT solutions that are secure, scalable, and customized to fit your business’s needs. Whether you need to implement AI or simply connect more devices, we have the knowledge to help you.",
+    },
+    {
+      image: "/iot2.svg",
+      title: "Scalable Solutions",
+      description:
+        "As your business grows, your IoT system should be able to grow with you. Our solutions are built to be flexible and scalable, so they can easily expand as your needs change. Whether you start with just a few devices or add thousands over time, we make sure your IoT system can handle it all without any hiccups.",
+    },
+    {
+      image: "/iot3.svg",
+      title: "Transparent Pricing",
+      description:
+      "We believe in offering cost-effective solutions that fit your budget. Our pricing is flexible and tailored to what you need, so you only pay for the services you use. We offer straightforward pricing with no hidden fees, so you can be confident that your investment in custom IoT app development services will give you great value without breaking the bank."    },
+    {
+      image: "/iot4.svg",
+      title: "Dedicated Support",
+      description:
+        "Once your IoT solution is up and running, we don’t leave you on your own. Our team is available 24/7 to help with any issues you might face, whether it’s troubleshooting, maintenance, or regular updates. We are committed to making sure your IoT system continues to work smoothly so your business can thrive.",
+    },  
+    
+  ];
+  export const voicespecialize = [
+    {
+      // image: voicesolution1,
+      title: "Natural Language Processing (NLP)",
+      description:
+        "Accurately processes human language with depth, understanding intent, and tone.",
+    },
+    {
+      // image: voicesolution2,
+      title: "Contextual Awareness",
+      description:
+        "Grasping context to ensure responses are always relevant and precise.",
+    },
+    {
+      // image: voicesolution3,
+      title: "Multilingual Support",
+      description:
+        "Engages users in multiple languages, offering global communication.",
+    },
+    {
+      // image: voicesolution4,
+      title: "Real-Time Processing",
+      description:
+        "Instantly responds, improving user engagement and experience.",
+    },
+    {
+      // image: voicesolution5,
+      title: "Personalized Responses",
+      description:
+        "Tailors interactions based on user history and preferences.",
+    },
+    {
+      // image: voicesolution6,
+      title: "Conversational AI",
+      description:
+        "Enables fluid, human-like interactions for an intuitive experience.",
+    },
+  ];

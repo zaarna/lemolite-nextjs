@@ -22,7 +22,7 @@ export default function Why_choose_us({data , title, columns = 3}) {
 
         {/* Grid Layout */}
         <div className={`grid ${gridColsClass} gap-4`}>
-          {data.map((item, index) => (
+          {(data || []).map((item, index) => (
             <SliderCard
               key={index}
               variant="option2"
