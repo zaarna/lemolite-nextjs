@@ -1,37 +1,19 @@
-import BlogCard from "@/components/ReusableComponent/blog/BlogCard";
+// import BlogCard from "@/components/ReusableComponent/blog/BlogCard";
 import CtaSection from "@/components/ReusableComponent/Cta_Section/CtaSection";
 import VisionAndExpertise from "@/components/ReusableComponent/ExpertiseSection/VisionAndExpertise";
 import Hire from "@/components/ReusableComponent/HireSection/Hire";
 import TailoredSolutions from "@/components/ReusableComponent/TailoredSolutions/TailoredSolutions";
 import TechnologyWeUse from "@/components/ReusableComponent/TechnologyWeUse/TechnologyWeUse";
-import Testimonial from "@/components/ReusableComponent/Testimonial/Testimonial";
 import TrustedByCliet_WhoWeAre from "@/components/ReusableComponent/TrustedByCliet_WhoWeAre/TrustedByCliet_WhoWeAre";
-import { blogCards } from "@/data/blogCards";
-import {
-  logos,
-  features,
-  solutions,
-  services,
-  developers,
-  testimonials,
-} from "@/data/home";
-import React from "react";
+// import { blogCards } from "@/data/blogCards";
 import OurWork from "@/components/AboutUs/OurWork";
 import Main_banner from "@/components/Home/Main_banner";
-import CtaSection from "@/components/ReusableComponent/Cta_Section/CtaSection";
-import VisionAndExpertise from "@/components/ReusableComponent/ExpertiseSection/VisionAndExpertise";
-import Hire from "@/components/ReusableComponent/HireSection/Hire";
-import TailoredSolutions from "@/components/ReusableComponent/TailoredSolutions/TailoredSolutions";
-import TechnologyWeUse from "@/components/ReusableComponent/TechnologyWeUse/TechnologyWeUse";
-import Testimonial from "@/components/ReusableComponent/Testimonial/Testimonial";
-import TrustedByCliet_WhoWeAre from "@/components/ReusableComponent/TrustedByCliet_WhoWeAre/TrustedByCliet_WhoWeAre";
 import {
   logos,
   features,
   solutions,
   services,
   developers,
-  testimonials,
   projects,
 } from "@/data/home";
 import React from "react";
