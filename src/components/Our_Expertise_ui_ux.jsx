@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import Titlecontent from "../components/ReusableComponent/TitleContent/Titlecontent";
+import Titlecontent from "@/components/ReusableComponent/Titlecontent/Titlecontent";
 import Grediantbutton from "../components/ReusableComponent/Button/Grediantbutton";
 
 

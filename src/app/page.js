@@ -1,11 +1,11 @@
-// import BlogCard from "@/components/ReusableComponent/blog/BlogCard";
+import BlogCard from "@/components/ReusableComponent/blog/BlogCard";
 import CtaSection from "@/components/ReusableComponent/Cta_Section/CtaSection";
 import VisionAndExpertise from "@/components/ReusableComponent/ExpertiseSection/VisionAndExpertise";
 import Hire from "@/components/ReusableComponent/HireSection/Hire";
 import TailoredSolutions from "@/components/ReusableComponent/TailoredSolutions/TailoredSolutions";
 import TechnologyWeUse from "@/components/ReusableComponent/TechnologyWeUse/TechnologyWeUse";
 import TrustedByCliet_WhoWeAre from "@/components/ReusableComponent/TrustedByCliet_WhoWeAre/TrustedByCliet_WhoWeAre";
-// import { blogCards } from "@/data/blogCards";
+import { blogCards } from "@/data/blogCards";
 import OurWork from "@/components/AboutUs/OurWork";
 import Main_banner from "@/components/Home/Main_banner";
 import {
@@ -54,16 +54,6 @@ const HomePage = () => {
         link={"/contact-us"}
       />
       <TechnologyWeUse />
-      {/* <CtaSection
-        title={"Take Your Project to the Next Level!"}
-        text={"Start Now"}
-        link={"/contact-us"}
-        image="/ctawhite.webp"
-        bg='bg-gradient-to-r from-[#2ec4f3]/30 to-[#bfd633]/30' />
-        <BlogCard blogCards={blogCards} bg="bg--gray" padding="top-bottom" />
-      </div>
-        bg="bg-gradient-to-r from-[#2ec4f3]/30 to-[#bfd633]/30"
-      /> */}
       <OurWork
         title={"Our Recent Work"}
         projects={projects}
@@ -77,6 +67,7 @@ const HomePage = () => {
         text={"Start Now"}
         link={"/contact-us"}
       />
+      <BlogCard blogCards={blogCards} bg="bg-[#F1F1F1]" padding="top-bottom" />
     </div>
   );
 };

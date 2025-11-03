@@ -1,15 +1,21 @@
 "use client";
 
-import React, { useState, useCallback } from "react";
+import React, { useState, useCallback, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import useEmblaCarousel from "embla-carousel-react";
+import { Calendar, ArrowLeft, ArrowRight } from "lucide-react";
 import Titlecontent from "@/components/ReusableComponent/Titlecontent/Titlecontent";
 import Gradientbutton from "@/components/ReusableComponent/Button/Grediantbutton";
 
-
-export default function BlogCard({ blogCards = [], bg = "bg-white", padding = "top-bottom" }) {
-  const sortedBlogCards = [...blogCards].sort((a, b) => new Date(b.date) - new Date(a.date));
+export default function BlogCard({
+  blogCards = [],
+  bg = "bg-white",
+  padding = "top-bottom",
+}) {
+  const sortedBlogCards = [...blogCards].sort(
+    (a, b) => new Date(b.date) - new Date(a.date)
+  );
 
   const [emblaRef, emblaApi] = useEmblaCarousel({
     loop: false,
@@ -27,7 +33,7 @@ export default function BlogCard({ blogCards = [], bg = "bg-white", padding = "t
     setSelectedIndex(emblaApi.selectedScrollSnap());
   }, [emblaApi]);
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (!emblaApi) return;
     emblaApi.on("select", onSelect);
   }, [emblaApi, onSelect]);
@@ -60,7 +66,9 @@ export default function BlogCard({ blogCards = [], bg = "bg-white", padding = "t
                           className="rounded-[10px] w-full object-cover mb-3"
                         />
                         <span className="text-[#BFD633] block mt-2">{card.tag}</span>
-                        <h4 className="text-lg sm:text-xl font-semibold mt-1">{card.title}</h4>
+                        <h4 className="text-lg sm:text-xl font-semibold mt-1">
+                          {card.title}
+                        </h4>
                         <p className="text-base font-light mt-2 mb-4">
                           {card.excerpt}{" "}
                           <Link
@@ -72,14 +80,8 @@ export default function BlogCard({ blogCards = [], bg = "bg-white", padding = "t
                         </p>
                         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center text-sm">
                           <span className="capitalize">{card.author}</span>
-                          <span className="flex items-center mt-2 sm:mt-0">
-                            <Image
-                              src="/calander_image.png"
-                              alt="Calendar"
-                              width={24}
-                              height={24}
-                              className="mr-2"
-                            />
+                          <span className="flex items-center mt-2 sm:mt-0 text-gray-600">
+                            <Calendar className="w-4 h-4 mr-2 text-[#BFD633]" />
                             {card.date}
                           </span>
                         </div>
@@ -90,27 +92,21 @@ export default function BlogCard({ blogCards = [], bg = "bg-white", padding = "t
               </div>
             </div>
 
-            {/* Custom Arrows */}
-            <div className="absolute inset-y-1/2 flex justify-between items-center w-full px-2">
+            {/* ⬇️ Custom Arrows Positioned Below Carousel */}
+            <div className="flex justify-center items-center gap-6 mt-6">
               <button
                 onClick={scrollPrev}
                 disabled={selectedIndex === 0}
-                className="bg-white/70 hover:bg-white rounded-full shadow p-2 disabled:opacity-40"
+                className="bg-white/80 hover:bg-white rounded-full shadow p-3 disabled:opacity-40 transition"
               >
-                <Image
-                  src="/arrows.png"
-                  alt="Prev"
-                  width={30}
-                  height={30}
-                  className="rotate-180"
-                />
+                <ArrowLeft className="w-6 h-6 text-gray-800" />
               </button>
 
               <button
                 onClick={scrollNext}
-                className="bg-white/70 hover:bg-white rounded-full shadow p-2"
+                className="bg-white/80 hover:bg-white rounded-full shadow p-3 transition"
               >
-                <Image src="/arrows.png" alt="Next" width={30} height={30} />
+                <ArrowRight className="w-6 h-6 text-gray-800" />
               </button>
             </div>
           </div>

@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import Trustedbyclient from "@/components/ReusableComponent/TrustedByClient/Trustedbyclient";
+import Trustedbyclient from "@/components/ReusableComponent/Trustedbyclient/Trustedbyclient";
 import Feature_Fact from "@/components/ReusableComponent/Feture_Fact/Feature_Fact";
 import Titlecontent from "@/components/ReusableComponent/Titlecontent/Titlecontent";
 
