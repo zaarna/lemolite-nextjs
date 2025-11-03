@@ -43,6 +43,7 @@ const HirePythonDeveloperPage = () => {
         btntext={"Hire Python Developers"}
         link={"/contact-us"}
         features={whyhirepython}
+        bg="bg-[#F1F1F1]"
       />
       <Ctasection
         bg="bg-gradient-to-r from-[#2ec4f3]/30 to-[#bfd633]/30"
@@ -60,7 +61,7 @@ const HirePythonDeveloperPage = () => {
         title={"Take Your Project to the Next Level!"}
         text={"Start Now"}
         link={"/contact-us"}
-        bg="bg-[#F1F1F1]"
+        bg="bg-gradient-to-r from-[#2ec4f3]/30 to-[#bfd633]/30"
       />
       <FAQ questions={hirefaqpython} />
       {/* <Testimonial

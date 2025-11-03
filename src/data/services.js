@@ -452,6 +452,38 @@ export const uiuxfaqData = [
       "Certainly! As a top UI/UX development company, we collaborate closely with the development team to ensure the UI/UX design is implemented smoothly. Our experts provide guidance and support during development to ensure the design translates into a fully functional and visually appealing product.",
   },
 ];
+export const mobileappfaqData = [
+  {
+    question:
+      " How do you balance user-friendly design with technical requirements in app development?",
+    answer:
+      "Our UX/UI design team collaborates closely with developers to create an intuitive interface that aligns with technical requirements, providing a seamless and enjoyable experience for end-users.",
+  },
+  {
+    question:
+      "Can you develop custom APIs or integrate third-party APIs for unique functionalities?",
+    answer:
+      "Absolutely! Our mobile app development services include both custom API development and third-party integrations to enhance functionality.",
+  },
+  {
+    question:
+      "What is your process for handling app updates and adding new features?",
+    answer:
+      "We offer ongoing support and maintenance, scheduling regular updates and adding new features based on user feedback and changing market needs, so your app stays relevant and competitive.",
+  },
+  {
+    question:
+      "How do you approach app store optimization (ASO) to increase app visibility?",
+    answer:
+      "Our ASO strategy includes keyword optimization, compelling visuals, and a well-crafted app description to improve search rankings and visibility on app stores, ensuring a higher chance of downloads.",
+  },
+  {
+    question:
+      "Can you integrate emerging technologies like AI, IoT, or blockchain into our mobile app?",
+    answer:
+      "Yes, As a leading mobile app development company, we integrate advanced technologies such as artificial intelligence, Internet of Things (IoT), and blockchain to create apps that offer cutting-edge features and enhanced user experiences.",
+  },
+];
 export const InnovativeTechnologies = [
   {
     image: "/arificial.png",
@@ -519,7 +551,6 @@ export const servicesempower = [
   { icon: "/nexticon15.svg", title: "Scalable Architecture" },
 ];
 
-
 export const commerceexpert = [
   {
     icon: "/commerce1.svg",
@@ -582,68 +613,98 @@ export const commerceexpert = [
       "We integrate trusted payment gateways to ensure smooth and secure transactions for your customers.",
   },
 ];
+export const mobilebexpert = [
+  {
+    icon: "/mob1.svg",
+    title: "Android App Development",
+    description:
+      "Our team creates advanced Android applications utilizing the latest tools and programming languages, including Java, Kotlin, Jetpack, and Fastlane. We create robust mobile app development solutions that ensure smooth performance on any Android device with enhanced functionality and a user-friendly design.",
+  },
+  {
+    icon: "/mob2.svg",
+    title: "iOS App Development",
+    description:
+      "We specialize in developing reliable, future-ready iOS applications that align with your business goals. Our team is proficient in Swift and Objective-C, building secure and high-performance applications for iPhone, iPad, and Apple Watch that meet and exceed user expectations.",
+  },
+  {
+    icon: "/mob3.svg",
+    title: "Cross-Platform App Development",
+    description:
+      "Expand your reach efficiently with cross-platform applications. Using frameworks such as Flutter and React Native, we build apps that seamlessly function across iOS and Android, delivering consistent performance while optimizing costs and development time.",
+  },
+  {
+    icon: "/mob4.svg",
+    title: "Progressive Web Application Development",
+    description:
+      "Elevate your digital presence with progressive web applications (PWAs) that blend the best of web and mobile technologies. Our PWAs are designed to provide a smooth, app-like experience, even in low-connectivity environments, ensuring broad accessibility and an optimized user experience.",
+  },
+];
 
 export const webdevlopmentfaqData = [
-    {
-        question: 'How much time does it take to build a website?',
-        answer: 'The timeline depends on the complexity. A simple website might take 4-6 weeks, while a custom or feature-rich web application development project may take 3-6 months.'
-    },
-    {
-        question: 'Do you offer post-launch support?',
-        answer: 'Yes, as a web application development company, we provide ongoing maintenance, security updates, and performance optimizations.'
-    },
-    {
-        question: 'Can I update the content of my website myself?',
-        answer: 'Absolutely! We specialize in developing websites with CMS platforms like WordPress, Spotify, and custom solutions, allowing you to manage and update your website without needing technical knowledge.'
-    },
-    {
-        question: 'What if I don’t know exactly what I need?',
-        answer: 'No worries! Our team will guide you through the discovery and planning process to define the best solution for your business based on your goals and budget.'
-    },
-    {
-        question: 'Will my website be mobile-friendly?',
-        answer: 'Yes, all of the websites we develop are fully responsive and optimized for mobile, tablet, and desktop devices.'
-    }
+  {
+    question: "How much time does it take to build a website?",
+    answer:
+      "The timeline depends on the complexity. A simple website might take 4-6 weeks, while a custom or feature-rich web application development project may take 3-6 months.",
+  },
+  {
+    question: "Do you offer post-launch support?",
+    answer:
+      "Yes, as a web application development company, we provide ongoing maintenance, security updates, and performance optimizations.",
+  },
+  {
+    question: "Can I update the content of my website myself?",
+    answer:
+      "Absolutely! We specialize in developing websites with CMS platforms like WordPress, Spotify, and custom solutions, allowing you to manage and update your website without needing technical knowledge.",
+  },
+  {
+    question: "What if I don’t know exactly what I need?",
+    answer:
+      "No worries! Our team will guide you through the discovery and planning process to define the best solution for your business based on your goals and budget.",
+  },
+  {
+    question: "Will my website be mobile-friendly?",
+    answer:
+      "Yes, all of the websites we develop are fully responsive and optimized for mobile, tablet, and desktop devices.",
+  },
 ];
 export const webexpert = [
-    {
-        icon: "/webexpert1.svg",
-        title: 'Custom Web Development',
-        description:
-            'Every business is different, and your website should be too. As a custom web application development company, we provide custom web development services tailored to your specific requirements. By understanding your business goals, we create websites that align with your vision and stand out in a crowded online landscape.',
-    },
-    {
-        icon: "/webexpert2.svg",
-        title: 'E-commerce Solutions',
-        description:
-            'Building a successful e-commerce platform requires expertise in e-commerce web application development.  We develop robust e-commerce websites that offer seamless shopping experiences, integrated payment gateways, and efficient inventory management to help you drive sales and grow your business.',
-    },
-    {
-        icon: "/webexpert3.svg",
-        title: 'CMS Development',
-        description:
-            'Content management shouldn’t be a hassle. With our CMS development services, you can easily manage and update your website without needing technical expertise. Whether it’s WordPress, Shopify, or a custom CMS, we ensure that your platform is user-friendly and designed for growth.',
-    },
-    {
-        icon: "/webexpert4.svg",
-        title: 'Front-end Development',
-        description:
-            'A website’s front-end is its face to the world. We specialize in creating responsive, interactive, and visually engaging interfaces that provide a smooth and intuitive user experience. Using the latest technologies like HTML5, CSS3, and JavaScript, our front-end developers ensure that your website looks great and works flawlessly on all devices.',
-    },
-    {
-        icon: "/webexpert5.svg",
-        title: 'Back-end Development',
-        description:
-            'Behind every well-functioning website is a powerful back-end. Our developers create a robust, scalable, and secure back-end architecture using technologies such as Node.JS, PHP, and Python, ensuring your website performs efficiently, regardless of the number of visitors or the complexity of operations.',
-    },
-    {
-        icon: "/webexpert6.svg",
-        title: 'API Integration & Development',
-        description:
-            'We can help extend the functionality of your website through seamless integration with third-party services via APIs. From payment gateways and social media platforms to CRM and analytics tools, our developers can integrate the necessary systems to optimize your website’s performance and user experience.',
-    },
+  {
+    icon: "/webexpert1.svg",
+    title: "Custom Web Development",
+    description:
+      "Every business is different, and your website should be too. As a custom web application development company, we provide custom web development services tailored to your specific requirements. By understanding your business goals, we create websites that align with your vision and stand out in a crowded online landscape.",
+  },
+  {
+    icon: "/webexpert2.svg",
+    title: "E-commerce Solutions",
+    description:
+      "Building a successful e-commerce platform requires expertise in e-commerce web application development.  We develop robust e-commerce websites that offer seamless shopping experiences, integrated payment gateways, and efficient inventory management to help you drive sales and grow your business.",
+  },
+  {
+    icon: "/webexpert3.svg",
+    title: "CMS Development",
+    description:
+      "Content management shouldn’t be a hassle. With our CMS development services, you can easily manage and update your website without needing technical expertise. Whether it’s WordPress, Shopify, or a custom CMS, we ensure that your platform is user-friendly and designed for growth.",
+  },
+  {
+    icon: "/webexpert4.svg",
+    title: "Front-end Development",
+    description:
+      "A website’s front-end is its face to the world. We specialize in creating responsive, interactive, and visually engaging interfaces that provide a smooth and intuitive user experience. Using the latest technologies like HTML5, CSS3, and JavaScript, our front-end developers ensure that your website looks great and works flawlessly on all devices.",
+  },
+  {
+    icon: "/webexpert5.svg",
+    title: "Back-end Development",
+    description:
+      "Behind every well-functioning website is a powerful back-end. Our developers create a robust, scalable, and secure back-end architecture using technologies such as Node.JS, PHP, and Python, ensuring your website performs efficiently, regardless of the number of visitors or the complexity of operations.",
+  },
+  {
+    icon: "/webexpert6.svg",
+    title: "API Integration & Development",
+    description:
+      "We can help extend the functionality of your website through seamless integration with third-party services via APIs. From payment gateways and social media platforms to CRM and analytics tools, our developers can integrate the necessary systems to optimize your website’s performance and user experience.",
+  },
 ];
-
 
 export const weblistItems = [
   "Provide your project goals, vision, and roadmap (if available)",
@@ -698,182 +759,293 @@ export const softwarefaqData = [
   },
 ];
 export const aimlfaqData = [
-    {
-        question: 'What industries do you serve?',
-        answer: 'As an AI/ML development company, we provide solutions for healthcare, finance, retail, manufacturing, and more.'
-    },
-    {
-        question: 'How long does it take to develop an AI solution?',
-        answer: 'The timeline depends on the complexity of the project. Typically, AI & ML development services take anywhere from a few weeks to several months to fully develop and deploy.'
-    },
-    {
-        question: 'What is the cost of developing an AI or ML solution?',
-        answer: 'Pricing varies based on project scope, data requirements, and the complexity of the solution. Contact us for a customized quote based on your specific needs.'
-    },
-    {
-        question: 'Do you offer integration with existing systems?',
-        answer: 'Yes, our AI and ML developers ensure seamless integration of AI/ML solutions with your existing systems, ensuring minimal disruption to your business processes.'
-    },
-    {
-        question: 'Can you provide ongoing support and updates after deployment?',
-        answer: 'Absolutely! We offer comprehensive post-deployment support, including system monitoring, updates, and improvements to keep your AI/ML solution running optimally.'
-    }
+  {
+    question: "What industries do you serve?",
+    answer:
+      "As an AI/ML development company, we provide solutions for healthcare, finance, retail, manufacturing, and more.",
+  },
+  {
+    question: "How long does it take to develop an AI solution?",
+    answer:
+      "The timeline depends on the complexity of the project. Typically, AI & ML development services take anywhere from a few weeks to several months to fully develop and deploy.",
+  },
+  {
+    question: "What is the cost of developing an AI or ML solution?",
+    answer:
+      "Pricing varies based on project scope, data requirements, and the complexity of the solution. Contact us for a customized quote based on your specific needs.",
+  },
+  {
+    question: "Do you offer integration with existing systems?",
+    answer:
+      "Yes, our AI and ML developers ensure seamless integration of AI/ML solutions with your existing systems, ensuring minimal disruption to your business processes.",
+  },
+  {
+    question: "Can you provide ongoing support and updates after deployment?",
+    answer:
+      "Absolutely! We offer comprehensive post-deployment support, including system monitoring, updates, and improvements to keep your AI/ML solution running optimally.",
+  },
 ];
 export const aimlchoosedata = [
-    {
-      image: "/expert.png",
-      title: "Expert Team",
-      description:
-        "Our data scientists and engineers are experts in AI and ML, with a proven track record of implementing solutions using the latest tools and methodologies.",
-    },
-    {
-      image: "/solution.png",
-      title: "Tailored Solutions",
-      description:
-        "As an AI/ML development company, we understand that two businesses are not the same. That’s why we offer fully customized solutions to meet your unique goals and challenges.",
-    },
-    {
-      image: "/support.png",
-      title: "End-to-End Support",
-      description:
-        "From initial consultation through to deployment and post-launch support, we provide full-cycle services to ensure your AI project’s success.",
-    },
-    {
-      image: "/pruven.png",
-      title: "Proven Results",
-      description:
-        "We have consistently delivered AI-driven solutions that enhance operational efficiency, improve accuracy, and boost customer satisfaction across industries.",
-    },
-  ];
-  export const iotdata = [
-    {
-        step: '01',
-        question: 'IoT Application Development',
-        answer: 'As a leading IoT app development company, we build tailored applications for mobile, web, and wearables that enable seamless connectivity and control of IoT devices. These apps are designed to be user-friendly and scalable, ensuring they meet both current and future needs.'
-    },
-    {
-        step: '02',
-        question: 'Cloud Integration',
-        answer: 'Leverage cutting-edge cloud platforms to store, process, and analyze data in real time. Our cloud solutions provide enhanced security and reliability, allowing you to focus on growth.'
-    },
-    {
-        step: '03',
-        question: 'IoT Consulting & Strategy',
-        answer: 'Get personalized guidance on designing and implementing IoT solutions. From initial brainstorming to full-scale deployment, we ensure your projects align with your business goals.'
-    },
-    {
-        step: '04',
-        question: 'Sensor & Gateway Integration',
-        answer: 'Integrate sensors and gateways to create a unified IoT ecosystem. This ensures real-time communication and seamless operation across all connected devices.'
-    },
-    {
-        step: '05',
-        question: 'Data Analytics & Security',
-        answer: 'Extract actionable insights from your IoT data using advanced analytics. We also prioritize robust security measures to safeguard your systems against cyber threats.'
-    }
+  {
+    image: "/expert.png",
+    title: "Expert Team",
+    description:
+      "Our data scientists and engineers are experts in AI and ML, with a proven track record of implementing solutions using the latest tools and methodologies.",
+  },
+  {
+    image: "/solution.png",
+    title: "Tailored Solutions",
+    description:
+      "As an AI/ML development company, we understand that two businesses are not the same. That’s why we offer fully customized solutions to meet your unique goals and challenges.",
+  },
+  {
+    image: "/support.png",
+    title: "End-to-End Support",
+    description:
+      "From initial consultation through to deployment and post-launch support, we provide full-cycle services to ensure your AI project’s success.",
+  },
+  {
+    image: "/pruven.png",
+    title: "Proven Results",
+    description:
+      "We have consistently delivered AI-driven solutions that enhance operational efficiency, improve accuracy, and boost customer satisfaction across industries.",
+  },
+];
+export const iotdata = [
+  {
+    step: "01",
+    question: "IoT Application Development",
+    answer:
+      "As a leading IoT app development company, we build tailored applications for mobile, web, and wearables that enable seamless connectivity and control of IoT devices. These apps are designed to be user-friendly and scalable, ensuring they meet both current and future needs.",
+  },
+  {
+    step: "02",
+    question: "Cloud Integration",
+    answer:
+      "Leverage cutting-edge cloud platforms to store, process, and analyze data in real time. Our cloud solutions provide enhanced security and reliability, allowing you to focus on growth.",
+  },
+  {
+    step: "03",
+    question: "IoT Consulting & Strategy",
+    answer:
+      "Get personalized guidance on designing and implementing IoT solutions. From initial brainstorming to full-scale deployment, we ensure your projects align with your business goals.",
+  },
+  {
+    step: "04",
+    question: "Sensor & Gateway Integration",
+    answer:
+      "Integrate sensors and gateways to create a unified IoT ecosystem. This ensures real-time communication and seamless operation across all connected devices.",
+  },
+  {
+    step: "05",
+    question: "Data Analytics & Security",
+    answer:
+      "Extract actionable insights from your IoT data using advanced analytics. We also prioritize robust security measures to safeguard your systems against cyber threats.",
+  },
 ];
 export const aimlData = [
-    {
-        step: '01',
-        question: 'Custom AI Solutions',
-        answer: 'As an AI/ML development company, We design and implement AI applications tailored to your business objectives, including intelligent automation, virtual assistants, and advanced analytics tools.'
-    },
-    {
-        step: '02',
-        question: 'Machine Learning Model Development',
-        answer: 'Our AI and ML developers specialize in data preprocessing, model development, and deployment, ensuring that your ML models provide accurate predictions and actionable insights for smarter decision-making.'
-    },
-    {
-        step: '03',
-        question: 'Natural Language Processing (NLP)',
-        answer: 'Transform customer interactions with NLP-powered chatbots and sentiment analysis tools that can understand, interpret, and respond to human language naturally and effectively.'
-    },
-    {
-        step: '04',
-        question: 'Predictive Analytics',
-        answer: 'Use past data to predict future trends and actions. Our predictive models help businesses make smarter decisions and plan ahead for success.'
-    },
-    {
-        step: '05',
-        question: 'Computer Vision',
-        answer: 'Apply AI to visual data with computer vision technologies for applications such as image recognition, object detection, and automated quality assurance.'
-    }
+  {
+    step: "01",
+    question: "Custom AI Solutions",
+    answer:
+      "As an AI/ML development company, We design and implement AI applications tailored to your business objectives, including intelligent automation, virtual assistants, and advanced analytics tools.",
+  },
+  {
+    step: "02",
+    question: "Machine Learning Model Development",
+    answer:
+      "Our AI and ML developers specialize in data preprocessing, model development, and deployment, ensuring that your ML models provide accurate predictions and actionable insights for smarter decision-making.",
+  },
+  {
+    step: "03",
+    question: "Natural Language Processing (NLP)",
+    answer:
+      "Transform customer interactions with NLP-powered chatbots and sentiment analysis tools that can understand, interpret, and respond to human language naturally and effectively.",
+  },
+  {
+    step: "04",
+    question: "Predictive Analytics",
+    answer:
+      "Use past data to predict future trends and actions. Our predictive models help businesses make smarter decisions and plan ahead for success.",
+  },
+  {
+    step: "05",
+    question: "Computer Vision",
+    answer:
+      "Apply AI to visual data with computer vision technologies for applications such as image recognition, object detection, and automated quality assurance.",
+  },
 ];
 export const aimalexpert = [
-    {
-        texttitle: "Artificial Intelligence (AI)",
-        textcontent: "AI enables machines to simulate human intelligence and perform tasks like decision-making, problem-solving, and data analysis. As a leading AI software development services provider, we develop AI solutions that automate workflows, improve efficiency, and generate new insights for your business.",
-        image: "/ai.webp",
-        alt: 'Artificial Intelligence'
-    },
-    {
-        texttitle: "Machine Learning (ML)",
-        textcontent: "ML is a branch of AI that allows systems to learn from data, adapt, and improve over time. Our team of AI/ML developers builds custom ML models that deliver accurate predictions, optimize processes, and evolve with your business needs.",
-        image: "/ml.webp",
-        alt: 'Machine Learning'
-    },
+  {
+    texttitle: "Artificial Intelligence (AI)",
+    textcontent:
+      "AI enables machines to simulate human intelligence and perform tasks like decision-making, problem-solving, and data analysis. As a leading AI software development services provider, we develop AI solutions that automate workflows, improve efficiency, and generate new insights for your business.",
+    image: "/ai.webp",
+    alt: "Artificial Intelligence",
+  },
+  {
+    texttitle: "Machine Learning (ML)",
+    textcontent:
+      "ML is a branch of AI that allows systems to learn from data, adapt, and improve over time. Our team of AI/ML developers builds custom ML models that deliver accurate predictions, optimize processes, and evolve with your business needs.",
+    image: "/ml.webp",
+    alt: "Machine Learning",
+  },
 ];
-export const iotfaqData = [  
-    {  
-        question: 'Can IoT solutions be customized for my business?',  
-        answer: 'Yes, we offer custom IoT app development services based on your specific business needs, ensuring they align with your goals and workflows.'  
-    },  
-    {  
-        question: 'How much does it cost to develop an IoT app?',  
-        answer: 'Costs depend on the app’s complexity, features, and platforms. Contact us for a custom quote on our IoT app development services.'  
-    },  
-    {  
-        question: 'How long does IoT development take?',  
-        answer: 'The development timeline varies depending on the scope and complexity of the project. We will provide a detailed estimate after we understand your needs.'  
-    },  
-    {  
-        question: 'How does IoT improve operational efficiency?',  
-        answer: 'IoT helps automate processes, provides real-time data insights, and reduces manual intervention, resulting in increased productivity and operational efficiency.'  
-    },  
-    {  
-        question: 'Which industries benefit most from IoT solutions?',  
-        answer: 'IoT is versatile and widely used in industries like healthcare, manufacturing, retail, transportation, agriculture, and smart cities.'  
-    }  ,
-
+export const iotfaqData = [
+  {
+    question: "Can IoT solutions be customized for my business?",
+    answer:
+      "Yes, we offer custom IoT app development services based on your specific business needs, ensuring they align with your goals and workflows.",
+  },
+  {
+    question: "How much does it cost to develop an IoT app?",
+    answer:
+      "Costs depend on the app’s complexity, features, and platforms. Contact us for a custom quote on our IoT app development services.",
+  },
+  {
+    question: "How long does IoT development take?",
+    answer:
+      "The development timeline varies depending on the scope and complexity of the project. We will provide a detailed estimate after we understand your needs.",
+  },
+  {
+    question: "How does IoT improve operational efficiency?",
+    answer:
+      "IoT helps automate processes, provides real-time data insights, and reduces manual intervention, resulting in increased productivity and operational efficiency.",
+  },
+  {
+    question: "Which industries benefit most from IoT solutions?",
+    answer:
+      "IoT is versatile and widely used in industries like healthcare, manufacturing, retail, transportation, agriculture, and smart cities.",
+  },
 ];
 
- export const iotsystem = [
-    {
-        image: "/iotsystem1.svg",
-        title: "Enhanced Operational Efficiency",
-        description:
-            "IoT systems make it easier to automate processes and reduce the need for manual work. By using real-time data, businesses can speed up workflows, reduce mistakes, and make better use of their resources. For example, factories can automate machines, and warehouses can keep track of stock automatically, leading to smoother operations and faster results.",
-    },
-    {
-        image: "/iotsystem2.svg",
-        title: "Cost Savings",
-        description:
-            "One of the biggest advantages of IoT is the potential for cost savings. By monitoring devices and systems in real time, businesses can spot problems before they become expensive issues. For example, IoT can predict when equipment is about to fail, allowing you to fix it before it breaks down. This helps businesses save money on repairs and reduce wasted energy and resources.",
-    },
-    {
-        image: "/iotsystem3.svg",
-        title: "Improved Decision-Making",
-        description:
-            "With IoT, businesses can access real-time data that helps them make better decisions. For example, a retail store can track inventory to make sure they don’t run out of popular products, or a manufacturer can monitor their production line to prevent downtime. IoT gives businesses the insights they need to react quickly and make smart choices.",
-    },
-    {
-        image: "/iotsystem4.svg",
-        title: "Better Customer Experiences",
-        description:
-            "IoT technology also helps businesses offer more personalized experiences to their customers. By collecting data on customer behavior and preferences, businesses can create customized products and services that meet their needs. For example, smart home devices can adjust settings based on what the user likes, and retail stores can offer personalized recommendations",
-    },
-    {
-        image: "/iotsystem5.svg",
-        title: "Increased Productivity and Automation",
-        description:
-            "IoT can help automate everyday tasks, which frees up employees to focus on more important work. Whether it’s managing office lighting or monitoring machinery, IoT systems can handle tasks automatically, allowing people to be more productive. Additionally, IoT systems can be controlled remotely, meaning businesses can monitor and manage their systems from anywhere.",
-    },
-    {
-        image: "/iotsystem6.svg",
-        title: "Scalability and Flexibility",
-        description:
-            "IoT systems are highly scalable, meaning businesses can easily expand their network of connected devices as they grow. This makes IoT a great long-term solution for businesses of any size. As your business changes and new needs arise, your IoT system can adapt to keep up.",
-    },
+export const iotsystem = [
+  {
+    image: "/iotsystem1.svg",
+    title: "Enhanced Operational Efficiency",
+    description:
+      "IoT systems make it easier to automate processes and reduce the need for manual work. By using real-time data, businesses can speed up workflows, reduce mistakes, and make better use of their resources. For example, factories can automate machines, and warehouses can keep track of stock automatically, leading to smoother operations and faster results.",
+  },
+  {
+    image: "/iotsystem2.svg",
+    title: "Cost Savings",
+    description:
+      "One of the biggest advantages of IoT is the potential for cost savings. By monitoring devices and systems in real time, businesses can spot problems before they become expensive issues. For example, IoT can predict when equipment is about to fail, allowing you to fix it before it breaks down. This helps businesses save money on repairs and reduce wasted energy and resources.",
+  },
+  {
+    image: "/iotsystem3.svg",
+    title: "Improved Decision-Making",
+    description:
+      "With IoT, businesses can access real-time data that helps them make better decisions. For example, a retail store can track inventory to make sure they don’t run out of popular products, or a manufacturer can monitor their production line to prevent downtime. IoT gives businesses the insights they need to react quickly and make smart choices.",
+  },
+  {
+    image: "/iotsystem4.svg",
+    title: "Better Customer Experiences",
+    description:
+      "IoT technology also helps businesses offer more personalized experiences to their customers. By collecting data on customer behavior and preferences, businesses can create customized products and services that meet their needs. For example, smart home devices can adjust settings based on what the user likes, and retail stores can offer personalized recommendations",
+  },
+  {
+    image: "/iotsystem5.svg",
+    title: "Increased Productivity and Automation",
+    description:
+      "IoT can help automate everyday tasks, which frees up employees to focus on more important work. Whether it’s managing office lighting or monitoring machinery, IoT systems can handle tasks automatically, allowing people to be more productive. Additionally, IoT systems can be controlled remotely, meaning businesses can monitor and manage their systems from anywhere.",
+  },
+  {
+    image: "/iotsystem6.svg",
+    title: "Scalability and Flexibility",
+    description:
+      "IoT systems are highly scalable, meaning businesses can easily expand their network of connected devices as they grow. This makes IoT a great long-term solution for businesses of any size. As your business changes and new needs arise, your IoT system can adapt to keep up.",
+  },
+];
+
+export const whatweoffer = [
+  {
+    icon: "/design.webp",
+    title: "Chatbot Design and Development",
+    description:
+      "We craft tailored chatbot solutions with user-friendly interfaces and advanced AI integration, enhancing customer engagement and delivering seamless experiences.",
+  },
+  {
+    icon: "/integration.webp",
+    title: "Chatbot Integration Services",
+    description:
+      "Seamlessly integrate chatbots into mobile apps, back-end systems, and databases to optimize business processes and provide personalized user interactions.",
+  },
+  {
+    icon: "/process.webp",
+    title: "Business Process Automation",
+    description:
+      "Automate key business functions such as customer service, sales, and marketing with chatbots that integrate effortlessly into existing workflows.",
+  },
+  {
+    icon: "/multilingual.webp",
+    title: "GPT-based and Multilingual Chatbots",
+    description:
+      "Utilize GPT-powered chatbots for advanced natural language processing and multilingual bots to enable culturally relevant, native-language interactions, boosting engagement and conversions.",
+  },
+  {
+    icon: "/custom.webp",
+    title: "Custom CRM/ERP/CM Bots",
+    description:
+      "Develop intelligent bots that integrate with CRM, ERP, and CM systems to automate tasks, provide real-time insights, and enhance operational efficiency.",
+  },
+  {
+    icon: "/reporting.webp",
+    title: "Transactional, Reporting, and Statistical Bots",
+    description:
+      "Facilitate seamless transactions, generate real-time reports, and deliver actionable insights with our transactional, reporting, and statistical bots.",
+  },
+  {
+    icon: "/aivoice.webp",
+    title: "AI Voice Assistants",
+    description:
+      "Revolutionize interactions with AI voice assistants that respond accurately to user queries, improving engagement and customer support.",
+  },
+  {
+    icon: "/technology.webp",
+    title: "Technology Consulting and Strategy Building",
+    description:
+      "Receive expert guidance in selecting the right chatbot technologies and creating tailored strategies for successful implementation.",
+  },
+];
+
+export const specialize = [
+  {
+    image: "/aipowered.svg",
+    title: "AI-Powered Assistant Chatbots",
+    description:
+      "AI-powered assistant chatbots are built using advanced NLP and machine learning technologies. These chatbots automate support 24/7, customize interactions, increase engagement, and gather valuable insights.",
+  },
+  {
+    image: "/customersupport.svg",
+    title: "Customer Support Chatbots",
+    description:
+      "Our chatbot developers specialize in creating customer service chatbots that manage a high volume of inquiries. They deliver fast, accurate responses and are available round the clock.",
+  },
+  {
+    image: "/leadgeneration.svg",
+    title: "Lead Generation Chatbots",
+    description:
+      "We design lead-generation chatbots that help capture potential leads. These chatbots attract clients, drive conversions, and support your business growth.",
+  },
+  {
+    image: "/booking.svg",
+    title: "Booking and Appointment Chatbots",
+    description:
+      "Our enterprise AI chatbot development services include booking and appointment chatbots. They simplify scheduling, improve convenience, and reduce wait times for users.",
+  },
+  {
+    image: "/transactional.svg",
+    title: "Transactional Chatbots",
+    description:
+      "We develop transactional chatbots that streamline the purchasing process. They ensure secure transactions for tracking orders, payments, and optimizing workflows.",
+  },
+  {
+    image: "/industry.svg",
+    title: "Industry-Specific Chatbots",
+    description:
+      "We create industry-specific chatbots tailored to your business. They enhance operations by delivering secure solutions for order management, payment processing, and more.",
+  },
 ];
  export const slidesiot = [
     {

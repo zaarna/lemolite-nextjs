@@ -2,7 +2,6 @@
 import Image from "next/image";
 
 export default function EventGallery({ images = [], alt = [] }) {
-  console.log("images", images);
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-4">
       {/* Image 1 */}

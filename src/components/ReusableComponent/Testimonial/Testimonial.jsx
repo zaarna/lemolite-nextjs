@@ -30,7 +30,6 @@ export default function Testimonial({ testimonials = [], title }) {
     "/services/voicebot-development",
   ];
 
-  // ❌ Also exclude blog and career inner pages
   const isBlogInner = pathname.startsWith("/blog/") && pathname !== "/blog";
   const isCareerInner =
     pathname.startsWith("/careers/") && pathname !== "/careers";

@@ -5,8 +5,11 @@ import Image from "next/image";
 import Titlecontent from "../Titlecontent/Titlecontent";
 import { MoveRight } from "lucide-react";
 
-const TechnologyWeUse = ({ padding = "top-bottom", bg = "bg-white" }) => {
-  const [activeCategory, setActiveCategory] = useState("AI_ML");
+const Mobile_TechnologyWeUse = ({
+  padding = "top-bottom",
+  bg = "bg-white",
+}) => {
+  const [activeCategory, setActiveCategory] = useState("ios");
   const [isOpen, setIsOpen] = useState({
     aiml: false,
     backend: false,
@@ -22,66 +25,51 @@ const TechnologyWeUse = ({ padding = "top-bottom", bg = "bg-white" }) => {
 
   const technologyCategories = [
     {
-      id: "AI_ML",
-      name: "AI & ML Development",
-      icon: "/tec1.svg",
+      id: "ios",
+      name: "ios",
+      icon: "/techno_apple.png",
       technologies: [
-        { name: "Sklearn", img: "/scikit-learn-logo.svg" },
-        { name: "Matplotlib", img: "/matplotlib-logo.svg" },
-        { name: "TensorFlow", img: "/tensorflow-logo.svg" },
-        { name: "Keras", img: "/keras-logo.svg" },
-        { name: "Hugging Face", img: "/huggingface-logo.svg" },
-        { name: "PyTorch", img: "/pytorch-logo.svg" },
-        { name: "NumPy", img: "/numpy-logo.svg" },
-        { name: "Seaborn", img: "/seaborn-logo.svg" },
-        { name: "spaCy", img: "/spacy-logo.svg" },
+        { name: "Swift", img: "/Swift.svg" },
+        { name: "SwiftUI", img: "/Swiftui.svg" },
+        { name: "Objective-C", img: "/Objective.svg" },
+        { name: "X-Code", img: "/XCode.svg" },
       ],
     },
 
     {
-      id: "Backend",
-      name: "Backend Development",
+      id: "android",
+      name: "Android Development",
       icon: "/tec2.svg",
       technologies: [
-        { name: "Node.js", img: "/back1.svg" },
-        { name: "PHP", img: "/back2.svg" },
-        { name: "Python", img: "/back3.svg" },
-        { name: "Laravel", img: "/back4.svg" },
-        { name: "Express Js", img: "/back5.svg" },
-        { name: "CodeIgniter", img: "/back6.svg" },
+        { name: "Kotlin", img: "/Kotlin.svg" },
+        { name: "Android Studio", img: "/Android.svg" },
+        { name: "Version control tools (Git, GitLab, Bit Bucket)", img: null },
       ],
     },
 
     {
-      id: "Frontend",
-      name: "Frontend Development",
-      icon: "/tec3.svg",
-      technologies: [
-        { name: "HTML", img: "/front1.svg" },
-        { name: "CSS", img: "/front2.svg" },
-        { name: "JavaScript", img: "/front3.svg" },
-        { name: "Vue.js", img: "/front4.svg" },
-        { name: "React Native", img: "/front5.svg" },
-        { name: "AngularJS", img: "/front6.svg" },
-        { name: "Typescript", img: "/front7.svg" },
-      ],
-    },
-
-    {
-      id: "Cloud",
-      name: "Cloud Computing",
+      id: "cross",
+      name: "Cross Platform",
       icon: "/tec4.svg",
-      technologies: [{ name: "Amazon Web Services (AWS)", img: "/cloud1.svg" }],
+      technologies: [
+        { name: "Flutter", img: "/Flutter.svg" },
+        { name: "React Native", img: "/Reactnative.svg" },
+        { name: "Ionic", img: "/Ionic.svg" },
+      ],
     },
 
     {
-      id: "E_Commerce",
-      name: "E-Commerce",
+      id: "database",
+      name: "Database",
       icon: "/tec5.svg",
       technologies: [
-        { name: "Shopify", img: "/ecom1.svg" },
-        { name: "Shopify Plus", img: "/ecom1.svg" },
-        { name: "WordPress", img: "/e-com2.svg" },
+        { name: "Firebase", img: "/Firebase.svg" },
+        { name: "Redis", img: "/PostgreSQL.svg" },
+        { name: "PostgreSQL", img: "/MySQL.svg" },
+        { name: "MongoDB", img: "/SQLite.svg" },
+        { name: "MySQL", img: "/DynamoDB.svg" },
+        { name: "DynamoDB", img: "/MongoDB.svg" },
+        { name: "SQLite", img: "/Redis.svg" },
       ],
     },
 
@@ -92,9 +80,9 @@ const TechnologyWeUse = ({ padding = "top-bottom", bg = "bg-white" }) => {
       technologies: [
         { name: "Adobe XD", img: "/design1.svg" },
         { name: "Figma", img: "/design2.svg" },
-        { name: "Photoshop", img: "/design3.svg" },
+        { name: "Adobe Photoshop", img: "/design3.svg" },
         { name: "Illustrator", img: "/design4.svg" },
-        { name: "After Effects", img: "/design5.svg" },
+        { name: "After effects", img: "/design5.svg" },
       ],
     },
   ];
@@ -105,11 +93,13 @@ const TechnologyWeUse = ({ padding = "top-bottom", bg = "bg-white" }) => {
 
   const renderTechnologyCards = (technologies, gridCols = "md:w-1/2") => {
     return technologies.map((tech, index) => (
-      <div key={index} className={`${gridCols}`}>
+      <div key={index} className={`${tech?.img ? gridCols : ""} `}>
         <div className="flex items-center justify-between p-2 rounded-[20px] bg-gray-200 mx-2 mb-2">
-          <div className="basis-1/2 text-left">
-            <Image src={tech.img} width={100} height={100} alt={tech.name} />
-          </div>
+          {tech?.img && (
+            <div className="basis-1/2 text-left">
+              <Image src={tech.img} width={100} height={100} alt={tech.name} />
+            </div>
+          )}
           <div className="basis-1/2 text-left">{tech.name}</div>
         </div>
       </div>
@@ -212,12 +202,15 @@ const TechnologyWeUse = ({ padding = "top-bottom", bg = "bg-white" }) => {
                         key={i}
                         className="p-3 bg-white border rounded-[20px] text-center"
                       >
-                        <Image
-                          src={tech.img}
-                          width={40}
-                          height={40}
-                          alt={tech.name}
-                        />
+                        {tech?.img && (
+                          <Image
+                            src={tech.img}
+                            width={40}
+                            height={40}
+                            alt={tech.name}
+                          />
+                        )}
+
                         <p className="text-sm mt-2">{tech.name}</p>
                       </div>
                     ))}
@@ -232,4 +225,4 @@ const TechnologyWeUse = ({ padding = "top-bottom", bg = "bg-white" }) => {
   );
 };
 
-export default TechnologyWeUse;
+export default Mobile_TechnologyWeUse;

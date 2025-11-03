@@ -6,7 +6,13 @@ import Innerhero from "@/components/ReusableComponent/Innerhero/Innerhero";
 import WhatWeOfferAccordion from "@/components/ReusableComponent/What_we_Offer_accordian/What_we_Offer_accordian";
 import Why_choose_us from "@/components/ReusableComponent/WhyChooseUs/WhyChooseUs";
 import { aiml } from "@/data/breadcrumsdata";
-import { aimalexpert, aimlchoosedata, aimlData, aimlfaqData, aimlprocessSteps } from "@/data/services";
+import {
+  aimalexpert,
+  aimlchoosedata,
+  aimlData,
+  aimlfaqData,
+  aimlprocessSteps,
+} from "@/data/services";
 import React from "react";
 
 const AIMLDevelopmentPage = () => {
@@ -24,13 +30,23 @@ const AIMLDevelopmentPage = () => {
         src={"/aiml.webp"}
         alt={"AI & ML Development Services"}
       />
-      <Experties bg='bg-gradient-to-r from-[#2ec4f3]/30 to-[#bfd633]/30'
-      maintitle={"Expertise You Can Trust"}
-      contentData={aimalexpert}/>
-      <WhatWeOfferAccordion title={"What We Offer"} stepDeta={aimlData} bg="bg-[#F1F1F1]" />
-      <Why_choose_us title={"Why Lemolite?"} data={aimlchoosedata} columns={2} />
+      <Experties
+        bg="bg-gradient-to-r from-[#2ec4f3]/30 to-[#bfd633]/30"
+        maintitle={"Expertise You Can Trust"}
+        contentData={aimalexpert}
+      />
+      <WhatWeOfferAccordion
+        title={"What We Offer"}
+        stepDeta={aimlData}
+        bg="bg-[#F1F1F1]"
+      />
+      <Why_choose_us
+        title={"Why Lemolite?"}
+        data={aimlchoosedata}
+        columns={2}
+      />
       <Devlopmentprocess
-        title={"Our Development Process"}
+        title={"The Process"}
         processSteps={aimlprocessSteps}
       />
       <Ctasection
@@ -40,7 +56,7 @@ const AIMLDevelopmentPage = () => {
         image="/ctagreadiant.webp"
         bg="bg-[#F1F1F1]"
       />
-      <FAQ questions={aimlfaqData} padding="top-bottom" /> 
+      <FAQ questions={aimlfaqData} padding="top-bottom" />
     </div>
   );
 };

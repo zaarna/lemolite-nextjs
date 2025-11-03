@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { useState, useEffect } from "react";
 import { all, celebration, event, sport } from "@/data/imagesdata";
@@ -46,7 +47,8 @@ const tabsData = [
 
 function AllEvent() {
   const [activeTab, setActiveTab] = useState(tabsData[0].id);
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+  // const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth < 768);

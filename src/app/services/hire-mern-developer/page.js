@@ -41,9 +41,10 @@ const HireMERNDeveloperPage = () => {
         btntext={"Hire MERN Stack Developer"}
         link={"/contact-us"}
         features={whyhiremern}
+        bg="bg-[#F1F1F1]"
       />
       <Ctasection
-        bg="bg-gradient-to-r from-primary/30 to-secondry/30"
+        bg="bg-gradient-to-r from-[#2ec4f3]/30 to-[#bfd633]/30"
         image={"/ctawhite.webp"}
         title={"Ready to Hire MERN Stack Developers?"}
         text={"Start Your Project Today!"}
@@ -55,7 +56,7 @@ const HireMERNDeveloperPage = () => {
         benefits={mernbenefit}
       />
       <Ctasection
-        bg="bg-gradient-to-r from-primary/30 to-secondry/30"
+        bg="bg-gradient-to-r from-[#2ec4f3]/30 to-[#bfd633]/30"
         image={"/hirecta.webp"}
         title={"Take Your Project to the Next Level!"}
         text={"Start Now"}

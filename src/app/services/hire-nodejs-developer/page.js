@@ -40,9 +40,10 @@ const HireNodJsDeveloperPage = () => {
         btntext={"Hire Node JS Developers"}
         link={"/contact-us"}
         features={whyhirenodejs}
+        bg="bg-[#F1F1F1]"
       />
       <Ctasection
-        bg="bg-gradient-to-r from-primary/30 to-secondry/30"
+        bg="bg-gradient-to-r from-[#2ec4f3]/30 to-[#bfd633]/30"
         image={"/ctawhite.webp"}
         title={"Ready To Node JS development team?"}
         text={"Start Your Project Today!"}
@@ -54,25 +55,13 @@ const HireNodJsDeveloperPage = () => {
         benefits={nodebenefit}
       />
       <Ctasection
-        bg="bg-gradient-to-r from-primary/30 to-secondry/30"
+        bg="bg-gradient-to-r from-[#2ec4f3]/30 to-[#bfd633]/30"
         image={"/hirecta.webp"}
         title={"Take Your Project to the Next Level!"}
         text={"Start Now"}
         link={"/contact-us"}
       />
       <FAQ questions={hirefaqnodejs} />
-      {/* <Testimonial
-        title="Hear from Our Happy Clients"
-        testimonials={testimonials}
-      /> */}
-      {/* <Contectinfo
-        maintitle={"Let’s Transform Your Vision into Reality"}
-        subtitle={"Get in Touch!"}
-        content={
-          "Working on something big? Let’s chat! We’re excited to hear about your project and see how we can help."
-        }
-        addresses={addresses}
-      /> */}
     </div>
   );
 };

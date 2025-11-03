@@ -5,15 +5,19 @@ import Image from "next/image";
 import SliderCard from "@/components/ReusableComponent/Card/SliderCard";
 import Titlecontent from "@/components/ReusableComponent/Titlecontent/Titlecontent";
 
-
-export default function Why_choose_us({data , title, columns = 3}) {
+export default function Why_choose_us({
+  data,
+  title,
+  columns = 3,
+  bg = "white",
+}) {
   const gridColsClass =
     columns === 2
       ? "grid-cols-1 md:grid-cols-2"
       : "grid-cols-1 md:grid-cols-2 lg:grid-cols-3";
 
   return (
-    <section className="why_choose_us top-bottom">
+    <section className={`why_choose_us top-bottom ${bg}`}>
       <div className="container">
         {/* Section Title */}
         <div className="title--head pb-6 lg:pb-12 md:pb-10 sm:pb-8 text-center">

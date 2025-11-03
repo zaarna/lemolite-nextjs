@@ -7,7 +7,7 @@ function Hireproccess({ steps = [], title }) {
   const [hoveredId, setHoveredId] = useState(0);
 
   return (
-    <section className="top-bottom">
+    <section className="top-bottom bg-white">
       <div className="container">
         <div className="title--head text-center pb-6 sm:pb-8 md:pb-10">
           <Titlecontent title={title} />

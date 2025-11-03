@@ -42,7 +42,7 @@ const HirePhpDeveloperPage = () => {
         features={whyhirephp}
       />
       <Ctasection
-        bg="bg-gradient-to-r from-primary/30 to-secondry/30"
+        bg="bg-gradient-to-r from-[#2ec4f3]/30 to-[#bfd633]/30"
         image={"/ctawhite.webp"}
         title={"Ready To Hire Skilled PHP Developers?"}
         text={"Start Your Project Today!"}
@@ -53,25 +53,13 @@ const HirePhpDeveloperPage = () => {
         benefits={phpbenefit}
       />
       <Ctasection
-        bg="bg-gradient-to-r from-primary/30 to-secondry/30"
         image={"/hirecta.webp"}
         title={"Take Your Project to the Next Level!"}
         text={"Start Now"}
         link={"/contact-us"}
+        bg="bg-gradient-to-r from-[#2ec4f3]/30 to-[#bfd633]/30"
       />
       <FAQ questions={hirefaqphp} />
-      {/* <Testimonial
-        title="Hear from Our Happy Clients"
-        testimonials={testimonials}
-      /> */}
-      {/* <Contectinfo
-        maintitle={"Let’s Transform Your Vision into Reality"}
-        subtitle={"Get in Touch!"}
-        content={
-          "Working on something big? Let’s chat! We’re excited to hear about your project and see how we can help."
-        }
-        addresses={addresses}
-      /> */}
     </div>
   );
 };

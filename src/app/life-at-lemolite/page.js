@@ -5,10 +5,12 @@ import Cta_life from "@/components/ReusableComponent/Cta_Section/Cta_life";
 import Ctasection from "@/components/ReusableComponent/Cta_Section/CtaSection";
 import AllEvent from "@/components/ReusableComponent/Life/AllEvent";
 import AwardSection from "@/components/ReusableComponent/Life/AwardSection";
+import Gallery from "@/components/ReusableComponent/Life/Gallery";
 import MainGallery from "@/components/ReusableComponent/Life/MainGallery";
 import Titlecontent from "@/components/ReusableComponent/Titlecontent/Titlecontent";
 import { addresses } from "@/data/home";
 import { awd, imageUrls } from "@/data/imagesdata";
+import { usePathname } from "next/navigation";
 import React from "react";
 import { useRef } from "react";
 
@@ -18,6 +20,23 @@ const LifeAtLemolitePage = () => {
   const scrollToFooter = () => {
     footerRef.current?.scrollIntoView({ behavior: "smooth" }); // Smooth scrolling
   };
+  const pathName = usePathname();
+  console.log("PathName");
+  if (pathName == "/careers")
+    return (
+      <section className="top-bottom">
+        <div className="container">
+          <div className="title--head text-center sm:mb-12 mb-6 ">
+            <Titlecontent title={"Life@Lemolite "} />
+          </div>
+
+          <Gallery images={imageUrls} />
+          <div className="text-center mt-7">
+            <Grediantbutton btntext={"Know More"} link={"/life-at-lemolite"} />
+          </div>
+        </div>
+      </section>
+    );
   return (
     <>
       <section className="top-bottom">

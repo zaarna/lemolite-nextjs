@@ -9,6 +9,7 @@ import parsePhoneNumber from "libphonenumber-js";
 // import rightarrow from "../../../assets/right-arrow.svg";
 import { ArrowRight, CircleX, Check } from "lucide-react";
 import { toast } from "react-toastify";
+import Grediantbutton from "../Button/Grediantbutton";
 
 function PartnerPopup() {
   const [isOpen, setIsOpen] = useState(false);
@@ -95,19 +96,20 @@ function PartnerPopup() {
       onOpen={() => setIsOpen(true)}
       onClose={() => setIsOpen(false)}
       trigger={
-        <button className="gradient-button">
-          <span> Partner with Us in Your Digital Journey</span>
-          {/* <img
-            src={rightarrow}
-            alt="right-arrow"
-            width={26}
-            className="transition-transform duration-500 group-hover:rotate-30"
-          /> */}
-          <ArrowRight
-            width={26}
-            className="transition-transform duration-500 group-hover:rotate-30"
-          />
-        </button>
+        // <button className="gradient-button">
+        //   <span> Partner with Us in Your Digital Journey</span>
+        //   {/* <img
+        //     src={rightarrow}
+        //     alt="right-arrow"
+        //     width={26}
+        //     className="transition-transform duration-500 group-hover:rotate-30"
+        //   /> */}
+        //   <ArrowRight
+        //     width={26}
+        //     className="transition-transform duration-500 group-hover:rotate-30"
+        //   />
+        // </button>
+        <Grediantbutton btntext={"Partner with Us in Your Digital Journey"} />
       }
       modal
       nested
@@ -115,7 +117,7 @@ function PartnerPopup() {
       {(close) => (
         <div className="modal relative bg-black rounded-[30px] overflow-scroll h-[400px] lg:overflow-auto lg:h-auto max-w-[300px] sm:max-w-[400px] md:max-w-[600px] lg:max-w-[800px] xl:max-w-[1000px] px-5 md:px-10 py-5 md:py-10">
           <button
-            className="close absolute flex items-center justify-center right-5 md:right-[30px] top-4 md:top-6 text-white w-6 md:w-8 h-6 md:h-8 border border-white rounded-full"
+            className="close absolute flex items-center justify-center right-5 md:right-[30px] top-4 md:top-6 text-white w-6 md:w-8 h-6 md:h-8 border border-white rounded-full cursor-pointer"
             onClick={close}
           >
             <CircleX width={14} />
@@ -358,7 +360,7 @@ function PartnerPopup() {
                 {/* Submit Button */}
                 <div className="flex items-center justify-center mt-5">
                   <button
-                    href=""
+                    href={null}
                     type="submit"
                     disabled={isLoading}
                     className="block max-w-[300px] text-center py-3 w-full bg-[#D8E8C5] text-black rounded-[16px] font-medium"

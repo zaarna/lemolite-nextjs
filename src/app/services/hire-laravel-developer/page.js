@@ -42,7 +42,7 @@ const HireLaravelDeveloperPage = () => {
         features={whyhirelaravel}
       />
       <Ctasection
-        bg="bg-gradient-to-r from-primary/30 to-secondry/30"
+        bg="bg-gradient-to-r from-[#2ec4f3]/30 to-[#bfd633]/30"
         image={"/ctawhite.webp"}
         title={"Ready To Hire certified Laravel developers?"}
         text={"Start Your Project Today!"}
@@ -53,7 +53,7 @@ const HireLaravelDeveloperPage = () => {
         benefits={laravelbenefit}
       />
       <Ctasection
-        bg="bg-gradient-to-r from-primary/30 to-secondry/30"
+        bg="bg-gradient-to-r from-[#2ec4f3]/30 to-[#bfd633]/30"
         image={"/hirecta.webp"}
         title={"Take Your Project to the Next Level!"}
         text={"Start Now"}

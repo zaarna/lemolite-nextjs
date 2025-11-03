@@ -54,7 +54,7 @@ const PhpDevelopmentPage = () => {
       />
       <InnerSlider
         data={phpdata}
-        title="Why Choose Lemolite for Your Laravel Development Services?"
+        title="Why Choose Lemolite for Your PHP Development Services?"
       />
     </div>
   );

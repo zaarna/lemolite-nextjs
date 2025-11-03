@@ -34,8 +34,7 @@ const ServicesPage = () => {
         }
         features={features}
       />
-      <SmartTechSolution 
-      sections={sections}/>
+      <SmartTechSolution sections={sections} />
       <Ctasection
         title={"Ready to Transform Your Business?"}
         text={"Take the First Step Today"}
@@ -43,17 +42,17 @@ const ServicesPage = () => {
         image="/ctagreadiant.webp"
         bg="bg-[#F1F1F1]"
       />
-      <Why_choose_us title={"Why Choose Lemolite as Your Trusted Partner?"} data={whychoosedata} />
-      <TechnologyWeUse 
-      bg="bg-[#F1F1F1]"/>
+      <Why_choose_us
+        title={"Why Choose Lemolite as Your Trusted Partner?"}
+        data={whychoosedata}
+      />
+      <TechnologyWeUse bg="bg-[#F1F1F1]" />
       <VisionAndExpertise
         title="Your Vision, Our Expertise!"
         content="We provide tailored custom software development services to drive innovation, improve efficiency, enhance customer experience, and support digital transformation, helping you achieve success and stay competitive."
         service={services}
       />
-      <FAQ questions={serviesfaqData}
-      padding="top-bottom"
-      bg="bg-gray-50" />
+      <FAQ questions={serviesfaqData} padding="top-bottom" bg="bg-gray-50" />
     </div>
   );
 };

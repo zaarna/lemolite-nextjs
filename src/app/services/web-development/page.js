@@ -1,11 +1,17 @@
 import Ctasection from "@/components/ReusableComponent/Cta_Section/CtaSection";
 import Devlopmentprocess from "@/components/ReusableComponent/DevelopmentProcess/Devlopmentprocess";
+import Dream_web_application from "@/components/ReusableComponent/DreamWebApplication/Dream_web_application";
 import FAQ from "@/components/ReusableComponent/HireDevelopers/FAQ";
 import WhyHireSection from "@/components/ReusableComponent/HireDevelopers/WhyHireSections";
 import Innerhero from "@/components/ReusableComponent/Innerhero/Innerhero";
 import TechnologyWeUse from "@/components/ReusableComponent/TechnologyWeUse/TechnologyWeUse";
 import { web } from "@/data/breadcrumsdata";
-import { webdevlopmentfaqData, webexpert, webprocessSteps } from "@/data/services";
+import {
+  webdevlopmentfaqData,
+  webexpert,
+  weblistItems,
+  webprocessSteps,
+} from "@/data/services";
 const WebDevelopmentPage = () => {
   return (
     <div className="min-h-screen">
@@ -32,18 +38,26 @@ const WebDevelopmentPage = () => {
         layoutType=""
         bg="bg-[#F1F1F1]"
       />
+      <Dream_web_application
+        title="Your Role in Building Your Dream Web Application"
+        content="To deliver the best results, collaboration between all stakeholders is key. Here’s how you can help ensure your project stays on track and meets your needs:"
+        listItems={weblistItems}
+        image={"/role-image.webp"}
+        alt={"Dream Web Application"}
+        additionalText="By working together, we will ensure that your web application is delivered on time, within budget, and to your complete satisfaction."
+      />
       <Devlopmentprocess
         title={"Our Development Process"}
         processSteps={webprocessSteps}
       />
       <Ctasection
-              title={"Ready to build your next web project?"}
-              text={"Contact us today"}
-              link={"/contact-us"}
-              image="/ctagreadiant.webp"
-              bg="bg-[#F1F1F1]"
-            />
-      <FAQ questions={webdevlopmentfaqData} padding="top-bottom" /> 
+        title={"Ready to build your next web project?"}
+        text={"Contact us today"}
+        link={"/contact-us"}
+        image="/ctagreadiant.webp"
+        bg="bg-white"
+      />
+      <FAQ questions={webdevlopmentfaqData} padding="top-bottom" />
       <TechnologyWeUse />
     </div>
   );

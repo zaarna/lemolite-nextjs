@@ -21,7 +21,7 @@ function Innerhero({
   clickit,
   targetBlank,
 }) {
-  const location = usePathname(); // Get current page path
+  const location = usePathname();
   return (
     <section className={`${padding} `}>
       <div className="container">
@@ -36,7 +36,7 @@ function Innerhero({
             </div>
             {!btnHide && (
               <div className="btn--inner">
-                {location.pathname === "/about-us" ? (
+                {location === "/about-us" ? (
                   <PartnerPopup />
                 ) : (
                   <Grediantbutton

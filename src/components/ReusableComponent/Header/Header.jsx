@@ -265,6 +265,8 @@ const Header = () => {
   }, []);
 
   const toggleMenu = (menu) => {
+    console.log("Toggle Menu", menu);
+    console.log("activeMenu Menu", activeMenu);
     setActiveMenu(activeMenu === menu ? null : menu);
   };
 
@@ -300,7 +302,10 @@ const Header = () => {
               title: "AI & ML Development",
               href: "/services/ai-ml-development",
             },
-            { title: "Internet of Things", href: "/services/internet-of-things" },
+            {
+              title: "Internet of Things",
+              href: "/services/internet-of-things",
+            },
             {
               title: "Chatbot Development",
               href: "/services/chatbot-development",
@@ -356,7 +361,7 @@ const Header = () => {
       footerText: "Explore Our Services to Meet Your Needs",
     },
     {
-      title: "Techstack",
+      title: "Tech Stack",
       href: "/techstack",
       description:
         "We use various tech stacks to build engaging websites and handle the behind-the-scenes work, making your digital experience smooth and effective.",
@@ -431,7 +436,7 @@ const Header = () => {
 
   const columnHeadings = {
     Services: ["Offerings", "Intelligent Automation", "Staff Augmentation"],
-    Techstack: ["Frontend", "Backend"],
+    "Tech Stack": ["Frontend", "Backend"],
     Company: ["Company Info"],
   };
 
@@ -481,7 +486,7 @@ const Header = () => {
           {/* Conditional Button or Social Icons */}
           {menu.title !== "Company" ? (
             <Link
-              href="/get-started"
+              href={menu.href}
               onClick={closeDropdown}
               className="flex items-center gap-2 bg-white hover:bg-black font-semibold w-8 h-8 justify-center rounded-full group transition-all"
             >
@@ -565,10 +570,10 @@ const Header = () => {
                       gradientUnits="userSpaceOnUse"
                       gradientTransform="translate(15.9376 64.6213) rotate(-90) scale(59.4644 55.3066)"
                     >
-                      <stop stop-color="#FFDD55" />
-                      <stop offset="0.1" stop-color="#FFDD55" />
-                      <stop offset="0.5" stop-color="#FF543E" />
-                      <stop offset="1" stop-color="#C837AB" />
+                      <stop stopColor="#FFDD55" />
+                      <stop offset="0.1" stopColor="#FFDD55" />
+                      <stop offset="0.5" stopColor="#FF543E" />
+                      <stop offset="1" stopColor="#C837AB" />
                     </radialGradient>
                   </defs>
                 </svg>
@@ -735,7 +740,9 @@ const Header = () => {
                   {/* Mega Menu Rendering */}
                   {hasDropdown &&
                     activeMenu === menu.title &&
-                    ["Services", "Techstack", "Company"].includes(menu.title) &&
+                    ["Services", "Tech Stack", "Company"].includes(
+                      menu.title
+                    ) &&
                     renderMegaMenu(menu)}
                 </li>
               );

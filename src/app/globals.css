@@ -20,6 +20,8 @@
   }
 } */
 
+
+
 body {
   background: var(--background);
   color: var(--foreground);
@@ -538,7 +540,6 @@ body {
 }
 
 
-/* Smart Operation Section */
 
 
 
@@ -596,5 +597,113 @@ body {
         height: 2px; /* Fixed height */  
         transition: height 0.3s ease; 
       }
+}
+
+.text-para{
+  font-size: clamp(1rem, 0.375rem + 2vw, 1.5rem);
+}
+
+.text-use{
+  font-size:  clamp(1.5rem, -1.3125rem + 9vw, 3.75rem);
+  margin-left: -10px;
+}
+
+.text-we-para{
+font-size: clamp(1rem, 0.375rem + 2vw, 1.5rem);
+}
+.text-we-use{
+font-size:  clamp(1.5rem, -1.3125rem + 9vw, 3.75rem);
+}
+.category-item.active {
+  background-color: white;
+  font-weight: bold;
+  color: #0f172a;
+}
+.category-item:hover .arrow-icon,
+.category-item.active .arrow-icon {
+  opacity: 1;
+  transform: translateY(-50%) translateX(0);
+}
+/* ChatBot */
+
+
+.listing-image li {
+    position: relative;
+    width: calc(50% - 20px);
+}
+
+.listing-image li::before {
+    position: absolute;
+    content: "";
+    background: url('/arrow-list.svg');
+    background-size: 30px 25px;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    top: 6px;
+    bottom: 0;
+    margin: auto;
+    left: -37px;
+}
+
+@media (max-width: 540px) {
+
+    .listing-image li {
+        width: 100%;
+        padding: 5px 0;
+    }
+}
+
+
+
+.main-banner h1 {
+  font-size: clamp(1.75rem, 1.1951rem + 3.1707vw, 5rem);
+  font-weight: 900;
+}
+
+.main-banner p {
+  font-size: clamp(1rem, 0.7866rem + 1.2195vw, 2.25rem);
+}
+
+
+.popup-overlay {
+    background: linear-gradient(320deg, rgba(46, 196, 243, 0.3), rgba(191, 214, 51, 0.3));
+}
+
+/* Why Choose Lemolite css */
+.why-lemo h2 {
+  font-size: clamp(1.5rem, 1.0732rem + 2.439vw, 4rem);
+  font-weight: 700;
+}
+.why-lemo p {
+  font-size: clamp(1rem, 0.8506rem + 0.8537vw, 1.875rem);
+}
+.why-lemo h3 {
+  font-size: clamp(0.875rem, 0.6829rem + 1.0976vw, 2rem);
+  font-weight: 600;
+}
+@media (max-width: 640px) {
+
+    .why-lemo{
+        flex-direction: column;
+    }
+    .main-lemo-sec {
+        text-align: center;
+    }
+    .image-list{
+        height: 41px;
+        width: 41px;
+    }
+}
+
+.from-primary {
+    --tw-gradient-from: #2EC4F3 var(--tw-gradient-from-position);
+    --tw-gradient-to: rgb(46 196 243 / 0) var(--tw-gradient-to-position);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.to-secondry {
+    --tw-gradient-to: #BFD633 var(--tw-gradient-to-position);
 }
 

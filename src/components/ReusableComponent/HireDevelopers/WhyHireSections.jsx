@@ -4,7 +4,7 @@ import Grediantbutton from "../Button/Grediantbutton";
 import WhyHire from "../WhyHire/WhyHire";
 
 function WhyHireSection({
-  bg = "bg--gray",
+  bg = "bg-[#F1F1F1]",
   padding = "top-bottom",
   title,
   content,

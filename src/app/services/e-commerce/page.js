@@ -1,17 +1,23 @@
 import E_Commerce_Success from "@/components/E_Commerce_Success";
 import E_empower from "@/components/E_empower";
 import Ctasection from "@/components/ReusableComponent/Cta_Section/CtaSection";
+import Experties from "@/components/ReusableComponent/ExpertiseSection/Experties";
 import FAQ from "@/components/ReusableComponent/HireDevelopers/FAQ";
 import WhyHireSection from "@/components/ReusableComponent/HireDevelopers/WhyHireSections";
 import Innerhero from "@/components/ReusableComponent/Innerhero/Innerhero";
 import Why_choose_us from "@/components/ReusableComponent/WhyChooseUs/WhyChooseUs";
 import { commarce } from "@/data/breadcrumsdata";
-import { commerceexpert, ecommercefaqData, InnovativeTechnologies, servicesempower } from "@/data/services";
+import { ecommerceexpert } from "@/data/expertise";
+import {
+  commerceexpert,
+  ecommercefaqData,
+  InnovativeTechnologies,
+  servicesempower,
+} from "@/data/services";
 
 const ECommercePage = () => {
   return (
     <div className="min-h-screen">
-
       <Innerhero
         padding="py-8 md:py-10 lg:py-20"
         breadcrumbs={commarce}
@@ -44,9 +50,20 @@ const ECommercePage = () => {
         bg="bg-[#F1F1F1]"
       />
       <E_empower servicesempower={servicesempower} />
-      
-      <Why_choose_us title={"Transform Your Store with Innovative Technologies"} data={InnovativeTechnologies} />
-      <FAQ questions={ecommercefaqData} padding="top-bottom" bg="bg-[#F1F1F1]"/>
+      <Experties
+        bg="bg-gradient-to-r from-[#2EC4F3]/30 to-[#BFD633]/30"
+        maintitle="3 Reasons Why We’re the Right Choice for You"
+        contentData={ecommerceexpert}
+      />
+      <Why_choose_us
+        title={"Transform Your Store with Innovative Technologies"}
+        data={InnovativeTechnologies}
+      />
+      <FAQ
+        questions={ecommercefaqData}
+        padding="top-bottom"
+        bg="bg-[#F1F1F1]"
+      />
     </div>
   );
 };

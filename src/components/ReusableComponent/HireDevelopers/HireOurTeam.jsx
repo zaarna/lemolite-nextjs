@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function HireOurTeam({ hireourteam = [] }) {
   return (
-    <section className="top-bottom bg-gradient-to-r from-primary/30 to-secondry/30">
+    <section className="top-bottom bg-gradient-to-r from-[#2EC4F3]/30 to-[#BFD633]/30">
       <div className="container">
         <div className="mx-auto px-4 grid md:gap-8 lg:grid-cols-3">
           {hireourteam.map((feature, index) => (

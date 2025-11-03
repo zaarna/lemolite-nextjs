@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { ChevronDown, ArrowRight } from "lucide-react";
@@ -14,6 +14,16 @@ export default function TailoredSolutions({ solutions = [] }) {
   const router = useRouter();
   const [openIndex, setOpenIndex] = useState(null);
   const { isDesktop, isTablet, isMobile } = useResponsive();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    // Avoid SSR mismatch — render skeleton or nothing
+    return null;
+  }
 
   const handleToggle = (index) => {
     setOpenIndex(openIndex === index ? null : index);

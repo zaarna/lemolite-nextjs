@@ -36,6 +36,7 @@ const CustomSoftwareDevelopmentPage = () => {
         link={"/contact-us"}
         features={custombexpert}
         layoutType=""
+        bg="bg-[#F1F1F1]"
       />
       <Experties
         maintitle="Custom Software Tailored for Every Business Level"

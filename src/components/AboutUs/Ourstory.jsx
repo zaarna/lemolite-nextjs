@@ -19,7 +19,7 @@ const Ourstory = () => {
   }, [currentImage]);
 
   return (
-    <section className="ourstory top-bottom bg--gray">
+    <section className="ourstory top-bottom bg-[#F1F1F1]">
       <div className="container">
         <div className="">
           {/* Title */}

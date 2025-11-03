@@ -48,7 +48,7 @@ const MernDevelopmentPage = () => {
       <Ctasection
         bg="bg-gradient-to-r from-[#2EC4F3]/30 to-[#BFD633]/30"
         image={"/hirecta.webp"}
-        title={"Ready to MERN Full Stack Developer"}
+        title={"Ready to Hire MERN Full Stack Developer"}
         text={"Find Your Developer"}
         link={"/contact-us"}
       />

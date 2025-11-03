@@ -54,7 +54,7 @@ const ShopifyDevelopmentPage = () => {
       />
       <InnerSlider
         data={shopifydata}
-        title="Why Choose Lemolite for Your Python Development Services?"
+        title="Why Choose Lemolite for Your Shopify Development Services?"
       />
     </div>
   );
