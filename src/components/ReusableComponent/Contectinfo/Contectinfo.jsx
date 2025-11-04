@@ -33,7 +33,8 @@ export default function Contectinfo({
   const pathname = usePathname();
 
   // Detect Career Page
-  const isCareerPage = pathname.startsWith("/career");
+  const isCareerPage =
+    pathname.startsWith("/career") || pathname.startsWith("/current-openings");
 
   // Detect Contact Page — update to match your route name
   const isContactPage = pathname === "/contact" || pathname === "/contact-us";

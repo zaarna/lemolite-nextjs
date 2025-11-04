@@ -32,9 +32,7 @@ function FeatureCard({ feature, layoutType }) {
               <h3 className="text-[20px] md:text-[24px] font-bold mb-2">
                 {feature.title}
               </h3>
-              <p className="text-[16px] md:text-lg font-light">
-                {feature.description}
-              </p>
+              <p className="text-[16px] md:text-lg ">{feature.description}</p>
             </div>
           </>
         ) : (
@@ -54,9 +52,7 @@ function FeatureCard({ feature, layoutType }) {
               </h3>
             </div>
             <div>
-              <p className="text-[16px] md:text-lg font-light">
-                {feature.description}
-              </p>
+              <p className="text-[16px] md:text-lg ">{feature.description}</p>
             </div>
           </>
         )}

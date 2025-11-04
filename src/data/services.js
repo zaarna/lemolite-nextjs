@@ -1219,61 +1219,66 @@ export const voicespecialize = [
 ];
 
 export const chatbotstep = [
-    {
-      step: "01",
-      question: "Natural Language Processing (NLP)",
-      answer:
-        "We develop intelligent chatbots that effectively understand and respond to both spoken and written language. Using advanced NLP technologies, these chatbots enable natural, human-like interactions that significantly enhance user engagement and satisfaction.",
-    },
-    {
-      step: "02",
-      question: "Cross-Platform Integration",
-      answer:
-        "Our chatbots are designed to integrate seamlessly across multiple platforms, including websites, mobile apps, and social media channels. This ensures a consistent and reliable support experience for users, regardless of the platform they prefer.",
-    },
-    {
-      step: "03",
-      question: "Automation and Workflow Optimization",
-      answer:
-        "Our AI-powered chatbots are capable of automating repetitive tasks such as processing transactions, managing appointment bookings, and answering frequently asked questions. By doing so, they help reduce human errors, minimize manual workload, and boost overall operational efficiency.",
-    },
-    {
-      step: "04",
-      question: "Multilingual Support for Global Reach",
-      answer:
-        "Our chatbots come with robust multilingual capabilities, making it easy to communicate with diverse audiences in their native languages. This feature enables smooth, culturally relevant interactions, helping businesses expand their global reach and connect more effectively.",
-    },
-    {
-      step: "05",
-      question: "Emotional Intelligence and Sentiment Analysis",
-      answer:
-        "Leverage chatbots with emotional intelligence and sentiment analysis to create empathetic, context-aware interactions. These bots can adjust their responses based on user sentiment and escalate complex issues to human agents when needed, ensuring superior customer support.",
-    },
-  ];
-  export const voicebotstep = [
-        {
-            step: '01',
-            question: 'Rule-Based Voicebots',
-            answer: 'These simple voicebots follow predefined rules and scripts to deliver responses or complete tasks. They excel at answering frequently asked questions (FAQs) and managing repetitive tasks. However, they cant adapt or learn from new data, resulting in more rigid, robotic interactions'
-        },
-        {
-            step: '02',
-            question: 'AI-Powered Voicebots',
-            answer: 'AI-driven voicebots use machine learning to process and interpret natural language. They can analyze context and learn from interactions, making their responses more flexible and dynamic.'
-        },
-        {
-            step: '03',
-            question: 'Conversational Voicebots',
-            answer: 'These voicebots focus on maintaining smooth, natural conversations by combining AI with advanced natural language processing (NLP). They`re ideal for open-ended discussions and can blend rule-based systems with AI learning to provide rich and adaptable interactions.'
-        },
-        {
-            step: '04',
-            question: 'Personalized Voicebots',
-            answer: 'These rule-based voicebots are specialized for handling specific tasks. They provide tailored support, answering a limited range of questions and automating routine processes, making them ideal for customer service or sales environments where automation of repetitive functions is required.'
-        },
-        {
-            step: '05',
-            question: 'Voice-Activated Assistants',
-            answer: 'More advanced than personal voicebots, voice-activated assistants use AI and NLP to support users with a broader range of tasks. These assistants are highly adaptable, often learning user preferences and offering a more personalized experience. '
-        }
-    ];
+  {
+    step: "01",
+    question: "Natural Language Processing (NLP)",
+    answer:
+      "We develop intelligent chatbots that effectively understand and respond to both spoken and written language. Using advanced NLP technologies, these chatbots enable natural, human-like interactions that significantly enhance user engagement and satisfaction.",
+  },
+  {
+    step: "02",
+    question: "Cross-Platform Integration",
+    answer:
+      "Our chatbots are designed to integrate seamlessly across multiple platforms, including websites, mobile apps, and social media channels. This ensures a consistent and reliable support experience for users, regardless of the platform they prefer.",
+  },
+  {
+    step: "03",
+    question: "Automation and Workflow Optimization",
+    answer:
+      "Our AI-powered chatbots are capable of automating repetitive tasks such as processing transactions, managing appointment bookings, and answering frequently asked questions. By doing so, they help reduce human errors, minimize manual workload, and boost overall operational efficiency.",
+  },
+  {
+    step: "04",
+    question: "Multilingual Support for Global Reach",
+    answer:
+      "Our chatbots come with robust multilingual capabilities, making it easy to communicate with diverse audiences in their native languages. This feature enables smooth, culturally relevant interactions, helping businesses expand their global reach and connect more effectively.",
+  },
+  {
+    step: "05",
+    question: "Emotional Intelligence and Sentiment Analysis",
+    answer:
+      "Leverage chatbots with emotional intelligence and sentiment analysis to create empathetic, context-aware interactions. These bots can adjust their responses based on user sentiment and escalate complex issues to human agents when needed, ensuring superior customer support.",
+  },
+];
+export const voicebotstep = [
+  {
+    step: "01",
+    question: "Rule-Based Voicebots",
+    answer:
+      "These simple voicebots follow predefined rules and scripts to deliver responses or complete tasks. They excel at answering frequently asked questions (FAQs) and managing repetitive tasks. However, they cant adapt or learn from new data, resulting in more rigid, robotic interactions",
+  },
+  {
+    step: "02",
+    question: "AI-Powered Voicebots",
+    answer:
+      "AI-driven voicebots use machine learning to process and interpret natural language. They can analyze context and learn from interactions, making their responses more flexible and dynamic.",
+  },
+  {
+    step: "03",
+    question: "Conversational Voicebots",
+    answer:
+      "These voicebots focus on maintaining smooth, natural conversations by combining AI with advanced natural language processing (NLP). They`re ideal for open-ended discussions and can blend rule-based systems with AI learning to provide rich and adaptable interactions.",
+  },
+  {
+    step: "04",
+    question: "Personalized Voicebots",
+    answer:
+      "These rule-based voicebots are specialized for handling specific tasks. They provide tailored support, answering a limited range of questions and automating routine processes, making them ideal for customer service or sales environments where automation of repetitive functions is required.",
+  },
+  {
+    step: "05",
+    question: "Voice-Activated Assistants",
+    answer:
+      "More advanced than personal voicebots, voice-activated assistants use AI and NLP to support users with a broader range of tasks. These assistants are highly adaptable, often learning user preferences and offering a more personalized experience. ",
+  },
+];

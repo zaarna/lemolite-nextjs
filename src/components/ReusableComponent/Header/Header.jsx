@@ -476,7 +476,8 @@ const Header = () => {
                   onClick={closeDropdown}
                   className="flex items-center text-sm gap-2 text-gray-700 hover:text-blue-600 transition transform hover:translate-x-1"
                 >
-                  <ArrowRight size={14} /> {item.title}
+                  {/* <ArrowRight size={14} />  */}
+                  {item.title}
                 </Link>
               ))}
             </div>

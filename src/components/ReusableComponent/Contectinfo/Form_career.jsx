@@ -120,7 +120,7 @@ export default function Form_career({ data = [] }) {
                 formData.name ? "text-xs h-1/4 -translate-y-full" : ""
               }`}
             >
-              First Name*
+              First Name
             </label>
           </div>
 
@@ -141,7 +141,7 @@ export default function Form_career({ data = [] }) {
                 formData.lastname ? "text-xs h-1/4 -translate-y-full" : ""
               }`}
             >
-              Last Name*
+              Last Name
             </label>
           </div>
 
@@ -162,7 +162,7 @@ export default function Form_career({ data = [] }) {
                 formData.email ? "text-xs h-1/4 -translate-y-full" : ""
               }`}
             >
-              Email Address*
+              Email Address
             </label>
           </div>
 
@@ -218,7 +218,7 @@ export default function Form_career({ data = [] }) {
           {/* Apply Position */}
           <div className="relative group">
             <label htmlFor="position" className="text-sm text-[#D9D9D9] mb-2">
-              Apply Position*
+              Apply Position
             </label>
             <select
               id="position"

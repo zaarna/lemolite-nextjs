@@ -114,7 +114,7 @@ export default function Form() {
                 formData.name ? "text-xs h-1/4 -translate-y-full" : ""
               }`}
             >
-              Your Name*
+              Your Name
             </label>
           </div>
 
@@ -135,7 +135,7 @@ export default function Form() {
                 formData.email ? "text-xs h-1/4 -translate-y-full" : ""
               }`}
             >
-              Your Email ID*
+              Your Email ID
             </label>
           </div>
 
@@ -156,7 +156,7 @@ export default function Form() {
                 formData.compnay ? "text-xs h-1/4 -translate-y-full" : ""
               }`}
             >
-              Your Company*
+              Your Company
             </label>
           </div>
 
@@ -185,7 +185,7 @@ export default function Form() {
                 value ? "text-xs h-1/4 -translate-y-full left-0" : "left-12"
               }`}
             >
-              Phone Number*
+              Phone Number
             </label>
           </div>
 

@@ -1,18 +1,13 @@
 "use client";
 import Grediantbutton from "@/components/ReusableComponent/Button/Grediantbutton";
-import Contectinfo from "@/components/ReusableComponent/Contectinfo/Contectinfo";
 import Cta_life from "@/components/ReusableComponent/Cta_Section/Cta_life";
-import Ctasection from "@/components/ReusableComponent/Cta_Section/CtaSection";
 import AllEvent from "@/components/ReusableComponent/Life/AllEvent";
 import AwardSection from "@/components/ReusableComponent/Life/AwardSection";
 import Gallery from "@/components/ReusableComponent/Life/Gallery";
 import GridGallery from "@/components/ReusableComponent/Life/GridGallery";
-import MainGallery from "@/components/ReusableComponent/Life/MainGallery";
 import Titlecontent from "@/components/ReusableComponent/Titlecontent/Titlecontent";
-import { addresses } from "@/data/home";
 import { awd, imageUrls } from "@/data/imagesdata";
 import { usePathname } from "next/navigation";
-import React from "react";
 import { useRef } from "react";
 
 const LifeAtLemolitePage = () => {
