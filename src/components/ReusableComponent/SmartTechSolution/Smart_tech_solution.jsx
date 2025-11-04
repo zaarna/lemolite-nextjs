@@ -5,18 +5,19 @@ import Titlecontent from "@/components/ReusableComponent/Titlecontent/Titleconte
 import Grediantbutton from "@/components/ReusableComponent/Button/Grediantbutton";
 
 export default function SmartTechSolution({
+  title,
   sections = [],
   variant = "option1",
 }) {
   return (
     <section
-      className={`top-bottom ${variant === "option2" ? "bg--gray" : ""}`}
+      className={`top-bottom ${variant === "option2" ? "bg-[#F1F1F1]" : ""}`}
     >
       <div className="container">
         <div>
           {/* Section Title */}
           <div className="title--head pb-6 lg:pb-12 md:pb-10 sm:pb-8 text-center">
-            <Titlecontent title="Shaping the Future of Your Business with Smart Tech Solutions" />
+            <Titlecontent title={title} />
           </div>
 
           {/* Conditional Rendering based on Variant */}

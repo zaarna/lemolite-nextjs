@@ -6,6 +6,7 @@ import Ctasection from "@/components/ReusableComponent/Cta_Section/CtaSection";
 import AllEvent from "@/components/ReusableComponent/Life/AllEvent";
 import AwardSection from "@/components/ReusableComponent/Life/AwardSection";
 import Gallery from "@/components/ReusableComponent/Life/Gallery";
+import GridGallery from "@/components/ReusableComponent/Life/GridGallery";
 import MainGallery from "@/components/ReusableComponent/Life/MainGallery";
 import Titlecontent from "@/components/ReusableComponent/Titlecontent/Titlecontent";
 import { addresses } from "@/data/home";
@@ -50,7 +51,7 @@ const LifeAtLemolitePage = () => {
             />
           </div>
 
-          <MainGallery images={imageUrls} />
+          <GridGallery images={imageUrls} />
           <div className="text-center mt-7">
             <Grediantbutton btntext={"Join Us"} onClick={scrollToFooter} />
           </div>

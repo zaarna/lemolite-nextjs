@@ -1,3 +1,4 @@
+import OurWork from "@/components/AboutUs/OurWork";
 import Ctasection from "@/components/ReusableComponent/Cta_Section/CtaSection";
 import VisionAndExpertise from "@/components/ReusableComponent/ExpertiseSection/VisionAndExpertise";
 import FAQ from "@/components/ReusableComponent/HireDevelopers/FAQ";
@@ -7,7 +8,7 @@ import TechnologyWeUse from "@/components/ReusableComponent/TechnologyWeUse/Tech
 import TrustedByCliet_WhoWeAre from "@/components/ReusableComponent/TrustedByCliet_WhoWeAre/TrustedByCliet_WhoWeAre";
 import Why_choose_us from "@/components/ReusableComponent/WhyChooseUs/WhyChooseUs";
 import { servicespage } from "@/data/breadcrumsdata";
-import { features, logos, services } from "@/data/home";
+import { features, logos, projects, services } from "@/data/home";
 import { sections, serviesfaqData, whychoosedata } from "@/data/services";
 import React from "react";
 
@@ -34,7 +35,10 @@ const ServicesPage = () => {
         }
         features={features}
       />
-      <SmartTechSolution sections={sections} />
+      <SmartTechSolution
+        title="Shaping the Future of Your Business with Smart Tech Solutions"
+        sections={sections}
+      />
       <Ctasection
         title={"Ready to Transform Your Business?"}
         text={"Take the First Step Today"}
@@ -51,6 +55,12 @@ const ServicesPage = () => {
         title="Your Vision, Our Expertise!"
         content="We provide tailored custom software development services to drive innovation, improve efficiency, enhance customer experience, and support digital transformation, helping you achieve success and stay competitive."
         service={services}
+      />
+      <OurWork
+        title={"Our Recent Work"}
+        projects={projects}
+        btntext={"View all work"}
+        link={"/casestudy"}
       />
       <FAQ questions={serviesfaqData} padding="top-bottom" bg="bg-gray-50" />
     </div>

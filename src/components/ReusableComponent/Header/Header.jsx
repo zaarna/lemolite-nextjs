@@ -293,6 +293,10 @@ const Header = () => {
               title: "Custom Software Development",
               href: "/services/custom-software-development",
             },
+            {
+              title: "Secure Product Lifestyle Solution",
+              href: "/services/ot-cybersecurity",
+            },
           ],
         },
         {
@@ -431,7 +435,7 @@ const Header = () => {
         },
       ],
     },
-    { title: "Case Study", href: "/casestudy" },
+    // { title: "Case Study", href: "/casestudy" },
   ];
 
   const columnHeadings = {
@@ -752,7 +756,7 @@ const Header = () => {
 
         {/* CTA Button */}
         <Link
-        target="blank"
+          target="blank"
           href="https://calendly.com/lemolite-sales/product-demo?month=2025-06"
           className="hidden md:inline-block ml-4 relative overflow-hidden border-2 border-[#bfd633] text-black font-semibold px-5 py-2 rounded-full transition-all duration-500 group"
         >
@@ -883,7 +887,7 @@ const Header = () => {
             {/* Mobile CTA Button */}
             <div className="mt-6">
               <Link
-              target="blank"
+                target="blank"
                 href="https://calendly.com/lemolite-sales/product-demo?month=2025-06"
                 className="block w-full relative overflow-hidden text-center border-2 border-[#bfd633] text-black font-semibold px-5 py-2 rounded-full transition-all duration-500 group"
               >

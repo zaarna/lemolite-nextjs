@@ -57,7 +57,7 @@ function AllEvent() {
   }, []);
 
   return (
-    <section className="top-bottom bg--gray">
+    <section className="top-bottom bg-[#f1f1f1]">
       <div className="container">
         <div className="title--head  md:pb-10 sm:pb-6 pb-5 text-center">
           <Titlecontent
@@ -69,58 +69,56 @@ function AllEvent() {
         </div>
 
         <div className="">
-          <div className="  p-4">
-            {/* Tabs for Desktop */}
-            {!isMobile && (
-              <div className="flex border-b">
-                {tabsData.map((tab) => (
+          {/* Tabs for Desktop */}
+          {!isMobile && (
+            <div className="flex space-x-4">
+              {tabsData.map((tab) => (
+                <button
+                  key={tab.id}
+                  className={`gradient-event-btn text-center  ${
+                    activeTab === tab.id ? "active" : ""
+                  }`}
+                  onClick={() => setActiveTab(tab.id)}
+                >
+                  <span>{tab.title}</span>
+                </button>
+              ))}
+            </div>
+          )}
+
+          {/* Content for Desktop */}
+          {!isMobile && (
+            <div className="mt-4 ">
+              {tabsData.find((tab) => tab.id === activeTab)?.content}
+            </div>
+          )}
+
+          {/* Accordion for Mobile */}
+          {isMobile && (
+            <div className="space-y-2">
+              {tabsData.map((tab) => (
+                <div
+                  key={tab.id}
+                  className={` w-full transition-all ${
+                    activeTab === tab.id ? "active" : ""
+                  }`}
+                >
                   <button
-                    key={tab.id}
-                    className={`gradient-event-btn text-center mr-3  ${
-                      activeTab === tab.id ? "active" : ""
-                    }`}
-                    onClick={() => setActiveTab(tab.id)}
+                    onClick={() =>
+                      setActiveTab(activeTab === tab.id ? "" : tab.id)
+                    }
+                    className="w-full flex justify-between gradient-event-btn text-left"
                   >
                     <span>{tab.title}</span>
+                    <span>{activeTab === tab.id ? "-" : "+"}</span>
                   </button>
-                ))}
-              </div>
-            )}
-
-            {/* Content for Desktop */}
-            {!isMobile && (
-              <div className=" border rounded-lg mt-4">
-                {tabsData.find((tab) => tab.id === activeTab)?.content}
-              </div>
-            )}
-
-            {/* Accordion for Mobile */}
-            {isMobile && (
-              <div className="space-y-2">
-                {tabsData.map((tab) => (
-                  <div
-                    key={tab.id}
-                    className={` w-full transition-all ${
-                      activeTab === tab.id ? "active" : ""
-                    }`}
-                  >
-                    <button
-                      onClick={() =>
-                        setActiveTab(activeTab === tab.id ? "" : tab.id)
-                      }
-                      className="w-full flex justify-between gradient-event-btn text-left"
-                    >
-                      <span>{tab.title}</span>
-                      <span>{activeTab === tab.id ? "-" : "+"}</span>
-                    </button>
-                    {activeTab === tab.id && (
-                      <div className="p-3 bg-white">{tab.content}</div>
-                    )}
-                  </div>
-                ))}
-              </div>
-            )}
-          </div>
+                  {activeTab === tab.id && (
+                    <div className="p-3 bg-white">{tab.content}</div>
+                  )}
+                </div>
+              ))}
+            </div>
+          )}
         </div>
       </div>
     </section>

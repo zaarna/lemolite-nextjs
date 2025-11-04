@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Titlecontent from "@/components/ReusableComponent/Titlecontent/Titlecontent";
 import { ArrowRight } from "lucide-react";
+import Grediantbutton from "../ReusableComponent/Button/Grediantbutton";
 
 const services = [
   {
@@ -96,14 +97,11 @@ const Idea = () => {
 
         {/* Button */}
         <div className="flex justify-center md:pb-10 sm:pb-6 pb-7">
-          <Link href={"/services"} link="/services">
-            <button className="py-2 px-4 sm:py-4 sm:px-8 flex text-black rounded-full relative overflow-hidden border border-black hover:border-black bg-white transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-black before:transition-all before:duration-500 hover:text-white hover:before:left-0 hover:before:w-full group">
-              <span className="relative z-10">Explore Our Services </span>
-              <span className="right-arrow pl-5 pt-1">
-                <ArrowRight size={26} />
-              </span>
-            </button>
-          </Link>
+          <Grediantbutton
+            variant="black"
+            link={"/services"}
+            btntext={"Explore Our Services"}
+          />
         </div>
 
         {/* Service Cards */}
@@ -112,20 +110,20 @@ const Idea = () => {
             <Link href={service.link} key={service.id} className="w-full">
               <div className="group h-full flex flex-col items-start justify-evenly p-6 bg-gradient-to-r from-[#2EC4F3]/30 to-[#BFD633]/30 rounded-lg shadow py-5 transition-all duration-300 hover:shadow-lg">
                 {/* Icon */}
-                <div className="w-12 xl:w-16 h-12 xl:h-16 transform group-hover:scale-125 transition-all duration-500">
+                <div className="w-12 transform group-hover:scale-125 transition-all duration-500">
                   <Image
                     src={service.img}
                     alt={service.title}
-                    width={64}
-                    height={64}
-                    className="object-fill mb-4"
+                    width={50}
+                    height={50}
+                    className="object-fill"
                   />
                 </div>
 
                 {/* Text */}
                 <div className="w-full relative">
                   <div className="break-words max-w-48 md:max-w-44 lg:max-w-48 xl:max-w-[14.55rem] w-full">
-                    <h3 className="font-medium text-[20px] sm:text-[24px] md:text-[28px] lg:text-[30px]">
+                    <h3 className="font-medium text-[20px] sm:text-[22px] ">
                       {service.title}
                     </h3>
 

@@ -15,7 +15,7 @@ export default function Testimonial({ testimonials = [], title }) {
   const excludedPaths = [
     "/contact-us",
     "/careers",
-    "/blog",
+    // "/blog",
     "/life-at-lemolite",
 
     // Services without testimonial 👇

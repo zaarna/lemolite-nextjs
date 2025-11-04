@@ -767,6 +767,88 @@ font-size:  clamp(1.5rem, -1.3125rem + 9vw, 3.75rem);
     top: 10px;
     bottom: 0;
 }
+
+
+.image-overlay
+{
+  position: relative;
+}
+.image-overlay::before
+{
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  transition:  0.3s ease-in-out;
+  z-index: 1;
+}
+.image-overlay:hover::before
+{
+  background: rgba(0, 0, 0, 0.4)
+}
+.border-img
+{
+    border: double 2px transparent;
+    border-radius: 26px;
+    background-image: none;
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    transition:  0.3s ease-in-out;
+}
+.border-img:hover
+{
+  background-image: linear-gradient(white, white), radial-gradient(circle at top left, #2ec4f3, #bfd633);
+}
+@keyframes scroll-up {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+}
+ 
+@keyframes scroll-down {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+ 
+.animate-scroll-up {
+  animation: scroll-up 15s linear infinite ;
+}
+ 
+.animate-scroll-down {
+  animation: scroll-down 15s linear infinite ;
+}
+ 
+@media (max-width: 720.99px)
+{
+  @keyframes scroll-up {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+ 
+  @keyframes scroll-down {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }
+}
+ 
   
 
 

@@ -5,7 +5,7 @@ import { useParams } from "next/navigation";
 import React, { forwardRef } from "react";
 import Link from "next/link";
 import { blogs } from "@/data/blog";
-import { Calendar } from "lucide-react";
+import { Calendar, ChevronDown, ChevronUp } from "lucide-react";
 import Image from "next/image";
 import ModernCTA from "@/components/ReusableComponent/Cta_Section/ModernCTA";
 import Breadcrumb from "@/components/ReusableComponent/Breadcrumb/Breadcrumb";
@@ -267,26 +267,55 @@ const BlogSectionCTA = React.forwardRef((props, ref) => {
 });
 
 // ===================== Q&A SECTION =====================
-const BlogSectionQA = React.forwardRef((props, ref) => {
-  const { heading, items = [] } = props;
+const BlogSectionQA = React.forwardRef(({ heading, items = [] }, ref) => {
+  const [openIndex, setOpenIndex] = useState(null);
+
+  const toggleAccordion = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
 
   return (
     <div ref={ref} className="my-8">
       {heading && (
         <h2 className="text-2xl font-semibold mb-6 text-gray-800">{heading}</h2>
       )}
-      <div className="space-y-6">
-        {items.map((qa, index) => (
-          <div key={index} className="border-b border-gray-200 pb-4">
-            <h3 className="text-lg font-semibold text-[#BFD633] mb-2">
-              Q{index + 1}. {qa.question}
-            </h3>
-            <p
-              className="text-gray-700 text-base leading-relaxed"
-              dangerouslySetInnerHTML={{ __html: qa.answer }}
-            ></p>
-          </div>
-        ))}
+
+      <div className="space-y-4">
+        {items.map((qa, index) => {
+          const isOpen = openIndex === index;
+
+          return (
+            <div
+              key={index}
+              className="border border-gray-200 rounded-2xl overflow-hidden transition-all duration-300 bg-white shadow-sm"
+            >
+              {/* Question */}
+              <button
+                onClick={() => toggleAccordion(index)}
+                className="w-full flex justify-between items-center text-left p-4 hover:bg-gray-50"
+              >
+                <h3 className="text-lg font-semibold text-gray-900 flex-1">
+                  {qa.question}
+                </h3>
+
+                {isOpen ? (
+                  <ChevronUp className="w-5 h-5 text-[#BFD633]" />
+                ) : (
+                  <ChevronDown className="w-5 h-5 text-[#BFD633]" />
+                )}
+              </button>
+
+              {/* Answer */}
+
+              {isOpen && (
+                <div
+                  className="p-4 pt-0 text-gray-700 text-base leading-relaxed animate-fadeIn"
+                  dangerouslySetInnerHTML={{ __html: qa.answer }}
+                ></div>
+              )}
+            </div>
+          );
+        })}
       </div>
     </div>
   );
@@ -1143,7 +1172,7 @@ const BlogDynamicPage = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY + 200;
-      
+
       for (let i = tocSections.length - 1; i >= 0; i--) {
         const section = sectionRefs.current[tocSections[i].idx];
         if (section && section.offsetTop <= scrollPosition) {
@@ -1153,10 +1182,10 @@ const BlogDynamicPage = () => {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     handleScroll(); // Initial check
-    
-    return () => window.removeEventListener('scroll', handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
   }, [tocSections]);
 
   const handleTocClick = (idx) => {
@@ -1175,7 +1204,7 @@ const BlogDynamicPage = () => {
   ];
 
   if (!blog) return <div>Blog not found.</div>;
-  
+
   return (
     <>
       <div
@@ -1284,7 +1313,8 @@ const BlogDynamicPage = () => {
                         <button
                           onClick={() => handleTocClick(s.idx)}
                           style={{
-                            background: activeSection === s.idx ? "#f0f7d4" : "none",
+                            background:
+                              activeSection === s.idx ? "#f0f7d4" : "none",
                             border: "none",
                             color: "inherit",
                             font: "inherit",

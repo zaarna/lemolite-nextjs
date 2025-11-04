@@ -22,11 +22,17 @@ export const commarce = [
   // { name: 'Offerings', href: '#' },
   { name: "E-Commerce", current: true },
 ];
+export const cybersecurity = [
+  { name: "Home", href: "/" },
+  { name: "Services", href: "/services" },
+  // { name: 'Offerings', href: '#' },
+  { name: "E-Commerce", current: true },
+];
 export const mobile = [
   { name: "Home", href: "/" },
   { name: "Services", href: "/services" },
   // { name: 'Offerings', href: '#' },
-  { name: "Mobile App Development", current: true },
+  { name: "Secure Product Lifecycle Solutions", current: true },
 ];
 export const softwere = [
   { name: "Home", href: "/" },

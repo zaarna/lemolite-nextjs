@@ -7,7 +7,6 @@ import { blogs } from "@/data/blog";
 import Breadcrumb from "@/components/ReusableComponent/Breadcrumb/Breadcrumb";
 import { Calendar } from "lucide-react";
 
-
 export default function BlogPageSection() {
   const [visibleBlogs, setVisibleBlogs] = useState(4);
 
@@ -30,22 +29,24 @@ export default function BlogPageSection() {
   ];
 
   return (
-    <section className="w-full pt-5 min-h-screen bg-[#fafafa]">
+    <section className="w-full top-bottom  min-h-screen bg-[#fafafa]">
       <div className="container mx-auto px-4">
         <Breadcrumb breadcrumbs={breadcrumbs} />
 
         <div className="flex flex-col lg:flex-row gap-8">
           {/* Left Column */}
           <div className="lg:w-2/3 lg:overflow-y-auto lg:max-h-screen lg:pr-4">
-            <h1 className="text-3xl font-bold text-gray-800 mb-6">Latest Blogs</h1>
+            <h1 className="text-3xl font-bold text-gray-800 mb-6">
+              Latest Blogs
+            </h1>
 
             {/* Featured Blog */}
             {featuredBlog && (
               <div className="mb-8 bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow">
                 <Image
                   src={
-                    featuredBlog.sections.find((s) => s.type === "image")?.src ||
-                    "/default-blog.jpg"
+                    featuredBlog.sections.find((s) => s.type === "image")
+                      ?.src || "/default-blog.jpg"
                   }
                   alt={featuredBlog.title}
                   width={800}
@@ -85,7 +86,9 @@ export default function BlogPageSection() {
             {/* Other Blogs Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {otherBlogs.map((blog) => {
-                const firstImage = blog.sections.find((s) => s.type === "image")?.src;
+                const firstImage = blog.sections.find(
+                  (s) => s.type === "image"
+                )?.src;
                 const firstParagraph = blog.sections.find(
                   (s) => s.type === "paragraph"
                 )?.content;
@@ -146,14 +149,16 @@ export default function BlogPageSection() {
 
           {/* Right Column - Trending */}
           <div className="lg:w-1/3 lg:sticky lg:top-20 lg:h-fit">
-            <h2 className="text-2xl font-bold text-gray-800 mb-6">Trending Blog</h2>
+            <h2 className="text-2xl font-bold text-gray-800 mb-6">
+              Trending Blog
+            </h2>
 
             {trendingBlog && (
               <div className="bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow">
                 <Image
                   src={
-                    trendingBlog.sections.find((s) => s.type === "image")?.src ||
-                    "/default-blog.jpg"
+                    trendingBlog.sections.find((s) => s.type === "image")
+                      ?.src || "/default-blog.jpg"
                   }
                   alt={trendingBlog.title}
                   width={800}

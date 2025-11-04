@@ -36,7 +36,7 @@ function FAQ({
                     }`}
                     onClick={() => toggleAccordion(index)}
                   >
-                    <span className="text-lg md:text-[20px] font-semibold">
+                    <span className="text-[18px] sm:text-[22px] md:text-[24px] lg:text-[28px] font-medium text-black">
                       {item.question}
                     </span>
                     <svg
@@ -63,7 +63,7 @@ function FAQ({
                   aria-labelledby={`accordion-flush-heading-${index}`}
                 >
                   <div className=" py-2 text-left border-t-[#D0D0D0] border-t">
-                    <p className="text-base md:text-lg font-light content-start">
+                    <p className="text-black text-[16px] md:text-[20px] font-light content-start">
                       {item.answer}
                     </p>
                   </div>

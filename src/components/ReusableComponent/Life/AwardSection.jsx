@@ -21,36 +21,28 @@ export default function AwardSection({ awdimages = [] }) {
               {/* Left Column - Scroll Up */}
               <div className="w-full md:w-1/2 flex flex-row md:flex-col gap-4 animate-scroll-up">
                 {awdimages.concat(awdimages).map((img, index) => (
-                  <div
-                    key={`up-${index}`}
-                    className="relative w-full h-[300px] rounded-xl overflow-hidden"
-                  >
-                    <Image
-                      src={img.src}
-                      alt={img.alt}
-                      fill
-                      className="object-cover rounded-xl"
-                      sizes="(max-width: 768px) 100vw, 50vw"
-                    />
-                  </div>
+                  <Image
+                    key={index}
+                    src={img.src}
+                    alt={img.alt}
+                    className="object-cover rounded-xl"
+                    height={300}
+                    width={300}
+                  />
                 ))}
               </div>
 
               {/* Right Column - Scroll Down */}
               <div className="w-full md:w-1/2 flex flex-row md:flex-col gap-4 animate-scroll-down">
                 {awdimages.concat(awdimages).map((img, index) => (
-                  <div
-                    key={`down-${index}`}
-                    className="relative w-full h-[300px] rounded-xl overflow-hidden"
-                  >
-                    <Image
-                      src={img.src}
-                      alt={img.alt}
-                      fill
-                      className="object-cover rounded-xl"
-                      sizes="(max-width: 768px) 100vw, 50vw"
-                    />
-                  </div>
+                  <Image
+                    key={index}
+                    src={img.src}
+                    alt={img.alt}
+                    height={300}
+                    width={300}
+                    className="object-cover rounded-xl"
+                  />
                 ))}
               </div>
             </div>

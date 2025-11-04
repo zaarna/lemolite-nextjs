@@ -1,4 +1,5 @@
 "use client";
+import CareerBanner from "@/components/ReusableComponent/CarrerBanner";
 import SectionBlock from "@/components/ReusableComponent/SectionBlock";
 import { bde } from "@/data/breadcrumsdata";
 import { feaureofbde } from "@/data/home";

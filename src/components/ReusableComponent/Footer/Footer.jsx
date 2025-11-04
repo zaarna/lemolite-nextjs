@@ -1,70 +1,115 @@
-'use client'
+"use client";
 
-import Link from 'next/link'
-import Image from 'next/image'
-import Followus from './Followus'
+import Link from "next/link";
+import Image from "next/image";
+import Followus from "./Followus";
 
 export default function Footer() {
   const sections = [
     {
-      title: 'Services',
+      title: "Services",
       links: [
-        { href: '/services/ui-ux-design', label: 'UI/UX Design' },
-        { href: '/services/e-commerce', label: 'E-Commerce' },
-        { href: '/services/web-development', label: 'Web Development' },
-        { href: '/services/mobile-app-development', label: 'Mobile App Development' },
-        { href: '/services/custom-software-development', label: 'Custom Software Development' },
+        { href: "/services/ui-ux-design", label: "UI/UX Design" },
+        { href: "/services/e-commerce", label: "E-Commerce" },
+        { href: "/services/web-development", label: "Web Development" },
+        {
+          href: "/services/mobile-app-development",
+          label: "Mobile App Development",
+        },
+        {
+          href: "/services/custom-software-development",
+          label: "Custom Software Development",
+        },
       ],
     },
     {
-      title: 'Intelligent Automation',
+      title: "Intelligent Automation",
       links: [
-        { href: '/services/ai-ml-development', label: 'AI & ML Development' },
-        { href: '/services/internet-of-things', label: 'Internet of Things' },
-        { href: '/services/chatbot-development', label: 'Chatbot Development' },
-        { href: '/services/voicebot-development', label: 'Voicebot Development' },
+        { href: "/services/ai-ml-development", label: "AI & ML Development" },
+        { href: "/services/internet-of-things", label: "Internet of Things" },
+        { href: "/services/chatbot-development", label: "Chatbot Development" },
+        {
+          href: "/services/voicebot-development",
+          label: "Voicebot Development",
+        },
       ],
     },
     {
-      title: 'Hire Resources',
+      title: "Hire Resources",
       links: [
-        { href: '/services/hire-python-developer', label: 'Hire Python Developers' },
-        { href: '/services/hire-mern-developer', label: 'Hire MERN Developers' },
-        { href: '/services/hire-reactjs-developer', label: 'Hire React JS Developers' },
-        { href: '/services/hire-nodejs-developer', label: 'Hire Node JS Developers' },
-        { href: '/services/hire-php-developer', label: 'Hire PHP Developers' },
-        { href: '/services/hire-laravel-developer', label: 'Hire Laravel Developers' },
-        { href: '/services/hire-angular-developer', label: 'Hire Angular Developers' },
-        { href: '/services/hire-vuejs-developer', label: 'Hire Vue JS Developers' },
-        { href: '/services/hire-shopify-developer', label: 'Hire Shopify Developers' },
+        {
+          href: "/services/hire-python-developer",
+          label: "Hire Python Developers",
+        },
+        {
+          href: "/services/hire-mern-developer",
+          label: "Hire MERN Developers",
+        },
+        {
+          href: "/services/hire-reactjs-developer",
+          label: "Hire React JS Developers",
+        },
+        {
+          href: "/services/hire-nodejs-developer",
+          label: "Hire Node JS Developers",
+        },
+        { href: "/services/hire-php-developer", label: "Hire PHP Developers" },
+        {
+          href: "/services/hire-laravel-developer",
+          label: "Hire Laravel Developers",
+        },
+        {
+          href: "/services/hire-angular-developer",
+          label: "Hire Angular Developers",
+        },
+        {
+          href: "/services/hire-vuejs-developer",
+          label: "Hire Vue JS Developers",
+        },
+        {
+          href: "/services/hire-shopify-developer",
+          label: "Hire Shopify Developers",
+        },
       ],
     },
     {
-      title: 'Tech Stack',
+      title: "Tech Stack",
       links: [
-        { href: '/techstack/reactjs-development', label: 'React JS Development' },
-        { href: '/techstack/angular-development', label: 'Angular Development' },
-        { href: '/techstack/vuejs-development', label: 'Vue JS Development' },
-        { href: '/techstack/nodejs-development', label: 'Node JS Development' },
-        { href: '/techstack/laravel-development', label: 'Laravel Development' },
-        { href: '/techstack/php-development', label: 'PHP Development' },
-        { href: '/techstack/mern-development', label: 'MERN Development' },
-        { href: '/techstack/python-development', label: 'Python Development' },
-        { href: '/techstack/shopify-development', label: 'Shopify Development' },
+        {
+          href: "/techstack/reactjs-development",
+          label: "React JS Development",
+        },
+        {
+          href: "/techstack/angular-development",
+          label: "Angular Development",
+        },
+        { href: "/techstack/vuejs-development", label: "Vue JS Development" },
+        { href: "/techstack/nodejs-development", label: "Node JS Development" },
+        {
+          href: "/techstack/laravel-development",
+          label: "Laravel Development",
+        },
+        { href: "/techstack/php-development", label: "PHP Development" },
+        { href: "/techstack/mern-development", label: "MERN Development" },
+        { href: "/techstack/python-development", label: "Python Development" },
+        {
+          href: "/techstack/shopify-development",
+          label: "Shopify Development",
+        },
       ],
     },
     {
-      title: 'Company',
+      title: "Company",
       links: [
-        { href: '/blog', label: 'Blog' },
-        { href: '/careers', label: 'Careers' },
-        { href: '/about-us', label: 'About Us' },
-        { href: '/contact-us', label: 'Contact Us' },
-        { href: '/life-at-lemolite', label: 'Life@Lemolite' },
-        { href: '/sitemap', label: 'Sitemap' },
+        { href: "/blog", label: "Blog" },
+        { href: "/careers", label: "Careers" },
+        { href: "/about-us", label: "About Us" },
+        { href: "/contact-us", label: "Contact Us" },
+        { href: "/life-at-lemolite", label: "Life@Lemolite" },
+        // { href: '/sitemap', label: 'Sitemap' },
       ],
     },
-  ]
+  ];
 
   return (
     <footer className="bg-black text-white" id="black-section">
@@ -77,7 +122,10 @@ export default function Footer() {
               <ul className="space-y-2 text-[15px] font-light capitalize">
                 {links.map(({ href, label }) => (
                   <li key={href}>
-                    <Link href={href} className="hover:text-gray-300 transition">
+                    <Link
+                      href={href}
+                      className="hover:text-gray-300 transition"
+                    >
                       {label}
                     </Link>
                   </li>
@@ -96,7 +144,10 @@ export default function Footer() {
 
           {/* Copyright + Links */}
           <div className="text-center md:text-center">
-            <p>© Lemolite Technologies LLP {new Date().getFullYear()} — All rights reserved</p>
+            <p>
+              © Lemolite Technologies LLP {new Date().getFullYear()} — All
+              rights reserved
+            </p>
             <div className="flex flex-wrap justify-center gap-4 mt-2">
               <Link href="/terms-conditions" className="hover:underline">
                 Terms & Conditions
@@ -146,5 +197,5 @@ export default function Footer() {
         className="hidden"
       />
     </footer>
-  )
+  );
 }

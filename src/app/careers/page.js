@@ -13,16 +13,19 @@ const CareersPage = () => {
       title: "Lead Generation",
       hire: "1+ YEARS",
       link: "/current-openings/lead-generation",
+      // link: "/openings/lead-generation",
     },
     {
       title: "Business Development Executive",
       hire: "1-3 YEARS",
       link: "/current-openings/business-development-executive",
+      // link: "/openings/business-development-executive",
     },
     {
       title: "Full Stack Developer",
       hire: "3-4 YEARS",
       link: "/current-openings/full-stack-developer",
+      // link: "/openings/full-stack-developer",
     },
   ];
   const footerRef = useRef(null); // Create a reference for the footer

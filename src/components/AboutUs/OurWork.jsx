@@ -4,7 +4,7 @@ import Titlecontent from "../ReusableComponent/Titlecontent/Titlecontent";
 
 const OurWork = ({ title, btntext, link, projects = [] }) => {
   return (
-    <section className="our_work  bg--gray top-bottom">
+    <section className="our_work  bg-[#F1F1F1] top-bottom">
       <div className="container">
         <div className="grid grid-cols-12">
           <div className="title--head grid col-span-10 col-start-2 text-center">

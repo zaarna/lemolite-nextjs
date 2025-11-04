@@ -7,7 +7,7 @@ import parsePhoneNumber from "libphonenumber-js";
 // import closeicon from "../../../assets/closeicon.svg";
 // import tickmark from "../../../assets/tick-mark.svg";
 // import rightarrow from "../../../assets/right-arrow.svg";
-import { ArrowRight, CircleX, Check } from "lucide-react";
+import { ArrowRight, CircleX, Check, X } from "lucide-react";
 import { toast } from "react-toastify";
 import Grediantbutton from "../Button/Grediantbutton";
 
@@ -120,7 +120,7 @@ function PartnerPopup() {
             className="close absolute flex items-center justify-center right-5 md:right-[30px] top-4 md:top-6 text-white w-6 md:w-8 h-6 md:h-8 border border-white rounded-full cursor-pointer"
             onClick={close}
           >
-            <CircleX width={14} />
+            <X width={14} />
           </button>
           <div className="header text-white text-center text-2xl mb-8">
             {" "}
