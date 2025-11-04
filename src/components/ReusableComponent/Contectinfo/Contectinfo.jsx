@@ -6,19 +6,23 @@ import Form from "./Form";
 import Form_career from "./Form_career";
 import { usePathname } from "next/navigation";
 
-
 export default function Contectinfo({
   maintitle,
   subtitle,
   content,
   addresses = [],
 }) {
+  const pathname = usePathname();
 
-      const pathname = usePathname();
-
-  // Show Career form on /career or /career/[slug]
+  // Detect Career Page
   const isCareerPage = pathname.startsWith("/career");
 
+  // Detect Contact Page — update to match your route name
+  const isContactPage =
+    pathname === "/contact" || pathname === "/contact-us";
+
+  // ✅ Don’t render anything if this is the contact page
+  if (isContactPage) return null;
 
   return (
     <section className="top-bottom visitor-section animated--background">
@@ -40,7 +44,7 @@ export default function Contectinfo({
             <div>
               <h4 className="font-semibold text-xl mb-4">Our Offices</h4>
 
-              <div className="flex flex-wrap  text-gray-800">
+              <div className="flex flex-wrap text-gray-800">
                 {addresses.map((address) => (
                   <div key={address.id} className="w-full md:w-1/2">
                     {/* Country */}
@@ -61,7 +65,12 @@ export default function Contectinfo({
                     <div className="space-y-3">
                       {/* Phone */}
                       <div className="flex items-center gap-3">
-                        <Image src="/call.png" alt="Call icon" width={25} height={25} />
+                        <Image
+                          src="/call.png"
+                          alt="Call icon"
+                          width={25}
+                          height={25}
+                        />
                         <a
                           href={address.phoneLink}
                           className="text-base hover:text-green-600 transition-colors"
@@ -72,7 +81,12 @@ export default function Contectinfo({
 
                       {/* Email */}
                       <div className="flex items-center gap-3">
-                        <Image src="/email.png" alt="Email icon" width={25} height={25} />
+                        <Image
+                          src="/email.png"
+                          alt="Email icon"
+                          width={25}
+                          height={25}
+                        />
                         <a
                           href={address.emailLink}
                           className="text-base hover:text-green-600 transition-colors"

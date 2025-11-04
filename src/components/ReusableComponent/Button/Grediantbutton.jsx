@@ -28,19 +28,19 @@ export default function Grediantbutton({
   const ButtonContent = (
     <button
       onClick={onClick}
-      className={`relative overflow-hidden px-8 py-3 font-semibold rounded-full 
+      className={`relative overflow-hidden px-8 py-3 font-bold rounded-full cursor-pointer
                   bg-white ${current.text} border ${current.border}
                   transition-all duration-500 shadow-md group`}
     >
       {/* Hover overlay */}
       <span
-        className={`absolute inset-0 ${current.hoverBg}
+        className={`absolute inset-0 ${current.hoverBg}  
                     translate-x-[-100%] group-hover:translate-x-0 
                     transition-transform duration-500 ease-out rounded-full`}
       ></span>
 
       {/* Text always above overlay */}
-      <span className="relative z-10 group-hover:text-white transition-colors duration-300">
+      <span className="relative z-10 font-bold group-hover:text-white transition-colors duration-300">
         {btntext}
       </span>
     </button>

@@ -752,7 +752,8 @@ const Header = () => {
 
         {/* CTA Button */}
         <Link
-          href="/get-started"
+        target="blank"
+          href="https://calendly.com/lemolite-sales/product-demo?month=2025-06"
           className="hidden md:inline-block ml-4 relative overflow-hidden border-2 border-[#bfd633] text-black font-semibold px-5 py-2 rounded-full transition-all duration-500 group"
         >
           <span className="relative z-10 transition-all duration-300 capitalize">
@@ -882,7 +883,8 @@ const Header = () => {
             {/* Mobile CTA Button */}
             <div className="mt-6">
               <Link
-                href="/get-started"
+              target="blank"
+                href="https://calendly.com/lemolite-sales/product-demo?month=2025-06"
                 className="block w-full relative overflow-hidden text-center border-2 border-[#bfd633] text-black font-semibold px-5 py-2 rounded-full transition-all duration-500 group"
               >
                 <span className="relative z-10 transition-all duration-300 capitalize text-center group-hover:text-white">
