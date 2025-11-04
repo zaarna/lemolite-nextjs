@@ -5,7 +5,7 @@ import SectionBlock from "@/components/ReusableComponent/SectionBlock";
 import { bde, fsd, lead } from "@/data/breadcrumsdata";
 import { feaureofbde, feaureoffsd, feaureoflg } from "@/data/home";
 
-function page({ params }) {
+function Page({ params }) {
   const { id } = use(params);
   const scrollToFooter = () => {
     const contactSection = document.getElementById("contact-info-section");
@@ -282,4 +282,4 @@ software solutions and development processes."
   return <p>No Opening Found</p>;
 }
 
-export default page;
+export default Page;

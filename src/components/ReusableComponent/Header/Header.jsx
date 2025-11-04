@@ -435,7 +435,7 @@ const Header = () => {
         },
       ],
     },
-    // { title: "Case Study", href: "/casestudy" },
+    { title: "Case Study", href: "/casestudy" },
   ];
 
   const columnHeadings = {
