@@ -83,20 +83,20 @@ export default function SliderCard({
      
       >
         {/* Icon / Image */}
-        <div className="mb-4 transition-all duration-700">
+        <div className="mb-2 transition-all duration-700">
           <div
             className="
-              w-14 h-14 rounded-2xl flex items-center justify-center 
+              w-20 h-20 rounded-2xl flex items-center justify-center 
               bg-transparent group-hover:bg-white transition-all duration-700
             "
           >
             <Image
               src={image}
               alt={title}
-              width={48}
-              height={48}
+              width={60}
+              height={60}
               className="
-                w-[40px] object-contain 
+                object-contain 
                 transition-all duration-500 ease-in-out
               "
             />
@@ -106,7 +106,7 @@ export default function SliderCard({
         {/* Title */}
         <h3
           className="
-            text-3xl font-bold text-gray-900 mb-4
+            text-lg sm:text-xl font-bold text-gray-900 mb-0.5
             transition-all duration-300 ease-in-out
           "
         >
@@ -116,7 +116,7 @@ export default function SliderCard({
         {/* Description */}
         <p
           className="
-            text-lg text-gray-700 leading-relaxed
+            text-base sm:text-lg text-gray-700 leading-relaxed
             transition-all duration-300 ease-in-out
           "
         >

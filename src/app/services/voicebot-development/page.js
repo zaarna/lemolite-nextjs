@@ -1,30 +1,16 @@
 import BetterOption from "@/components/BetterOption";
+import OfferVoicebot from "@/components/OfferVoicebot";
 import Ctasection from "@/components/ReusableComponent/Cta_Section/CtaSection";
 import Innerhero from "@/components/ReusableComponent/Innerhero/Innerhero";
+import WhatWeOfferAccordion from "@/components/ReusableComponent/What_we_Offer_accordian/What_we_Offer_accordian";
 import Why_choose_us from "@/components/ReusableComponent/WhyChooseUs/WhyChooseUs";
-import WhatWeOfferVoicebot from "@/components/WhatWeOfferVoicebot";
 import { Voicebot } from "@/data/breadcrumsdata";
+import { voicebotstep, voicespecialize } from "@/data/services";
 import React from "react";
 
 const VoiceBotDevelopmentPage = () => {
   return (
     <div className="min-h-screen bg-gray-50">
-      <div className="container mx-auto px-4 py-8">
-        <h1 className="text-4xl font-bold text-center mb-8">
-          Voicebot Development
-        </h1>
-        <div className="text-center">
-          <p className="text-lg text-gray-600 mb-4">
-            Voice-enabled AI assistants and voicebots
-          </p>
-          <p className="text-gray-500">
-            This is a placeholder for your VoiceBotDevelopment component.
-            <br />
-            Migrate your VoiceBotDevelopment component from React.js to replace
-            this.
-          </p>
-        </div>
-      </div>
       <Innerhero
         padding="py-8 md:py-10 lg:py-20"
         breadcrumbs={Voicebot}
@@ -37,7 +23,8 @@ const VoiceBotDevelopmentPage = () => {
         src={"/voice.webp"}
         alt={"AI Voicebot Development Services"}
       />
-      <WhatWeOfferVoicebot />
+      <OfferVoicebot />
+      <WhatWeOfferAccordion bg="bg-[#F1F1F1]" layout="split" title={"Choose the Right Voicebot for Your Business Need"} content={"You may assume all voicebots are the same, but that's not the case. While they all provide voice interaction, their features and use cases differ significantly. Let’s break down the various types of voice bots, each designed for specific needs and offering distinct advantages:"} stepData={voicebotstep} />
       <Ctasection
         title={"Take Your Customer Experience to the Next Level"}
         text={"Create Your Voicebot"}
@@ -45,7 +32,9 @@ const VoiceBotDevelopmentPage = () => {
         image="/ctawhite.webp"
         bg="bg-gradient-to-r from-[#2ec4f3]/30 to-[#bfd633]/30"
       />
-      <Why_choose_us title={"Capabilities of Our Voicebot Solutions"} />
+      <Why_choose_us title={"Capabilities of Our Voicebot Solutions"}
+      columns={3}
+      data={voicespecialize} />
       <BetterOption />
     </div>
   );

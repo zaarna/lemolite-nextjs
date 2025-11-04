@@ -849,6 +849,193 @@ font-size:  clamp(1.5rem, -1.3125rem + 9vw, 3.75rem);
   }
 }
  
+
+.voicebot--content--card {
+  background-color: white;
+  border-radius: 32px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+  padding: 30px 30px 80px 30px;
+  height: 100%;
+}
+
+.voicebot--card.even-card {
+  transform: translate(0px, -60px);
+}
+
+.voicebot--card.even-card .voicebot--content--card {
+  padding: 80px 30px 30px 30px;
+}
+
+.voicebot--innerimg--card {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+}
+
+.voicebot--innerimg--card img {
+  width: 60px;
+}
+
+.voicebot--img--card {
+  background: transparent;
+  padding: 4px;
+  border: 3px solid white;
+  border-radius: 14px;
+  transform: translate(0px, -60px);
+}
+
+.voicebot--card.even-card .voicebot--img--card {
+  transform: translate(0px, 60px);
+}
+
+.voice-bot-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+  height: 27rem;
+}
+
+.voicebot--card {
+  width: calc(33.33% - 5%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top {
+  top: calc(100% - 92%);
+  position: absolute;
+  left: calc(100% - 68%);
+  width: 13.90%;
+}
+.bottom{
+  bottom: calc(100% - 92%);
+  position: absolute;
+  right: calc(100% - 32%);
+  width: 13.90%;
+}
+
+.middle {
+  position: absolute;
+  left: calc(100% - 68%);
+  height: 365px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.top-right
+{
+  top: calc(100% - 92%);
+  position: absolute;
+  right: calc(100% - 68%);
+  width: 13.90%;
+
+}
+.middle-right
+{
+  position: absolute;
+  right: calc(100% - 68%);
+  height: 365px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.bottom-right
+{
+  bottom: calc(100% - 92%);
+  position: absolute;
+  left: calc(100% - 32%);
+  width: 13.90%;
+}
+
+@media screen and (max-width: 1320px) 
+{
+  .voicebot--content--card {
+    border-radius: 30px;
+    padding: 20px 20px 70px 20px;
+}
+.voicebot--card.even-card .voicebot--content--card {
+  padding: 70px 20px 20px 20px;
+}
+.top, .top-right {
+  top: calc(100% - 95%);
+}
+.bottom, .bottom-right {
+  bottom: calc(100% - 95%);
+}
+.middle, .middle-right {
+  height: 392px;
+}
+
+}
+@media screen and (max-width: 1139.99px) 
+{
+  .voice-bot-cards {
+    height: 34rem;
+}
+.middle, .middle-right {
+  height: 493px;
+}
+}
+@media screen and (max-width: 1024.99px) 
+{
+  .voice-bot-cards {
+    height: auto;
+    flex-direction: column;
+}
+.middle, .middle-right {
+  height: 493px;
+}
+.voicebot--card {
+  width: calc(100%);
+  flex-direction: row-reverse;
+  padding: 15px 0;
+}
+.voicebot--card.even-card, .voicebot--card {
+  transform: translate(0px, 0px);
+}
+.voicebot--card.even-card .voicebot--content--card {
+  padding: 20px 90px 20px 20px;
+}
+.voicebot--content--card {
+  border-radius: 30px;
+  padding: 20px 20px 20px 90px;
+}
+.voicebot--card.even-card .voicebot--img--card {
+  transform: translate(-60px, 0px);
+}
+.voicebot--img--card {
+  transform: translate(60px, 0px);
+}
+.top, .top-right, .bottom, .bottom-right, .middle, .middle-right 
+{
+  display: none;
+}
+}
+@media screen and (max-width: 767.99px) 
+{
+  .voicebot--content--card, .voicebot--card.even-card .voicebot--content--card{
+    border-radius: 30px;
+    padding: 20px 20px 90px 20px;
+}
+.voicebot--card {
+  align-items: center;
+  flex-direction: column;
+}
+.voicebot--img--card, .voicebot--card.even-card .voicebot--img--card {
+  transform: translate(0px, -60px);
+}
+.voicebot--card.even-card
+{
+  flex-direction: column-reverse; 
+}
+}
   
 
 

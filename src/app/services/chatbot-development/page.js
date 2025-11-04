@@ -1,9 +1,10 @@
 import Chatbot_into_Website from "@/components/ReusableComponent/ChatBot/Chatbot_into_Website";
 import Ctasection from "@/components/ReusableComponent/Cta_Section/CtaSection";
 import Innerhero from "@/components/ReusableComponent/Innerhero/Innerhero";
+import WhatWeOfferAccordion from "@/components/ReusableComponent/What_we_Offer_accordian/What_we_Offer_accordian";
 import Why_choose_us from "@/components/ReusableComponent/WhyChooseUs/WhyChooseUs";
 import { Chatbot } from "@/data/breadcrumsdata";
-import { iotsystem, specialize } from "@/data/services";
+import { chatbotstep, iotsystem, specialize } from "@/data/services";
 import React from "react";
 
 const ChatBotDevelopmentPage = () => {
@@ -39,7 +40,7 @@ const ChatBotDevelopmentPage = () => {
         text={"Create Yours Today"}
         link={"/contact-us"}
       />
-
+      <WhatWeOfferAccordion layout="split" title={"Capabilities of Our Chatbot Solutions"} bg="bg-gradient-to-r from-[#2ec4f3]/30 to-[#bfd633]/30" padding="top-bottom" stepData={chatbotstep}/>
       <Chatbot_into_Website />
     </div>
   );
