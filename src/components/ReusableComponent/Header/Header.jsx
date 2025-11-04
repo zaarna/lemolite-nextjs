@@ -353,7 +353,7 @@ const Header = () => {
             },
             {
               title: "Hire Vue JS Developers",
-              href: "/services/hire-vue-developer",
+              href: "/services/hire-vuejs-developer",
             },
             {
               title: "Hire Shopify Developers",

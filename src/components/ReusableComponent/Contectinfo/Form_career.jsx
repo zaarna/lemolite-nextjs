@@ -226,11 +226,17 @@ export default function Form_career({ data = [] }) {
               value={formData.position}
               onChange={handleChange}
               required
-              className="w-full border-b border-gray-300 bg-transparent py-2 text-white focus:outline-none"
+              className="w-full border-b border-gray-300 bg-transparent py-2 focus:outline-none"
             >
-              <option value="">Select Position</option>
+              <option value="" className="text-black">
+                Select Position
+              </option>
               {data.map((position, index) => (
-                <option key={index} value={position.title}>
+                <option
+                  key={index}
+                  value={position.title}
+                  className="text-black"
+                >
                   {position.title} - {position.hire}
                 </option>
               ))}

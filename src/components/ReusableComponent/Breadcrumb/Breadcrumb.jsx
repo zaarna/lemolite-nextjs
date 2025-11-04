@@ -24,7 +24,7 @@ function Breadcrumb({
                 // </a>
                 <Link
                   href={item.href}
-                  className="inline-flex items-center font-normal text-black dark:text-gray-400 dark:hover:text-white"
+                  className="inline-flex items-center font-normal text-black  "
                 >
                   {" "}
                   {item.name}

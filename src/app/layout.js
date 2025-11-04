@@ -29,17 +29,14 @@ export const metadata = {
     icon: "/lemolite.ico",
   },
   title: "Custom Software Development Services | Lemolite Technologies",
-  description: "Lemolite Technologies LLP provides custom software development services tailored to your business needs, ensuring innovative and efficient solutions.",
+  description:
+    "Lemolite Technologies LLP provides custom software development services tailored to your business needs, ensuring innovative and efficient solutions.",
 };
 
 export default function RootLayout({ children }) {
-
-
   return (
     <html lang="en">
-      <body
-        className={`${outfit.variable} antialiased`}
-      >
+      <body className={`${outfit.variable} antialiased`}>
         <Header />
         <ToastContainer />
         {children}

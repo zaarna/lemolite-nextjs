@@ -12,20 +12,40 @@ export default function Contectinfo({
   content,
   addresses = [],
 }) {
+  const openings = [
+    {
+      title: "Lead Generation",
+      hire: "1+ YEARS",
+      link: "/current-openings/lead-generation",
+    },
+    {
+      title: "Business Development Executive",
+      hire: "1-3 YEARS",
+      link: "/current-openings/business-development-executive",
+    },
+    {
+      title: "Full Stack Developer",
+      hire: "3-4 YEARS",
+      link: "/current-openings/full-stack-developer",
+    },
+  ];
+
   const pathname = usePathname();
 
   // Detect Career Page
   const isCareerPage = pathname.startsWith("/career");
 
   // Detect Contact Page — update to match your route name
-  const isContactPage =
-    pathname === "/contact" || pathname === "/contact-us";
+  const isContactPage = pathname === "/contact" || pathname === "/contact-us";
 
   // ✅ Don’t render anything if this is the contact page
   if (isContactPage) return null;
 
   return (
-    <section className="top-bottom visitor-section animated--background">
+    <section
+      className="top-bottom visitor-section animated--background"
+      id="contact-info-section"
+    >
       <div className="container mx-auto px-4">
         {/* Main Title */}
         <div className="text-center mb-8">
@@ -122,7 +142,7 @@ export default function Contectinfo({
 
           {/* Right Side - Form */}
           <div className="w-full lg:w-1/2">
-            {isCareerPage ? <Form_career /> : <Form />}
+            {isCareerPage ? <Form_career data={openings} /> : <Form />}
           </div>
         </div>
       </div>
