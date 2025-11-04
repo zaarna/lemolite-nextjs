@@ -65,11 +65,11 @@ export default function Contectinfo({
             <div>
               <h4 className="font-semibold text-xl mb-4">Our Offices</h4>
 
-              <div className="flex flex-wrap text-gray-800">
+              <div className="flex flex-wrap text-gray-800 space-y-6">
                 {addresses.map((address) => (
                   <div key={address.id} className="w-full md:w-1/2">
                     {/* Country */}
-                    <div className="flex items-center gap-3 mb-3">
+                    <div className="flex items-center gap-3 mb-3 ">
                       <Image
                         src={address.flag}
                         alt={`${address.country} flag`}

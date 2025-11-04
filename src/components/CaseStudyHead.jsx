@@ -13,7 +13,7 @@ export default function CaseStudyHead() {
           </h1>
 
           {/* Paragraph */}
-          <p className="text-base sm:text-lg md:text-xl font-light text-gray-700">
+          <p className="text-base sm:text-lg md:text-xl">
             A case study is about the saying, “A picture is worth a thousand
             words,” by telling compelling stories from our clients' perspectives.
             It highlights development processes, challenges, and solutions. We

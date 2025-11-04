@@ -1,5 +1,6 @@
 import AllCaseStudy from '@/components/AllCaseStudy';
 import CaseStudyHead from '@/components/CaseStudyHead';
+import GradientScrollSection from '@/components/GradientScrollSection';
 import React from 'react';
 
 const CaseStudyPage = () => {
@@ -7,6 +8,7 @@ const CaseStudyPage = () => {
     <div className="min-h-screen">
       <CaseStudyHead />
       <AllCaseStudy />
+      <GradientScrollSection />
     </div>
   );
 };

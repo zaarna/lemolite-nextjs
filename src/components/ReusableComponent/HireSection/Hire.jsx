@@ -13,9 +13,10 @@ export default function Hire({
   content,
   btntext,
   link,
+  bg
 }) {
   return (
-    <section className="top-bottom bg--gray">
+    <section className={`top-bottom ${bg}`}>
       <div className="container">
         <div className="hire-innovators">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">

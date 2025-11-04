@@ -34,11 +34,11 @@ function Hireproccess({ steps = [], title }) {
                 <div className="p-3 relative">
                   <div className="flex items-center">
                     {/* Step Number */}
-                    <span className="text-[#BFD633] mr-6 font-bold text-[24px] sm:text-[30px] md:text-[36px]">
+                    <span className="text-[#BFD633] mr-6 font-bold text-[24px] ">
                       {step.num}.
                     </span>
                     {/* Step Title */}
-                    <h3 className="font-semibold relative text-[20px] sm:text-[24px] md:text-[28px] lg:text-[30px]">
+                    <h3 className="font-semibold relative text-[20px] sm:text-[24px]">
                       {step.title}
                       {/* Horizontal Line */}
                     </h3>
@@ -59,7 +59,7 @@ function Hireproccess({ steps = [], title }) {
                         transition: "height 0.3s ease",
                       }}
                     ></span>
-                    <p className="mt-4 text-gray-600 text-[16px] md:text-[20px] font-light">
+                    <p className="mt-4 text-gray-600 text-[16px] md:text-lg font-light">
                       {step.content}
                     </p>
                   </div>

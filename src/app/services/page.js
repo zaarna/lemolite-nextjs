@@ -22,7 +22,7 @@ const ServicesPage = () => {
         content={
           "We specialize in creating custom software that fits your needs. With our expert team, we’ll help you grow through smart automation and unique software solutions."
         }
-        btntext={"Let’s innovate together"}
+        btntext={"Let’s Innovate Together"}
         link={"/contact-us"}
         src={"/uncover.webp"}
         alt={"Explore our Services"}

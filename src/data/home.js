@@ -218,20 +218,9 @@ export const testimonials = [
   },
 ];
 export const addresses = [
+  
   {
     id: 1,
-    country: "India",
-    flag: "/india.png",
-    phone: "+91 93138 34815",
-    phoneLink: "tel:+91 9313834815",
-    email: "sales@lemolite.com",
-    emailLink: "mailto:sales@lemolite.com",
-    location:
-      "1101, 1103, 1104, Colonnade,<br /> Iskcon Cross Road, Satellite,<br /> Ahmedabad, Gujarat,<br /> INDIA - 380059",
-    locationLink: "https://maps.app.goo.gl/qRb2qjYm2kojAX8q8",
-  },
-  {
-    id: 2,
     country: "UK",
     flag: "/uk.png",
     phone: "+44 7551 316937",
@@ -242,17 +231,40 @@ export const addresses = [
     email: "jainam@lemolite.com",
     emailLink: "mailto:jainam@lemolite.com",
   },
-  // {
-  //   id: 3,
-  //   country: "Canada",
-  //   flag: "/canada.png",
-  //   phone: "+1 22699 84440",
-  //   phoneLink: "tel:+1 2269984440",
-  //   email: "connect@lemolite.com",
-  //   emailLink: "mailto:connect@lemolite.com",
-  //   location: "1735 Parkhurst Avenue,<br /> London, Ontario N5V 2C4",
-  //   locationLink: "https://maps.app.goo.gl/5PMfcLmxPz92LYJK7",
-  // },
+  {
+    id: 2,
+    country: "Dubai",
+    flag: "/Dubai.png",
+    phone: "+974 7794 0018",
+    phoneLink: "tel:+974 7794 0018",
+    email: "abdul@lemolite.com",
+    emailLink: "mailto:abdul@lemolite.com",
+    location: "Office No. 2045, Business Tower, <br /> Near Burjuman Mall, <br /> Dubai, U.A.E",
+    locationLink: "https://maps.app.goo.gl/YCG5LyGiKJoNbBx16",
+  },
+  {
+    id: 3,
+    country: "Doha",
+    flag: "/Doha.png",
+    phone: "+974 7794 0018",
+    phoneLink: "tel:+974 7794 0018",
+    email: "abdul@lemolite.com",
+    emailLink: "mailto:abdul@lemolite.com",
+    location: "Al Nasser Tower, Corniche <br /> Westbay - Doha Qatar",
+    locationLink: "https://maps.app.goo.gl/ZPzMbnomEnjRRbKd9",
+  },
+  {
+    id: 4,
+    country: "India",
+    flag: "/india.png",
+    phone: "+91 93138 34815",
+    phoneLink: "tel:+91 9313834815",
+    email: "sales@lemolite.com",
+    emailLink: "mailto:sales@lemolite.com",
+    location:
+      "1101, 1103, 1104, Colonnade,<br /> Iskcon Cross Road, Satellite,<br /> Ahmedabad, Gujarat,<br /> INDIA - 380059",
+    locationLink: "https://maps.app.goo.gl/qRb2qjYm2kojAX8q8",
+  },
 ];
 
 export const customservices = [

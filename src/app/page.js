@@ -21,7 +21,7 @@ import React from "react";
 // This will be replaced with your actual HomePage component when migrated
 const HomePage = () => {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen ">
       <Main_banner />
       <TrustedByCliet_WhoWeAre
         logo={logos}
@@ -52,6 +52,7 @@ const HomePage = () => {
         }
         btntext="Talk to an Expert"
         link={"/contact-us"}
+        bg="bg-[#F1F1F1]"
       />
       <TechnologyWeUse />
       <OurWork
