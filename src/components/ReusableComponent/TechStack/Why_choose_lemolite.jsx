@@ -56,7 +56,7 @@ export default function WhyChooseLemolite() {
           {whychoosetech.map((item, index) => (
             <div
               key={index}
-              className="bg-[#F5F5F5] shadow-md rounded-[32px] p-10 hover:shadow-lg transition hover:bg-gradient-to-r from-primary/30 to-secondry/30"
+              className="bg-[#F5F5F5] shadow-md rounded-[32px] p-10 hover:shadow-lg transition hover:bg-gradient-to-r from-[#2EC4F3]/30 to-[#BFD633]/30"
             >
               <div className="flex justify-start">
                 <Image

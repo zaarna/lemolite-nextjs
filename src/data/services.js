@@ -669,55 +669,55 @@ export const commerceexpert = [
     icon: "/commerce2.svg",
     title: "Store Customization",
     description:
-      "Your online store should represent your brand perfectly. We customize every detail of your storefront to align with your brand identity, creating a seamless shopping experience.",
+      "Your online store should represent your brand perfectly. We customize every detail of your storefront to align with your brand identity, creating a seamless shopping experience. This personalization helps attract and retain customers while building a strong connection with your target audience.",
   },
   {
     icon: "/commerce3.svg",
     title: "Shopping Cart Development",
     description:
-      "A smooth checkout process is essential for any e-commerce store. We design and implement intuitive shopping cart systems that make buying simple and hassle-free for your customers.",
+      "A smooth checkout process is essential for any e-commerce store. We design and implement intuitive shopping cart systems that make buying simple and hassle-free for your customers. This streamlined process reduces cart abandonment and boosts your conversion rates.",
   },
   {
     icon: "/commerce4.svg",
     title: "Marketplace Development",
     description:
-      "We develop dynamic, feature-rich online marketplaces designed to handle seamless transactions and interactions.",
+      "We develop dynamic, feature-rich online marketplaces designed to handle seamless transactions and interactions. Whether it's a niche marketplace or a large-scale platform, we help create a thriving ecosystem tailored to your needs.",
   },
   {
     icon: "/commerce5.svg",
     title: "Store Migration",
     description:
-      "Our e-commerce software consultants handle the entire migration process for you — ensuring a smooth transition without disrupting business operations.",
+      "Our e-commerce software consultants handle the entire migration process for you. From transferring data to optimizing features, we ensure a smooth transition without any disruption to your business operations. Your new store will be fully functional, secure, and ready to perform.",
   },
   {
     icon: "/commerce6.svg",
     title: "Plugin & Module Development",
     description:
-      "We create custom plugins and modules tailored to your specific needs, enhancing functionality and user experience.",
+      "We create custom plugins and modules tailored to your specific needs. These tools enhance your website’s functionality, integrate seamlessly with third-party systems, and improve the overall user experience.",
   },
   {
     icon: "/commerce7.svg",
     title: "Responsive Website Development",
     description:
-      "We specialize in responsive designs that deliver seamless user experiences across all devices.",
+      "In today’s mobile-first world, your e-commerce store needs to work perfectly on all devices. We specialize in developing responsive websites that provide a consistent and optimized user experience across smartphones, tablets, and desktops. This ensures your store reaches more customers and performs flawlessly everywhere.",
   },
   {
     icon: "/commerce8.svg",
     title: "E-Commerce App Development",
     description:
-      "We design and develop mobile apps for iOS and Android, offering your customers a cutting-edge shopping experience.",
+      "Go beyond the website with a custom e-commerce app. We design and develop mobile apps for iOS and Android that deliver a cutting-edge shopping experience. These apps are tailored to your brand and provide a convenient, engaging way for customers to shop on the go.",
   },
   {
     icon: "/commerce9.svg",
     title: "AI-Driven Personalization",
     description:
-      "We use AI to deliver tailored recommendations and optimize user journeys, boosting satisfaction and conversions.",
+      "Give your customers a personalized shopping experience with AI. By analyzing user behavior, we help you customize product recommendations, optimize pricing, and deliver tailored offers. This boosts customer satisfaction and significantly improves your sales conversions.",
   },
   {
     icon: "/commerce10.svg",
     title: "Payment Gateway Integration",
     description:
-      "We integrate trusted payment gateways to ensure smooth and secure transactions for your customers.",
+      "A secure and reliable payment system is key to customer trust. We integrate trusted payment gateways into your store to ensure smooth and secure transactions. With our expertise, your customers can shop with confidence, enhancing their overall experience.",
   },
 ];
 export const mobilebexpert = [
