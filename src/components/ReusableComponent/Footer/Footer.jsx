@@ -20,6 +20,10 @@ export default function Footer() {
           href: "/services/custom-software-development",
           label: "Custom Software Development",
         },
+        {
+          href: "/services/ot-cybersecurity",
+          label: "Secure Product Lifecycle Solutions",
+        },
       ],
     },
     {

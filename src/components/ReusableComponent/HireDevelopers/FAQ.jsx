@@ -40,7 +40,7 @@ function FAQ({
                       {item.question}
                     </span>
                     <svg
-                      className={`w-6 h-6 shrink-0  transition ease-linear duration-200 ${
+                      className={`w-6 h-6 shrink-0  transition ease-linear duration-200 cursor-pointer ${
                         openIndex === index ? "rotate-180" : ""
                       }`}
                       fill="currentColor"

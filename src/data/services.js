@@ -1182,36 +1182,36 @@ export const slidesiot = [
 ];
 export const voicespecialize = [
   {
-    // image: voicesolution1,
+    image: "/aipowered.svg",
     title: "Natural Language Processing (NLP)",
     description:
       "Accurately processes human language with depth, understanding intent, and tone.",
   },
   {
-    // image: voicesolution2,
+    image: "/customersupport.svg",
     title: "Contextual Awareness",
     description:
       "Grasping context to ensure responses are always relevant and precise.",
   },
   {
-    // image: voicesolution3,
+    image: "/leadgeneration.svg",
     title: "Multilingual Support",
     description:
       "Engages users in multiple languages, offering global communication.",
   },
   {
-    // image: voicesolution4,
+    image: "/booking.svg",
     title: "Real-Time Processing",
     description:
       "Instantly responds, improving user engagement and experience.",
   },
   {
-    // image: voicesolution5,
+    image: "/transactional.svg",
     title: "Personalized Responses",
     description: "Tailors interactions based on user history and preferences.",
   },
   {
-    // image: voicesolution6,
+    image: "/industry.svg",
     title: "Conversational AI",
     description:
       "Enables fluid, human-like interactions for an intuitive experience.",

@@ -50,7 +50,7 @@ const HomePage = () => {
         content={
           "Elevate your business with innovative, custom-built digital solutions designed to meet today's challenges and drive future growth and success."
         }
-        btntext="Talk to an Expert"
+        btntext="Talk To An Expert"
         link={"/contact-us"}
         bg="bg-[#F1F1F1]"
       />
@@ -58,7 +58,7 @@ const HomePage = () => {
       <OurWork
         title={"Our Recent Work"}
         projects={projects}
-        btntext={"View all work"}
+        btntext={"View All Work"}
         link={"/casestudy"}
       />
       <CtaSection

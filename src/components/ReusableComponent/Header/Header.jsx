@@ -495,7 +495,10 @@ const Header = () => {
               onClick={closeDropdown}
               className="flex items-center gap-2 bg-white hover:bg-black font-semibold w-8 h-8 justify-center rounded-full group transition-all"
             >
-              <ArrowRight size={14} className="-rotate-45 text-[#2ec4f3]" />
+              <ArrowRight
+                size={14}
+                className="-rotate-45 text-[#2ec4f3] cursor-pointer"
+              />
             </Link>
           ) : (
             <div className="flex items-center gap-3 text-white">
@@ -734,7 +737,7 @@ const Header = () => {
                       >
                         <ChevronDown
                           size={16}
-                          className={`transition-transform ${
+                          className={`transition-transform cursor-pointer ${
                             activeMenu === menu.title ? "rotate-180" : ""
                           }`}
                         />

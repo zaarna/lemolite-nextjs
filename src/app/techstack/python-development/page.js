@@ -23,7 +23,7 @@ const PythonDevelopmentPage = () => {
         content={
           "Discover the power of Python for building scalable, efficient, and versatile applications. Our experts are here to help you harness Python's full potential for your business needs."
         }
-        btntext={"Talk to a Python Expert"}
+        btntext={"Talk To A Python Expert"}
         link={"/contact-us"}
         src={"/techstackphython.webp"}
         alt={"Python Development Company"}
@@ -36,7 +36,7 @@ const PythonDevelopmentPage = () => {
       <WhyHireSection
         title="Unlock the Power of Python Development"
         content="Build robust and scalable applications with Python's versatility. From Python web development services to AI solutions, achieve your goals efficiently with expert guidance. Let Python elevate your projects with its simplicity and power!"
-        btntext="Hire a Python Expert"
+        btntext="Hire A Python Expert"
         link={"/services/hire-python-developer"}
         features={phythonfeatures}
       />

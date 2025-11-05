@@ -576,7 +576,7 @@ For more insights and updates, follow us on <a href="https://x.com/lemolite_tech
         type: "cta",
         heading:
           "Want to Ensure Your Mobile App Ticks All the Privacy by Design Boxes?",
-        text: "Talk to an Expert",
+        text: "Talk To An Expert",
         link: "/contact-us",
         backgroundColor: "#002066",
       },

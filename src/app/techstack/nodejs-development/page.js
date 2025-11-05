@@ -23,7 +23,7 @@ const AngularDevelopmentPage = () => {
         content={
           "Node JS is a versatile platform known for its speed and scalability. It helps create efficient, real-time applications that perform well even under heavy loads, offering businesses a reliable solution to meet growing demands."
         }
-        btntext={"Talk to a Node JS Expert"}
+        btntext={"Talk To A Node JS Expert"}
         link={"/contact-us"}
         src={"/nodetech.webp"}
         alt={"Node JS Development Company"}

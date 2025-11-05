@@ -23,7 +23,7 @@ const LaravelDevelopmentPage = () => {
         content={
           "Effortlessly create dynamic and robust web applications with our Laravel development services. As a leading Laravel web development company, we simplify complex processes, enhance scalability, and deliver exceptional user experiences."
         }
-        btntext={"Talk to a Laravel Expert"}
+        btntext={"Talk To A Laravel Expert"}
         link={"/contact-us"}
         src={"/laraveltech.webp"}
         alt={"Laravel Development Company"}

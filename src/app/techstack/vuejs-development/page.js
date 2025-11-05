@@ -24,7 +24,7 @@ const VueJSDevelopmentPage = () => {
         content={
           "Vue JS is a lightweight, flexible framework for building interactive web applications that are easy to scale and maintain. As a top Vue.js development company, we specialize in delivering high-performance, scalable solutions for businesses of all sizes."
         }
-        btntext={"Talk to a Vue JS Expert"}
+        btntext={"Talk To A Vue JS Expert"}
         link={"/contact-us"}
         src={"/vuetech.webp"}
         alt={"Vue JS Development Company"}

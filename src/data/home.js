@@ -197,7 +197,7 @@ export const testimonials = [
     image: "/thehijabworld.svg",
     quote:
       "We wanted a fresh look for our website, and Lemolite delivered exactly that. Our customers noticed the change right away, and traffic has gone up. Even small edits are done without any fuss. Plus, they don’t overcharge, which is rare in this space.",
-    name: "The HIJAB world, UK",
+    name: "The HIJAB World, UK",
     title: "Executive",
     alt: "The Hijab World - Testimonial",
   },
@@ -205,7 +205,7 @@ export const testimonials = [
     image: "/KeepingBaby.svg",
     quote:
       "What I liked was that they just ‘got it.’ I didn’t have to explain things ten times. The project was finished on time, issues were fixed quickly, and honestly, I didn’t have to micromanage. That was a big relief.",
-    name: "Keeping Up with The Baby",
+    name: "Keeping Up With The Baby",
     title: "CEO",
     alt: "Keeping up with the Baby - Testimonial",
   },
@@ -218,7 +218,6 @@ export const testimonials = [
   },
 ];
 export const addresses = [
-  
   {
     id: 1,
     country: "UK",
@@ -239,7 +238,8 @@ export const addresses = [
     phoneLink: "tel:+974 7794 0018",
     email: "abdul@lemolite.com",
     emailLink: "mailto:abdul@lemolite.com",
-    location: "Office No. 2045, Business Tower, <br /> Near Burjuman Mall, <br /> Dubai, U.A.E",
+    location:
+      "Office No. 2045, Business Tower, <br /> Near Burjuman Mall, <br /> Dubai, U.A.E",
     locationLink: "https://maps.app.goo.gl/YCG5LyGiKJoNbBx16",
   },
   {

@@ -23,7 +23,7 @@ const AngularDevelopmentPage = () => {
         content={
           "Our Angular development company specializes in delivering high-performance, scalable, and robust web applications. As a leading AngularJS development company, we help businesses create dynamic, feature-rich applications with a focus on speed and user experience."
         }
-        btntext={" Talk to an Angular Expert"}
+        btntext={" Talk To An Angular Expert"}
         link={"/contact-us"}
         src={"/angulartech.webp"}
         alt={"Angular Development Company"}
@@ -38,7 +38,7 @@ const AngularDevelopmentPage = () => {
         content={
           "Our AngularJS developers leverage a wide range of modern technologies and frameworks, ensuring high-quality, scalable, and efficient applications tailored to your specific business needs."
         }
-        btntext={"Hire an Angular Expert"}
+        btntext={"Hire An Angular Expert"}
         link={"/services/hire-angular-developer"}
         features={angularfeatures}
       />

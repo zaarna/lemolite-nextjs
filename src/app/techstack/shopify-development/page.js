@@ -23,7 +23,7 @@ const ShopifyDevelopmentPage = () => {
         content={
           "Transform your e-commerce business with custom Shopify development. Our expert team offers scalable, tailored solutions to create a seamless online store that drives growth and success."
         }
-        btntext={"Talk to a Shopify Expert"}
+        btntext={"Talk To A Shopify Expert"}
         link={"/contact-us"}
         src={"/techstackshopify.webp"}
         alt={"Shopify Development Company"}
@@ -36,7 +36,7 @@ const ShopifyDevelopmentPage = () => {
       <WhyHireSection
         title="Transform Your E-Commerce with Powerful Features"
         content="Unlock the full potential of your Shopify store with powerful features designed for growth. From seamless integrations to advanced customization options, our expert team ensures you maximize every tool Shopify offers to boost your business success and drive results."
-        btntext="Hire a Shopify Expert"
+        btntext="Hire A Shopify Expert"
         link={"/services/hire-shopify-developer"}
         features={shopifyfeatures}
       />

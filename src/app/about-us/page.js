@@ -20,7 +20,7 @@ const AboutUsPage = () => {
         content={"Where Technology Meets Vision"}
         src={"/about-banner.webp"}
         alt={"About Us"}
-        btntext="Partner with Us in Your Digital Journey"
+        btntext="Partner With Us In Your Digital Journey"
       />
       <MissionVission />
       <Corevalue />

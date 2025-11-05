@@ -23,7 +23,7 @@ const ReactJSDevelopmentPage = () => {
         content={
           "Build interactive applications such as  SPAs, PWAs, dynamic websites, and social media platforms using the React.JS library, ensuring smooth performance and a seamless user experience."
         }
-        btntext={"Talk to a React.JS Expert"}
+        btntext={"Talk To A React.JS Expert"}
         link={"/contact-us"}
         src={"/reactech.webp"}
         alt={"React JS Development Company"}

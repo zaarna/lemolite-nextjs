@@ -11,8 +11,9 @@ import { ArrowRight, CircleX, Check, X } from "lucide-react";
 import { toast } from "react-toastify";
 import Grediantbutton from "../Button/Grediantbutton";
 
-function PartnerPopup() {
-  const [isOpen, setIsOpen] = useState(false);
+function PartnerPopup({ isPopupOpen, closePopup }) {
+  console.log("isPopupOpen", isPopupOpen);
+  const [isOpen, setIsOpen] = useState(isPopupOpen || false);
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
@@ -88,13 +89,24 @@ function PartnerPopup() {
       });
   };
 
+  const closePopupOutside = () => {
+    setIsOpen(false);
+    if (typeof closePopup == "function") {
+      closePopup();
+    }
+  };
+
   const [value, setValue] = useState("");
 
   return (
     <Popup
       open={isOpen}
       onOpen={() => setIsOpen(true)}
-      onClose={() => setIsOpen(false)}
+      onClose={() =>
+        // setIsOpen(false);
+        // closePopup();
+        closePopupOutside()
+      }
       trigger={
         // <button className="gradient-button">
         //   <span> Partner with Us in Your Digital Journey</span>
@@ -109,7 +121,7 @@ function PartnerPopup() {
         //     className="transition-transform duration-500 group-hover:rotate-30"
         //   />
         // </button>
-        <Grediantbutton btntext={"Partner with Us in Your Digital Journey"} />
+        <Grediantbutton btntext={"Partner With Us In Your Digital Journey"} />
       }
       modal
       nested
@@ -118,7 +130,12 @@ function PartnerPopup() {
         <div className="modal relative bg-black rounded-[30px] overflow-scroll h-[400px] lg:overflow-auto lg:h-auto max-w-[300px] sm:max-w-[400px] md:max-w-[600px] lg:max-w-[800px] xl:max-w-[1000px] px-5 md:px-10 py-5 md:py-10">
           <button
             className="close absolute flex items-center justify-center right-5 md:right-[30px] top-4 md:top-6 text-white w-6 md:w-8 h-6 md:h-8 border border-white rounded-full cursor-pointer"
-            onClick={close}
+            onClick={() => {
+              close();
+              if (typeof closePopup == "function") {
+                closePopup();
+              }
+            }}
           >
             <X width={14} />
           </button>

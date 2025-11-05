@@ -18,18 +18,28 @@ const IoTDevelopmentPage = () => {
         content={
           "Connect your world effortlessly with our smart IoT solutions. Simplify your business, enhance user experiences, and trust us to deliver secure, reliable technology that works for you."
         }
-        btntext={"Innovate with IoT"}
+        btntext={"Innovate With IoT"}
         link={"/contact-us"}
         src={"/iot.webp"}
         alt={"IoT App Development Services"}
       />
-      <WhatWeOfferAccordion padding="top-bottom" title={"What We Offer"} layout="full" stepData={iotdata} bg="bg-gradient-to-r from-[#2EC4F3]/30 to-[#BFD633]/30" />
-      <InnerSlider title={"Why Lemolite?"} padding="top-bottom" data={slidesiot} bg="bg-[#F1F1F1]" />
+      <WhatWeOfferAccordion
+        padding="top-bottom"
+        title={"What We Offer"}
+        layout="full"
+        stepData={iotdata}
+        bg="bg-gradient-to-r from-[#2EC4F3]/30 to-[#BFD633]/30"
+      />
+      <InnerSlider
+        title={"Why Lemolite?"}
+        padding="top-bottom"
+        data={slidesiot}
+        bg="bg-[#F1F1F1]"
+      />
       <Why_choose_us
         title={"Benefits of IoT Systems"}
         data={iotsystem}
         columns={2}
-        
       />
       <Ctasection
         title={"Make Your Systems Smarter with IoT"}

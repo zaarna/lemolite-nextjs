@@ -7,6 +7,7 @@ import Contectinfo from "@/components/ReusableComponent/Contectinfo/Contectinfo"
 import { addresses, testimonials } from "@/data/home";
 import Testimonial from "@/components/ReusableComponent/Testimonial/Testimonial";
 import { icons } from "lucide-react";
+import PopupTimer from "@/components/PopupTimer";
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -41,10 +42,10 @@ export default function RootLayout({ children }) {
         <Header />
         <ToastContainer />
         {children}
-        <Testimonial
+        {/* <Testimonial
           title="Hear from Our Happy Clients"
           testimonials={testimonials}
-        />
+        /> */}
         <Contectinfo
           maintitle={"Let’s Transform Your Vision into Reality"}
           subtitle={"Get in Touch!"}
@@ -54,6 +55,7 @@ export default function RootLayout({ children }) {
           addresses={addresses}
         />
         <Footer />
+        <PopupTimer />
       </body>
     </html>
   );

@@ -23,7 +23,7 @@ const MernDevelopmentPage = () => {
         content={
           "Unlock the potential of MERN Stack development to build dynamic, scalable, and high-performance web applications. Our expert developers specialize in crafting custom solutions tailored to your business needs, from dynamic frontends to seamless backends."
         }
-        btntext={"Talk to a MERN Expert"}
+        btntext={"Talk To A MERN Expert"}
         link={"/contact-us"}
         src={"/techstackmern.webp"}
         alt={"MERN Stack Development Company"}

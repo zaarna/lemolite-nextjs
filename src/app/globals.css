@@ -1041,7 +1041,17 @@ font-size:  clamp(1.5rem, -1.3125rem + 9vw, 3.75rem);
 }
   
 
+/* Terms */
+.text-primary {
+    --tw-text-opacity: 1;
+    color: rgb(46 196 243 / var(--tw-text-opacity, 1));
+}
 
+
+.text-secondry {
+    --tw-text-opacity: 1;
+    color: rgb(191 214 51 / var(--tw-text-opacity, 1));
+}
 
 
 

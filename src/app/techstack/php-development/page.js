@@ -23,7 +23,7 @@ const PhpDevelopmentPage = () => {
         content={
           "PHP transforms web development with scalable and flexible solutions, delivering efficiency and reliability to meet diverse business needs and achieve exceptional results."
         }
-        btntext={"Hire a PHP Developer"}
+        btntext={"Hire A PHP Developer"}
         link={"/contact-us"}
         src={"/techstackphp.webp"}
         alt={"services image"}
