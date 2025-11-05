@@ -55,7 +55,7 @@ const nextgencards = [
 ];
 const Nextgencard = () => {
   return (
-    <section className="bg--gray top-bottom">
+    <section className="bg-[#f1f1f1] top-bottom">
       <div className="container">
         <div className="flex flex-row items-center justify-center md:justify-between">
           <div className="text-center md:text-left basis-full md:basis-3/4 title--head">
@@ -69,15 +69,15 @@ const Nextgencard = () => {
           </div>
         </div>
 
-        <div className="pt-10 sm:pt-20">
-          <div className="grid grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="pt-10">
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
             {nextgencards.map((card, index) => (
               <div
                 key={index}
-                className="group transition-colors ease-in-out duration-300 next-gen p-5 lg:p-6 xl:p-8 2xl:p-10 text-left rounded-[10px] md:rounded-[32px] bg-gradient-to-r from-[#2EC4F3]/30 to-[#BFD633]/30 hover:bg-gradient-to-bl"
+                className="group transition-colors ease-in-out duration-300 next-gen p-5 text-left rounded-[16px] bg-gradient-to-r from-[#2EC4F3]/30 to-[#BFD633]/30 hover:bg-gradient-to-bl"
               >
                 <Link href={card.link}>
-                  <div className="w-8 md:w-10 lg:w-12 xl:w-16 h-8 md:h-10 lg:h-12 xl:h-16 transform group-hover:scale-110 transition-all duration-500">
+                  <div className="w-8 md:w-10 h-8 md:h-10 transform group-hover:scale-110 transition-all duration-500">
                     <Image
                       src={card.icon}
                       alt={card.title}
@@ -86,10 +86,10 @@ const Nextgencard = () => {
                       className="object-contain"
                     />
                   </div>
-                  <div className="flex flex-row items-center lg:items-end pt-2 sm:pt-5 md:pt-5 lg:pt-6 xl:pt-10 justify-between">
-                    <h5 className="break-words max-w-32 md:max-w-40 lg:max-w-48 xl:max-w-60 w-full capitalize">
+                  <div className="flex flex-row items-center lg:items-end pt-2 justify-between">
+                    <h4 className="break-words max-w-32 md:max-w-40 lg:max-w-48 xl:max-w-60 w-full capitalize text-base sm:text-lg">
                       {card.title}
-                    </h5>
+                    </h4>
                     <ArrowRight className="w-6 sm:w-8 lg:w-0 h-4 sm:h-5 lg:h-9 group-hover:lg:w-14 transition-[width] ease-in-out duration-300" />
                   </div>
                 </Link>

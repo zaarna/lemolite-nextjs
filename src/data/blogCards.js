@@ -89,7 +89,7 @@ export const blogCards = [
     tag: "E-commerce",
     image: "/ecomblog.webp",
     excerpt:
-      "Are slow apps, inconsistent UIs, or scattered development teams delaying your product launches?...",
+      "Starting an online store does not have to be complicated anymore. In the past, businesses spent...",
     link: "/blog/SaaS-for-eCommerce-platform",
   },
 ];

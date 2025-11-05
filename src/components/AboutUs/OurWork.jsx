@@ -27,7 +27,7 @@ const OurWork = ({ title, btntext, link, projects = [] }) => {
                   {project.title}
                 </h3>
                 <div
-                  className={`up_heading ${project.upHeadingColor} text-6xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 -rotate-90`}
+                  className={`up_heading ${project.upHeadingColor} text-2xl sm:text-6xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 -rotate-90`}
                 >
                   {project.upHeading}
                 </div>
@@ -60,7 +60,7 @@ const OurWork = ({ title, btntext, link, projects = [] }) => {
                   {project.title}
                 </h3>
                 <div
-                  className={`up_heading ${project.upHeadingColor} text-6xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 -rotate-90`}
+                  className={`up_heading ${project.upHeadingColor} text-2xl sm:text-6xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 -rotate-90`}
                 >
                   {project.upHeading}
                 </div>

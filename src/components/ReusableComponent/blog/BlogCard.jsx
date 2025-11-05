@@ -25,8 +25,14 @@ export default function BlogCard({
 
   const [selectedIndex, setSelectedIndex] = useState(0);
 
-  const scrollPrev = useCallback(() => emblaApi && emblaApi.scrollPrev(), [emblaApi]);
-  const scrollNext = useCallback(() => emblaApi && emblaApi.scrollNext(), [emblaApi]);
+  const scrollPrev = useCallback(
+    () => emblaApi && emblaApi.scrollPrev(),
+    [emblaApi]
+  );
+  const scrollNext = useCallback(
+    () => emblaApi && emblaApi.scrollNext(),
+    [emblaApi]
+  );
 
   const onSelect = useCallback(() => {
     if (!emblaApi) return;
@@ -65,18 +71,18 @@ export default function BlogCard({
                           height={400}
                           className="rounded-[10px] w-full object-cover mb-3"
                         />
-                        <span className="text-[#BFD633] block mt-2">{card.tag}</span>
+                        <span className="text-[#BFD633] block mt-2">
+                          {card.tag}
+                        </span>
                         <h4 className="text-lg sm:text-xl font-semibold mt-1">
                           {card.title}
                         </h4>
                         <p className="text-base font-light mt-2 mb-4">
                           {card.excerpt}{" "}
-                          <Link
-                            href={card.link}
-                            className="underline text-black hover:text-gray-800 font-medium"
+                          <span className="underline text-black hover:text-gray-800 font-medium"
                           >
                             Read More
-                          </Link>
+                          </span>
                         </p>
                         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center text-sm">
                           <span className="capitalize">{card.author}</span>

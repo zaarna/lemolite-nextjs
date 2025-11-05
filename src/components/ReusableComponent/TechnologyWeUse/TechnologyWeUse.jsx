@@ -4,6 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Titlecontent from "../Titlecontent/Titlecontent";
 import { MoveRight } from "lucide-react";
+import { ChevronDown } from "lucide-react";
 
 const TechnologyWeUse = ({ padding = "top-bottom", bg = "bg-white" }) => {
   const [activeCategory, setActiveCategory] = useState("AI_ML");
@@ -27,7 +28,7 @@ const TechnologyWeUse = ({ padding = "top-bottom", bg = "bg-white" }) => {
       icon: "/tec1.svg",
       technologies: [
         { name: "Sklearn", img: "/scikit-learn-logo.svg" },
-        { name: "Matplotlib", img: "/matplotlib-logo.svg" },
+        { name: "Matplotlib", img: "/matplotlib-logoo.svg" },
         { name: "TensorFlow", img: "/tensorflow-logo.svg" },
         { name: "Keras", img: "/keras-logo.svg" },
         { name: "Hugging Face", img: "/huggingface-logo.svg" },
@@ -106,8 +107,8 @@ const TechnologyWeUse = ({ padding = "top-bottom", bg = "bg-white" }) => {
   const renderTechnologyCards = (technologies, gridCols = "md:w-1/2") => {
     return technologies.map((tech, index) => (
       <div key={index} className={`${gridCols}`}>
-        <div className="flex items-center justify-between p-2 rounded-[20px] bg-gray-200 mx-2 mb-2">
-          <div className="basis-1/2 text-left">
+        <div className="flex items-center justify-between  p-2 rounded-[20px] bg-gray-200 mx-2 mb-2">
+          <div className="basis-1/2 text-left h-[70px] flex">
             <Image src={tech.img} width={100} height={100} alt={tech.name} />
           </div>
           <div className="basis-1/2 text-left">{tech.name}</div>
@@ -193,7 +194,7 @@ const TechnologyWeUse = ({ padding = "top-bottom", bg = "bg-white" }) => {
             return (
               <div key={category.id}>
                 <div
-                  className="flex items-center justify-between px-4 py-3 border-b cursor-pointer"
+                  className="flex items-center space-x-4 px-4 py-3 border-b cursor-pointer"
                   onClick={() => toggleAccordion(key)}
                 >
                   <Image
@@ -210,12 +211,12 @@ const TechnologyWeUse = ({ padding = "top-bottom", bg = "bg-white" }) => {
                     {category.technologies.map((tech, i) => (
                       <div
                         key={i}
-                        className="p-3 bg-white border rounded-[20px] text-center"
+                        className="p-3 bg-white border rounded-[20px] text-center flex flex-col items-center justify-between"
                       >
                         <Image
                           src={tech.img}
-                          width={40}
-                          height={40}
+                          width={100}
+                          height={100}
                           alt={tech.name}
                         />
                         <p className="text-sm mt-2">{tech.name}</p>
