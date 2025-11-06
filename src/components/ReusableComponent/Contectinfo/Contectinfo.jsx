@@ -14,19 +14,19 @@ export default function Contectinfo({
 }) {
   const openings = [
     {
-      title: "Lead Generation",
+      title: "SEO / Digital Marketing Executive",
       hire: "1+ YEARS",
-      link: "/current-openings/lead-generation",
+      link: "/current-openings/seo",
     },
     {
-      title: "Business Development Executive",
-      hire: "1-3 YEARS",
-      link: "/current-openings/business-development-executive",
+      title: "MERN Stack Developer",
+      hire: "1+ YEARS",
+      link: "/current-openings/mern",
     },
     {
-      title: "Full Stack Developer",
-      hire: "3-4 YEARS",
-      link: "/current-openings/full-stack-developer",
+      title: "Flutter Developer",
+      hire: "2+ YEARS",
+      link: "/current-openings/flutter",
     },
   ];
 
