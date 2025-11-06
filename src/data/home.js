@@ -319,3 +319,33 @@ export const feaureoffsd = [
   { value: "Experience Level ", label: "3-4 YEARS", bgColor: "bg-[#2EC4F333]" },
   { value: "Location", label: "Ahmedabad", bgColor: "bg-[#BFD63333]" },
 ];
+export const feaureoffseo = [
+  {
+    value: "Role",
+    label: "SEO / Digital Marketing Executive",
+    bgColor: "bg-[#2EC4F333]",
+  },
+  { value: "Job Type", label: "Full-time", bgColor: "bg-[#BFD63333]" },
+  { value: "Experience Level ", label: "1+ YEARS", bgColor: "bg-[#2EC4F333]" },
+  { value: "Location", label: "Ahmedabad", bgColor: "bg-[#BFD63333]" },
+];
+export const feaureoffmern = [
+  {
+    value: "Role",
+    label: "MERN Stack Developer",
+    bgColor: "bg-[#2EC4F333]",
+  },
+  { value: "Job Type", label: "Full-time", bgColor: "bg-[#BFD63333]" },
+  { value: "Experience Level ", label: "1+ YEARS", bgColor: "bg-[#2EC4F333]" },
+  { value: "Location", label: "Ahmedabad", bgColor: "bg-[#BFD63333]" },
+];
+export const feaureoffflutter = [
+  {
+    value: "Role",
+    label: "Flutter Developer",
+    bgColor: "bg-[#2EC4F333]",
+  },
+  { value: "Job Type", label: "Full-time", bgColor: "bg-[#BFD63333]" },
+  { value: "Experience Level ", label: "2+ YEARS", bgColor: "bg-[#2EC4F333]" },
+  { value: "Location", label: "Ahmedabad", bgColor: "bg-[#BFD63333]" },
+];

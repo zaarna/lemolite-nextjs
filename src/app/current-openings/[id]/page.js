@@ -2,8 +2,15 @@
 import { use } from "react";
 import CareerBanner from "@/components/ReusableComponent/CarrerBanner";
 import SectionBlock from "@/components/ReusableComponent/SectionBlock";
-import { bde, fsd, lead } from "@/data/breadcrumsdata";
-import { feaureofbde, feaureoffsd, feaureoflg } from "@/data/home";
+import { bde, fsd, lead, seo } from "@/data/breadcrumsdata";
+import {
+  feaureofbde,
+  feaureoffflutter,
+  feaureoffmern,
+  feaureoffsd,
+  feaureoffseo,
+  feaureoflg,
+} from "@/data/home";
 
 function Page({ params }) {
   const { id } = use(params);
@@ -279,6 +286,259 @@ software solutions and development processes."
         </section>
       </div>
     );
+  else if (id == "seo")
+    return (
+      <div>
+        <CareerBanner
+          breddata={seo}
+          title={"SEO / Digital Marketing Executive"}
+          btntext={"Apply"}
+          onclick={scrollToFooter}
+          stats={feaureoffseo}
+        />
+        <section className="career-inner">
+          <div className="container">
+            <SectionBlock
+              title="Job Overview"
+              content="We are looking for a proactive and creative SEO & Digital Marketing Executive with hands-on experience in improving organic traffic, running paid campaigns, and managing brand visibility across digital channels. The ideal candidate should have a strong understanding of SEO principles, Google Ads, social media strategy, and analytics."
+            />
+
+            <SectionBlock
+              title="Responsibilities"
+              list={[
+                {
+                  text: "Plan and execute SEO strategies to improve organic search rankings.",
+                },
+                {
+                  text: "Conduct keyword research, backlinking, and competitor analysis.",
+                },
+                {
+                  text: "Manage and optimize Google Ads, Meta Ads, and LinkedIn campaigns.",
+                },
+                {
+                  text: "Develop and schedule content across digital platforms.",
+                },
+                {
+                  text: "Track, analyze, and report campaign performance using Google Analytics and Search Console.",
+                },
+                {
+                  text: "Collaborate with content, design, and development teams to ensure SEO-friendly site structure.",
+                },
+                {
+                  text: "Stay updated with the latest digital marketing trends and algorithm updates.",
+                },
+              ]}
+            />
+
+            <SectionBlock
+              title="Requirements"
+              list={[
+                "Bachelor’s degree in Marketing, Communications, or a related field.",
+                "Minimum 1 year of hands-on experience in SEO and digital marketing.",
+                "Working knowledge of Google Analytics, Google Search Console, and keyword research tools.",
+                "Understanding of on-page and off-page SEO techniques.",
+                "Familiarity with social media platforms and campaign management.",
+                "Strong communication and content-writing skills.",
+              ]}
+            />
+
+            <SectionBlock
+              title="Preferred Skills"
+              list={[
+                "Experience managing Google Ads or Meta Ads campaigns.",
+                "Hands-on experience with tools like Ahrefs, SEMrush, Moz.",
+                "Knowledge of email marketing and marketing automation tools.",
+                "Ability to analyze traffic data and prepare performance reports.",
+              ]}
+            />
+
+            <SectionBlock
+              title="Company Overview"
+              content="At Lemolite Technologies LLP, we're committed to delivering innovative tech solutions and exceptional service to our clients. Our dedication to excellence propels us to push the boundaries of AI/ML and digital transformation."
+            />
+
+            <SectionBlock
+              title="Benefits"
+              list={[
+                "Competitive salary based on experience and skills.",
+                "Opportunities for professional growth and career advancement.",
+                "Flexible work hours and remote work options (if required).",
+                "Collaborative and supportive work environment fostering innovation and creativity.",
+              ]}
+            />
+          </div>
+        </section>
+      </div>
+    );
+  else if (id == "mern")
+    return (
+      <div>
+        <CareerBanner
+          breddata={seo}
+          title={"MERN Stack Developer"}
+          btntext={"Apply"}
+          onclick={scrollToFooter}
+          stats={feaureoffmern}
+        />
+        <section className="career-inner">
+          <div className="container">
+            <SectionBlock
+              title="Job Overview"
+              content="We are seeking a talented MERN Stack Developer to join our development team. The ideal candidate should have experience in building scalable web applications using MongoDB, Express.js, React.js, and Node.js with good understanding of REST APIs and deployment practices."
+            />
+
+            <SectionBlock
+              title="Responsibilities"
+              list={[
+                {
+                  text: "Design, develop, and maintain full-stack web applications using the MERN stack.",
+                },
+                {
+                  text: "Write clean, reusable, and well-documented code.",
+                },
+                {
+                  text: "Develop RESTful APIs and integrate with third-party services.",
+                },
+                {
+                  text: "Work closely with UI/UX designers to implement responsive interfaces.",
+                },
+                {
+                  text: "Optimize performance and scalability of applications.",
+                },
+                {
+                  text: "Participate in code reviews and troubleshooting of issues.",
+                },
+                {
+                  text: "Collaborate with cross-functional teams for requirement gathering and deployment.",
+                },
+              ]}
+            />
+
+            <SectionBlock
+              title="Requirements"
+              list={[
+                "Bachelor’s degree in Computer Science, IT, or equivalent.",
+                "Minimum 1 year of hands-on experience with MERN stack (MongoDB, Express.js, React.js, Node.js).",
+                "Solid understanding of JavaScript, HTML, CSS.",
+                "Experience building RESTful APIs and integrating third-party services.",
+                "Familiarity with Git and code versioning tools.",
+              ]}
+            />
+
+            <SectionBlock
+              title="Preferred Skills"
+              list={[
+                "Experience with Next.js, TypeScript, or GraphQL.",
+                "Understanding of Redux or Context API for state management.",
+                "Experience deploying apps on AWS, Vercel, or Render.",
+                "Knowledge of unit testing and CI/CD pipelines.",
+                "Good grasp of performance optimization and security best practices.",
+              ]}
+            />
+
+            <SectionBlock
+              title="Company Overview"
+              content="At Lemolite Technologies LLP, we're committed to delivering innovative tech solutions and exceptional service to our clients. Our dedication to excellence propels us to push the boundaries of AI/ML and digital transformation."
+            />
+
+            <SectionBlock
+              title="Benefits"
+              list={[
+                "Competitive salary based on experience and skills.",
+                "Opportunities for professional growth and career advancement.",
+                "Flexible work hours and remote work options (if required).",
+                "Collaborative and supportive work environment fostering innovation and creativity.",
+              ]}
+            />
+          </div>
+        </section>
+      </div>
+    );
+  else if (id == "flutter")
+    return (
+      <div>
+        <CareerBanner
+          breddata={seo}
+          title={"Flutter Developer"}
+          btntext={"Apply"}
+          onclick={scrollToFooter}
+          stats={feaureoffflutter}
+        />
+        <section className="career-inner">
+          <div className="container">
+            <SectionBlock
+              title="Job Overview"
+              content="We are hiring an experienced Flutter Developer to build and maintain high-quality cross-platform mobile applications. The candidate should have a strong portfolio of Flutter projects and experience integrating APIs, Firebase, and third-party plugins."
+            />
+
+            <SectionBlock
+              title="Responsibilities"
+              list={[
+                {
+                  text: "Develop and maintain mobile applications for Android and iOS using Flutter.",
+                },
+                {
+                  text: "Translate UI/UX designs into responsive, functional interfaces.",
+                },
+                {
+                  text: "Integrate REST APIs and Firebase services (Auth, Firestore, Push Notifications).",
+                },
+                {
+                  text: "Ensure performance, quality, and responsiveness of applications.",
+                },
+                {
+                  text: "Debug, test, and deploy updates as required.",
+                },
+                {
+                  text: "Collaborate with backend developers and designers for seamless app functionality.",
+                },
+                {
+                  text: "Keep up with the latest Flutter updates and mobile development trends.",
+                },
+              ]}
+            />
+
+            <SectionBlock
+              title="Requirements"
+              list={[
+                "Bachelor’s degree in Computer Science, IT, or related field.",
+                "At least 2 years of experience developing mobile apps with Flutter & Dart.",
+                "Familiarity with REST APIs and Firebase (Auth, Firestore, Notifications).",
+                "Basic understanding of UI/UX principles and responsive layouts.",
+                "Knowledge of Git for version control.",
+              ]}
+            />
+
+            <SectionBlock
+              title="Preferred Skills"
+              list={[
+                "Experience with GetX, Riverpod, or BLoC state management.",
+                "Familiarity with native Android/iOS code (Java/Kotlin/Swift).",
+                "Experience publishing apps to Play Store and App Store.",
+                "Understanding of app performance optimization and push notifications.",
+                "Exposure to CI/CD, App Center, or Crashlytics.",
+              ]}
+            />
+
+            <SectionBlock
+              title="Company Overview"
+              content="At Lemolite Technologies LLP, we're committed to delivering innovative tech solutions and exceptional service to our clients. Our dedication to excellence propels us to push the boundaries of AI/ML and digital transformation."
+            />
+
+            <SectionBlock
+              title="Benefits"
+              list={[
+                "Competitive salary based on experience and skills.",
+                "Opportunities for professional growth and career advancement.",
+                "Flexible work hours and remote work options (if required).",
+                "Collaborative and supportive work environment fostering innovation and creativity.",
+              ]}
+            />
+          </div>
+        </section>
+      </div>
+    );
+
   return <p>No Opening Found</p>;
 }
 

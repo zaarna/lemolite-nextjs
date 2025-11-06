@@ -206,3 +206,8 @@ export const techstack = [
   { name: "Home", href: "/" },
   { name: "Techstack", current: true },
 ];
+export const seo = [
+  { name: "Home", href: "/" },
+  { name: "Careers", href: "/careers" },
+  { name: "SEO / Digital Marketing Executive", current: true },
+];

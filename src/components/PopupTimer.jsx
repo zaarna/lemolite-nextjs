@@ -4,7 +4,7 @@ import PartnerPopup from "./ReusableComponent/PartnerPopup/PartnerPopup";
 
 function PopupTimer() {
   const [showPopup, setShowPopup] = useState(false);
-  console.log("poup timer");
+  ("poup timer");
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowPopup(true);

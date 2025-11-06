@@ -2,13 +2,13 @@ import SectionBlock from "@/components/ReusableComponent/SectionBlock";
 
 function Opening({ params }) {
   const { id } = params;
-  console.log("id", id);
+  "id", id;
   return (
     <section className="career-inner">
       <div className="container">
         <SectionBlock
           title="Job Overview"
-          content="We are looking for a highly motivated Lead Generation to join our team for a minimum 1+ years experience. The ideal candidate will be responsible for generating qualified leads, managing outreach efforts, and supporting the sales team in driving business growth."
+          content="We are looking for a highly motivated Lead GenFlutter Developereration to join our team for a minimum 1+ years experience. The ideal candidate will be responsible for generating qualified leads, managing outreach efforts, and supporting the sales team in driving business growth."
         />
 
         <SectionBlock

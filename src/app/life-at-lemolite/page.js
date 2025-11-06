@@ -17,7 +17,7 @@ const LifeAtLemolitePage = () => {
     footerRef.current?.scrollIntoView({ behavior: "smooth" }); // Smooth scrolling
   };
   const pathName = usePathname();
-  console.log("PathName");
+  ("PathName");
   if (pathName == "/careers")
     return (
       <section className="top-bottom">

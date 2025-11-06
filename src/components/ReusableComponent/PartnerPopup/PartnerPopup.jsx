@@ -12,7 +12,7 @@ import { toast } from "react-toastify";
 import Grediantbutton from "../Button/Grediantbutton";
 
 function PartnerPopup({ isPopupOpen, closePopup }) {
-  console.log("isPopupOpen", isPopupOpen);
+  "isPopupOpen", isPopupOpen;
   const [isOpen, setIsOpen] = useState(isPopupOpen || false);
   const [isLoading, setIsLoading] = useState(false);
 

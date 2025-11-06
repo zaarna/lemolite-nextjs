@@ -55,7 +55,7 @@ export default function Form() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsLoading(true);
-    console.log("Submitting form data:", formData);
+    "Submitting form data:", formData;
 
     try {
       const response = await fetch(
@@ -72,7 +72,7 @@ export default function Form() {
       if (!response.ok) throw new Error(data.message || "An error occurred");
 
       toast.success(data.message || "Form submitted successfully!");
-      console.log("Form submitted successfully:", data);
+      "Form submitted successfully:", data;
 
       setFormData({
         name: "",

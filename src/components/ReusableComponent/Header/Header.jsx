@@ -265,8 +265,8 @@ const Header = () => {
   }, []);
 
   const toggleMenu = (menu) => {
-    console.log("Toggle Menu", menu);
-    console.log("activeMenu Menu", activeMenu);
+    "Toggle Menu", menu;
+    "activeMenu Menu", activeMenu;
     setActiveMenu(activeMenu === menu ? null : menu);
   };
 
