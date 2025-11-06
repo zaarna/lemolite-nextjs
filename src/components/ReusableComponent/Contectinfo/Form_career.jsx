@@ -202,7 +202,7 @@ export default function Form_career({ data = [] }) {
               name="message"
               value={formData.message}
               onChange={handleChange}
-              rows="2"
+              rows="1"
               className="w-full border-b border-gray-300 bg-transparent py-2 text-[#D9D9D9] focus:outline-none"
             />
             <label

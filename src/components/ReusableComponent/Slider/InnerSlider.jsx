@@ -3,7 +3,12 @@ import React from "react";
 import Crousal from "./Crousal";
 import Titlecontent from "../Titlecontent/Titlecontent";
 
-function InnerSlider({ padding = "pt-8 md:pt-16 lg:pt-20", data, title, bg = "bg-white" }) {
+function InnerSlider({
+  padding = "pt-8 md:pt-16 lg:pt-20 md:pb-16 lg:pb-20",
+  data,
+  title,
+  bg = "bg-white",
+}) {
   return (
     <section className={`${padding} ${bg}`}>
       <div className="container">

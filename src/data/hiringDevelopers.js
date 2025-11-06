@@ -12,7 +12,7 @@ export const hireourteamphython = [
     title: "Smooth Team Integration",
     description:
       "Our Python developers integrate smoothly into your existing team and workflow, ensuring efficient communication and collaboration. Whether you need to hire Python developers for short or long-term projects, we ensure minimal disruption and maximum efficiency.",
-    number: "10+",
+    number: "9+",
     stats: "Years Experience",
   },
   {
@@ -38,7 +38,7 @@ export const hireourteammern = [
     title: "Seamless Integration into Your Team",
     description:
       "Our dedicated MERN stack developers integrate smoothly into your existing team and workflow, ensuring efficient communication and collaboration. Whether you need to hire MERN full-stack developers for short or long-term projects, we ensure minimal disruption and maximum efficiency.",
-    number: "10+",
+    number: "9+",
     stats: "Years Experience",
   },
   {
@@ -64,7 +64,7 @@ export const hireourteamreact = [
     title: "Seamless Integration into Your Team",
     description:
       "Our top ReactJS developers integrate smoothly into your existing team and workflows, whether for short-term projects or long-term collaborations. They quickly adapt to your tools and processes, ensuring seamless communication and collaboration, minimizing disruptions, and accelerating project success.",
-    number: "10+",
+    number: "9+",
     stats: "Years Experience",
   },
   {
@@ -90,7 +90,7 @@ export const hireourteamnode = [
     title: "Seamless Integration into Your Team",
     description:
       "Our Node JS development team integrates smoothly into your existing setup, whether for short-term projects or long-term collaborations. They quickly adapt to your workflow and tools, ensuring seamless communication and collaboration. This minimizes any disruption and accelerates your project’s success.",
-    number: "10+",
+    number: "9+",
     stats: "Years Experience",
   },
   {
@@ -116,7 +116,7 @@ export const hireourteamangular = [
     title: "Seamless Integration into Your Team",
     description:
       "Our Node JS development team integrates smoothly into your existing setup, whether for short-term projects or long-term collaborations. They quickly adapt to your workflow and tools, ensuring seamless communication and collaboration. This minimizes any disruption and accelerates your project’s success.",
-    number: "10+",
+    number: "9+",
     stats: "Years Experience",
   },
   {
@@ -142,7 +142,7 @@ export const hireourteamvue = [
     title: "Seamless Integration into Your Team",
     description:
       "Our Vue JS developers integrate smoothly into your existing team and processes, whether for short-term projects or long-term collaborations. They adapt quickly to your workflow and tools, ensuring smooth communication and collaboration while minimizing disruptions.",
-    number: "10+",
+    number: "9+",
     stats: "Years Experience",
   },
   {
@@ -168,7 +168,7 @@ export const hireourteamphp = [
     title: "Seamless Integration into Your Team",
     description:
       "Our developers integrate smoothly into your existing team and processes, whether for short-term projects or long-term collaborations. They quickly adapt to your workflow and tools, ensuring seamless communication and collaboration. This minimizes any disruption and accelerates your project’s success.",
-    number: "10+",
+    number: "9+",
     stats: "Years Experience",
   },
   {
@@ -194,7 +194,7 @@ export const hireourteamlaravel = [
     title: "Seamless Integration into Your Team",
     description:
       "Our Laravel development services ensure that our developers integrate effortlessly into your existing team and processes, whether for short-term projects or long-term collaborations. They quickly adapt to your workflow and tools, ensuring smooth communication and collaboration.",
-    number: "10+",
+    number: "9+",
     stats: "Years Experience",
   },
   {
@@ -220,7 +220,7 @@ export const hireourteamshopify = [
     title: "Seamless Integration into Your Team",
     description:
       "Our developers integrate smoothly into your existing team and workflows, whether for short-term projects or long-term collaborations. When you hire Shopify developers, they quickly adapt to your tools and processes, ensuring seamless communication and efficient teamwork to minimize disruptions and accelerate project success.",
-    number: "10+",
+    number: "9+",
     stats: "Years Experience",
   },
   {
