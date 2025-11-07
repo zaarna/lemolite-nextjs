@@ -423,7 +423,6 @@ const Header = () => {
         {
           heading: "Company Info",
           items: [
-            { title: "Contact Us", href: "/contact-us" },
             { title: "About us", href: "/about-us" },
             {
               title: "Blog",
@@ -436,6 +435,7 @@ const Header = () => {
       ],
     },
     { title: "Case Study", href: "/casestudy" },
+    { title: "Contact Us", href: "/contact-us" },
   ];
 
   const columnHeadings = {

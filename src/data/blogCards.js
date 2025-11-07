@@ -81,7 +81,7 @@ export const blogCards = [
     link: "/blog/django-with-react",
   },
   {
-    id: "SaaS-for-eCommerce-platform",
+    id: "saas-for-eCommerce-platform",
     title:
       "How to Choose the Right SaaS eCommerce Platform",
     author: "Swetketu Trivedi",
@@ -90,6 +90,18 @@ export const blogCards = [
     image: "/ecomblog.webp",
     excerpt:
       "Starting an online store does not have to be complicated anymore. In the past, businesses spent...",
-    link: "/blog/SaaS-for-eCommerce-platform",
+    link: "/blog/saas-for-eCommerce-platform",
+  },
+  {
+    id: "how-to-hire-mobile-app-developer-in-dubai",
+    title:
+      "How to Hire Skilled Mobile App Developers in Dubai for Your Business",
+    author: "Swetketu Trivedi",
+    date: "November 07, 2025",
+    tag: "Mobile app development",
+    image: "/appdubai.webp",
+    excerpt:
+      "Dubai has quickly become a global hub for mobile app innovation. Businesses from all over...",
+    link: "/blog/how-to-hire-mobile-app-developer-in-dubai",
   },
 ];

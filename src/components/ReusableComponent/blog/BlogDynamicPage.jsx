@@ -1208,7 +1208,7 @@ const BlogDynamicPage = () => {
   return (
     <>
       <div
-        className="container blog-dynamic-page pt-16 flex flex-col md:flex-row px-4 md:px-0 pb-10"
+        className="container blog-dynamic-page top-bottom flex flex-col md:flex-row px-4 md:px-0"
         style={{ gap: 32, margin: "0 auto" }}
       >
         {/* Sidebar */}
