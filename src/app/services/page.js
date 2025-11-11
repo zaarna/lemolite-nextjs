@@ -11,6 +11,16 @@ import { servicespage } from "@/data/breadcrumsdata";
 import { features, logos, projects, services } from "@/data/home";
 import { sections, serviesfaqData, whychoosedata } from "@/data/services";
 import React from "react";
+import { pagesMeta } from "@/data/pagesMeta";
+
+export const metadata = {
+  title: pagesMeta.services.title,
+  description: pagesMeta.services.description,
+  keywords: pagesMeta.services.keywords,
+  alternates: {
+    canonical: pagesMeta.services.canonical,
+  },
+};
 
 const ServicesPage = () => {
   return (

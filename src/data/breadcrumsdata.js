@@ -122,6 +122,11 @@ export const angulartech = [
   { name: "Tech Stack", href: "/techstack" },
   { name: "Angular Development", current: true },
 ];
+export const fluttertech = [
+  { name: "Home", href: "/" },
+  { name: "Tech Stack", href: "/techstack" },
+  { name: "Flutter Development", current: true },
+];
 export const reacttech = [
   { name: "Home", href: "/" },
   { name: "Tech Stack", href: "/techstack" },

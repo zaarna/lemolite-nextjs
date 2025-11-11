@@ -12,8 +12,17 @@ import { pythonbenifit } from "@/data/keybenifit";
 import Key_benifit from "@/components/ReusableComponent/HireDevelopers/key_benifit";
 import FAQ from "@/components/ReusableComponent/HireDevelopers/FAQ";
 import { hirefaqpython } from "@/data/faqhire";
-// import Testimonial from "@/components/ReusableComponent/HireDevelopers/Testimonial";
-import { testimonials } from "@/data/home";
+import { pagesMeta } from "@/data/pagesMeta";
+
+
+export const metadata = {
+  title: pagesMeta["hire-python-developer"].title,
+  description: pagesMeta["hire-python-developer"].description,
+  keywords: pagesMeta["hire-python-developer"].keywords,
+  alternates: {
+    canonical: pagesMeta["hire-python-developer"].canonical,
+  },
+};
 
 const HirePythonDeveloperPage = () => {
   return (
@@ -64,10 +73,7 @@ const HirePythonDeveloperPage = () => {
         bg="bg-gradient-to-r from-[#2ec4f3]/30 to-[#bfd633]/30"
       />
       <FAQ questions={hirefaqpython} />
-      {/* <Testimonial
-        title="Hear from Our Happy Clients"
-        testimonials={testimonials}
-      /> */}
+
     </div>
   );
 };

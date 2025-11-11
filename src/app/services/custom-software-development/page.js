@@ -11,7 +11,17 @@ import { custombexpert, softwereexpert } from "@/data/expertise";
 import { customservices } from "@/data/home";
 import { projectSteps, softwarefaqData } from "@/data/services";
 import React from "react";
+import { pagesMeta } from "@/data/pagesMeta";
 
+
+export const metadata = {
+  title: pagesMeta["custom-software-development"].title,
+  description: pagesMeta["custom-software-development"].description,
+  keywords: pagesMeta["custom-software-development"].keywords,
+  alternates: {
+    canonical: pagesMeta["custom-software-development"].canonical,
+  },
+};
 const CustomSoftwareDevelopmentPage = () => {
   return (
     <div className="min-h-screen ">

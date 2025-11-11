@@ -10,6 +10,17 @@ import { techstack } from "@/data/breadcrumsdata";
 import { techstackmainfaqData } from "@/data/faqhire";
 import { logos, projects } from "@/data/home";
 import { allStats } from "@/data/techstack";
+import { pagesMeta } from "@/data/pagesMeta";
+
+
+export const metadata = {
+  title: pagesMeta.techstack.title,
+  description: pagesMeta.techstack.description,
+  keywords: pagesMeta.techstack.keywords,
+  alternates: {
+    canonical: pagesMeta.techstack.canonical,
+  },
+};
 
 function TechStack() {
   return (

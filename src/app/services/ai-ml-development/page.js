@@ -14,6 +14,17 @@ import {
   aimlprocessSteps,
 } from "@/data/services";
 import React from "react";
+import { pagesMeta } from "@/data/pagesMeta";
+
+
+export const metadata = {
+  title: pagesMeta["ai-ml-development"].title,
+  description: pagesMeta["ai-ml-development"].description,
+  keywords: pagesMeta["ai-ml-development"].keywords,
+  alternates: {
+    canonical: pagesMeta["ai-ml-development"].canonical,
+  },
+};
 
 const AIMLDevelopmentPage = () => {
   return (

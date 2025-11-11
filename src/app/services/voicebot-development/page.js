@@ -7,6 +7,17 @@ import Why_choose_us from "@/components/ReusableComponent/WhyChooseUs/WhyChooseU
 import { Voicebot } from "@/data/breadcrumsdata";
 import { voicebotstep, voicespecialize } from "@/data/services";
 import React from "react";
+import { pagesMeta } from "@/data/pagesMeta";
+
+
+export const metadata = {
+  title: pagesMeta["voicebot-development"].title,
+  description: pagesMeta["voicebot-development"].description,
+  keywords: pagesMeta["voicebot-development"].keywords,
+  alternates: {
+    canonical: pagesMeta["voicebot-development"].canonical,
+  },
+};
 
 const VoiceBotDevelopmentPage = () => {
   return (

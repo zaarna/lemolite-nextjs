@@ -5,6 +5,17 @@ import FAQ from "@/components/ReusableComponent/HireDevelopers/FAQ";
 import Innerhero from "@/components/ReusableComponent/Innerhero/Innerhero";
 import { uiux } from "@/data/breadcrumsdata";
 import { uiuxfaqData, uiuxprocessSteps } from "@/data/services";
+import { pagesMeta } from "@/data/pagesMeta";
+
+
+export const metadata = {
+  title: pagesMeta["ui-ux-design"].title,
+  description: pagesMeta["ui-ux-design"].description,
+  keywords: pagesMeta["ui-ux-design"].keywords,
+  alternates: {
+    canonical: pagesMeta["ui-ux-design"].canonical,
+  },
+};
 
 const UIUXDesignPage = () => {
   return (

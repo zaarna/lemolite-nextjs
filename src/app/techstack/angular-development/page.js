@@ -12,6 +12,17 @@ import {
   angularkeydata,
   angularlibraries,
 } from "@/data/techstack";
+import { pagesMeta } from "@/data/pagesMeta";
+
+
+export const metadata = {
+  title: pagesMeta["angular-development"].title,
+  description: pagesMeta["angular-development"].description,
+  keywords: pagesMeta["angular-development"].keywords,
+  alternates: {
+    canonical: pagesMeta["angular-development"].canonical,
+  },
+};
 
 const AngularDevelopmentPage = () => {
   return (

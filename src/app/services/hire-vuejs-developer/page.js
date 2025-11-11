@@ -11,6 +11,17 @@ import { hireprocessvuejs } from "@/data/hireprocess";
 import { hireourteamvue } from "@/data/hiringDevelopers";
 import { vuebenefit } from "@/data/keybenifit";
 import { whyhirevuejs } from "@/data/whyhiredev";
+import { pagesMeta } from "@/data/pagesMeta";
+
+
+export const metadata = {
+  title: pagesMeta["hire-vuejs-developer"].title,
+  description: pagesMeta["hire-vuejs-developer"].description,
+  keywords: pagesMeta["hire-vuejs-developer"].keywords,
+  alternates: {
+    canonical: pagesMeta["hire-vuejs-developer"].canonical,
+  },
+};
 
 const HireVueDeveloperPage = () => {
   return (

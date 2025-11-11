@@ -12,6 +12,17 @@ import {
   laravelkeydata,
   laravellibraries,
 } from "@/data/techstack";
+import { pagesMeta } from "@/data/pagesMeta";
+
+
+export const metadata = {
+  title: pagesMeta["laravel-development"].title,
+  description: pagesMeta["laravel-development"].description,
+  keywords: pagesMeta["laravel-development"].keywords,
+  alternates: {
+    canonical: pagesMeta["laravel-development"].canonical,
+  },
+};
 
 const LaravelDevelopmentPage = () => {
   return (

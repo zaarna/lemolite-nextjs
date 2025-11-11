@@ -8,6 +8,7 @@ import { addresses, testimonials } from "@/data/home";
 import Testimonial from "@/components/ReusableComponent/Testimonial/Testimonial";
 import { icons } from "lucide-react";
 import PopupTimer from "@/components/PopupTimer";
+import WhatsAppIcon from "@/components/ReusableComponent/WhatsAppIcon/WhatsAppIcon";
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -27,12 +28,11 @@ const outfit = Outfit({
 });
 
 export const metadata = {
+  // metadataBase: new URL("https://lemolite.com/"),
   icons: {
     icon: "/lemolite.ico",
   },
-  title: "Custom Software Development Services | Lemolite Technologies",
-  description:
-    "Lemolite Technologies LLP provides custom software development services tailored to your business needs, ensuring innovative and efficient solutions.",
+  authors: [{ name: "Lemolite Technologies" }],
 };
 
 export default function RootLayout({ children }) {
@@ -42,10 +42,10 @@ export default function RootLayout({ children }) {
         <Header />
         <ToastContainer />
         {children}
-        {/* <Testimonial
+        <Testimonial
           title="Hear from Our Happy Clients"
           testimonials={testimonials}
-        /> */}
+        />
         <Contectinfo
           maintitle={"Let’s Transform Your Vision into Reality"}
           subtitle={"Get in Touch!"}
@@ -54,6 +54,7 @@ export default function RootLayout({ children }) {
           }
           addresses={addresses}
         />
+        <WhatsAppIcon />
         <Footer />
         <PopupTimer />
       </body>

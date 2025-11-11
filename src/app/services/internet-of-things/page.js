@@ -7,6 +7,17 @@ import Why_choose_us from "@/components/ReusableComponent/WhyChooseUs/WhyChooseU
 import { iot } from "@/data/breadcrumsdata";
 import { iotdata, iotfaqData, iotsystem, slidesiot } from "@/data/services";
 import React from "react";
+import { pagesMeta } from "@/data/pagesMeta";
+
+
+export const metadata = {
+  title: pagesMeta["internet-of-things"].title,
+  description: pagesMeta["internet-of-things"].description,
+  keywords: pagesMeta["internet-of-things"].keywords,
+  alternates: {
+    canonical: pagesMeta["internet-of-things"].canonical,
+  },
+};
 
 const IoTDevelopmentPage = () => {
   return (

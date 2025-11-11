@@ -9,6 +9,16 @@ import Innerhero from "@/components/ReusableComponent/Innerhero/Innerhero";
 import { about } from "@/data/breadcrumsdata";
 import { projects, services } from "@/data/home";
 import React from "react";
+import { pagesMeta } from "@/data/pagesMeta";
+
+export const metadata = {
+  title: pagesMeta.aboutus.title,
+  description: pagesMeta.aboutus.description,
+  keywords: pagesMeta.aboutus.keywords,
+  alternates: {
+    canonical: pagesMeta.aboutus.canonical,
+  },
+};
 
 const AboutUsPage = () => {
   return (

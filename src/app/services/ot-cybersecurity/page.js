@@ -6,7 +6,17 @@ import Why_choose_us from "@/components/ReusableComponent/WhyChooseUs/WhyChooseU
 import { cybersecurity } from "@/data/breadcrumsdata";
 import { otcybersecurity, securitySections } from "@/data/services";
 import React from "react";
+import { pagesMeta } from "@/data/pagesMeta";
 
+
+export const metadata = {
+  title: pagesMeta["ot-cybersecurity"].title,
+  description: pagesMeta["ot-cybersecurity"].description,
+  keywords: pagesMeta["ot-cybersecurity"].keywords,
+  alternates: {
+    canonical: pagesMeta["ot-cybersecurity"].canonical,
+  },
+};
 function Cybersecurity() {
   return (
     <div className="min-h-screen">

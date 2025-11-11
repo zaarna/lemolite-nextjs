@@ -11,6 +11,17 @@ import { hireprocesslaravel } from "@/data/hireprocess";
 import { hireourteamlaravel } from "@/data/hiringDevelopers";
 import { laravelbenefit } from "@/data/keybenifit";
 import { whyhirelaravel } from "@/data/whyhiredev";
+import { pagesMeta } from "@/data/pagesMeta";
+
+
+export const metadata = {
+  title: pagesMeta["hire-laravel-developer"].title,
+  description: pagesMeta["hire-laravel-developer"].description,
+  keywords: pagesMeta["hire-laravel-developer"].keywords,
+  alternates: {
+    canonical: pagesMeta["hire-laravel-developer"].canonical,
+  },
+};
 
 const HireLaravelDeveloperPage = () => {
   return (

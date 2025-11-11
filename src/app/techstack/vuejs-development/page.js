@@ -13,6 +13,17 @@ import {
   vuelibraries,
 } from "@/data/techstack";
 import React from "react";
+import { pagesMeta } from "@/data/pagesMeta";
+
+
+export const metadata = {
+  title: pagesMeta["vuejs-development"].title,
+  description: pagesMeta["vuejs-development"].description,
+  keywords: pagesMeta["vuejs-development"].keywords,
+  alternates: {
+    canonical: pagesMeta["vuejs-development"].canonical,
+  },
+};
 
 const VueJSDevelopmentPage = () => {
   return (

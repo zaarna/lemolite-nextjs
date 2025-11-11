@@ -12,6 +12,17 @@ import {
   shopifykeydata,
   shopifylibraries,
 } from "@/data/techstack";
+import { pagesMeta } from "@/data/pagesMeta";
+
+
+export const metadata = {
+  title: pagesMeta["shopify-development"].title,
+  description: pagesMeta["shopify-development"].description,
+  keywords: pagesMeta["shopify-development"].keywords,
+  alternates: {
+    canonical: pagesMeta["shopify-development"].canonical,
+  },
+};
 
 const ShopifyDevelopmentPage = () => {
   return (

@@ -12,6 +12,17 @@ import {
   weblistItems,
   webprocessSteps,
 } from "@/data/services";
+import { pagesMeta } from "@/data/pagesMeta";
+
+
+export const metadata = {
+  title: pagesMeta["web-development"].title,
+  description: pagesMeta["web-development"].description,
+  keywords: pagesMeta["web-development"].keywords,
+  alternates: {
+    canonical: pagesMeta["web-development"].canonical,
+  },
+};
 const WebDevelopmentPage = () => {
   return (
     <div className="min-h-screen">

@@ -8,6 +8,7 @@ import TrustedByCliet_WhoWeAre from "@/components/ReusableComponent/TrustedByCli
 import { blogCards } from "@/data/blogCards";
 import OurWork from "@/components/AboutUs/OurWork";
 import Main_banner from "@/components/Home/Main_banner";
+import { pagesMeta } from "@/data/pagesMeta";
 import {
   logos,
   features,
@@ -17,6 +18,15 @@ import {
   projects,
 } from "@/data/home";
 import React from "react";
+
+export const metadata = {
+  title: pagesMeta.home.title,
+  description: pagesMeta.home.description,
+  keywords: pagesMeta.home.keywords,
+  alternates: {
+    canonical: pagesMeta.home.canonical,
+  },
+};
 
 // This will be replaced with your actual HomePage component when migrated
 const HomePage = () => {

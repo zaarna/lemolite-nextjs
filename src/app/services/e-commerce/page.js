@@ -14,6 +14,17 @@ import {
   InnovativeTechnologies,
   servicesempower,
 } from "@/data/services";
+import { pagesMeta } from "@/data/pagesMeta";
+
+
+export const metadata = {
+  title: pagesMeta["e-commerce"].title,
+  description: pagesMeta["e-commerce"].description,
+  keywords: pagesMeta["e-commerce"].keywords,
+  alternates: {
+    canonical: pagesMeta["e-commerce"].canonical,
+  },
+};
 
 const ECommercePage = () => {
   return (

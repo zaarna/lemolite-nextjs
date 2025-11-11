@@ -12,6 +12,17 @@ import {
   phythonkeydata,
   phythonlibraries,
 } from "@/data/techstack";
+import { pagesMeta } from "@/data/pagesMeta";
+
+
+export const metadata = {
+  title: pagesMeta["python-development"].title,
+  description: pagesMeta["python-development"].description,
+  keywords: pagesMeta["python-development"].keywords,
+  alternates: {
+    canonical: pagesMeta["python-development"].canonical,
+  },
+};
 
 const PythonDevelopmentPage = () => {
   return (

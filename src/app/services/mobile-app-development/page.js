@@ -13,7 +13,17 @@ import {
   mobilelistItems,
   mobileprocessSteps,
 } from "@/data/services";
+import { pagesMeta } from "@/data/pagesMeta";
 
+
+export const metadata = {
+  title: pagesMeta["mobile-app-development"].title,
+  description: pagesMeta["mobile-app-development"].description,
+  keywords: pagesMeta["mobile-app-development"].keywords,
+  alternates: {
+    canonical: pagesMeta["mobile-app-development"].canonical,
+  },
+};
 const MobileAppDevelopmentPage = () => {
   return (
     <div className="min-h-screen">

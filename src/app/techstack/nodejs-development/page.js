@@ -12,6 +12,17 @@ import {
   nodekeydata,
   nodelibraries,
 } from "@/data/techstack";
+import { pagesMeta } from "@/data/pagesMeta";
+
+
+export const metadata = {
+  title: pagesMeta["nodejs-development"].title,
+  description: pagesMeta["nodejs-development"].description,
+  keywords: pagesMeta["nodejs-development"].keywords,
+  alternates: {
+    canonical: pagesMeta["nodejs-development"].canonical,
+  },
+};
 
 const AngularDevelopmentPage = () => {
   return (

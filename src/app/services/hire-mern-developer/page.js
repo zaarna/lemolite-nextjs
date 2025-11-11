@@ -12,6 +12,17 @@ import { hireourteammern } from "@/data/hiringDevelopers";
 import { mernbenefit } from "@/data/keybenifit";
 import { whyhiremern } from "@/data/whyhiredev";
 import React from "react";
+import { pagesMeta } from "@/data/pagesMeta";
+
+
+export const metadata = {
+  title: pagesMeta["hire-mern-developer"].title,
+  description: pagesMeta["hire-mern-developer"].description,
+  keywords: pagesMeta["hire-mern-developer"].keywords,
+  alternates: {
+    canonical: pagesMeta["hire-mern-developer"].canonical,
+  },
+};
 
 const HireMERNDeveloperPage = () => {
   return (

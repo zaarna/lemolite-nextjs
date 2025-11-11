@@ -11,6 +11,17 @@ import { hireprocessangular } from "@/data/hireprocess";
 import { hireourteamangular } from "@/data/hiringDevelopers";
 import { angularbenefit } from "@/data/keybenifit";
 import { whyhireangular } from "@/data/whyhiredev";
+import { pagesMeta } from "@/data/pagesMeta";
+
+
+export const metadata = {
+  title: pagesMeta["hire-angular-developer"].title,
+  description: pagesMeta["hire-angular-developer"].description,
+  keywords: pagesMeta["hire-angular-developer"].keywords,
+  alternates: {
+    canonical: pagesMeta["hire-angular-developer"].canonical,
+  },
+};
 
 const HireAngularDeveloperPage = () => {
   return (

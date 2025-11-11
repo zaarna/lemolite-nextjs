@@ -11,6 +11,17 @@ import { hireprocessphp } from "@/data/hireprocess";
 import { hireourteamphp } from "@/data/hiringDevelopers";
 import { phpbenefit } from "@/data/keybenifit";
 import { whyhirephp } from "@/data/whyhiredev";
+import { pagesMeta } from "@/data/pagesMeta";
+
+
+export const metadata = {
+  title: pagesMeta["hire-php-developer"].title,
+  description: pagesMeta["hire-php-developer"].description,
+  keywords: pagesMeta["hire-php-developer"].keywords,
+  alternates: {
+    canonical: pagesMeta["hire-php-developer"].canonical,
+  },
+};
 
 const HirePhpDeveloperPage = () => {
   return (

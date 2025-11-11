@@ -1,6 +1,16 @@
 import Innerhero from "@/components/ReusableComponent/Innerhero/Innerhero";
 import Link from "next/link";
 import React from "react";
+import { pagesMeta } from "@/data/pagesMeta";
+
+export const metadata = {
+  title: pagesMeta.termsconditions.title,
+  description: pagesMeta.termsconditions.description,
+  keywords: pagesMeta.termsconditions.keywords,
+  alternates: {
+    canonical: pagesMeta.termsconditions.canonical,
+  },
+};
 
 const termsAndConditions = [
   {

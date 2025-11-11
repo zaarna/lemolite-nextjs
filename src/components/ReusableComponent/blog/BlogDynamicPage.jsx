@@ -334,6 +334,9 @@ const BlogSectionTable = React.forwardRef((props, ref) => {
     firstColumnBackground = "",
     title,
     advantages,
+    advantagesTitle,
+    challengesTitle,
+    exampleTitle,
     challenges,
     example,
     caption,
@@ -535,65 +538,78 @@ const BlogSectionTable = React.forwardRef((props, ref) => {
   const currentDesign = designs[design] || designs["1"];
 
   // ========== DESIGN 2 ==========
-  if (design === "2") {
-    return (
-      <div ref={ref} style={currentDesign.container}>
-        <div style={currentDesign.wrapper}>
-          {title && <h2 style={currentDesign.title}>{title}</h2>}
-          {title && <div style={currentDesign.titleSeparator}></div>}
-          {description && (
+ if (design === "2") {
+  return (
+    <div ref={ref} style={currentDesign.container}>
+      <div style={currentDesign.wrapper}>
+        
+        {title && <h2 style={currentDesign.title}>{title}</h2>}
+        {title && <div style={currentDesign.titleSeparator}></div>}
+
+        {description && (
+          <p
+            style={currentDesign.description}
+            dangerouslySetInnerHTML={{ __html: description }}
+          />
+        )}
+
+        {/* ✅ Dynamic Advantages Title */}
+        {advantages?.length > 0 && (
+          <div style={{ marginBottom: "1.5rem" }}>
+            <h3 style={currentDesign.sectionTitle}>
+              {advantagesTitle || "Advantages"}:
+            </h3>
+            <ul>
+              {advantages.map((a, i) => (
+                <li key={i} style={currentDesign.listItem}>
+                  <span style={currentDesign.bullet}>◆</span>
+                  <span dangerouslySetInnerHTML={{ __html: a }} />
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        {/* ✅ Dynamic Challenges Title */}
+        {challenges?.length > 0 && (
+          <div style={{ marginBottom: "1.5rem" }}>
+            <h3 style={currentDesign.sectionTitle}>
+              {challengesTitle || "Challenges"}:
+            </h3>
+            <ul>
+              {challenges.map((c, i) => (
+                <li key={i} style={currentDesign.listItem}>
+                  <span style={currentDesign.bullet}>◆</span>
+                  <span dangerouslySetInnerHTML={{ __html: c }} />
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        {/* ✅ Dynamic Example Title */}
+        {example && (
+          <div>
+            <h3 style={currentDesign.sectionTitle}>
+              {exampleTitle || "Example"}:
+            </h3>
             <p
-              style={currentDesign.description}
-              dangerouslySetInnerHTML={{ __html: description }}
+              style={{
+                fontSize: "18px",
+                lineHeight: "1.7",
+                color: "#696969",
+                margin: "0",
+              }}
+              dangerouslySetInnerHTML={{ __html: example }}
             />
-          )}
+          </div>
+        )}
 
-          {advantages?.length > 0 && (
-            <div style={{ marginBottom: "1.5rem" }}>
-              <h3 style={currentDesign.sectionTitle}>Advantages:</h3>
-              <ul>
-                {advantages.map((a, i) => (
-                  <li key={i} style={currentDesign.listItem}>
-                    <span style={currentDesign.bullet}>◆</span>
-                    <span dangerouslySetInnerHTML={{ __html: a }} />
-                  </li>
-                ))}
-              </ul>
-            </div>
-          )}
-
-          {challenges?.length > 0 && (
-            <div style={{ marginBottom: "1.5rem" }}>
-              <h3 style={currentDesign.sectionTitle}>Challenges:</h3>
-              <ul>
-                {challenges.map((c, i) => (
-                  <li key={i} style={currentDesign.listItem}>
-                    <span style={currentDesign.bullet}>◆</span>
-                    <span dangerouslySetInnerHTML={{ __html: c }} />
-                  </li>
-                ))}
-              </ul>
-            </div>
-          )}
-
-          {example && (
-            <div>
-              <h3 style={currentDesign.sectionTitle}>Example:</h3>
-              <p
-                style={{
-                  fontSize: "18px",
-                  lineHeight: "1.7",
-                  color: "#696969",
-                  margin: "0",
-                }}
-                dangerouslySetInnerHTML={{ __html: example }}
-              />
-            </div>
-          )}
-        </div>
       </div>
-    );
-  }
+    </div>
+  );
+}
+
 
   // ========== DESIGN 3 ==========
   if (design === "3") {

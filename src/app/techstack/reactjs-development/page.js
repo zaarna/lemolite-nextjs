@@ -12,6 +12,17 @@ import {
   reactlibraries,
   reactdata,
 } from "@/data/techstack";
+import { pagesMeta } from "@/data/pagesMeta";
+
+
+export const metadata = {
+  title: pagesMeta["reactjs-development"].title,
+  description: pagesMeta["reactjs-development"].description,
+  keywords: pagesMeta["reactjs-development"].keywords,
+  alternates: {
+    canonical: pagesMeta["reactjs-development"].canonical,
+  },
+};
 
 const ReactJSDevelopmentPage = () => {
   return (

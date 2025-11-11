@@ -12,6 +12,17 @@ import { hireourteamreact } from "@/data/hiringDevelopers";
 import { reactbenefit } from "@/data/keybenifit";
 import { whyhirereactjs } from "@/data/whyhiredev";
 import React from "react";
+import { pagesMeta } from "@/data/pagesMeta";
+
+
+export const metadata = {
+  title: pagesMeta["hire-reactjs-developer"].title,
+  description: pagesMeta["hire-reactjs-developer"].description,
+  keywords: pagesMeta["hire-reactjs-developer"].keywords,
+  alternates: {
+    canonical: pagesMeta["hire-reactjs-developer"].canonical,
+  },
+};
 
 const HireReactJSDeveloperPage = () => {
   return (

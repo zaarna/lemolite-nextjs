@@ -12,6 +12,17 @@ import {
   phpkeydata,
   phplibraries,
 } from "@/data/techstack";
+import { pagesMeta } from "@/data/pagesMeta";
+
+
+export const metadata = {
+  title: pagesMeta["php-development"].title,
+  description: pagesMeta["php-development"].description,
+  keywords: pagesMeta["php-development"].keywords,
+  alternates: {
+    canonical: pagesMeta["php-development"].canonical,
+  },
+};
 
 const PhpDevelopmentPage = () => {
   return (

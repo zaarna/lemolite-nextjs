@@ -11,6 +11,17 @@ import { hireprocessnodejs } from "@/data/hireprocess";
 import { hireourteamnode } from "@/data/hiringDevelopers";
 import { nodebenefit } from "@/data/keybenifit";
 import { whyhirenodejs } from "@/data/whyhiredev";
+import { pagesMeta } from "@/data/pagesMeta";
+
+
+export const metadata = {
+  title: pagesMeta["hire-nodejs-developer"].title,
+  description: pagesMeta["hire-nodejs-developer"].description,
+  keywords: pagesMeta["hire-nodejs-developer"].keywords,
+  alternates: {
+    canonical: pagesMeta["hire-nodejs-developer"].canonical,
+  },
+};
 
 const HireNodJsDeveloperPage = () => {
   return (

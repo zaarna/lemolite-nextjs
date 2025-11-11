@@ -6,6 +6,17 @@ import Why_choose_us from "@/components/ReusableComponent/WhyChooseUs/WhyChooseU
 import { Chatbot } from "@/data/breadcrumsdata";
 import { chatbotstep, iotsystem, specialize } from "@/data/services";
 import React from "react";
+import { pagesMeta } from "@/data/pagesMeta";
+
+
+export const metadata = {
+  title: pagesMeta["chatbot-development"].title,
+  description: pagesMeta["chatbot-development"].description,
+  keywords: pagesMeta["chatbot-development"].keywords,
+  alternates: {
+    canonical: pagesMeta["chatbot-development"].canonical,
+  },
+};
 
 const ChatBotDevelopmentPage = () => {
   return (

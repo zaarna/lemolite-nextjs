@@ -3,6 +3,16 @@ import HaveanIdea from "@/components/HaveanIdea";
 import Innerhero from "@/components/ReusableComponent/Innerhero/Innerhero";
 import { contactus } from "@/data/breadcrumsdata";
 import React from "react";
+import { pagesMeta } from "@/data/pagesMeta";
+
+export const metadata = {
+  title: pagesMeta.contactus.title,
+  description: pagesMeta.contactus.description,
+  keywords: pagesMeta.contactus.keywords,
+  alternates: {
+    canonical: pagesMeta.contactus.canonical,
+  },
+};
 
 const ContactUsPage = () => {
   return (

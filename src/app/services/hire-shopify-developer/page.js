@@ -11,6 +11,17 @@ import { hireprocessshopify } from "@/data/hireprocess";
 import { hireourteamshopify } from "@/data/hiringDevelopers";
 import { shopifybenefit } from "@/data/keybenifit";
 import { whyhireshopify } from "@/data/whyhiredev";
+import { pagesMeta } from "@/data/pagesMeta";
+
+
+export const metadata = {
+  title: pagesMeta["hire-shopify-developer"].title,
+  description: pagesMeta["hire-shopify-developer"].description,
+  keywords: pagesMeta["hire-shopify-developer"].keywords,
+  alternates: {
+    canonical: pagesMeta["hire-shopify-developer"].canonical,
+  },
+};
 
 const HireShopifyDeveloperPage = () => {
   return (

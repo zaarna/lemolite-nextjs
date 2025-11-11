@@ -104,4 +104,16 @@ export const blogCards = [
       "Dubai has quickly become a global hub for mobile app innovation. Businesses from all over...",
     link: "/blog/how-to-hire-mobile-app-developer-in-dubai",
   },
+  {
+    id: "ai-as-a-Service",
+    title:
+      "AI-as-a-Service Your Blueprint for Smarter, Faster Business Growth",
+    author: "Swetketu Trivedi",
+    date: "November 11, 2025",
+    tag: "AI/ML",
+    image: "/aiasservice.webp",
+    excerpt:
+      "Hey there! Let’s start with a simple question: have you ever wished your business could think...",
+    link: "/blog/ai-as-a-Service",
+  },
 ];

@@ -41,6 +41,24 @@ export const angularlibraries = [
   { src: "/ngxcharts.svg", srcname: "chart", text: "NGX-charts" },
 ];
 
+// Flutter Libraries
+export const flutterlibraries = [
+  { src: "/ngrx.svg", srcname: "ngrx", text: "Provider" },
+  {
+    src: "/angularmaterial.svg",
+    srcname: "material",
+    text: "GetX",
+  },
+  { src: "/ngxs.svg", srcname: "ngxs", text: "Bloc" },
+  { src: "/ngxbootstrap.svg", srcname: "boot", text: "Hive" },
+  { src: "/angularfire.svg", srcname: "icon_angular", text: "Dio" },
+  { src: "/ngxtranslate.svg", srcname: "translate", text: "Flutter Riverpod" },
+  { src: "/primeng.svg", srcname: "ng", text: "Firebase" },
+  { src: "/apolloangular.svg", srcname: "apollo", text: "Lottie" },
+  { src: "/flexlayout.svg", srcname: "flex", text: "Rive" },
+  { src: "/ngxcharts.svg", srcname: "chart", text: "Intl" },
+];
+
 // Vue Libraries
 export const vuelibraries = [
   { src: "/bootstrapvue.svg", srcname: "BootstrapVue", text: "BootstrapVue" },
@@ -266,6 +284,45 @@ export const angularfeatures = [
     title: "Forms and Validation",
     description:
       "The forms module offers tools for building and validating dynamic forms effortlessly, ensuring data integrity and custom error handling to deliver a smoother user experience",
+  },
+];
+
+export const flutterfeatures = [
+  {
+    icon: "/01.svg",
+    title: "Dart Programming Language",
+    description:
+      "Skilled in the Dart language to craft clean, efficient, and maintainable code for seamless Flutter app performance.",
+  },
+  {
+    icon: "/02.svg",
+    title: "Cross-Platform App Development",
+    description:
+      "Build feature-rich apps for iOS, Android, and Web using a single, unified Flutter codebase.",
+  },
+  {
+    icon: "/03.svg",
+    title: "API Integration & Backend Connectivity ",
+    description:
+      "Implement smooth third-party and custom API integrations for dynamic, data-driven functionality.",
+  },
+  {
+    icon: "/04.svg",
+    title: "Custom Flutter Widgets",
+    description:
+      " Develop unique, brand-aligned UI components for consistent design and engaging user experiences.",
+  },
+  {
+    icon: "/05.svg",
+    title: "Performance Optimization & Testing",
+    description:
+      "Ensure native-like speed, smooth animations, and responsive performance across all devices",
+  },
+  {
+    icon: "/06.svg",
+    title: "App Deployment & Continuous Maintenance",
+    description:
+      "Provide full lifecycle support, from app launch to updates, ensuring stability and scalability.",
   },
 ];
 
@@ -611,6 +668,45 @@ export const angularkeydata = [
     title: "Code Reusability",
     description:
       "Angular’s modular design ensures reusable components, reducing redundant code and speeding up development while maintaining a clean codebase.",
+  },
+];
+
+export const flutterkeydata = [
+  {
+    img: "/reactdev5.svg",
+    title: "High Performance",
+    description:
+      "Angular’s AOT compilation and tree-shaking techniques reduce load times and optimize app performance, delivering fast, responsive user experiences.",
+  },
+  {
+    img: "/phythondev3.svg",
+    title: "Cross-Platform",
+    description:
+      "Angular allows the development of web, mobile, and PWAs with a single codebase, offering consistent user experiences across platforms while cutting down on costs.",
+  },
+  {
+    img: "/phythondev2.svg",
+    title: "Strong Community",
+    description:
+      "Backed by Google, Angular’s strong community provides extensive tools, libraries, and support, ensuring developers stay updated and efficient.",
+  },
+  {
+    img: "/angulardev5.svg",
+    title: "Maintainability",
+    description:
+      "Angular’s component-based structure simplifies maintenance and allows quick updates, keeping your app adaptable to new technologies and requirements.",
+  },
+  {
+    img: "/angulardev6.svg",
+    title: "Code Reusability",
+    description:
+      "Angular’s modular design ensures reusable components, reducing redundant code and speeding up development while maintaining a clean codebase.",
+  },
+  {
+    img: "/phythondev6.svg",
+    title: "Scalability",
+    description:
+      "As your company grows, you can easily expand and maintain your Flutter applications.",
   },
 ];
 

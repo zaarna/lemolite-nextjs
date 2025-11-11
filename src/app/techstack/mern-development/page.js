@@ -12,6 +12,17 @@ import {
   mernkeydata,
   mernlibraries,
 } from "@/data/techstack";
+import { pagesMeta } from "@/data/pagesMeta";
+
+
+export const metadata = {
+  title: pagesMeta["mern-development"].title,
+  description: pagesMeta["mern-development"].description,
+  keywords: pagesMeta["mern-development"].keywords,
+  alternates: {
+    canonical: pagesMeta["mern-development"].canonical,
+  },
+};
 
 const MernDevelopmentPage = () => {
   return (

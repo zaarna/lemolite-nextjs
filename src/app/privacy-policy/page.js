@@ -1,12 +1,22 @@
 import Innerhero from "@/components/ReusableComponent/Innerhero/Innerhero";
 import React from "react";
+import { pagesMeta } from "@/data/pagesMeta";
+
+export const metadata = {
+  title: pagesMeta.privacypolicy.title,
+  description: pagesMeta.privacypolicy.description,
+  keywords: pagesMeta.privacypolicy.keywords,
+  alternates: {
+    canonical: pagesMeta.privacypolicy.canonical,
+  },
+};
 
 function page() {
   return (
     <>
       <Innerhero
         padding="p-0"
-        title={"Your Privacy is More Than a Policy - It’s Our Promise"}
+        title={"Your Privacy is More Than a Policy-It’s Our Promise"}
         btnHide={true}
         src={"/tearms.webp"}
         alt={"tearms image"}
