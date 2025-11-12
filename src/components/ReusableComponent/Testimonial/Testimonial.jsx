@@ -1,25 +1,26 @@
 "use client";
 
-import React, { useRef, useState, useEffect, useCallback } from "react";
-import useEmblaCarousel from "embla-carousel-react";
-import Autoplay from "embla-carousel-autoplay";
-import Image from "next/image";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import React, { useState } from "react";
 import { usePathname } from "next/navigation";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import Titlecontent from "../../ReusableComponent/Titlecontent/Titlecontent";
+import Image from "next/image";
 
 export default function Testimonial({ testimonials = [], title }) {
   const pathname = usePathname();
+  const [isBeginning, setIsBeginning] = useState(true);
+  const [isEnd, setIsEnd] = useState(false);
 
-  // ❌ Define excluded pages (no testimonial)
+  // ❌ Pages where testimonials should NOT appear
   const excludedPaths = [
     "/contact-us",
     "/careers",
-    // "/blog",
     "/life-at-lemolite",
-
-    // Services without testimonial 👇
-
     "/services/e-commerce",
     "/services/web-development",
     "/services/mobile-app-development",
@@ -34,157 +35,146 @@ export default function Testimonial({ testimonials = [], title }) {
   const isCareerInner =
     pathname.startsWith("/careers/") && pathname !== "/careers";
 
-  // ✅ Show testimonial only on specific pages
   if (excludedPaths.includes(pathname) || isBlogInner || isCareerInner) {
     return null;
   }
 
-  // --- Carousel setup ---
-  const autoplay = useRef(Autoplay({ delay: 4000, stopOnInteraction: false }));
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
-    autoplay.current,
-  ]);
-  const [selectedIndex, setSelectedIndex] = useState(0);
-  const [scrollSnaps, setScrollSnaps] = useState([]);
+  const showControls = testimonials.length > 3;
 
-  const scrollTo = useCallback(
-    (index) => emblaApi && emblaApi.scrollTo(index),
-    [emblaApi]
-  );
-  const scrollPrev = useCallback(
-    () => emblaApi && emblaApi.scrollPrev(),
-    [emblaApi]
-  );
-  const scrollNext = useCallback(
-    () => emblaApi && emblaApi.scrollNext(),
-    [emblaApi]
-  );
+  const onSwiper = (swiper) => {
+    swiper.on("slideChange", () => {
+      setIsBeginning(swiper.isBeginning);
+      setIsEnd(swiper.isEnd);
+    });
+  };
 
-  const onSelect = useCallback(() => {
-    if (!emblaApi) return;
-    setSelectedIndex(emblaApi.selectedScrollSnap());
-  }, [emblaApi]);
-
-  useEffect(() => {
-    if (!emblaApi) return;
-    setScrollSnaps(emblaApi.scrollSnapList());
-    emblaApi.on("select", onSelect);
-    onSelect();
-  }, [emblaApi, onSelect]);
-
-  const showArrows =
-    (typeof window !== "undefined" &&
-      ((window.innerWidth >= 1024 && testimonials.length > 3) ||
-        (window.innerWidth >= 640 &&
-          window.innerWidth < 1024 &&
-          testimonials.length > 2) ||
-        (window.innerWidth < 640 && testimonials.length > 1))) ??
-    false;
-
-  // --- Render Section ---
   return (
-    <section className="top-bottom">
+    <section className="top-bottom relative">
       <div className="container mx-auto px-4">
         {/* Section Title */}
-        <div className="text-center mb-12 col-span-6 mx-auto">
+        <div className="text-center mb-12">
           <Titlecontent title={title || "What Our Clients Say"} />
         </div>
 
-        <div className="relative overflow-hidden py-14">
-          {/* Carousel */}
-          <div className="px-5 lg:px-20 " ref={emblaRef}>
-            <div className="flex">
-              {testimonials.map((testimonial, index) => (
-                <div
-                  key={index}
-                  className="
-                    flex-[0_0_100%]
-                    sm:flex-[0_0_50%]
-                    lg:flex-[0_0_33.333%]
-                    px-4
-                    flex justify-center
-                  "
-                >
-                  {/* --- Testimonial Card --- */}
-                  <div className="relative w-[95%] text-center h-auto flex flex-col justify-between">
-                    {/* Green Decorative Glow Background */}
-                    <div className="absolute inset-0 transform rotate-[9deg] -z-10 flex justify-center items-center">
-                      <div className="w-[95%] h-[300px] bg-gradient-to-r from-[#2EC4F3] to-[#BFD633] rounded-2xl opacity-60 "></div>
-                    </div>
+        <div className="relative">
+          <Swiper
+            modules={[Autoplay, Pagination, Navigation]}
+            spaceBetween={30}
+            loop={false}
+            autoplay={{
+              delay: 4000,
+              disableOnInteraction: false,
+              pauseOnMouseEnter: true,
+            }}
+            pagination={
+              showControls
+                ? { clickable: true, el: ".custom-pagination" }
+                : false
+            }
+            navigation={
+              showControls
+                ? { nextEl: ".custom-next", prevEl: ".custom-prev" }
+                : false
+            }
+            onSwiper={onSwiper}
+            breakpoints={{
+              0: { slidesPerView: 1 },
+              640: { slidesPerView: 2 },
+              1024: { slidesPerView: 3 },
+              1280: { slidesPerView: 3 },
+            }}
+            className="py-12"
+          >
+            {testimonials.map((testimonial, i) => (
+              <SwiperSlide key={i}>
+                <div className="relative bg-white rounded-2xl shadow-[0_0px_10px_rgba(0,0,0,0.25)] p-4 text-center h-full flex flex-col min-h-[350px]">
+                  {/* Decorative Background */}
+                  <div className="absolute inset-0 transform rotate-[10deg] -z-10 flex justify-center items-center">
+                    <div className="w-[95%] h-[320px] bg-gradient-to-r from-[#2EC4F3] to-[#BFD633] rounded-2xl opacity-60"></div>
+                  </div>
 
-                    {/* Main White Card */}
-                    <div className="relative bg-white rounded-3xl shadow-2xl p-5 w-[95%] mx-auto flex flex-col justify-between h-full">
-                      {/* Profile Image */}
-                      <div className="absolute -top-12 left-1/2 transform -translate-x-1/2">
-                        <div className="w-32 h-32 rounded-full flex justify-center overflow-hidden bg-black border-4 border-white shadow-lg">
-                          <Image
-                            src={testimonial.image}
-                            alt={testimonial.name}
-                            width={115}
-                            height={115}
-                            className="object-contain"
-                          />
-                        </div>
-                      </div>
-
-                      {/* Content */}
-                      <div className="mt-20 flex-1 flex flex-col justify-between">
-                        <div>
-                          <h2 className="text-lg md:text-xl font-bold text-gray-800 mb-2">
-                            {testimonial.name}
-                          </h2>
-                          <p className="text-gray-500 italic text-base mb-4">
-                            {testimonial.title}
-                          </p>
-                        </div>
-                        <p className="text-gray-600 text-sm leading-relaxed">
-                          {testimonial.quote}
-                        </p>
-                      </div>
+                  {/* Profile Image */}
+                  <div className="absolute -top-12 left-1/2 transform -translate-x-1/2">
+                    <div className="w-28 h-28 rounded-full overflow-hidden border-4 border-white shadow-lg bg-gray-100">
+                      <Image
+                        src={testimonial.image}
+                        alt={testimonial.name}
+                        width={115}
+                        height={115}
+                        className="object-contain"
+                      />
                     </div>
                   </div>
-                  {/* --- End Card --- */}
-                </div>
-              ))}
-            </div>
-          </div>
 
-          {/* Arrows (Desktop Only) */}
-          {showArrows && (
+                  {/* Content */}
+                  <div className="mt-16 flex-1 flex flex-col">
+                    <div>
+                      <h2 className="text-lg md:text-xl font-bold text-gray-800 mb-1">
+                        {testimonial.name}
+                      </h2>
+                      <p className="text-gray-500 italic text-base mb-3">
+                        {testimonial.title}
+                      </p>
+                    </div>
+                    <p className="text-gray-600 text-base sm:text-lg leading-relaxed">
+                      {testimonial.quote}
+                    </p>
+                  </div>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+
+          {/* Centered Arrows */}
+          {showControls && (
             <>
               <button
-                className="hidden lg:flex absolute top-1/2 -left-4 transform -translate-y-1/2 bg-white border border-gray-300 rounded-full p-2 shadow-md hover:bg-gray-100"
-                onClick={scrollPrev}
+                className={`custom-prev absolute left-0 top-1/2 -translate-y-1/2 z-10 rounded-full p-2 shadow-md transition-all duration-300 ${
+                  isBeginning
+                    ? "bg-gray-300 text-gray-600 cursor-not-allowed opacity-50"
+                    : "bg-black text-white"
+                }`}
+                aria-label="Previous"
+                disabled={isBeginning}
               >
-                <ChevronLeft size={20} />
+                <ChevronLeft size={28} />
               </button>
+
               <button
-                className="hidden lg:flex absolute top-1/2 -right-4 transform -translate-y-1/2 bg-white border border-gray-300 rounded-full p-2 shadow-md hover:bg-gray-100"
-                onClick={scrollNext}
+                className={`custom-next absolute right-2 top-1/2 -translate-y-1/2 z-10 rounded-full p-2 shadow-md transition-all duration-300 ${
+                  isEnd
+                    ? "bg-gray-300 text-gray-600 cursor-not-allowed opacity-50"
+                    : "bg-black text-white"
+                }`}
+                aria-label="Next"
+                disabled={isEnd}
               >
-                <ChevronRight size={20} />
+                <ChevronRight size={28} />
               </button>
             </>
           )}
 
           {/* Dots */}
-          {showArrows && (
-            <div className="flex justify-center mt-8 gap-2">
-              {scrollSnaps.map((_, index) => (
-                <button
-                  key={index}
-                  onClick={() => scrollTo(index)}
-                  className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                    index === selectedIndex
-                      ? "bg-gradient-to-r from-[#2EC4F3] to-[#BFD633]"
-                      : "bg-gray-300"
-                  }`}
-                ></button>
-              ))}
-            </div>
+          {showControls && (
+            <div className="custom-pagination flex justify-center gap-2 mt-10"></div>
           )}
         </div>
       </div>
+
+      {/* Dot styles */}
+      <style jsx global>{`
+        .custom-pagination .swiper-pagination-bullet {
+          width: 10px;
+          height: 10px;
+          background: #bcbcbc; /* gray */
+          opacity: 1;
+          transition: all 0.3s ease;
+        }
+        .custom-pagination .swiper-pagination-bullet-active {
+          background: #000; /* black */
+          transform: scale(1.3);
+        }
+      `}</style>
     </section>
   );
 }

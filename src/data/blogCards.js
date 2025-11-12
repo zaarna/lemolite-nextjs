@@ -116,4 +116,5 @@ export const blogCards = [
       "Hey there! Let’s start with a simple question: have you ever wished your business could think...",
     link: "/blog/ai-as-a-Service",
   },
+  
 ];

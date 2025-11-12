@@ -194,7 +194,7 @@ export const projects = [
 
 export const testimonials = [
   {
-    image: "/thehijabworld.svg",
+    image: "/Thehijabworld7.webp",
     quote:
       "We wanted a fresh look for our website, and Lemolite delivered exactly that. Our customers noticed the change right away, and traffic has gone up. Even small edits are done without any fuss. Plus, they don’t overcharge, which is rare in this space.",
     name: "The HIJAB World, UK",
@@ -202,7 +202,7 @@ export const testimonials = [
     alt: "The Hijab World - Testimonial",
   },
   {
-    image: "/KeepingBaby.svg",
+    image: "/Keeping2.webp",
     quote:
       "What I liked was that they just ‘got it.’ I didn’t have to explain things ten times. The project was finished on time, issues were fixed quickly, and honestly, I didn’t have to micromanage. That was a big relief.",
     name: "Keeping Up With The Baby",
@@ -210,10 +210,45 @@ export const testimonials = [
     alt: "Keeping up with the Baby - Testimonial",
   },
   {
-    image: "/testiimg.svg",
+    image: "/Combat1.webp",
     quote:
       "Setting up our combat sports brand online was new territory for me. The Lemolite team walked me through everything, stayed patient, and always answered quickly. The site went live smoothly, and I didn’t feel lost in the process.",
     name: "Combat Sports Apparel Company",
+    title: "Founder",
+  },
+  {
+    image: "/Shifeco8.webp",
+    quote:
+      "The team delivered a platform that represents our sustainability vision. The design is intuitive, and the workflow is efficient.",
+    name: "Shift Eco",
+    title: "Founder",
+  },
+  {
+    image: "/Premierattire5.webp",
+    quote:
+      "The design is elegant and user- friendly, exactly as we envisioned. The team was very responsive and delivered a polished product.",
+    name: "Premier Attire",
+    title: "Founder",
+  },
+  {
+    image: "/Madeinply3.webp",
+    quote:
+      "The website captures essence of our brand. The custom order system is seamless, our customers love the user experience.",
+    name: "Made In Ply",
+    title: "Executive",
+  },
+  {
+    image: "/Otaa4.webp",
+    quote:
+      "OTAA's online presence now truly reflects our brand. The site is user friendly, and the team did an amazing job.",
+    name: "Otaa",
+    title: "Founder",
+  },
+  {
+    image: "/SaatgutKonfetti6.webp",
+    quote:
+      "The website conveys our mission and is beautifully designed. Team delivered exactly what we needed, and the site is great to work with.",
+    name: "Saatgut Konfetti",
     title: "Founder",
   },
 ];

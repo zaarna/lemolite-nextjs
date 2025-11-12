@@ -7,9 +7,7 @@ import Link from "next/link";
 import { blogs } from "@/data/blog";
 import { Calendar, ChevronDown, ChevronUp } from "lucide-react";
 import Image from "next/image";
-import ModernCTA from "@/components/ReusableComponent/Cta_Section/ModernCTA";
 import Breadcrumb from "@/components/ReusableComponent/Breadcrumb/Breadcrumb";
-// import Seo from "./ReusableComponent/Seo/Seo";
 import BlogSectionBlockquote from "./BlogSectionBlockquote";
 
 // Section sub-components
@@ -242,7 +240,7 @@ const BlogSectionCTA = React.forwardRef((props, ref) => {
             {heading}
           </h2>
           <button
-            onClick={() => (window.location.href = link)}
+            onClick={() => window.open(link, "_blank", "noopener,noreferrer")}
             className="bg-transparent hover:bg-white hover:text-black flex items-center justify-center mx-auto border-2 border-white rounded-full p-3 sm:px-6 sm:py-3 text-white text-base cursor-pointer inline-flex gap-2 transition-all duration-300 ease-in-out"
           >
             {buttonText}

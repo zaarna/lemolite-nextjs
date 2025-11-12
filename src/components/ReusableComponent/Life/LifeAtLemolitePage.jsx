@@ -18,7 +18,7 @@ const LifeAtLemolitePage = () => {
   };
   const pathName = usePathname();
   ("PathName");
-  if (pathName == "/careers")
+  if (pathName == "/careers") 
     return (
       <section className="top-bottom">
         <div className="container">
