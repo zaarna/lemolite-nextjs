@@ -83,7 +83,7 @@ export default function Testimonial({ testimonials = [], title }) {
               1024: { slidesPerView: 3 },
               1280: { slidesPerView: 3 },
             }}
-            className="py-12"
+            className=""
           >
             {testimonials.map((testimonial, i) => (
               <SwiperSlide key={i}>
