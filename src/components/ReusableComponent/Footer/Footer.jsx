@@ -88,7 +88,10 @@ export default function Footer() {
           label: "Angular Development",
         },
         { href: "/techstack/vuejs-development", label: "Vue JS Development" },
-        // { href: "/techstack/flutter-development", label: "Flutter Development" },
+        {
+          href: "/techstack/flutter-development",
+          label: "Flutter Development",
+        },
         { href: "/techstack/nodejs-development", label: "Node JS Development" },
         {
           href: "/techstack/laravel-development",

@@ -8,6 +8,7 @@ import { fluttertech } from "@/data/breadcrumsdata";
 import {
   allStats,
   angulardata,
+  flutterdata,
   flutterfeatures,
   flutterkeydata,
   flutterlibraries,
@@ -62,13 +63,13 @@ const FlutterDevelopmentPage = () => {
       <Ctasection
         bg="bg-gradient-to-r from-[#2EC4F3]/30 to-[#BFD633]/30"
         image={"/hirecta.webp"}
-        title={"Ready to Hire Angular Developers?"}
+        title={"Ready to Hire Flutter Developers?"}
         text={"Find Your Developer"}
         link={"/contact-us"}
       />
       <InnerSlider
-        data={angulardata}
-        title="Why Choose Lemolite for Angular Development Services?"
+        data={flutterdata}
+        title="Why Choose Lemolite for Flutter Development?"
       />
     </div>
   );

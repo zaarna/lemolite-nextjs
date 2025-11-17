@@ -673,40 +673,39 @@ export const angularkeydata = [
 
 export const flutterkeydata = [
   {
-    img: "/reactdev5.svg",
-    title: "High Performance",
-    description:
-      "Angular’s AOT compilation and tree-shaking techniques reduce load times and optimize app performance, delivering fast, responsive user experiences.",
-  },
-  {
-    img: "/phythondev3.svg",
+    img: "/Experts.svg",
     title: "Cross-Platform",
-    description:
-      "Angular allows the development of web, mobile, and PWAs with a single codebase, offering consistent user experiences across platforms while cutting down on costs.",
+    description: "One codebase for everything, one codebase to rule them all.",
   },
   {
-    img: "/phythondev2.svg",
-    title: "Strong Community",
+    img: "/Build_once.svg",
+    title: "Faster Time-to-Market",
     description:
-      "Backed by Google, Angular’s strong community provides extensive tools, libraries, and support, ensuring developers stay updated and efficient.",
+      "Speed up the Flutter mobile development time that won’t cost you quality.",
   },
   {
-    img: "/angulardev5.svg",
-    title: "Maintainability",
+    img: "/Quicker_Time.svg",
+    title: "Adaptive workflows",
     description:
-      "Angular’s component-based structure simplifies maintenance and allows quick updates, keeping your app adaptable to new technologies and requirements.",
+      "Adaptive workflows provide flexibility and clarity for faster time-to-market are referred to as agile and transparent processes.",
   },
   {
-    img: "/angulardev6.svg",
-    title: "Code Reusability",
+    img: "/Native_Performance.svg",
+    title: "End-to-end Project Delivery",
     description:
-      "Angular’s modular design ensures reusable components, reducing redundant code and speeding up development while maintaining a clean codebase.",
+      "Planning, design and delivery – including ongoing maintenance.",
   },
   {
-    img: "/phythondev6.svg",
-    title: "Scalability",
+    img: "/Lower_Development.svg",
+    title: "UI/UX-Centered Flutter app Development",
     description:
-      "As your company grows, you can easily expand and maintain your Flutter applications.",
+      "Building intuitive and engaging app experiences that lead to high conversions.",
+  },
+  {
+    img: "/Scalability.svg",
+    title: "Best Level Of Quality & Scalability & Performance",
+    description:
+      "Strong focused on the best App Architecture which will aid your app’s growth for long term.",
   },
 ];
 
@@ -1058,6 +1057,45 @@ export const angulardata = [
     title: "Post-Launch Support",
     description:
       "Our dedicated support team provides ongoing maintenance to ensure the smooth operation of your Angular applications.",
+  },
+];
+
+export const flutterdata = [
+  {
+    image: "/Experts.svg",
+    title: "Expert Developers",
+    description:
+      "Experienced Flutter/Dart Developers: Talented developers who code elegant, efficient, and scalable applications.",
+  },
+  {
+    image: "/Build_once.svg",
+    title: "Proven Success",
+    description:
+      "Cross-Industry Successes: Experience is working with enterprise solutions, fintech, logistics healthcare and e-commerce.",
+  },
+  {
+    image: "/Quicker_Time.svg",
+    title: "Full-Service Offering",
+    description:
+      "Adaptive workflows provide flexibility and clarity for faster time-to-market are referred to as agile and transparent processes.",
+  },
+  {
+    image: "/Native Performance.svg",
+    title: "Advanced Technologies",
+    description:
+      "End-to-end Project Delivery: Planning, design and delivery – including ongoing maintenance.",
+  },
+  {
+    image: "/Lower_Development.svg",
+    title: "Client-Centric Approach",
+    description:
+      "UI/UX-Centered Flutter app Development – Building intuitive and engaging app experiences that lead to high conversions.",
+  },
+  {
+    image: "/Scalability.svg",
+    title: "Post-Launch Support",
+    description:
+      "Best Level Of Quality & Scalability & Performance – Strong focused on the best App Architecture which will aid your app’s growth for long term.",
   },
 ];
 
