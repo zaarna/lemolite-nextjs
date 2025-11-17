@@ -16,9 +16,9 @@ export default function Testimonial({ testimonials = [], title }) {
   const [isBeginning, setIsBeginning] = useState(true);
   const [isEnd, setIsEnd] = useState(false);
 
-  // ❌ Pages where testimonials should NOT appear
+  // Pages where testimonials should NOT appear
   const excludedPaths = [
-    "/contact-us",
+    // "/contact-us",
     "/careers",
     "/life-at-lemolite",
     "/services/e-commerce",

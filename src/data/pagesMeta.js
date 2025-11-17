@@ -246,6 +246,16 @@ export const pagesMeta = {
     ],
     canonical: "https://lemolite.com/services/hire-vuejs-developer",
   },
+  "hire-flutter-developer": {
+    title: "Hire Flutter Developers | Hire Flutter App Developers",
+    description:
+      "Launch mobile apps faster with Flutter specialists from Lemolite Technologies. Hire Flutter app developers to deliver seamless experiences on iOS and Android.",
+    keywords: [
+      "Hire Flutter Developer",
+      "Hire Flutter App Developer",
+    ],
+    canonical: "https://lemolite.com/services/hire-vuejs-developer",
+  },
 
   "hire-shopify-developer": {
     title: "Hire Shopify Developers | Hire Dedicated Shopify Developer",

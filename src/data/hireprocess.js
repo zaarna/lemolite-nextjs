@@ -223,6 +223,51 @@ export const hireprocessangular = [
   },
 ];
 
+export const hireprocessflutter = [
+  {
+    num: "01",
+    title: "Strategic Consultation",
+    content:
+      "Best Flutter Developers for Hire is shortlisted based on domain knowledge to match the IT complexity level of your product.",
+    image: "/flutterprocess1.webp",
+  },
+  {
+    num: "02",
+    title: "Personalized Skill Match",
+    content:
+      "Based on domain expertise, each Flutter programmer is shortlisted to ensure that they are a good fit for the technical complexity of your app.",
+    image: "/flutterproces2.webp",
+  },
+  {
+    num: "03",
+    title: "Efficient Onboarding",
+    content:
+      "To ensure our projects start fast, we streamline collaboration, tools, and docs set-up.",
+    image: "/flutterprocess3.webp",
+  },
+  {
+    num: "04",
+    title: "Ongoing Support",
+    content:
+      "Our management team ensures delivery quality at all times during engagement.",
+    image: "/flutterprocess4.webp",
+  },
+  {
+    num: "05",
+    title: "Flexible Hiring",
+    content:
+      "Choose from hourly, part-time, and full-time hire as per your company's needs.",
+    image: "/flutterprocess5.webp",
+  },
+  {
+    num: "06",
+    title: "Final Phase Execution",
+    content:
+      "Your dedicated Flutter app developers deliver well-designed, production-ready apps on time and within budget.",
+    image: "/flutterprocess6.webp",
+  },
+];
+
 export const hireprocessvuejs = [
   {
     num: "01",

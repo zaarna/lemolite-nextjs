@@ -356,6 +356,10 @@ const Header = () => {
               href: "/services/hire-vuejs-developer",
             },
             {
+              title: "Hire Flutter Developers",
+              href: "/services/hire-flutter-developer",
+            },
+            {
               title: "Hire Shopify Developers",
               href: "/services/hire-shopify-developer",
             },

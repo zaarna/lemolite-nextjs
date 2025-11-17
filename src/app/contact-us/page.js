@@ -4,6 +4,9 @@ import Innerhero from "@/components/ReusableComponent/Innerhero/Innerhero";
 import { contactus } from "@/data/breadcrumsdata";
 import React from "react";
 import { pagesMeta } from "@/data/pagesMeta";
+import { featurescontact, logos } from "@/data/home";
+import TrustedAndCaseStudy from "@/components/ContactUs/TrustedAndCaseStudy";
+import { projectdata } from "@/data/casestudy";
 
 export const metadata = {
   title: pagesMeta.contactus.title,
@@ -16,9 +19,9 @@ export const metadata = {
 
 const ContactUsPage = () => {
   return (
-    <div className="min-h-screen">
+    <div className="">
       <Innerhero
-        padding="py-8 md:py-10 lg:py-0 "
+        padding="py-8 "
         breadcrumbs={contactus}
         title={"Contact Us"}
         content={
@@ -29,9 +32,11 @@ const ContactUsPage = () => {
         targetBlank={true}
         src={"/contactbanner.webp"}
         alt={"Contact us"}
+        features={featurescontact}
       />
-      <HaveanIdea />
-      <OurPresence />
+      <TrustedAndCaseStudy logos={logos} steps={projectdata}  />
+      {/* <HaveanIdea />
+      <OurPresence /> */}
     </div>
   );
 };

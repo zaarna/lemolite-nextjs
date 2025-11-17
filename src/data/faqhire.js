@@ -117,6 +117,25 @@ export const hirefaqangular = [
   },
 ];
 
+export const hirefaqflutter = [
+  {
+    question: "Can you help migrate my existing app to Flutter?",
+    answer: "Yes, we ensure your data integrity and app performance remain intact during migration. Our skilled Flutter experts guarantee a smooth, lag-free transition for your application."
+  },
+  {
+    question: "How much does it cost to hire Flutter developers?",
+    answer: "Contact us for a customized quote. The cost depends on your project’s complexity, duration, and required features."
+  },
+  {
+    question: "Can I interview Flutter developers before hiring?",
+    answer: "Absolutely! To ensure the perfect match, you can interview and communicate directly with our dedicated Flutter developers before onboarding."
+  },
+  {
+    question: "How long does it take to develop a Flutter app?",
+    answer: "The development timeline depends on the project scope. However, our Flutter experts are known for delivering high-quality applications in a remarkably fast turnaround time."
+  }
+];
+
 export const hirefaqvuejs = [
   {
     question: "What are the advantages of using Vue.js for web development?",

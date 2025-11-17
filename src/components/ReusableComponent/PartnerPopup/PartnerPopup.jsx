@@ -261,8 +261,8 @@ function PartnerPopup({ isPopupOpen, closePopup }) {
                               countrycode: countrycode,
                             }));
                           }}
-                          defaultCountry="IN"
-                          className="w-full border-b border-gray-300 bg-transparent py-2 text-[#D9D9D9] placeholder-transparent focus:outline-none focus:border-blue-500"
+                          defaultCountry="US"
+                          className="w-full border-b border-gray-300 py-2 text-black focus:outline-none"
                         />
                         <label
                           htmlFor="number"

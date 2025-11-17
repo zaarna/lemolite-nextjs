@@ -36,11 +36,11 @@ export default function Contectinfo({
   const isCareerPage =
     pathname.startsWith("/career") || pathname.startsWith("/current-openings");
 
-  // Detect Contact Page — update to match your route name
-  const isContactPage = pathname === "/contact" || pathname === "/contact-us";
+  // // Detect Contact Page — update to match your route name
+  // const isContactPage = pathname === "/contact" || pathname === "/contact-us";
 
-  // ✅ Don’t render anything if this is the contact page
-  if (isContactPage) return null;
+  // // ✅ Don’t render anything if this is the contact page
+  // if (isContactPage) return null;
 
   return (
     <section

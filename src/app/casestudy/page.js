@@ -3,6 +3,7 @@ import CaseStudyHead from '@/components/CaseStudyHead';
 import GradientScrollSection from '@/components/GradientScrollSection';
 import React from 'react';
 import { pagesMeta } from "@/data/pagesMeta";
+import { projectdata } from '@/data/casestudy';
 
 export const metadata = {
   title: pagesMeta.casestudy.title,
@@ -17,7 +18,7 @@ const CaseStudyPage = () => {
   return (
     <div className="min-h-screen">
       <CaseStudyHead />
-      <AllCaseStudy />
+      <AllCaseStudy steps={projectdata} />
       <GradientScrollSection />
     </div>
   );

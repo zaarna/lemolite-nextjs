@@ -193,6 +193,45 @@ export const whyhireangular = [
   },
 ];
 
+export const whyhireflutter = [
+  {
+    icon: "/hirepage1.svg",
+    title: "Custom Contracts for Your Needs",
+    description:
+      "Our contracts let you hire developers flexibly for short or long-term needs. Whether for immediate fixes or extended projects, we ensure efficiency, scalability, and seamless integration, giving you access to expert professionals without long-term hiring.",
+  },
+  {
+    icon: "/hirepage2.svg",
+    title: "Flexible Hiring Options",
+    description:
+      "Select short-term or long-term hiring models according to your project’s need and duration. Our flexible hiring models, make it easy for you to hire Flutter developers on your terms and timeline.",
+  },
+  {
+    icon: "/hirepage3.svg",
+    title: "Transparent Plan",
+    description:
+      "We provide cost effective and transparent hiring options to suit your budget with best Flutter Developers for Hire with measurable results.",
+  },
+  {
+    icon: "/hirepage4.svg",
+    title: "Developer Exchange",
+    description:
+      "Unhappy with a match? We provide a simple replacement policy. To ensure continuous project progress, switch to a different Flutter programmer without any delays or extra expenses.",
+  },
+  {
+    icon: "/hirepage5.svg",
+    title: "Effective Communication",
+    description:
+      "Leveraging the tools of your choice, our dedicated Flutter app developers collaborate toward transparency, quick feedback and continuous monitoring to measure progress at all stages.",
+  },
+  {
+    icon: "/hirepage6.svg",
+    title: "Dedicated Project Manager",
+    description:
+      "At each stage, your dedicated project manager ensures successful delivery by overseeing the process, double-checking alignment, and enabling smooth interaction between your team and our Flutter experts.",
+  },
+];
+
 export const whyhirevuejs = [
   {
     icon: "/hirepage1.svg",

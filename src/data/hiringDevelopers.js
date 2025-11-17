@@ -128,6 +128,32 @@ export const hireourteamangular = [
     stats: "Creative Mind",
   },
 ];
+export const hireourteamflutter = [
+  {
+    img: "/handshak.svg",
+    title: "Access the Top Global Flutter Experts",
+    description:
+      "Fingent pairs you up with pre-vetted dedicated Flutter app developers who are experts in creating scalable, visually appealing, high-performance mobile apps. Each Flutter programmer on the list of yours has been also carefully screened to make sure they fit those requirements.",
+    number: "100+",
+    stats: "Completed Projects",
+  },
+  {
+    img: "/massagetik.svg",
+    title: "Smooth Team Integration",
+    description:
+      "Our Flutter experts become a part of your team and integrated in the entire development process to ensure easy access, communication and collaboration. You can get in touch to hire Flutter developers for short term and long term projects. Our experts will fit all into your procedures, habits and tools to provide effective work.",
+    number: "9+",
+    stats: "Years Experience",
+  },
+  {
+    img: "/star-man.svg",
+    title: "Easy Hiring",
+    description:
+      "Avoid months-long hiring processes. With our staff augmentation model, you can hire Flutter app developers on a temporary basis with zero administrative or onboarding hassles. You stay focused on executing, we’ll take care of everything else.",
+    number: "40+",
+    stats: "Creative Mind",
+  },
+];
 export const hireourteamvue = [
   {
     img: "/handshak.svg",

@@ -31,6 +31,24 @@ export const features = [
   { value: 40, suffix: "+", text: "Creative Minds", bgColor: "bg-[#BFD63333]" },
   { value: 11, suffix: "+", text: "Technologies", bgColor: "bg-[#2EC4F333]" },
 ];
+export const featurescontact = [
+  {
+    value: 100,
+    suffix: "+",
+    text: "Completed Projects",
+    // bgColor: "bg-[#2EC4F333]",
+    bgColor: "bg-[#2EC4F3]/70",
+  },
+  {
+    value: 9,
+    suffix: "+",
+    text: "Years in Business",
+    // bgColor: "bg-[#BFD63333]",
+    bgColor: "bg-[#BFD633]/70",
+  },
+  { value: 40, suffix: "+", text: "Creative Minds", bgColor: "bg-[#BFD633]/70" },
+  { value: 11, suffix: "+", text: "Technologies", bgColor: "bg-[#2EC4F3]/70" },
+];
 
 export const solutions = [
   {
