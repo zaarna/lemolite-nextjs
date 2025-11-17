@@ -43,20 +43,20 @@ export const angularlibraries = [
 
 // Flutter Libraries
 export const flutterlibraries = [
-  { src: "/ngrx.svg", srcname: "ngrx", text: "Provider" },
+  { src: "/Provider.svg", srcname: "Provider", text: "Provider" },
   {
-    src: "/angularmaterial.svg",
-    srcname: "material",
+    src: "/Getx.svg",
+    srcname: "Provider",
     text: "GetX",
   },
-  { src: "/ngxs.svg", srcname: "ngxs", text: "Bloc" },
-  { src: "/ngxbootstrap.svg", srcname: "boot", text: "Hive" },
-  { src: "/angularfire.svg", srcname: "icon_angular", text: "Dio" },
-  { src: "/ngxtranslate.svg", srcname: "translate", text: "Flutter Riverpod" },
-  { src: "/primeng.svg", srcname: "ng", text: "Firebase" },
-  { src: "/apolloangular.svg", srcname: "apollo", text: "Lottie" },
-  { src: "/flexlayout.svg", srcname: "flex", text: "Rive" },
-  { src: "/ngxcharts.svg", srcname: "chart", text: "Intl" },
+  { src: "/Bloc.svg", srcname: "ngxs", text: "Bloc" },
+  { src: "/Hive.svg", srcname: "Hive", text: "Hive" },
+  { src: "/Dio.svg", srcname: "Dio", text: "Dio" },
+  { src: "/RiverPod.svg", srcname: "RiverPod", text: "Flutter Riverpod" },
+  { src: "/FirebaseDark.svg", srcname: "FirebaseDark", text: "Firebase" },
+  { src: "/Lottie.svg", srcname: "Lottie", text: "Lottie" },
+  { src: "/Rive.svg", srcname: "Rive", text: "Rive" },
+  { src: "/Intl.svg", srcname: "Intl", text: "Intl" },
 ];
 
 // Vue Libraries
@@ -673,39 +673,37 @@ export const angularkeydata = [
 
 export const flutterkeydata = [
   {
-    img: "/Experts.svg",
+    img: "/Cross-Platform.svg",
     title: "Cross-Platform",
     description: "One codebase for everything, one codebase to rule them all.",
   },
   {
-    img: "/Build_once.svg",
+    img: "/Faster-Time.svg",
     title: "Faster Time-to-Market",
     description:
       "Speed up the Flutter mobile development time that won’t cost you quality.",
   },
   {
-    img: "/Quicker_Time.svg",
-    title: "Adaptive workflows",
-    description:
-      "Adaptive workflows provide flexibility and clarity for faster time-to-market are referred to as agile and transparent processes.",
+    img: "/Native_Performance.svg",
+    title: "Seamless Experience",
+    description: "Enjoy fluid animations and smooth performance.",
   },
   {
-    img: "/Native_Performance.svg",
-    title: "End-to-end Project Delivery",
-    description:
-      "Planning, design and delivery – including ongoing maintenance.",
+    img: "/Flutter_UiUx.svg",
+    title: "Now in the Brand Custom Interface",
+    description: " UIs as stunning as your brand.",
   },
   {
     img: "/Lower_Development.svg",
-    title: "UI/UX-Centered Flutter app Development",
+    title: "Lower Development Expense",
     description:
-      "Building intuitive and engaging app experiences that lead to high conversions.",
+      "The cost of flutter app development can be much cheaper since you only use a single codebase for two operating systems.",
   },
   {
     img: "/Scalability.svg",
-    title: "Best Level Of Quality & Scalability & Performance",
+    title: "Scalable",
     description:
-      "Strong focused on the best App Architecture which will aid your app’s growth for long term.",
+      "You can scale and sustain your Flutter app as your business grows.",
   },
 ];
 
@@ -1068,34 +1066,34 @@ export const flutterdata = [
       "Experienced Flutter/Dart Developers: Talented developers who code elegant, efficient, and scalable applications.",
   },
   {
-    image: "/Build_once.svg",
-    title: "Proven Success",
+    image: "/Cross-Industry.svg",
+    title: "Cross-Industry Successes",
     description:
-      "Cross-Industry Successes: Experience is working with enterprise solutions, fintech, logistics healthcare and e-commerce.",
+      "Experience is working with enterprise solutions, fintech, logistics healthcare and e-commerce.",
   },
   {
-    image: "/Quicker_Time.svg",
-    title: "Full-Service Offering",
+    image: "/Adaptive_workflows.svg",
+    title: "Adaptive workflows",
     description:
-      "Adaptive workflows provide flexibility and clarity for faster time-to-market are referred to as agile and transparent processes.",
+      "Provide flexibility and clarity for faster time-to-market are referred to as agile and transparent processes.",
   },
   {
-    image: "/Native Performance.svg",
-    title: "Advanced Technologies",
+    image: "/End-to-End.svg",
+    title: "End-to-end Project Delivery ",
     description:
-      "End-to-end Project Delivery: Planning, design and delivery – including ongoing maintenance.",
+      " Planning, design and delivery – including ongoing maintenance.",
   },
   {
-    image: "/Lower_Development.svg",
-    title: "Client-Centric Approach",
+    image: "/Flutter_UiUx.svg",
+    title: "UI/UX-Centered Flutter app Development ",
     description:
-      "UI/UX-Centered Flutter app Development – Building intuitive and engaging app experiences that lead to high conversions.",
+      "Building intuitive and engaging app experiences that lead to high conversions.",
   },
   {
-    image: "/Scalability.svg",
-    title: "Post-Launch Support",
+    image: "/Quality.svg",
+    title: "Best Level Of Quality & Scalability & Performance",
     description:
-      "Best Level Of Quality & Scalability & Performance – Strong focused on the best App Architecture which will aid your app’s growth for long term.",
+      "Strong focused on the best App Architecture which will aid your app’s growth for long term.",
   },
 ];
 
