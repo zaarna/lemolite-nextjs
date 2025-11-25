@@ -71,6 +71,10 @@ export default function Footer() {
           label: "Hire Vue JS Developers",
         },
         {
+          href: "/services/hire-flutter-developer",
+          label: "Hire Flutter Developers",
+        },
+        {
           href: "/services/hire-shopify-developer",
           label: "Hire Shopify Developers",
         },

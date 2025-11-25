@@ -112,6 +112,12 @@ export const vue = [
   // { name: 'Staff Augmentation', href: '#' },
   { name: "Hire Vue Js Developers", current: true },
 ];
+export const flutter = [
+  { name: "Home", href: "/" },
+  { name: "Services", href: "/services" },
+  // { name: 'Staff Augmentation', href: '#' },
+  { name: "Hire Flutter Developers", current: true },
+];
 export const vuetech = [
   { name: "Home", href: "/" },
   { name: "Tech Stack", href: "/techstack" },

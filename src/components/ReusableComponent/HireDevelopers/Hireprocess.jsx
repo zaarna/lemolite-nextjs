@@ -52,10 +52,10 @@ function Hireproccess({ steps = [], title }) {
                     }`}
                   >
                     <span
-                      className={`absolute w-[2px] left-[45px] bg-gradient-to-b from-[#BFD633] to-[#00BFFF]`}
+                      className={`absolute w-[2px] left-[26px] bg-gradient-to-b from-[#BFD633] to-[#00BFFF]`}
                       style={{
                         height: hoveredId === index ? "50%" : "", // Starts at 50%, grows to 100%
-                        top: 80,
+                        top: 60,
                         transition: "height 0.3s ease",
                       }}
                     ></span>

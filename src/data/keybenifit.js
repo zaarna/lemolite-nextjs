@@ -271,6 +271,45 @@ export const angularbenefit = [
   },
 ];
 
+export const flutterbenefit = [
+  {
+    icon: "/flutter1.svg",
+    title: "Cross-Platform Efficiency",
+    description:
+      "Hire Flutter developers to build apps for iOS, Android and web from a single codebase.",
+  },
+  {
+    icon: "/flutter2.svg",
+    title: "Faster Time-to-Market",
+    description:
+      "Our experienced Flutter expert team accelerates the development and deployment lifecycles by using pre-made widgets and tools.",
+  },
+  {
+    icon: "/flutter3.svg",
+    title: "Cost-Effective Solutions",
+    description:
+      "Partnering with dedicated Flutter app developers you can save cost minus performance or quality.",
+  },
+  {
+    icon: "/flutter4.svg",
+    title: "Superior UI/UX",
+    description:
+      "Flutter programmers create native-like, pixel-perfect user interfaces that increase user satisfaction and engagement.",
+  },
+  {
+    icon: "/flutter5.svg",
+    title: "Scalable Architecture",
+    description:
+      "Leverage the talent of Flutter app developers for hire and deliver future-proof, scalable apps.",
+  },
+  {
+    icon: "/flutter6.svg",
+    title: "Continuous Support",
+    description:
+      "Through follow-on technical support, maintenance and refreshes after deployment Our team is committed to long term success.",
+  },
+];
+
 export const vuebenefit = [
   {
     icon: "/vue1.svg",

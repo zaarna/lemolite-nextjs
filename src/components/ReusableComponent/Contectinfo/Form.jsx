@@ -176,8 +176,8 @@ export default function Form() {
                   countrycode,
                 }));
               }}
-              defaultCountry="IN"
-              className="w-full border-b border-gray-300 bg-transparent py-2 text-[#D9D9D9] focus:outline-none"
+              defaultCountry="US"
+              className="w-full border-b border-gray-300 py-2 text-black focus:outline-none"
             />
             <label
               htmlFor="phone"

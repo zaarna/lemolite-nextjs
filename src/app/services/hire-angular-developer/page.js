@@ -71,18 +71,6 @@ const HireAngularDeveloperPage = () => {
         link={"/contact-us"}
       />
       <FAQ questions={hirefaqangular} />
-      {/* <Testimonial
-        title="Hear from Our Happy Clients"
-        testimonials={testimonials}
-      /> */}
-      {/* <Contectinfo
-        maintitle={"Let’s Transform Your Vision into Reality"}
-        subtitle={"Get in Touch!"}
-        content={
-          "Working on something big? Let’s chat! We’re excited to hear about your project and see how we can help."
-        }
-        addresses={addresses}
-      /> */}
     </div>
   );
 };
