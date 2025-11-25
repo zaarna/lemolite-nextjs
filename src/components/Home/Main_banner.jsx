@@ -1,4 +1,3 @@
-
 import Grediantbutton from "../ReusableComponent/Button/Grediantbutton";
 import AnimatedImage from "./AnimatedImage";
 import ScrollReveal from "@/components/ReusableComponent/Animations/ScrollReveal";
@@ -10,7 +9,6 @@ function Main_banner() {
 
       <div className="main-banner container flex">
         <div className="text-center items-center absolute top-0 bottom-0 left-0 right-0 m-auto h-3/4 sm:h-2/4 md:h-2/3 lg:h-3/6 w-[300px] sm:w-[550px] md:w-3/4">
-
           <ScrollReveal delay={0.1}>
             <h1>Transform. Elevate. Succeed.</h1>
           </ScrollReveal>
@@ -30,7 +28,6 @@ function Main_banner() {
               />
             </div>
           </ScrollReveal>
-
         </div>
       </div>
     </section>
@@ -38,4 +35,3 @@ function Main_banner() {
 }
 
 export default Main_banner;
-

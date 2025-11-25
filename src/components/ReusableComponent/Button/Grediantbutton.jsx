@@ -15,11 +15,19 @@ export default function Grediantbutton({
       text: "text-[#2EC4F3]",
       border: "border-[#2EC4F3]",
       hoverBg: "bg-gradient-to-r from-[#2EC4F3] to-[#BFD633]",
+      bg: "bg-white",
     },
     black: {
       text: "text-black",
       border: "border-black",
       hoverBg: "bg-black",
+      bg: "bg-white",
+    },
+    green: {
+      text: "text-black",
+      border: "",
+      hoverBg: "bg-black",
+      bg: "#BFD633",
     },
   };
 
@@ -29,7 +37,7 @@ export default function Grediantbutton({
     <button
       onClick={onClick}
       className={`relative overflow-hidden px-8 py-3 font-bold rounded-full cursor-pointer
-                  bg-white ${current.text} border ${current.border}
+                  bg-[${current.bg}] ${current.text} border ${current.border}
                   transition-all duration-500 shadow-md group`}
     >
       {/* Hover overlay */}

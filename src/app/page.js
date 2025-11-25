@@ -18,6 +18,7 @@ import {
   projects,
 } from "@/data/home";
 import React from "react";
+import Main_bannerUpdated from "@/components/Home/Main_bannerUpdated";
 
 export const metadata = {
   title: pagesMeta.home.title,
@@ -32,15 +33,16 @@ export const metadata = {
 const HomePage = () => {
   return (
     <div className="min-h-screen ">
-      <Main_banner />
-      <TrustedByCliet_WhoWeAre
+      {/* <Main_banner /> */}
+      <Main_bannerUpdated />
+      {/* <TrustedByCliet_WhoWeAre
         logo={logos}
         title={"Who We Are"}
         content={
           "We provide tailored custom software development services to meet your specific business requirements. From full-stack development to machine learning, our experience helps you reach your objectives. As a leading custom software development company, we are more than just service providers—we transform your ideas into the best possible designs and developments. Our custom web application development company delivers innovative solutions that help your business grow into a successful brand."
         }
         features={features}
-      />
+      /> */}
       <TailoredSolutions solutions={solutions} />
       <CtaSection
         title={"Ready to Transform Your Business?"}
