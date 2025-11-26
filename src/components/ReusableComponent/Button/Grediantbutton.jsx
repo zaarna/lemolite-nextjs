@@ -17,6 +17,7 @@ export default function Grediantbutton({
       hoverBg: "bg-gradient-to-r from-[#2EC4F3] to-[#BFD633]",
       bg: "bg-white",
       border_radius: "full",
+      text_weight: "font-bold",
     },
     black: {
       text: "text-black",
@@ -24,6 +25,7 @@ export default function Grediantbutton({
       hoverBg: "bg-black",
       bg: "bg-white",
       border_radius: "full",
+      text_weight: "font-bold",
     },
     green: {
       text: "text-black",
@@ -31,6 +33,7 @@ export default function Grediantbutton({
       hoverBg: "bg-black",
       bg: "#BFD633",
       border_radius: "[10px]",
+      text_weight: "font-medium",
     },
   };
 
@@ -51,7 +54,9 @@ export default function Grediantbutton({
       ></span>
 
       {/* Text always above overlay */}
-      <span className="relative z-10 font-bold group-hover:text-white transition-colors duration-300 left-0">
+      <span
+        className={`relative z-10 ${current.text_weight} group-hover:text-white transition-colors duration-300 left-0`}
+      >
         {btntext}
       </span>
     </button>
@@ -66,7 +71,11 @@ export default function Grediantbutton({
         </a>
       );
     } else {
-      return <Link href={link}>{ButtonContent}</Link>;
+      return (
+        <Link className="w-fit" href={link}>
+          {ButtonContent}
+        </Link>
+      );
     }
   }
 

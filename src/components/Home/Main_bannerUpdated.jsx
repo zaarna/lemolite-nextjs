@@ -10,14 +10,14 @@ function Main_bannerUpdated() {
   return (
     <section className="relative h-[500px] sm:h-5/6 md:h-4/6 lg:h-[750px] overflow-hidden">
       <AnimatedImage />
-      <div className="text-center absolute top-0 bottom-0 left-0 right-0 m-auto h-auto w-[300px] sm:w-[550px] md:w-3/4 lg:w-[90%] max-w-7xl flex flex-col justify-center">
-        <div className="grid lg:grid-cols-2 gap-8 items-center lg:mt-[50px]">
+      <div className="text-center absolute top-0 bottom-0 left-0 right-0 m-auto h-auto w-[300px] sm:w-[550px] md:w-3/4 lg:w-[90%] max-w-7xl flex flex-col justify-start">
+        <div className="grid lg:grid-cols-2 gap-8 items-center lg:mt-[20px]">
           {/* Left side - Text content */}
           <div className="text-left space-y-6 pt-12 lg:pt-0">
             <ScrollReveal delay={0.1}>
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-light  leading-tight">
                 We Build{" "}
-                <span className="relative inline-block">
+                <span className="relative inline-block font-bold">
                   Your Startup
                   <img
                     src="./Crown.svg"
@@ -37,19 +37,21 @@ function Main_bannerUpdated() {
 
             <ScrollReveal delay={0.4}>
               <div className="flex flex-col">
-                <b className="mb-2">Mad ideas? Perfect. Let’s build them.</b>
+                <b className="mb-2 font-normal text-[19px]">
+                  Mad ideas? Perfect. Let’s build them.
+                </b>
                 <Grediantbutton
                   variant="green"
                   btntext="Book Your Free 30-Minute Call"
                   link="https://calendly.com/lemolite-sales/product-demo?month=2025-06"
                 />
-                <p className="font-inter font-normal italic text-[22px] leading-[100%] tracking-[0] mt-2">
+                <p className="font-inter font-extralight italic text-[20px] leading-[100%] tracking-[0] mt-2">
                   We don’t bite. Promise.
                 </p>
               </div>
 
               {/* Yellow accent line */}
-              <div className="w-32 h-1 bg-[#BFD633] mt-8"></div>
+              <div className="w-32 h-1 bg-[#BFD633] mt-[50px]"></div>
             </ScrollReveal>
           </div>
 

@@ -48,7 +48,7 @@ const StatsSection = () => {
   ];
 
   return (
-    <section className="relative py-12 sm:py-16">
+    <section className="relative my-3">
       <div className="px-0  relative z-10">
         <div className="flex flex-col lg:flex-row items-center justify-center lg:justify-between gap-6 lg:gap-8  ">
           {/* Stats Cards */}

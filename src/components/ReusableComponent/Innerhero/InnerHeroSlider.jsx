@@ -6,11 +6,22 @@ import "swiper/css/mousewheel";
 import styles from "../../../app/page.module.css";
 function InnerHeroSlider() {
   const logos = [
-    "/Hero_ Zioritix.svg",
-    "/Hero_Shift.svg",
-    "/Hero_Napchief.svg",
-    "/Hero_GDD.svg",
-    "/Hero_Nexstaff.svg",
+    "/color_bootroom.svg",
+    "/color_botButler.svg",
+    "/color_forSent.svg",
+    "/color_Gdd.svg",
+    "/color_laboucle.svg",
+    "/color_maya.svg",
+    "/color_napchief.svg",
+    "/color_nexstaff.svg",
+    "/color_nikben.svg",
+    "/color_obm.svg",
+    "/color_rs.svg",
+    "/color_s2h.svg",
+    "/color_secrure.svg",
+    "/color_shift.svg",
+    "/color_vomax.svg",
+    "/color_zirotix.svg",
   ];
   const containerRef = useRef(null);
   const x = useRef(0);
@@ -28,7 +39,7 @@ function InnerHeroSlider() {
     }
   });
   return (
-    <section className={`container-fluid `}>
+    <section className="container-fluid mx-1">
       {/* <div className="container">
         <div className={`row ${styles.titletext} ${styles.logosection}`}>
           <div className="col-12 col-md-6 offset-md-3">

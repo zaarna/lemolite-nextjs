@@ -2,6 +2,7 @@ import React from "react";
 
 const style = {
   height: "100%",
+  width: "100%",
 };
 
 function AnimatedImage() {
