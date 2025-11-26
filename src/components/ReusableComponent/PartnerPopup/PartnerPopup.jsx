@@ -4,20 +4,15 @@ import Popup from "reactjs-popup";
 import PhoneInput from "react-phone-number-input";
 import "react-phone-number-input/style.css";
 import parsePhoneNumber from "libphonenumber-js";
-// import closeicon from "../../../assets/closeicon.svg";
-// import tickmark from "../../../assets/tick-mark.svg";
-// import rightarrow from "../../../assets/right-arrow.svg";
-import { ArrowRight, CircleX, Check, X } from "lucide-react";
+import { Check, X } from "lucide-react";
 import { toast } from "react-toastify";
 import Grediantbutton from "../Button/Grediantbutton";
 
 function PartnerPopup({ isPopupOpen, closePopup }) {
-  "isPopupOpen", isPopupOpen;
   const [isOpen, setIsOpen] = useState(isPopupOpen || false);
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
-    // Disable body scroll when popup is open
     if (isOpen) {
       document.body.style.overflow = "hidden";
     } else {
@@ -25,7 +20,7 @@ function PartnerPopup({ isPopupOpen, closePopup }) {
     }
 
     return () => {
-      document.body.style.overflow = "auto"; // Reset on unmount
+      document.body.style.overflow = "auto";
     };
   }, [isOpen]);
 

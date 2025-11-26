@@ -4,14 +4,14 @@ import PartnerPopup from "./ReusableComponent/PartnerPopup/PartnerPopup";
 
 function PopupTimer() {
   const [showPopup, setShowPopup] = useState(false);
-  ("poup timer");
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowPopup(true);
-    }, 3000);
+  // ("poup timer");
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     setShowPopup(true);
+  //   }, 3000);
 
-    return () => clearTimeout(timer);
-  }, []);
+  //   return () => clearTimeout(timer);
+  // }, []);
   const closePopup = () => {
     setShowPopup(false);
   };

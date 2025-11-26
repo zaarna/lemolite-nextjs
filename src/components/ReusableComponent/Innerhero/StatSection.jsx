@@ -49,8 +49,8 @@ const StatsSection = () => {
 
   return (
     <section className="relative py-12 sm:py-16">
-      <div className="px-0 container relative z-10">
-        <div className="flex flex-col lg:flex-row items-center justify-center lg:justify-between gap-6 lg:gap-8 max-w-6xl ">
+      <div className="px-0  relative z-10">
+        <div className="flex flex-col lg:flex-row items-center justify-center lg:justify-between gap-6 lg:gap-8  ">
           {/* Stats Cards */}
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 w-full lg:w-auto">
             {stats.map((stat, index) => (
@@ -66,7 +66,7 @@ const StatsSection = () => {
           {/* Clutch Badge */}
           <div className="flex-shrink-0 mt-6 lg:mt-0">
             <img
-              src="/Badgeblack.svg"
+              src="/Badgeblack.png"
               alt="Clutch review"
               width={110}
               height={40}

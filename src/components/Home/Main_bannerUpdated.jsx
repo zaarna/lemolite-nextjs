@@ -11,7 +11,7 @@ function Main_bannerUpdated() {
     <section className="relative h-[500px] sm:h-5/6 md:h-4/6 lg:h-[750px] overflow-hidden">
       <AnimatedImage />
       <div className="text-center absolute top-0 bottom-0 left-0 right-0 m-auto h-auto w-[300px] sm:w-[550px] md:w-3/4 lg:w-[90%] max-w-7xl flex flex-col justify-center">
-        <div className="grid lg:grid-cols-2 gap-8 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 items-center lg:mt-[50px]">
           {/* Left side - Text content */}
           <div className="text-left space-y-6 pt-12 lg:pt-0">
             <ScrollReveal delay={0.1}>
@@ -19,18 +19,11 @@ function Main_bannerUpdated() {
                 We Build{" "}
                 <span className="relative inline-block">
                   Your Startup
-                  <svg
-                    className="absolute -bottom-2 left-0 w-full"
-                    viewBox="0 0 200 10"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M0 5 Q 50 0, 100 5 T 200 5"
-                      stroke="#000"
-                      strokeWidth="2"
-                      fill="none"
-                    />
-                  </svg>
+                  <img
+                    src="./Crown.svg"
+                    className="absolute -top-1 -right-3 w-6 h-11"
+                    alt=""
+                  />
                 </span>
               </h1>
             </ScrollReveal>
@@ -61,10 +54,10 @@ function Main_bannerUpdated() {
           </div>
 
           {/* Right side - Illustration */}
-          <div className="hidden lg:flex justify-center items-center">
+          <div className="hidden lg:flex justify-center md:justify-end items-center">
             <div className="relative w-full max-w-lg">
               {/* Person illustration placeholder */}
-              <div className="relative z-10 flex justify-center">
+              <div className="relative z-10 flex justify-end">
                 <img
                   src="/Hero_Updated_Vector.svg"
                   alt="Developer working on laptop"

@@ -59,7 +59,7 @@
 .sliderWrapper {
   overflow: hidden;
   width: 100%;
-  background: #fff; /* optional */
+  /* background: #fff; */
 }
  
 .sliderMask {
