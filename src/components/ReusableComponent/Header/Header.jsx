@@ -719,7 +719,8 @@ const Header = () => {
             ))}
           </ul>
         </div> */}
-        <div className="hidden md:flex space-x-8 text-gray-700 font-medium justify-center flex-1">
+        {/* <div className="hidden md:flex space-x-8 text-gray-700 font-medium justify-center flex-1"> */}
+        <div className="hidden lg:flex space-x-8 text-gray-700 font-medium justify-center flex-1">
           <ul className="flex space-x-8 text-gray-700 font-medium static">
             {menus.map((menu) => {
               // Detect if the menu has items or columns
@@ -787,7 +788,8 @@ const Header = () => {
         {/* Mobile Menu Toggle */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden text-gray-800 focus:outline-none"
+          // className="md:hidden text-gray-800 focus:outline-none"
+          className="lg:hidden text-gray-800 focus:outline-none"
         >
           {isOpen ? <X size={26} /> : <Menu size={26} />}
         </button>

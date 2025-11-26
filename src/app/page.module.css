@@ -84,8 +84,8 @@
 }
  
 .slide img {
-  height: 30px;
-  width: auto;
+  height: 40px;
+  width: auto; 
   object-fit: contain;
 }
  

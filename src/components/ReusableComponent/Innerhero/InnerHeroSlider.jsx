@@ -9,6 +9,7 @@ function InnerHeroSlider() {
     "/color_bootroom.svg",
     "/color_botButler.svg",
     "/color_forSent.svg",
+    "/color_vomax.png",
     "/color_Gdd.svg",
     "/color_laboucle.svg",
     "/color_maya.svg",
@@ -16,11 +17,10 @@ function InnerHeroSlider() {
     "/color_nexstaff.svg",
     "/color_nikben.svg",
     "/color_obm.svg",
-    "/color_rs.svg",
+    "/color_rs.png",
     "/color_s2h.svg",
     "/color_secrure.svg",
     "/color_shift.svg",
-    "/color_vomax.svg",
     "/color_zirotix.svg",
   ];
   const containerRef = useRef(null);
@@ -30,7 +30,6 @@ function InnerHeroSlider() {
     if (containerRef.current) {
       x.current -= 0.04 * delta; // speed control
       containerRef.current.style.transform = `translateX(${x.current}px)`;
-
       // Reset position for infinite loop
       const scrollWidth = containerRef.current.scrollWidth / 2;
       if (Math.abs(x.current) >= scrollWidth) {

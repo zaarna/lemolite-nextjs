@@ -2,7 +2,7 @@ import React from "react";
 
 const StatCard = ({ icon, number, label, suffix = "+" }) => {
   return (
-    <div className="bg-white rounded-2xl py-3 sm:py-4 shadow-md hover:shadow-lg transition-shadow duration-300 flex items-center gap-3 w-full sm:w-[240px] md:w-[260px] border border-[#CDCDCD] px-3">
+    <div className="bg-white rounded-3xl py-2 sm:py-3 shadow-md hover:shadow-lg transition-shadow duration-300 flex items-center gap-3 w-full sm:w-[240px] md:w-[260px] border border-[#CDCDCD] px-3 space-x-2">
       {/* Icon on the left */}
       <div className="flex-shrink-0">
         {typeof icon === "string" ? (
@@ -15,13 +15,15 @@ const StatCard = ({ icon, number, label, suffix = "+" }) => {
       {/* Number and Label on the right */}
       <div className="flex flex-col">
         {/* Bold Number with suffix */}
-        <div className="text-2xl sm:text-3xl font-bold leading-tight">
+        <div className="text-2xl sm:text-3xl font-bold leading-tight text-left">
           {number}
           {suffix}
         </div>
 
         {/* Smaller Label */}
-        <div className="text-xs sm:text-sm text-gray-600 mt-0.5">{label}</div>
+        <div className="text-xs sm:text-sm text-black mt-0.5 text-left">
+          {label}
+        </div>
       </div>
     </div>
   );
@@ -50,7 +52,7 @@ const StatsSection = () => {
   return (
     <section className="relative my-3">
       <div className="px-0  relative z-10">
-        <div className="flex flex-col lg:flex-row items-center justify-center lg:justify-between gap-6 lg:gap-8  ">
+        <div className="flex flex-wrap md:flex-nowrap items-center justify-center lg:justify-between gap-4 sm:gap-6 md:gap-8 ">
           {/* Stats Cards */}
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 w-full lg:w-auto">
             {stats.map((stat, index) => (
@@ -64,7 +66,7 @@ const StatsSection = () => {
           </div>
 
           {/* Clutch Badge */}
-          <div className="flex-shrink-0 mt-6 lg:mt-0">
+          <div className="flex sm:hidden md:hidden lg:flex flex-shrink-0 mt-6 lg:mt-0">
             <img
               src="/Badgeblack.png"
               alt="Clutch review"
