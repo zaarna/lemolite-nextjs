@@ -4,9 +4,12 @@ import Popup from "reactjs-popup";
 import PhoneInput from "react-phone-number-input";
 import "react-phone-number-input/style.css";
 import parsePhoneNumber from "libphonenumber-js";
-import { Check, X } from "lucide-react";
+import { X } from "lucide-react";
 import { toast } from "react-toastify";
 import Grediantbutton from "../Button/Grediantbutton";
+import Image from "next/image";
+import { Phone } from "lucide-react";
+import Link from "next/link";
 
 function PartnerPopup({ isPopupOpen, closePopup }) {
   const [isOpen, setIsOpen] = useState(isPopupOpen || false);
@@ -26,13 +29,11 @@ function PartnerPopup({ isPopupOpen, closePopup }) {
 
   const [formData, setFormData] = useState({
     name: "",
-    lastname: "",
     companyname: "",
     email: "",
     countrycode: "",
     phone: "",
     aboutus: "",
-    message: "",
     pageurl: "",
   });
 
@@ -66,13 +67,11 @@ function PartnerPopup({ isPopupOpen, closePopup }) {
         toast.success(data.message);
         setFormData({
           name: "",
-          lastname: "",
           companyname: "",
           email: "",
           countrycode: "",
           phone: "",
           aboutus: "",
-          message: "",
           pageurl: "",
         });
       })
@@ -97,34 +96,17 @@ function PartnerPopup({ isPopupOpen, closePopup }) {
     <Popup
       open={isOpen}
       onOpen={() => setIsOpen(true)}
-      onClose={() =>
-        // setIsOpen(false);
-        // closePopup();
-        closePopupOutside()
-      }
+      onClose={() => closePopupOutside()}
       trigger={
-        // <button className="gradient-button">
-        //   <span> Partner with Us in Your Digital Journey</span>
-        //   {/* <img
-        //     src={rightarrow}
-        //     alt="right-arrow"
-        //     width={26}
-        //     className="transition-transform duration-500 group-hover:rotate-30"
-        //   /> */}
-        //   <ArrowRight
-        //     width={26}
-        //     className="transition-transform duration-500 group-hover:rotate-30"
-        //   />
-        // </button>
         <Grediantbutton btntext={"Partner With Us In Your Digital Journey"} />
       }
       modal
       nested
     >
       {(close) => (
-        <div className="modal relative bg-black rounded-[30px] overflow-scroll h-[400px] lg:overflow-auto lg:h-auto max-w-[300px] sm:max-w-[400px] md:max-w-[600px] lg:max-w-[800px] xl:max-w-[1000px] px-5 md:px-10 py-5 md:py-10">
+        <div className="modal relative bg-white drop-shadow-2xl rounded-[32px] overflow-y-auto max-h-[90vh] max-w-[90vw] sm:max-w-[75vw] ">
           <button
-            className="close absolute flex items-center justify-center right-5 md:right-[30px] top-4 md:top-6 text-white w-6 md:w-8 h-6 md:h-8 border border-white rounded-full cursor-pointer"
+            className="close absolute flex items-center justify-center right-5 md:right-[30px] top-4 md:top-6 text-black lg:text-white w-8 h-8 rounded-full cursor-pointer z-50 "
             onClick={() => {
               close();
               if (typeof closePopup == "function") {
@@ -132,19 +114,28 @@ function PartnerPopup({ isPopupOpen, closePopup }) {
               }
             }}
           >
-            <X width={14} />
+            <X width={26} />
           </button>
-          <div className="header text-white text-center text-2xl mb-8">
-            {" "}
-            Partner with Us!{" "}
-          </div>
-          <div className="content">
-            <div className="">
-              <form className=" " onSubmit={handleSubmit}>
-                <div className="flex flex-col md:flex-row flex-nowrap md:flex-wrap w-full">
-                  {/*First Name Field */}
-                  <div className="w-fll md:w-1/2 mb-7">
-                    <div className="relative group mx-3 ">
+
+          <div className="flex flex-col lg:flex-row">
+            {/* Left Section - Form - Full width on mobile */}
+            <div className="w-full lg:w-2/3 px-5 md:px-10 py-8 md:py-10">
+              <div className="header text-black text-left mb-6">
+                <h2 className="text-2xl md:text-3xl mb-3 font-bold">
+                  Share the Madness You Believe In
+                </h2>
+                <p className="text-sm md:text-base font-light text-gray-600">
+                  Got a vision that refuses to sit still? Drop it in, and our
+                  team will help you shape it into something powerful, scalable,
+                  and market-ready.
+                </p>
+              </div>
+
+              <form onSubmit={handleSubmit}>
+                <div className="flex flex-col gap-6">
+                  {/* Full Name and Email */}
+                  <div className="flex flex-col md:flex-row gap-6">
+                    <div className="relative group flex-1">
                       <input
                         type="text"
                         id="name"
@@ -152,68 +143,20 @@ function PartnerPopup({ isPopupOpen, closePopup }) {
                         value={formData.name}
                         onChange={handleChange}
                         required
-                        className="w-full border-b border-gray-300 bg-transparent py-2 text-[#D9D9D9] placeholder-transparent focus:outline-none "
-                        placeholder="First Name*"
+                        className="w-full border-b border-gray-300 bg-transparent py-2 text-gray-900 placeholder-transparent focus:outline-none focus:border-gray-900"
+                        placeholder="Full Name*"
                       />
                       <label
                         htmlFor="name"
-                        className={`absolute left-0 top-0 h-full flex items-center pl-0 text-sm text-[#D9D9D9] transition-all transform ${
-                          formData.name ? "h-1/4 -translate-y-full" : ""
+                        className={`absolute left-0 top-0 h-full flex items-center text-sm text-gray-500 transition-all transform ${
+                          formData.name ? "text-xs -translate-y-6" : ""
                         }`}
                       >
-                        First Name*
+                        Full Name*
                       </label>
                     </div>
-                  </div>
-                  {/*Last Name Field */}
-                  <div className="w-fll md:w-1/2 mb-7">
-                    <div className="relative group mx-3">
-                      <input
-                        type="text"
-                        id="lastname"
-                        name="lastname"
-                        value={formData.lastname}
-                        onChange={handleChange}
-                        required
-                        className="w-full border-b border-gray-300 bg-transparent py-2 text-[#D9D9D9] placeholder-transparent focus:outline-none "
-                        placeholder="Last Name*"
-                      />
-                      <label
-                        htmlFor="last name"
-                        className={`absolute left-0 top-0 h-full flex items-center pl-0 text-sm text-[#D9D9D9] transition-all transform ${
-                          formData.lastname ? " h-1/4 -translate-y-full" : ""
-                        }`}
-                      >
-                        Last Name*
-                      </label>
-                    </div>
-                  </div>
-                  {/*Company Name Field */}
-                  <div className="w-fll md:w-1/2 mb-7">
-                    <div className="relative group mx-3">
-                      <input
-                        type="text"
-                        id="companyname"
-                        name="companyname"
-                        value={formData.companyname}
-                        onChange={handleChange}
-                        required
-                        className="w-full border-b border-gray-300 bg-transparent py-2 text-[#D9D9D9] placeholder-transparent focus:outline-none "
-                        placeholder="Company Name*"
-                      />
-                      <label
-                        htmlFor="Company name"
-                        className={`absolute left-0 top-0 h-full flex items-center pl-0 text-sm text-[#D9D9D9] transition-all transform ${
-                          formData.companyname ? " h-1/4 -translate-y-full" : ""
-                        }`}
-                      >
-                        Company Name*
-                      </label>
-                    </div>
-                  </div>
-                  {/* Email Field */}
-                  <div className="w-fll md:w-1/2 mb-7">
-                    <div className="relative group mx-3">
+
+                    <div className="relative group flex-1">
                       <input
                         type="email"
                         id="email"
@@ -221,175 +164,239 @@ function PartnerPopup({ isPopupOpen, closePopup }) {
                         value={formData.email}
                         onChange={handleChange}
                         required
-                        className="w-full border-b border-gray-300 bg-transparent py-2 text-[#D9D9D9] placeholder-transparent focus:outline-none "
-                        placeholder="Email ID*"
+                        className="w-full border-b border-gray-300 bg-transparent py-2 text-gray-900 placeholder-transparent focus:outline-none focus:border-gray-900"
+                        placeholder="Email Address*"
                       />
                       <label
                         htmlFor="email"
-                        className={`absolute left-0 top-0 h-full flex items-center pl-0 text-sm text-[#D9D9D9] transition-all transform ${
-                          formData.email ? " h-1/4 -translate-y-full" : ""
+                        className={`absolute left-0 top-0 h-full flex items-center text-sm text-gray-500 transition-all transform ${
+                          formData.email ? "text-xs -translate-y-6" : ""
                         }`}
                       >
-                        Email ID*
+                        Email Address*
                       </label>
                     </div>
                   </div>
-                  {/* Phone Number Field */}
-                  <div className="w-fll md:w-1/2 mb-7">
-                    <div className="relative group mx-3">
-                      <div style={{ display: "flex", alignItems: "center" }}>
-                        <PhoneInput
-                          id="phone"
-                          placeholder=""
-                          value={value}
-                          onChange={(phone) => {
-                            setValue(phone);
-                            // Parse phone number for country code
-                            const phoneNumber = phone
-                              ? parsePhoneNumber(phone)
-                              : null;
-                            const countrycode = phoneNumber?.country || "";
-                            // Update formData state
-                            setFormData((prevData) => ({
-                              ...prevData,
-                              phone: phone || "",
-                              countrycode: countrycode,
-                            }));
-                          }}
-                          defaultCountry="US"
-                          className="w-full border-b border-gray-300 py-2 text-black focus:outline-none"
-                        />
-                        <label
-                          htmlFor="number"
-                          className={`text-[#D9D9D9] absolute  top-0 h-full flex items-center text-sm transition-all transform ${
-                            formData.phone
-                              ? "left-0 text-sm  -translate-y-8 pl-0"
-                              : "left-12"
-                          }`}
-                        >
-                          Phone Number*
-                        </label>
-                      </div>
-                    </div>
-                  </div>
-                  {/* Social account Dropdown */}
-                  <div className="w-fll md:w-1/2 mb-7">
-                    <div className="relative group mx-3">
-                      <label
-                        htmlFor="aboutus"
-                        className={`text-[#D9D9D9] -translate-y-8 absolute top-0 h-full flex items-center text-sm transition-all transform `}
-                      >
-                        How did you hear about us? *
-                      </label>
-                      <select
-                        id="aboutus"
-                        name="aboutus"
-                        value={formData.aboutus}
+
+                  {/* Company + Phone */}
+                  <div className="flex flex-col md:flex-row gap-6">
+                    <div className="relative group flex-1">
+                      <input
+                        type="text"
+                        id="companyname"
+                        name="companyname"
+                        value={formData.companyname}
                         onChange={handleChange}
                         required
-                        className="w-full border-b border-gray-300 bg-transparent py-2 text-[#D9D9D9] focus:outline-none bg-black "
+                        className="w-full border-b border-gray-300 bg-transparent py-2 text-gray-900 placeholder-transparent focus:outline-none focus:border-gray-900"
+                        placeholder="Company Name"
+                      />
+                      <label
+                        htmlFor="companyname"
+                        className={`absolute left-0 top-0 h-full flex items-center text-sm text-gray-500 transition-all transform ${
+                          formData.companyname ? "text-xs -translate-y-6" : ""
+                        }`}
                       >
-                        <option className="bg-black" value="LinkedIn">
-                          LinkedIn
-                        </option>
-                        <option className="bg-black" value="Instagram">
-                          Instagram
-                        </option>
-                        <option className="bg-black" value="Whatsapp">
-                          Whatsapp
-                        </option>
-                        <option className="bg-black" value="Other">
-                          Other
-                        </option>
-                      </select>
-                    </div>
-                  </div>
-                </div>
-                <div className="pb-10">
-                  <h5 className="text-left font-medium text-xl text-white">
-                    Why Partner with Us?
-                  </h5>
-                  <div className="flex items-start flex-wrap justify-between pt-4 space-y-1">
-                    <div className="text-white flex items-center md:w-1/2 lg:w-1/3 ">
-                      <Check width={20} />
-                      <label className="pl-3 font-light text-base">
-                        White Label Partnership
+                        Company Name
                       </label>
                     </div>
-                    <div className="text-white flex items-center md:w-1/2 lg:w-1/3">
-                      <Check width={20} />
-                      <label className="pl-3 font-light text-base">
-                        Joint Marketing
-                      </label>
-                    </div>
-                    <div className="text-white flex items-center md:w-1/2 lg:w-1/3">
-                      <Check width={20} />
-                      <label className="pl-3 font-light text-base">
-                        Remarkable Kickbacks
-                      </label>
-                    </div>
-                    <div className="text-white flex items-center md:w-1/2 lg:w-1/3">
-                      <Check width={20} />
-                      <label className="pl-3 font-light text-base">
-                        Dedicated Support
-                      </label>
-                    </div>
-                    <div className="text-white flex items-center md:w-1/2 lg:w-1/3">
-                      <Check width={20} />
-                      <label className="pl-3 font-light text-base">
-                        Rewarding Opportunities
-                      </label>
-                    </div>
-                    <div className="text-white flex items-center md:w-1/2 lg:w-1/3">
-                      <Check width={20} />
-                      <label className="pl-3 font-light text-base">
-                        Continuous Training
+
+                    <div className="relative group flex-1">
+                      <PhoneInput
+                        id="phone"
+                        placeholder=""
+                        value={formData.phone}
+                        onChange={(phone) => {
+                          const phoneNumber = phone
+                            ? parsePhoneNumber(phone)
+                            : null;
+                          const countrycode = phoneNumber?.country || "";
+
+                          setFormData((prev) => ({
+                            ...prev,
+                            phone: phone,
+                            countrycode: countrycode,
+                          }));
+                        }}
+                        defaultCountry="US"
+                        className="w-full border-b border-gray-300 py-2 text-gray-900 focus:outline-none"
+                      />
+                      <label
+                        htmlFor="phone"
+                        className={`text-gray-500 absolute top-0 h-full flex items-center text-sm transition-all transform ${
+                          formData.phone
+                            ? "left-0 text-xs -translate-y-6"
+                            : "left-12"
+                        }`}
+                      >
+                        Phone Number
                       </label>
                     </div>
                   </div>
-                </div>
-                {/* Message Field */}
-                <div className="relative group">
-                  <textarea
-                    rows="1"
-                    id="message"
-                    name="message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    required
-                    className="w-full border-b border-gray-300 bg-transparent py-2 text-[#D9D9D9] placeholder-transparent focus:outline-none "
-                    placeholder="Add Description"
-                  />
-                  <label
-                    htmlFor="message"
-                    className={`absolute left-0 top-0 h-full flex items-center text-sm text-[#D9D9D9] transition-all transform ${
-                      formData.message ? "h-1/4 -translate-y-full" : ""
-                    }`}
-                  >
-                    Add Description
-                  </label>
-                </div>
-                {/* Submit Button */}
-                <div className="flex items-center justify-center mt-5">
-                  <button
-                    href={null}
-                    type="submit"
-                    disabled={isLoading}
-                    className="block max-w-[300px] text-center py-3 w-full bg-[#D8E8C5] text-black rounded-[16px] font-medium"
-                  >
-                    {isLoading ? "Submitting..." : "Become a Partner"}
-                  </button>
+
+                  {/* Message */}
+                  <div className="relative group">
+                    <textarea
+                      rows="3"
+                      id="message"
+                      name="message"
+                      value={formData.message}
+                      onChange={handleChange}
+                      required
+                      className="w-full border-b border-gray-300 bg-transparent py-2 text-gray-900 placeholder-transparent focus:outline-none focus:border-gray-900 resize-none"
+                      placeholder="Tell Us About Your Project"
+                    />
+                    <label
+                      htmlFor="message"
+                      className={`absolute left-0 top-0 flex items-start pt-2 text-sm text-gray-500 transition-all transform ${
+                        formData.message ? "text-xs -translate-y-6" : ""
+                      }`}
+                    >
+                      Tell Us About Your Project
+                    </label>
+                  </div>
+
+                  {/* Submit */}
+                  <div className="flex flex-col lg:flex-row items-center space-y-4 lg:space-x-4">
+                    <button
+                      type="submit"
+                      disabled={isLoading}
+                      className="w-full py-3 cursor-pointer hover:bg-black hover:text-white border-2 border-black bg-white text-black rounded-2xl font-medium transition-colors disabled:bg-gray-400"
+                    >
+                      {isLoading ? "Submitting..." : "Submit"}
+                    </button>
+
+                    <p className="text-sm text-gray-500 text-left">
+                      By submitting this form, I confirm that I have reviewed
+                      and agree to the{" "}
+                      <a
+                        href="/privacy-policy"
+                        target="_blank"
+                        className="underline text-[#065CDC]"
+                      >
+                        Lemolite privacy policy.
+                      </a>
+                      .
+                    </p>
+                  </div>
                 </div>
               </form>
             </div>
-          </div>
 
-          <div className="actions">
-            <Popup
-              trigger={<button className="button"> Trigger </button>}
-              position="top center"
-              nested
-            ></Popup>
+            {/* Right Section - Contact Info - Hidden on mobile, visible on desktop */}
+            <div className="hidden lg:block w-full lg:w-1/3 bg-[url('/backgroundimg.webp')] bg-cover bg-center bg-no-repeat text-white px-5 md:px-10 py-8 md:py-10 rounded-tr-[30px] rounded-br-[30px']">
+              <h2 className="text-2xl font-bold mb-2">Pass the Brief</h2>
+              <p className="text-base">
+                Just fill out the form or contact us via email or phone.
+              </p>
+
+              {/* Contact Details */}
+              <div className="space-y-4 my-4">
+                <div className="flex items-center gap-3">
+                  <div className="w-8 h-8 bg-[#BFD633] rounded-full flex items-center justify-center flex-shrink-0">
+                    <svg
+                      className="w-5 h-5 text-gray-900"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="text-sm md:text-base font-normal">
+                      sales@lemalite.com
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-3">
+                  <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center flex-shrink-0">
+                    <Image src="/uk.png" alt="flag" width={32} height={32} />
+                  </div>
+                  <div className="flex space-x-2 items-center">
+                    <Phone className="w-5 h-5 text-white" />
+                    <p className="text-sm md:text-base font-normal">
+                      +44 75513 16937
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-3">
+                  <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center flex-shrink-0">
+                    <Image src="/Dubai.png" alt="flag" width={32} height={32} />
+                  </div>
+                  <div className="flex space-x-2 items-center">
+                    <Phone className="w-5 h-5 text-white" />
+                    <p className="text-sm md:text-base font-normal">
+                      +974 7794 0018
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-3">
+                  <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center flex-shrink-0">
+                    <Image src="/india.png" alt="flag" width={32} height={32} />
+                  </div>
+                  <div className="flex space-x-2 items-center">
+                    <Phone className="w-5 h-5 text-white" />
+                    <p className="text-sm md:text-base font-normal">
+                      +91 93138 34815
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Book Call Button */}
+
+              <Link
+                target="blank"
+                href="https://calendly.com/lemolite-sales/product-demo?month=2025-06"
+                className="block w-full py-3 text-center cursor-pointer bg-[#BFD633] text-gray-900 rounded-2xl font-bold transition-colors mb-4"
+              >
+                Book 30-Min Call
+              </Link>
+
+              {/* Trusted Brands */}
+              <div>
+                <h3 className="text-lg font-bold mb-4">
+                  Trusted by Leading Brands
+                </h3>
+                <div className="flex items-center space-x-1">
+                  <div className="px-2">
+                    <Image
+                      src="/botform.svg"
+                      alt="logo"
+                      width={90}
+                      height={32}
+                    />
+                  </div>
+                  <div className="px-2">
+                    <Image
+                      src="/shiftform.svg"
+                      alt="logo"
+                      width={58}
+                      height={40}
+                    />
+                  </div>
+                  <div className="px-2">
+                    <Image
+                      src="/depoterform.svg"
+                      alt="logo"
+                      width={90}
+                      height={17}
+                    />
+                  </div>
+                  <div className="px-2">
+                    <Image
+                      src="/botroomform.svg"
+                      alt="logo"
+                      width={85}
+                      height={30}
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       )}

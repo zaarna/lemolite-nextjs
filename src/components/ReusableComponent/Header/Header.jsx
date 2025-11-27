@@ -769,21 +769,16 @@ const Header = () => {
         </div>
 
         {/* CTA Button */}
-        {/* <Link
+        <Link
           target="blank"
           href="https://calendly.com/lemolite-sales/product-demo?month=2025-06"
-          className="hidden md:inline-block ml-4 relative overflow-hidden border-2 border-[#bfd633] text-black font-semibold px-5 py-2 rounded-full transition-all duration-500 group"
+          className="hidden md:inline-block ml-4 relative overflow-hidden bg-[#BFD633] text-black hover:text-white font-semibold px-5 py-2 rounded-[10px] transition-all duration-500 group"
         >
-          <span className="relative z-10 transition-all duration-300 capitalize">
+          <span className="relative z-20 transition-all duration-300 capitalize">
             Book a call
           </span>
-          <span className="absolute left-0 top-0 h-full w-0 bg-gradient-to-r from-[#2ec4f3] to-[#bfd633] transition-all duration-500 group-hover:w-full"></span>
-        </Link> */}
-        <Grediantbutton
-          variant="green"
-          btntext="Book a call"
-          link="https://calendly.com/lemolite-sales/product-demo?month=2025-06"
-        />
+          <span className="absolute left-0 top-0 h-full w-0 bg-black transition-all duration-500 group-hover:w-full"></span>
+        </Link>
 
         {/* Mobile Menu Toggle */}
         <button

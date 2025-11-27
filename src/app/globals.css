@@ -711,7 +711,7 @@ font-size:  clamp(1.5rem, -1.3125rem + 9vw, 3.75rem);
 
 
 .popup-overlay {
-    background: linear-gradient(320deg, rgba(46, 196, 243, 0.3), rgba(191, 214, 51, 0.3));
+    background: rgba(0, 0, 0, 0.35);
 }
 
 /* Why Choose Lemolite css */

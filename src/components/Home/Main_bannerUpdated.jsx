@@ -43,6 +43,7 @@ function Main_bannerUpdated() {
                 <Grediantbutton
                   variant="green"
                   btntext="Book Your Free 30-Minute Call"
+                  targetBlank= "true"
                   link="https://calendly.com/lemolite-sales/product-demo?month=2025-06"
                 />
                 <p className="font-inter font-extralight italic text-base sm:text-lg md:text-xl lg:text-[20px] leading-[100%] tracking-[0] mt-2 md:mt-3">

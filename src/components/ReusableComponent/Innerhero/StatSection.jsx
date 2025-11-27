@@ -1,3 +1,5 @@
+import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const StatCard = ({ icon, number, label, suffix = "+" }) => {
@@ -66,15 +68,22 @@ const StatsSection = () => {
           </div>
 
           {/* Clutch Badge */}
-          <div className="flex sm:hidden md:hidden lg:flex flex-shrink-0 mt-6 lg:mt-0">
-            <img
-              src="/Badgeblack.png"
-              alt="Clutch review"
-              width={110}
-              height={40}
-              className="object-contain"
-            />
-          </div>
+
+          <Link
+            href="https://clutch.co/profile/lemolite-technologies-llp"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className="flex sm:hidden md:hidden lg:flex flex-shrink-0 mt-6 lg:mt-0 cursor-pointer">
+              <Image
+                src="/Badgeblack.png"
+                alt="Clutch review"
+                width={110}
+                height={40}
+                className="object-contain"
+              />
+            </div>
+          </Link>
         </div>
       </div>
     </section>

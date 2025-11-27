@@ -72,7 +72,7 @@ export default function Grediantbutton({
       );
     } else {
       return (
-        <Link className="w-fit" href={link}>
+        <Link className="w-full" href={link}>
           {ButtonContent}
         </Link>
       );
