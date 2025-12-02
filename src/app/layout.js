@@ -9,6 +9,7 @@ import Testimonial from "@/components/ReusableComponent/Testimonial/Testimonial"
 import { icons } from "lucide-react";
 import PopupTimer from "@/components/PopupTimer";
 import WhatsAppIcon from "@/components/ReusableComponent/WhatsAppIcon/WhatsAppIcon";
+import PartnerPopup from "@/components/ReusableComponent/PartnerPopup/PartnerPopup";
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -39,24 +40,25 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${outfit.variable} antialiased`}>
-        <Header />
-        <ToastContainer />
-        {children}
-        <Testimonial
-          title="Hear from Our Happy Clients"
-          testimonials={testimonials}
-        />
-        <Contectinfo
-          maintitle={"Let’s Transform Your Vision into Reality"}
-          subtitle={"Get in Touch!"}
-          content={
-            "Working on something big? Let’s chat! We’re excited to hear about your project and see how we can help."
-          }
-          addresses={addresses}
-        />
-        <WhatsAppIcon />
-        <Footer />
-        <PopupTimer />
+        <PopupTimer>
+          <Header />
+          <ToastContainer />
+          {children}
+          <Testimonial
+            title="Hear from Our Happy Clients"
+            testimonials={testimonials}
+          />
+          <Contectinfo
+            maintitle={"Let’s Transform Your Vision into Reality"}
+            subtitle={"Get in Touch!"}
+            content={
+              "Working on something big? Let’s chat! We’re excited to hear about your project and see how we can help."
+            }
+            addresses={addresses}
+          />
+          <WhatsAppIcon />
+          <Footer />
+        </PopupTimer>
       </body>
     </html>
   );

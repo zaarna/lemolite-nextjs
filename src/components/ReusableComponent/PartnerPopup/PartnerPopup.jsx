@@ -303,9 +303,12 @@ function PartnerPopup({ isPopupOpen, closePopup }) {
                     </svg>
                   </div>
                   <div>
-                    <p className="text-sm md:text-base font-normal">
-                      sales@lemalite.com
-                    </p>
+                    <a
+                      href="mailto:sales@lemolite.com"
+                      className="text-sm md:text-base font-normal"
+                    >
+                      sales@lemolite.com
+                    </a>
                   </div>
                 </div>
 
@@ -315,9 +318,12 @@ function PartnerPopup({ isPopupOpen, closePopup }) {
                   </div>
                   <div className="flex space-x-2 items-center">
                     <Phone className="w-5 h-5 text-white" />
-                    <p className="text-sm md:text-base font-normal">
+                    <a
+                      href="tel:+447551316937"
+                      className="text-sm md:text-base font-normal"
+                    >
                       +44 75513 16937
-                    </p>
+                    </a>
                   </div>
                 </div>
 
@@ -327,9 +333,12 @@ function PartnerPopup({ isPopupOpen, closePopup }) {
                   </div>
                   <div className="flex space-x-2 items-center">
                     <Phone className="w-5 h-5 text-white" />
-                    <p className="text-sm md:text-base font-normal">
+                    <a
+                      href="tel:+97477940018"
+                      className="text-sm md:text-base font-normal"
+                    >
                       +974 7794 0018
-                    </p>
+                    </a>
                   </div>
                 </div>
 
@@ -339,9 +348,12 @@ function PartnerPopup({ isPopupOpen, closePopup }) {
                   </div>
                   <div className="flex space-x-2 items-center">
                     <Phone className="w-5 h-5 text-white" />
-                    <p className="text-sm md:text-base font-normal">
+                    <a
+                      href="tel:+919313834815"
+                      className="text-sm md:text-base font-normal"
+                    >
                       +91 93138 34815
-                    </p>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -353,7 +365,7 @@ function PartnerPopup({ isPopupOpen, closePopup }) {
                 href="https://calendly.com/lemolite-sales/product-demo?month=2025-06"
                 className="block w-full py-3 text-center cursor-pointer bg-[#BFD633] text-gray-900 rounded-2xl font-bold transition-colors mb-4"
               >
-                Book 30-Min Call
+                Book 30-Min Call-calendly
               </Link>
 
               {/* Trusted Brands */}

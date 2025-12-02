@@ -234,18 +234,23 @@
 // export default Header;
 
 "use client";
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, useContext } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, Menu, ChevronDown, ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Grediantbutton from "../Button/Grediantbutton";
+import PartnerPopup from "../PartnerPopup/PartnerPopup";
+import { usePopup } from "@/components/PopupTimer";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeMenu, setActiveMenu] = useState(null);
   const [isSticky, setIsSticky] = useState(false);
+  const [showPopup, setShowPopup] = useState(false);
   const menuRef = useRef();
+
+  const { openPopup } = usePopup();
 
   useEffect(() => {
     const handleClickOutside = (e) => {
@@ -272,6 +277,10 @@ const Header = () => {
   };
 
   const closeDropdown = () => setActiveMenu(null);
+
+  const closePopup = () => {
+    setShowPopup(false);
+  };
 
   const menus = [
     {
@@ -769,7 +778,7 @@ const Header = () => {
         </div>
 
         {/* CTA Button */}
-        <Link
+        {/* <Link
           target="blank"
           href="https://calendly.com/lemolite-sales/product-demo?month=2025-06"
           className="hidden md:inline-block ml-4 relative overflow-hidden bg-[#BFD633] text-black hover:text-white font-semibold px-5 py-2 rounded-[10px] transition-all duration-500 group"
@@ -778,7 +787,15 @@ const Header = () => {
             Book a call
           </span>
           <span className="absolute left-0 top-0 h-full w-0 bg-black transition-all duration-500 group-hover:w-full"></span>
-        </Link>
+        </Link> */}
+        <Grediantbutton
+          variant="green"
+          btntext=" Book a call"
+          targetBlank="true"
+          onClick={() => {
+            openPopup();
+          }}
+        />
 
         {/* Mobile Menu Toggle */}
         <button
@@ -900,7 +917,7 @@ const Header = () => {
 
             {/* Mobile CTA Button */}
             <div className="mt-6">
-              <Link
+              {/* <Link
                 target="blank"
                 href="https://calendly.com/lemolite-sales/product-demo?month=2025-06"
                 className="block w-full relative overflow-hidden text-center border-2 border-[#bfd633] text-black font-semibold px-5 py-2 rounded-full transition-all duration-500 group"
@@ -908,9 +925,16 @@ const Header = () => {
                 <span className="relative z-10 transition-all duration-300 capitalize text-center group-hover:text-white">
                   Book a call
                 </span>
-                {/* Gradient background animation */}
                 <span className="absolute left-0 top-0 h-full w-0 bg-gradient-to-r from-[#2ec4f3] to-[#bfd633] transition-all duration-500 group-hover:w-full"></span>
-              </Link>
+              </Link> */}
+              <Grediantbutton
+                variant="green"
+                btntext=" Book a call"
+                targetBlank="true"
+                onClick={() => {
+                  openPopup();
+                }}
+              />
             </div>
           </motion.div>
         )}

@@ -1,6 +1,5 @@
-
-import BlogPageSection from '@/components/ReusableComponent/blog/MainBlogCard';
-import React from 'react';
+import BlogPageSection from "@/components/ReusableComponent/blog/MainBlogCard";
+import React from "react";
 import { pagesMeta } from "@/data/pagesMeta";
 
 export const metadata = {
@@ -21,5 +20,3 @@ const BlogPage = () => {
 };
 
 export default BlogPage;
-
-

@@ -183,7 +183,7 @@ export default function Form_career({ data = [] }) {
                 }));
               }}
               defaultCountry="US"
-              className="w-full border-b border-gray-300 py-2 text-black focus:outline-none"
+              className="w-full border-b border-gray-300 py-2  focus:outline-none"
             />
             <label
               htmlFor="phone"

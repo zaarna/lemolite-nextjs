@@ -9,7 +9,7 @@ export const pagesMeta = {
       "custom software development agency",
     ],
     alternates: {
-      canonical: "/",
+      canonical: "https://lemolite.com",
     },
   },
 
@@ -250,10 +250,7 @@ export const pagesMeta = {
     title: "Hire Flutter Developers | Hire Flutter App Developers",
     description:
       "Launch mobile apps faster with Flutter specialists from Lemolite Technologies. Hire Flutter app developers to deliver seamless experiences on iOS and Android.",
-    keywords: [
-      "Hire Flutter Developer",
-      "Hire Flutter App Developer",
-    ],
+    keywords: ["Hire Flutter Developer", "Hire Flutter App Developer"],
     canonical: "https://lemolite.com/services/hire-vuejs-developer",
   },
 
@@ -319,7 +316,7 @@ export const pagesMeta = {
     ],
     canonical: "https://lemolite.com/techstack/flutter-development",
   },
-  
+
   "nodejs-development": {
     title: "Node.js Development Comapny",
     description:
@@ -410,7 +407,7 @@ export const pagesMeta = {
     title: "Current Opportunities and Job Openings at Lemolite Technologies",
     description:
       "Lemolite Technologies offers a chance to work with leading technologies, grow your IT career, and enhance your passion. Kickstart your journey with us today!",
-    keywords: ["Current Job Openings", "Job Openings",],
+    keywords: ["Current Job Openings", "Job Openings"],
     canonical: "https://lemolite.com/careers",
   },
 

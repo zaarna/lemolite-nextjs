@@ -32,7 +32,8 @@ export default function Grediantbutton({
       border: "",
       hoverBg: "bg-black",
       bg: "#BFD633",
-      border_radius: "[10px]",
+      // border_radius: "[10px]",
+      border_radius: "full",
       text_weight: "font-medium",
     },
   };
@@ -71,11 +72,7 @@ export default function Grediantbutton({
         </a>
       );
     } else {
-      return (
-        <Link className="w-full" href={link}>
-          {ButtonContent}
-        </Link>
-      );
+      return <Link href={link}>{ButtonContent}</Link>;
     }
   }
 

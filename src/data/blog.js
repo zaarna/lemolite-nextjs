@@ -152,7 +152,6 @@ For more insights and updates, follow us on <a href="https://x.com/lemolite_tech
       title: "Custom Software Development Services: The Ultimate Guide",
       description:
         "Choose Lemolite Technologies for Leading Custom Software Development Services. Get quality solutions for your business. Start your project today!",
-      
     },
     sections: [
       {
@@ -452,7 +451,8 @@ For more insights and updates, follow us on <a href="https://x.com/lemolite_tech
       title: "Privacy by Design in Mobile Apps | Lemolite Technologies",
       description:
         "Lemolite Technologies builds secure mobile apps with Privacy by Design, combining custom security, DevOps, and AI to earn lasting user trust.",
-      keywords: "Secure Mobile App Development Services, Custom Mobile App Security, Trusted Mobile App Developer, DevOps in Mobile App Development, Mobile App Development Company, Privacy First Mobile UI, AI-Driven Threat Detection Apps"
+      keywords:
+        "Secure Mobile App Development Services, Custom Mobile App Security, Trusted Mobile App Developer, DevOps in Mobile App Development, Mobile App Development Company, Privacy First Mobile UI, AI-Driven Threat Detection Apps",
     },
     sections: [
       {
@@ -846,7 +846,8 @@ Partner with a <a target="_blank" href="https://lemolite.com/services/hire-react
       title: "Transform Online Shopping with AR & Custom Development",
       description:
         "Experience how AR revolutionizes online retail. Lemolite Technologies drives innovative custom e-commerce development for next-gen shopping success.",
-      keywords: "Personalized Shopping Experience, Custom E-commerce Development, custom e-commerce development services, Virtual Try-On Technology, AI-Powered E-commerce, Augmented Reality E-commerce, e-commerce augmented reality, Hire Shopify developers",
+      keywords:
+        "Personalized Shopping Experience, Custom E-commerce Development, custom e-commerce development services, Virtual Try-On Technology, AI-Powered E-commerce, Augmented Reality E-commerce, e-commerce augmented reality, Hire Shopify developers",
     },
     sections: [
       {
@@ -1125,7 +1126,8 @@ Partner with a <a target="_blank" href="https://lemolite.com/services/hire-react
       title: "How Edge Computing Transforms Real-Time Software",
       description:
         "Experience real-time software solutions with Lemolite Technologies, leveraging edge computing to gain a market edge in milliseconds.",
-      keywords: "AI software development services, custom machine learning solutions, mobile and web app development services, custom software development services, real-time software solutions, software modernization and migration, low-latency computing solutions, AI-driven edge analytics, AI-enabled automation services"
+      keywords:
+        "AI software development services, custom machine learning solutions, mobile and web app development services, custom software development services, real-time software solutions, software modernization and migration, low-latency computing solutions, AI-driven edge analytics, AI-enabled automation services",
     },
     sections: [
       {
@@ -1470,7 +1472,8 @@ Partner with a <a target="_blank" href="https://lemolite.com/services/hire-react
       title: "Fuel Your App’s Growth with Web App Development Experts",
       description:
         "We bring your app idea to life with Lemolite Technologies’ app development services, crafted from concept to launch exactly the way you need.",
-      keywords: "app development services, enterprise software solutions, app performance optimization, cloud migration services, API development services, software development company, custom software development, full-stack web development, app development software, software development services, Hire React JS developers for custom apps, Hire Angular developers"
+      keywords:
+        "app development services, enterprise software solutions, app performance optimization, cloud migration services, API development services, software development company, custom software development, full-stack web development, app development software, software development services, Hire React JS developers for custom apps, Hire Angular developers",
     },
     sections: [
       {
@@ -1802,7 +1805,8 @@ Partner with a <a target="_blank" href="https://lemolite.com/services/hire-react
       title: "Why Django React is Perfect for High-Growth Businesses",
       description:
         "Empower growth with expert web development services using Django and React scalable, innovative solutions crafted by Lemolite Technologies",
-      keywords: "Microservices architecture, Python web development, Hire reactjs developers, Security best practices, django web development with python, hire reactjs developer, Component-based architecture"
+      keywords:
+        "Microservices architecture, Python web development, Hire reactjs developers, Security best practices, django web development with python, hire reactjs developer, Component-based architecture",
     },
     sections: [
       {
@@ -2214,7 +2218,8 @@ Partner with a <a target="_blank" href="https://lemolite.com/services/hire-react
       title: "Choosing the Right SaaS for an eCommerce Platform",
       description:
         "Get a step-by-step guide to selecting the right SaaS for an eCommerce platform with features that support scalability, security, and easy customization.",
-      keywords: "website development, SaaS development, ecommerce development, hire shopify developer, e-commerce development, SaaS for eCommerce platform, Saas Development Company",
+      keywords:
+        "website development, SaaS development, ecommerce development, hire shopify developer, e-commerce development, SaaS for eCommerce platform, Saas Development Company",
     },
     sections: [
       {
@@ -2676,7 +2681,8 @@ Partner with a <a target="_blank" href="https://lemolite.com/services/hire-react
       title: "Hire Top Mobile App Developers in Dubai - Lemolite Technologies",
       description:
         "Hire skilled mobile app developers in Dubai with Lemolite for custom iOS, Android, React Native, and AI-powered apps. Drive your business success today!",
-      keywords:"Mobile app development Dubai, mobile app development company in dubai, Mobile app development services Dubai, App development UAE, mobile app development"
+      keywords:
+        "Mobile app development Dubai, mobile app development company in dubai, Mobile app development services Dubai, App development UAE, mobile app development",
     },
     sections: [
       {
@@ -3056,7 +3062,8 @@ Partner with a <a target="_blank" href="https://lemolite.com/services/hire-react
       title: "AI-as-a-Service: Boost Business Growth with AI Solutions",
       description:
         "Drive growth with Lemolite’s AI-as-a-Service scalable AI, automation, and cloud AI platforms powering smarter enterprise solutions.",
-      keywords: "AI-powered automation, cloud AI platform, AI cloud platforms, Machine learning services, Artificial intelligence as a service, AI ML development company, AI/ML development service"
+      keywords:
+        "AI-powered automation, cloud AI platform, AI cloud platforms, Machine learning services, Artificial intelligence as a service, AI ML development company, AI/ML development service",
     },
     sections: [
       {
@@ -3122,61 +3129,57 @@ Partner with a <a target="_blank" href="https://lemolite.com/services/hire-react
       {
         type: "paragraph",
         heading: "Why AIaaS is Different from Traditional AI",
-        content:
-          `Traditional AI means building everything in-house: servers, models, algorithms, and teams. It’s expensive, time-consuming, and risky.`,
+        content: `Traditional AI means building everything in-house: servers, models, algorithms, and teams. It’s expensive, time-consuming, and risky.`,
       },
       {
-  type: "table",
-  design: "1",
-  caption: "AI-as-a-Service vs Traditional AI",
-  columns: ["Feature", "Traditional AI", "AIaaS"],
-  rows: [
-    [
-      '<span style="font-weight: 600;">Infrastructure</span>',
-      "On-premise servers",
-      "Cloud-based"
-    ],
-    [
-      '<span style="font-weight: 600;">Talent</span>',
-      "AI experts required",
-      "Pre-built tools, optional experts"
-    ],
-    [
-      '<span style="font-weight: 600;">Cost</span>',
-      "High upfront investment",
-      "Pay-as-you-go"
-    ],
-    [
-      '<span style="font-weight: 600;">Time to Deploy</span>',
-      "Months or years",
-      "Days or weeks"
-    ],
-    [
-      '<span style="font-weight: 600;">Scalability</span>',
-      "Difficult",
-      "Seamless through cloud AI platforms"
-    ]
-  ],
-  firstColumnBackground: "#bcbdbd"
-},
+        type: "table",
+        design: "1",
+        caption: "AI-as-a-Service vs Traditional AI",
+        columns: ["Feature", "Traditional AI", "AIaaS"],
+        rows: [
+          [
+            '<span style="font-weight: 600;">Infrastructure</span>',
+            "On-premise servers",
+            "Cloud-based",
+          ],
+          [
+            '<span style="font-weight: 600;">Talent</span>',
+            "AI experts required",
+            "Pre-built tools, optional experts",
+          ],
+          [
+            '<span style="font-weight: 600;">Cost</span>',
+            "High upfront investment",
+            "Pay-as-you-go",
+          ],
+          [
+            '<span style="font-weight: 600;">Time to Deploy</span>',
+            "Months or years",
+            "Days or weeks",
+          ],
+          [
+            '<span style="font-weight: 600;">Scalability</span>',
+            "Difficult",
+            "Seamless through cloud AI platforms",
+          ],
+        ],
+        firstColumnBackground: "#bcbdbd",
+      },
       {
         type: "paragraph",
-        content:
-          `The takeaway? AIaaS removes barriers, making advanced AI accessible and practical for all types of businesses.`,
+        content: `The takeaway? AIaaS removes barriers, making advanced AI accessible and practical for all types of businesses.`,
       },
       {
         type: "cta",
-        heading:
-          "Your Shortcut to Smarter Automation and Faster Results",
+        heading: "Your Shortcut to Smarter Automation and Faster Results",
         buttonText: "Book a Free AI Consultation",
         link: "https://calendly.com/lemolite-sales/product-demo?month=2025-06",
         backgroundColor: "#01032b",
       },
-       {
+      {
         type: "paragraph",
         heading: "Who Can Use AIaaS?",
-        content:
-          `<span style="width: 100%; display: block;">The short answer: everyone.  <br/>
+        content: `<span style="width: 100%; display: block;">The short answer: everyone.  <br/>
           AIaaS is flexible and scalable, which means it fits startups, SMEs, and enterprises. But the way it’s used varies depending on business size, resources, and goals.</span>`,
       },
       {
@@ -3186,30 +3189,30 @@ Partner with a <a target="_blank" href="https://lemolite.com/services/hire-react
           "Startups have big ideas but usually small budgets. Every decision counts, and time is limited. AIaaS is like a secret weapon, letting startups innovate, automate, and scale without the heavy costs of traditional AI.",
       },
       {
-  type: "table",
-  design: "1",
-  caption: "Common Startup Challenges & AIaaS Solutions",
-  columns: ["Problem", "AIaaS Solution"],
-  rows: [
-    [
-      '<span style="font-weight: 600;">Limited Resources & Strategic Planning</span>',
-      "NLP and Deep Learning analyze market trends, competitors, and customer feedback to deliver cost-effective strategic insights."
-    ],
-    [
-      '<span style="font-weight: 600;">Unreliable Forecasting</span>',
-      "Predictive analytics offer accurate sales, demand, and cash flow forecasting for better planning."
-    ],
-    [
-      '<span style="font-weight: 600;">Inventory Management</span>',
-      "Computer Vision and AI monitoring optimize stock levels, demand prediction, and replenishment cycles."
-    ],
-    [
-      '<span style="font-weight: 600;">Slow Prototyping</span>',
-      "Cloud AI platforms accelerate MVP development using AI features like AR try-ons, recommendation engines, and automated testing."
-    ]
-  ],
-  firstColumnBackground: "#bcbdbd"
-},
+        type: "table",
+        design: "1",
+        caption: "Common Startup Challenges & AIaaS Solutions",
+        columns: ["Problem", "AIaaS Solution"],
+        rows: [
+          [
+            '<span style="font-weight: 600;">Limited Resources & Strategic Planning</span>',
+            "NLP and Deep Learning analyze market trends, competitors, and customer feedback to deliver cost-effective strategic insights.",
+          ],
+          [
+            '<span style="font-weight: 600;">Unreliable Forecasting</span>',
+            "Predictive analytics offer accurate sales, demand, and cash flow forecasting for better planning.",
+          ],
+          [
+            '<span style="font-weight: 600;">Inventory Management</span>',
+            "Computer Vision and AI monitoring optimize stock levels, demand prediction, and replenishment cycles.",
+          ],
+          [
+            '<span style="font-weight: 600;">Slow Prototyping</span>',
+            "Cloud AI platforms accelerate MVP development using AI features like AR try-ons, recommendation engines, and automated testing.",
+          ],
+        ],
+        firstColumnBackground: "#bcbdbd",
+      },
       {
         type: "paragraph",
         subheading: "Why Startups Should Adopt AIaaS:",
@@ -3231,38 +3234,38 @@ Partner with a <a target="_blank" href="https://lemolite.com/services/hire-react
           "Small and medium-sized businesses are often caught between growth and operational constraints. Tight budgets, clunky workflows, and rising competition make it challenging to scale efficiently. That’s where AIaaS shines.",
       },
       {
-  type: "table",
-  design: "1",
-  caption: "SME Challenges & AIaaS Solutions",
-  columns: ["Challenge", "AIaaS Solution"],
-  rows: [
-    [
-      '<span style="font-weight: 600;">Overburdened Customer Support</span>',
-      "AI-powered automation using NLP chatbots improves response times by 45% and reduces support costs by 35%."
-    ],
-    [
-      '<span style="font-weight: 600;">Inefficient Inventory</span>',
-      "AI and Computer Vision monitor stock in real time, cutting inventory waste by up to 25%."
-    ],
-    [
-      '<span style="font-weight: 600;">Slow Strategic Insights</span>',
-      "Predictive analytics uncover trends and opportunities rapidly—without hiring a full analytics team."
-    ],
-    [
-      '<span style="font-weight: 600;">Poor Employee Experience</span>',
-      "AI tools personalize workflows, optimize task allocation, and enhance overall productivity."
-    ],
-    [
-      '<span style="font-weight: 600;">Innovation Stagnation</span>',
-      "AIaaS accelerates R&D and prototyping using predictive analytics and deep learning."
-    ],
-    [
-      '<span style="font-weight: 600;">Customer Engagement</span>',
-      "Generative AI, NLP, and predictive analytics deliver multilingual, personalized customer journeys."
-    ]
-  ],
-  firstColumnBackground: "#bcbdbd"
-},
+        type: "table",
+        design: "1",
+        caption: "SME Challenges & AIaaS Solutions",
+        columns: ["Challenge", "AIaaS Solution"],
+        rows: [
+          [
+            '<span style="font-weight: 600;">Overburdened Customer Support</span>',
+            "AI-powered automation using NLP chatbots improves response times by 45% and reduces support costs by 35%.",
+          ],
+          [
+            '<span style="font-weight: 600;">Inefficient Inventory</span>',
+            "AI and Computer Vision monitor stock in real time, cutting inventory waste by up to 25%.",
+          ],
+          [
+            '<span style="font-weight: 600;">Slow Strategic Insights</span>',
+            "Predictive analytics uncover trends and opportunities rapidly—without hiring a full analytics team.",
+          ],
+          [
+            '<span style="font-weight: 600;">Poor Employee Experience</span>',
+            "AI tools personalize workflows, optimize task allocation, and enhance overall productivity.",
+          ],
+          [
+            '<span style="font-weight: 600;">Innovation Stagnation</span>',
+            "AIaaS accelerates R&D and prototyping using predictive analytics and deep learning.",
+          ],
+          [
+            '<span style="font-weight: 600;">Customer Engagement</span>',
+            "Generative AI, NLP, and predictive analytics deliver multilingual, personalized customer journeys.",
+          ],
+        ],
+        firstColumnBackground: "#bcbdbd",
+      },
       {
         type: "paragraph",
         subheading: "Why SMEs Should Adopt AIaaS:",
@@ -3639,5 +3642,4 @@ Partner with a <a target="_blank" href="https://lemolite.com/services/hire-react
       },
     ],
   },
-  
 ];

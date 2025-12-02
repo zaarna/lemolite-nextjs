@@ -21,7 +21,7 @@ function InnerHeroSlider() {
     "/color_s2h.svg",
     "/color_secrure.svg",
     "/color_shift.svg",
-    "/color_zirotix.svg",
+    // "/color_zirotix.svg",
   ];
   const containerRef = useRef(null);
   const x = useRef(0);

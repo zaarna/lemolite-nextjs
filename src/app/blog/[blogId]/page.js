@@ -1,49 +1,48 @@
+// app/blog/[blogId]/page.tsx
 
-import React from "react";
+import { blogs } from "@/data/blog";
 import BlogDynamicPage from "@/components/ReusableComponent/blog/BlogDynamicPage";
-import { blogs } from "@/data/blog"; // ✅ import your blog data
+import { Metadata } from "next";
 
-// ✅ Dynamic metadata generator for each blog
+// THIS IS THE HOLY GRAIL — KEEP THIS
+export const generateStaticParams = () => {
+  return blogs.map((blog) => ({
+    blogId: blog.id,
+  }));
+};
+
+// export const dynamic = "force-static";
+// export const revalidate = false;
+
+// KEEP THIS — your perfect metadata
 export async function generateMetadata({ params }) {
-  const { blogId } = params;
-
-  // Find blog by ID (convert to string for safety)
-  const blog = blogs.find((b) => b.id.toString() === blogId);
+  const { blogId } = await params;
+  const blog = blogs.find((b) => b.id === blogId);
 
   if (!blog) {
     return {
       title: "Blog Not Found | Lemolite Technologies",
-      description: "Sorry, this blog post could not be found.",
     };
   }
 
   return {
     title: `${blog.seo.title} | Lemolite Technologies`,
-    description:
-      blog.seo.description ||
-      "Explore the latest insights and updates from Lemolite Technologies.",
-      keywords: blog.seo.keywords || [
-      "software development",
-      "web development",
-      "mobile app development",
-      "Lemolite Technologies",
-    ],
-       alternates: {
-      canonical: `https://www.lemolite.com/blog/${blogId}`,
+    description: blog.seo.description || "",
+    keywords: blog.seo.keywords,
+    alternates: {
+      canonical: `https://lemolite.com/blog/${blogId}`,
     },
+    // Optional: add OG if you want
   };
 }
 
-// ✅ Main Blog Page Component
-const DynamicBlogPage = ({ params }) => {
+// REMOVE THE async/await HERE — make it normal sync component
+export default function BlogPostPage({ params }) {
   const { blogId } = params;
 
   return (
     <div className="min-h-screen">
-      {/* Pass blogId to your BlogDynamicPage component */}
       <BlogDynamicPage blogId={blogId} />
     </div>
   );
-};
-
-export default DynamicBlogPage;
+}

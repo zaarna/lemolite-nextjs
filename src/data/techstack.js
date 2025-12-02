@@ -1375,3 +1375,16 @@ export const shopifydata = [
       "Our dedicated support team ensures your Shopify website development runs smoothly with continuous assistance and issue resolution.",
   },
 ];
+
+export const techroutes = [
+  { slug: "angular-development" },
+  { slug: "flutter-development" },
+  { slug: "laravel-development" },
+  { slug: "mern-development" },
+  { slug: "nodejs-development" },
+  { slug: "php-development" },
+  { slug: "python-development" },
+  { slug: "reactjs-development" },
+  { slug: "shopify-development" },
+  { slug: "vuejs-development" },
+];

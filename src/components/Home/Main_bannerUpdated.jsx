@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import ScrollReveal from "../ReusableComponent/Animations/ScrollReveal";
 import Grediantbutton from "../ReusableComponent/Button/Grediantbutton";
@@ -5,8 +6,10 @@ import AnimatedImage from "./AnimatedImage";
 import StatsSection from "../ReusableComponent/Innerhero/StatSection";
 import InnerHeroSlider from "../ReusableComponent/Innerhero/InnerHeroSlider";
 import Link from "next/link";
+import { usePopup } from "../PopupTimer";
 
 function Main_bannerUpdated() {
+  const { openPopup } = usePopup();
   return (
     <section className="relative h-[1050px] sm:h-[850px] md:h-[1000px] lg:h-[650px] overflow-hidden">
       <AnimatedImage />
@@ -43,8 +46,11 @@ function Main_bannerUpdated() {
                 <Grediantbutton
                   variant="green"
                   btntext="Book Your Free 30-Minute Call"
-                  targetBlank= "true"
-                  link="https://calendly.com/lemolite-sales/product-demo?month=2025-06"
+                  targetBlank="true"
+                  // link="https://calendly.com/lemolite-sales/product-demo?month=2025-06"
+                  onClick={() => {
+                    openPopup();
+                  }}
                 />
                 <p className="font-inter font-extralight italic text-base sm:text-lg md:text-xl lg:text-[20px] leading-[100%] tracking-[0] mt-2 md:mt-3">
                   We don't bite. Promise.
