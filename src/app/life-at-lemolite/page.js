@@ -1,5 +1,5 @@
 
-import LifeAtLemolitePage from "@/components/ReusableComponent/Life/LifeAtLemolitePage";
+import LifeAtLemoliteWrapper from "@/components/ReusableComponent/Life/LifeAtLemoliteWrapper.client";
 import { pagesMeta } from "@/data/pagesMeta";
 
 
@@ -16,8 +16,7 @@ export default function LifeAtLemolite() {
 
   return (
     <div className="min-h-screen">
-      <LifeAtLemolitePage
-      />
+      <LifeAtLemoliteWrapper />
     </div>
   );
 }

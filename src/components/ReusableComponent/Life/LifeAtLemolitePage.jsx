@@ -1,9 +1,7 @@
 "use client";
 import { awd, imageUrls } from "@/data/imagesdata";
-import { usePathname } from "next/navigation";
 import { useRef } from "react";
 import Titlecontent from "../Titlecontent/Titlecontent";
-import Gallery from "./Gallery";
 import Grediantbutton from "../Button/Grediantbutton";
 import GridGallery from "./GridGallery";
 import AwardSection from "./AwardSection";
@@ -16,23 +14,7 @@ const LifeAtLemolitePage = () => {
   const scrollToFooter = () => {
     footerRef.current?.scrollIntoView({ behavior: "smooth" }); // Smooth scrolling
   };
-  const pathName = usePathname();
-  ("PathName");
-  if (pathName == "/careers") 
-    return (
-      <section className="top-bottom">
-        <div className="container">
-          <div className="title--head text-center sm:mb-12 mb-6 ">
-            <Titlecontent title={"Life@Lemolite "} />
-          </div>
 
-          <Gallery images={imageUrls} />
-          <div className="text-center mt-7">
-            <Grediantbutton btntext={"Know More"} link={"/life-at-lemolite"} />
-          </div>
-        </div>
-      </section>
-    );
   return (
     <>
       <section className="top-bottom">

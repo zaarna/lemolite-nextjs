@@ -448,7 +448,7 @@ For more insights and updates, follow us on <a href="https://x.com/lemolite_tech
     date: "August 12, 2025",
     tags: ["Mobile App Development", "Development", "Guide"],
     seo: {
-      title: "Privacy by Design in Mobile Apps | Lemolite Technologies",
+      title: "Privacy by Design in Mobile Apps ",
       description:
         "Lemolite Technologies builds secure mobile apps with Privacy by Design, combining custom security, DevOps, and AI to earn lasting user trust.",
       keywords:
@@ -2678,7 +2678,7 @@ Partner with a <a target="_blank" href="https://lemolite.com/services/hire-react
       "Guide",
     ],
     seo: {
-      title: "Hire Top Mobile App Developers in Dubai - Lemolite Technologies",
+      title: "Hire Top Mobile App Developers in Dubai",
       description:
         "Hire skilled mobile app developers in Dubai with Lemolite for custom iOS, Android, React Native, and AI-powered apps. Drive your business success today!",
       keywords:
