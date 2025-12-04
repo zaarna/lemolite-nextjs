@@ -25,7 +25,7 @@ export const metadata = {
   description: pagesMeta.home.description,
   keywords: pagesMeta.home.keywords,
   alternates: {
-    canonical: pagesMeta.home.canonical,
+    canonical: pagesMeta.home.alternates.canonical,
   },
 };
 
