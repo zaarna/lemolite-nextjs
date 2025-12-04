@@ -452,6 +452,6 @@ export const pagesMeta = {
     title: "Navigate Lemolite Sitemap and Complete Page Guide",
     description:
       "Explore our sitemap for quick, easy access to all Lemolite website pages including careers, services, policies, and company information.",
-    canonical: "https://lemolite.com/sitemap",
+    canonical: "https://lemolite.com/site-map",
   },
 };
