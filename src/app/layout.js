@@ -29,7 +29,7 @@ const outfit = Outfit({
 });
 
 export const metadata = {
-  // metadataBase: new URL("https://lemolite.com/"),
+  metadataBase: new URL("https://lemolite.com/"),
   icons: {
     icon: "/lemolite.ico",
   },
