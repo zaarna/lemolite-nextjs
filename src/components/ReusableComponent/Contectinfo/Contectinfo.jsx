@@ -138,6 +138,40 @@ export default function Contectinfo({
                   </div>
                 ))}
               </div>
+              {/* Inquiry Section */}
+              <h6 className="font-semibold text-xl mt-3">HR Inquiry</h6>
+              <div className="flex flex-wrap sm:flex-row flex-col sm:items-center mt-3 text-gray-800 gap-4">
+                <div className="flex items-center gap-3">
+                  <Image
+                    src="/call.png"
+                    alt="Call icon"
+                    width={25}
+                    height={25}
+                  />
+                  <a
+                    href="tel:+918849280647"
+                    className="text-base hover:text-green-600 transition-colors"
+                  >
+                    +91 8849280647
+                  </a>
+                </div>
+
+                {/* Email */}
+                <div className="flex items-center gap-3">
+                  <Image
+                    src="/email.png"
+                    alt="Email icon"
+                    width={25}
+                    height={25}
+                  />
+                  <a
+                    href="mailto:hr@lemolite.com"
+                    className="text-base hover:text-green-600 transition-colors"
+                  >
+                    hr@lemolite.com
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
 

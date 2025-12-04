@@ -14,7 +14,6 @@ import {
 } from "@/data/services";
 import { pagesMeta } from "@/data/pagesMeta";
 
-
 export const metadata = {
   title: pagesMeta["web-development"].title,
   description: pagesMeta["web-development"].description,
@@ -66,7 +65,7 @@ const WebDevelopmentPage = () => {
         text={"Contact us today"}
         link={"/contact-us"}
         image="/ctagreadiant.webp"
-        bg="bg-white"
+        bg="bg-[#F1F1F1]"
       />
       <FAQ questions={webdevlopmentfaqData} padding="top-bottom" />
       <TechnologyWeUse />

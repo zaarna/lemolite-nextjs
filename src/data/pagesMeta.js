@@ -447,4 +447,11 @@ export const pagesMeta = {
       "Review Lemolite’s terms and conditions to understand service agreements, user rights, and compliance policies for a transparent, secure experience.",
     canonical: "https://lemolite.com/terms-conditions",
   },
+
+  sitemap: {
+    title: "Navigate Lemolite Sitemap and Complete Page Guide",
+    description:
+      "Explore our sitemap for quick, easy access to all Lemolite website pages including careers, services, policies, and company information.",
+    canonical: "https://lemolite.com/sitemap",
+  },
 };

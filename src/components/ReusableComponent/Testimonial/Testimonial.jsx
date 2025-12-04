@@ -29,6 +29,8 @@ export default function Testimonial({ testimonials = [], title }) {
     "/services/ai-ml-development",
     "/services/chatbot-development",
     "/services/voicebot-development",
+    "/site-map",
+    "/not-found",
   ];
 
   const isBlogInner = pathname.startsWith("/blog/") && pathname !== "/blog";
@@ -47,6 +49,44 @@ export default function Testimonial({ testimonials = [], title }) {
       setIsEnd(swiper.isEnd);
     });
   };
+
+  const includePaths = [
+    "/",
+    "/about-us",
+    "/services",
+    "/techstack",
+    "/casestudy",
+    "/blog",
+    "/privacy-policy",
+    "/terms-conditions",
+    "/services/custom-software-development",
+    "/services/ui-ux-design",
+    "/services/internet-of-things",
+    "/services/hire-python-developer",
+    "/services/hire-mern-developer",
+    "/services/hire-reactjs-developer",
+    "/services/hire-nodejs-developer",
+    "/services/hire-php-developer",
+    "/services/hire-laravel-developer",
+    "/services/hire-angular-developer",
+    "/services/hire-vuejs-developer",
+    "/services/hire-shopify-developer",
+    "/services/hire-flutter-developer",
+    "/techstack/reactjs-development",
+    "/techstack/angular-development",
+    "/techstack/vuejs-development",
+    "/techstack/flutter-development",
+    "/techstack/nodejs-development",
+    "/techstack/laravel-development",
+    "/techstack/php-development",
+    "/techstack/mern-development",
+    "/techstack/python-development",
+    "/techstack/shopify-development",
+  ];
+
+  // Only show on included paths
+  const shouldShow = includePaths.some((path) => pathname === path);
+  if (!shouldShow) return null;
 
   return (
     <section className="top-bottom relative">
