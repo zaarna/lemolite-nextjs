@@ -177,7 +177,7 @@ export default function Form() {
                 }));
               }}
               defaultCountry="US"
-              className="w-full border-b border-gray-300 py-2 focus:outline-none"
+              className="w-full border-b text-black border-gray-300 py-2 focus:outline-none"
             />
             <label
               htmlFor="phone"
