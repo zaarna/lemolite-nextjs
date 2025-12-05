@@ -62,37 +62,6 @@ export default function BlogCard({
                     key={idx}
                     className="flex-[0_0_100%] sm:flex-[0_0_48%] lg:flex-[0_0_32%] p-4 bg-white border-custom rounded-3xl  transition "
                   >
-                    {/* <Link href={card.link}>
-                      <div className="border-custom p-4 rounded-3xl bg-white h-full shadow-md hover:shadow-lg transition">
-                        <Image
-                          src={card.image}
-                          alt={card.title}
-                          width={600}
-                          height={400}
-                          className="rounded-[10px] w-full object-cover mb-3"
-                        />
-                        <span className="text-[#BFD633] block mt-2">
-                          {card.tag}
-                        </span>
-                        <h4 className="text-lg sm:text-xl font-semibold mt-1">
-                          {card.title}
-                        </h4>
-                        <p className="text-base font-light mt-2 mb-4">
-                          {card.excerpt}{" "}
-                          <span className="underline text-black hover:text-gray-800 font-medium"
-                          >
-                            Read More
-                          </span>
-                        </p>
-                        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center text-sm">
-                          <span className="capitalize">{card.author}</span>
-                          <span className="flex items-center mt-2 sm:mt-0 text-gray-600">
-                            <Calendar className="w-4 h-4 mr-2 text-[#BFD633]" />
-                            {card.date}
-                          </span>
-                        </div>
-                      </div>
-                    </Link> */}
                     <Link href={card.link}>
                       <div className="h-full flex flex-col">
                         <Image
