@@ -41,12 +41,12 @@ const StatsSection = () => {
     },
     {
       icon: "/year.svg", // Your SVG path in public folder
-      number: "09",
+      number: "9",
       label: "Years in Business",
     },
     {
       icon: "/countries.svg", // Your SVG path in public folder
-      number: "04",
+      number: "4",
       label: "Countries",
     },
   ];
