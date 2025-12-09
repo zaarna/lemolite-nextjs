@@ -21,7 +21,7 @@ function PopupTimer({ children }) {
       const timer = setTimeout(() => {
         setShowPopup(true);
         setHasShownOnce(true);
-      }, 3000);
+      }, 10000);
 
       return () => clearTimeout(timer);
     }
