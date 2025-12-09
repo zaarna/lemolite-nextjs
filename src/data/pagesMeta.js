@@ -251,7 +251,7 @@ export const pagesMeta = {
     description:
       "Launch mobile apps faster with Flutter specialists from Lemolite Technologies. Hire Flutter app developers to deliver seamless experiences on iOS and Android.",
     keywords: ["Hire Flutter Developer", "Hire Flutter App Developer"],
-    canonical: "https://lemolite.com/services/hire-vuejs-developer",
+    canonical: "https://lemolite.com/services/hire-flutter-developer",
   },
 
   "hire-shopify-developer": {

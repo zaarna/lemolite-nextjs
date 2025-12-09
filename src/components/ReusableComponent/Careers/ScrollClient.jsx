@@ -4,8 +4,8 @@ import { career } from "@/data/breadcrumsdata";
 import React, { useRef } from "react";
 import Innerhero from "../Innerhero/Innerhero";
 import WhyLemolite from "../WhyLemolite/WhyLemolite";
-import LifeAtLemolitePage from "@/app/life-at-lemolite/page";
 import Position_card from "../Card/Position_card";
+import LifeatLemolite from "./LifeAtLemolite";
 
 
 const CareersScrollWrapper = () => {
@@ -45,7 +45,7 @@ const CareersScrollWrapper = () => {
         alt={"Career at Lemoloite Technologies"}
       />
       <WhyLemolite />
-      <LifeAtLemolitePage />
+      <LifeatLemolite />
       <div ref={footerRef}>
         <Position_card data={data} />
       </div>

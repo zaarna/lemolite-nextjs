@@ -15,7 +15,7 @@ import { pagesMeta } from "@/data/pagesMeta";
 
 export const metadata = {
   title: pagesMeta.services.title,
-  description: pagesMeta.services.description,
+  description: pagesMeta.services.description, 
   keywords: pagesMeta.services.keywords,
   alternates: {
     canonical: pagesMeta.services.canonical,

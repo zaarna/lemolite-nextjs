@@ -19,7 +19,7 @@ function Cta_life() {
               <Grediantbutton
                 btntext={"Explore Opportunities"}
                 link={"/careers"}
-                variant="black"
+                variant="green"
               />
             </div>
           </div>
