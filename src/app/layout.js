@@ -10,6 +10,7 @@ import { icons } from "lucide-react";
 import PopupTimer from "@/components/PopupTimer";
 import WhatsAppIcon from "@/components/ReusableComponent/WhatsAppIcon/WhatsAppIcon";
 import Script from "next/script";
+import RedditPixel from "@/components/RedditPixel";
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -132,6 +133,7 @@ export default function RootLayout({ children }) {
             style={{ display: "none", visibility: "hidden" }}
           ></iframe>
         </noscript>
+        <RedditPixel />
         <PopupTimer>
           <Header />
           <ToastContainer />

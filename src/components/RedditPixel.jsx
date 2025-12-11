@@ -1,49 +1,21 @@
 "use client";
 
-import { useEffect } from "react";
+import Script from "next/script";
 
 export default function RedditPixel() {
-  //   useEffect(() => {
-  //     // bootstrap rdt if not present
-  //     window.rdt =
-  //       window.rdt ||
-  //       function () {
-  //         window.rdt.q = window.rdt.q || [];
-  //         window.rdt.q.push(arguments);
-  //       };
+  const pixelId = "a2_hzse89lydm1c"; // Replace this with your actual Reddit Pixel ID
 
-  //     // load pixel.js manually
-  //     const script = document.createElement("script");
-  //     script.src = "https://www.redditstatic.com/ads/pixel.js";
-  //     script.async = true;
-
-  //     script.onload = () => {
-  //       console.log("Reddit pixel loaded");
-
-  //       // now call init AFTER pixel.js is ready
-  //       window.rdt("init", "a2_hzse89lydm1c");
-  //       window.rdt("track", "PageVisit");
-
-  //       // optional: manually flush leftover queued calls
-  //       if (Array.isArray(window.rdt.q)) {
-  //         const queue = [...window.rdt.q];
-  //         window.rdt.q = []; // clear queue
-  //         queue.forEach((args) => {
-  //           try {
-  //             window.rdt.apply(null, args);
-  //           } catch (e) {
-  //             console.error("Flush error:", e);
-  //           }
-  //         });
-  //       }
-  //     };
-
-  //     script.onerror = (e) => {
-  //       console.error("Failed to load Reddit pixel:", e);
-  //     };
-
-  //     document.body.appendChild(script);
-  //   }, []);
-
-  return null;
+  return (
+    <Script
+      id="reddit-pixel"
+      strategy="afterInteractive"
+      dangerouslySetInnerHTML={{
+        __html: `
+          !function(w,d){if(!w.rdt){var p=w.rdt=function(){p.sendEvent?p.sendEvent.apply(p,arguments):p.callQueue.push(arguments)};p.callQueue=[];var t=d.createElement("script");t.src="https://www.redditstatic.com/ads/pixel.js",t.async=!0;var s=d.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}}(window,document);
+          rdt('init','${pixelId}', {"optOut":false,"useDecimalCurrencyValues":true});
+          rdt('track', 'PageVisit');
+        `,
+      }}
+    />
+  );
 }

@@ -59,19 +59,11 @@ export default function Form() {
     "Submitting form data:", formData;
 
     try {
-      // After successful submit
-      if (
-        typeof window !== "undefined" &&
-        typeof window.redditTrack === "function"
-      ) {
-        window.redditTrack("ContactFormSubmitted", {
-          /* optional: value: 0 */
-        });
+      if (typeof window !== "undefined" && window.rdt) {
+        window.rdt("track", "Lead");
+        console.log("✅ Reddit Lead event fired!");
       } else {
-        // fallback: try to call rdt directly with a short delay
-        setTimeout(function () {
-          window.redditTrack && window.redditTrack("ContactFormSubmitted");
-        }, 200);
+        console.log("❌ Reddit Pixel not loaded");
       }
 
       const response = await fetch(
