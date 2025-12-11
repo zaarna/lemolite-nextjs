@@ -10,7 +10,6 @@ import { icons } from "lucide-react";
 import PopupTimer from "@/components/PopupTimer";
 import WhatsAppIcon from "@/components/ReusableComponent/WhatsAppIcon/WhatsAppIcon";
 import Script from "next/script";
-import RedditPixel from "@/components/RedditPixel";
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -56,8 +55,6 @@ export default function RootLayout({ children }) {
     })(window, document, 'script', 'dataLayer', 'GTM-M7FDB3B7');
   `}
         </Script>
-
-        <script>{console.log("Before load:", window.rdt)}</script>
 
         {/* End Google Tag Manager */}
         <Script
@@ -125,16 +122,6 @@ export default function RootLayout({ children }) {
             }),
           }}
         />
-
-        <Script id="reddit-boot" strategy="beforeInteractive">
-          {`
-            (function(w){
-              w.rdt = w.rdt || function(){ (w.rdt.q = w.rdt.q || []).push(arguments); };
-            })(window);
-          `}
-        </Script>
-
-        {/* Reddit ads Pixel */}
       </head>
       <body className={`${outfit.variable} antialiased`}>
         <noscript>
@@ -145,25 +132,6 @@ export default function RootLayout({ children }) {
             style={{ display: "none", visibility: "hidden" }}
           ></iframe>
         </noscript>
-
-        <Script
-          id="reddit-pixel-src"
-          src="https://www.redditstatic.com/ads/pixel.js"
-          strategy="afterInteractive"
-        />
-        <Script id="reddit-init" strategy="afterInteractive">
-          {`
-  (function(){
-    var PIXEL_ID = "a2_hzse89lydm1c";
-    if (!window.rdt || typeof window.rdt !== "function") {
-      window.rdt = window.rdt || function(){ (window.rdt.q = window.rdt.q || []).push(arguments); };
-    }
-    try { window.rdt("init", PIXEL_ID); window.rdt("track", "PageVisit"); } catch(e){}
-    window.redditTrack = function(name,p){ /* safe helper retrying until rdt ready */ };
-  })();
-`}
-        </Script>
-
         <PopupTimer>
           <Header />
           <ToastContainer />
@@ -183,7 +151,6 @@ export default function RootLayout({ children }) {
           <WhatsAppIcon />
           <Footer />
         </PopupTimer>
-        {/* <RedditPixel /> */}
       </body>
     </html>
   );
