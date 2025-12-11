@@ -59,17 +59,20 @@ export default function Form() {
     "Submitting form data:", formData;
 
     try {
-      if (typeof window !== "undefined" && typeof window.rdt === "function") {
-        console.log("Inside Reddit FUnction");
-        window.rdt("track", "Custom", {
-          event_name: "ContactFormSubmitted",
+      // After successful submit
+      if (
+        typeof window !== "undefined" &&
+        typeof window.redditTrack === "function"
+      ) {
+        window.redditTrack("ContactFormSubmitted", {
+          /* optional: value: 0 */
         });
+      } else {
+        // fallback: try to call rdt directly with a short delay
+        setTimeout(function () {
+          window.redditTrack && window.redditTrack("ContactFormSubmitted");
+        }, 200);
       }
-      setTimeout(() => {
-        console.log(
-          performance.getEntries().filter((e) => e.name.includes("reddit"))
-        );
-      }, 1000);
 
       const response = await fetch(
         "https://devdemo.peliswan.com/api/send-email",
