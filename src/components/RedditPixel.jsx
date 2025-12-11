@@ -21,7 +21,7 @@ export default function RedditPixel() {
       console.log("Reddit pixel loaded");
 
       // now call init AFTER pixel.js is ready
-      window.rdt("init", "a2_hzse89lydm1c");
+      window.rdt("init", "t2_869gav9g");
       window.rdt("track", "PageVisit");
 
       // optional: manually flush leftover queued calls
