@@ -7,6 +7,7 @@ import parsePhoneNumber from "libphonenumber-js";
 import { toast } from "react-toastify";
 
 export default function Form() {
+  console.log("Footer Form");
   const [isLoading, setIsLoading] = useState(false);
   const [value, setValue] = useState("");
   const [formData, setFormData] = useState({
@@ -58,6 +59,18 @@ export default function Form() {
     "Submitting form data:", formData;
 
     try {
+      if (typeof window !== "undefined" && typeof window.rdt === "function") {
+        console.log("Inside Reddit FUnction");
+        window.rdt("track", "Custom", {
+          event_name: "ContactFormSubmitted",
+        });
+      }
+      setTimeout(() => {
+        console.log(
+          performance.getEntries().filter((e) => e.name.includes("reddit"))
+        );
+      }, 1000);
+
       const response = await fetch(
         "https://devdemo.peliswan.com/api/send-email",
         {
@@ -177,7 +190,7 @@ export default function Form() {
                 }));
               }}
               defaultCountry="US"
-              className="w-full border-b text-black border-gray-300 py-2 focus:outline-none"
+              className="w-full border-b text-black  border-gray-300 py-2 focus:outline-none"
             />
             <label
               htmlFor="phone"

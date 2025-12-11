@@ -10,6 +10,7 @@ import { icons } from "lucide-react";
 import PopupTimer from "@/components/PopupTimer";
 import WhatsAppIcon from "@/components/ReusableComponent/WhatsAppIcon/WhatsAppIcon";
 import Script from "next/script";
+import RedditPixel from "@/components/RedditPixel";
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -70,8 +71,8 @@ export default function RootLayout({ children }) {
               sameAs: [
                 "https://www.facebook.com/lemolitetech",
                 "https://www.instagram.com/lemolite.tech/",
-                "https://www.linkedin.com/company/lemolite-technologies-llp"
-              ]
+                "https://www.linkedin.com/company/lemolite-technologies-llp",
+              ],
             }),
           }}
         />
@@ -122,6 +123,8 @@ export default function RootLayout({ children }) {
             }),
           }}
         />
+
+        {/* Reddit ads Pixel */}
       </head>
       <body className={`${outfit.variable} antialiased`}>
         <noscript>
@@ -132,6 +135,7 @@ export default function RootLayout({ children }) {
             style={{ display: "none", visibility: "hidden" }}
           ></iframe>
         </noscript>
+        <RedditPixel />
         <PopupTimer>
           <Header />
           <ToastContainer />
