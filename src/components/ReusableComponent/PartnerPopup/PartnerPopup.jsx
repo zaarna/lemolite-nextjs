@@ -73,6 +73,11 @@ function PartnerPopup({ isPopupOpen, closePopup }) {
       .then((response) => response.json())
       .then((data) => {
         toast.success(data.message);
+        if (typeof window !== "undefined" && window.rdt) {
+          window.rdt("track", "Partner");
+        } else {
+          console.log("❌ Reddit Pixel not loaded");
+        }
         setFormData({
           name: "",
           companyname: "",
@@ -218,12 +223,10 @@ function PartnerPopup({ isPopupOpen, closePopup }) {
                           const phoneNumber = phone
                             ? parsePhoneNumber(phone)
                             : null;
-                          const countrycode = phoneNumber?.country || "";
-
                           setFormData((prev) => ({
                             ...prev,
                             phone: phone,
-                            countrycode: countrycode,
+                            countrycode: phoneNumber?.countryCallingCode,
                           }));
                         }}
                         defaultCountry="US"

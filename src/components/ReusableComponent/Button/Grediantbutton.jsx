@@ -8,6 +8,7 @@ export default function Grediantbutton({
   onClick,
   targetBlank = false,
   variant = "gradient", // "gradient" or "black"
+  id = "",
 }) {
   // Style presets for both variants
   const variants = {
@@ -46,6 +47,7 @@ export default function Grediantbutton({
       className={`relative overflow-hidden px-8 py-3 font-bold rounded-${current.border_radius} cursor-pointer
                   bg-[${current.bg}] ${current.text} ${current.border} ${current.border}
                   transition-all duration-500 shadow-md group`}
+      id={id}
     >
       {/* Hover overlay */}
       <span

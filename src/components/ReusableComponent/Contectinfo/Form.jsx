@@ -179,11 +179,11 @@ export default function Form() {
               onChange={(phone) => {
                 setValue(phone);
                 const phoneNumber = phone ? parsePhoneNumber(phone) : null;
-                const countrycode = phoneNumber?.country || "";
+                console.log(phoneNumber?.countryCallingCode);
                 setFormData((prevData) => ({
                   ...prevData,
                   phone: phone || "",
-                  countrycode,
+                  countrycode: phoneNumber?.countryCallingCode,
                 }));
               }}
               defaultCountry="US"

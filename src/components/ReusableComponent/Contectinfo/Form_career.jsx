@@ -85,6 +85,12 @@ export default function Form_career({ data = [] }) {
       const data = await res.json();
       toast.success(data.message || "Form submitted successfully!");
 
+      if (typeof window !== "undefined" && window.rdt) {
+        window.rdt("track", "Carrer");
+      } else {
+        console.log("❌ Reddit Pixel not loaded");
+      }
+
       setFormData({
         name: "",
         lastname: "",
@@ -180,11 +186,10 @@ export default function Form_career({ data = [] }) {
               onChange={(phone) => {
                 setValue(phone);
                 const phoneNumber = phone ? parsePhoneNumber(phone) : null;
-                const countrycode = phoneNumber?.country || "";
                 setFormData((prev) => ({
                   ...prev,
                   phone: phone || "",
-                  countrycode,
+                  countrycode: phoneNumber?.countryCallingCode,
                 }));
               }}
               defaultCountry="US"

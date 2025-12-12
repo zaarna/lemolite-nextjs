@@ -19,7 +19,7 @@ function InnerHeroSlider() {
     "/color_obm.svg",
     "/color_rs.png",
     "/color_s2h.svg",
-    "/color_secrure.svg",
+    // "/color_secrure.svg",
     "/relybluesvg.svg",
     // "/color_zirotix.svg",
   ];
