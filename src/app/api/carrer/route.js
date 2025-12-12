@@ -6,9 +6,6 @@ export async function POST(req) {
     const formData = await req.formData();
     const { formData: data, fileData } = await processFormData(formData);
 
-    console.log("Processed data:", data);
-    console.log("Uploaded files:", fileData);
-
     // Destructure form data
     const {
       name,
