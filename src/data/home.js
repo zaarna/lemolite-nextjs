@@ -12,7 +12,8 @@ export const logos = [
   { src: "/ostrichees.webp", alt: "Ostriches" },
   { src: "/nexstaff.webp", alt: "Nexstaff" },
   { src: "/botbutler.webp", alt: "Botbutler" },
-  { src: "/sq.webp", alt: "Security Quarks" },
+  // { src: "/sq.webp", alt: "Security Quarks" },
+  { src: "/relybluesvg.webp", alt: "Security Quarks" },
 ];
 
 export const features = [
@@ -46,7 +47,12 @@ export const featurescontact = [
     // bgColor: "bg-[#BFD63333]",
     bgColor: "bg-[#BFD633]/70",
   },
-  { value: 40, suffix: "+", text: "Creative Minds", bgColor: "bg-[#BFD633]/70" },
+  {
+    value: 40,
+    suffix: "+",
+    text: "Creative Minds",
+    bgColor: "bg-[#BFD633]/70",
+  },
   { value: 11, suffix: "+", text: "Technologies", bgColor: "bg-[#2EC4F3]/70" },
 ];
 

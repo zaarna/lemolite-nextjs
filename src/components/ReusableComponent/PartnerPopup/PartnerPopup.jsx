@@ -35,6 +35,7 @@ function PartnerPopup({ isPopupOpen, closePopup }) {
     phone: "",
     aboutus: "",
     pageurl: "",
+    message: "",
   });
 
   useEffect(() => {
@@ -55,7 +56,14 @@ function PartnerPopup({ isPopupOpen, closePopup }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsLoading(true);
-    fetch("https://devdemo.peliswan.com/api/send-partner-with-us", {
+    // fetch("https://devdemo.peliswan.com/api/send-partner-with-us", {
+    //   method: "POST",
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //   },
+    //   body: JSON.stringify(formData),
+    // })
+    fetch("/api/partner", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -73,6 +81,7 @@ function PartnerPopup({ isPopupOpen, closePopup }) {
           phone: "",
           aboutus: "",
           pageurl: "",
+          message: "",
         });
       })
       .catch((error) => {
@@ -187,7 +196,6 @@ function PartnerPopup({ isPopupOpen, closePopup }) {
                         name="companyname"
                         value={formData.companyname}
                         onChange={handleChange}
-                        required
                         className="w-full border-b border-gray-300 bg-transparent py-2 text-gray-900 placeholder-transparent focus:outline-none focus:border-gray-900"
                         placeholder="Company Name"
                       />
@@ -203,7 +211,7 @@ function PartnerPopup({ isPopupOpen, closePopup }) {
 
                     <div className="relative group flex-1">
                       <PhoneInput
-                        id="phone"
+                        id="phoneno"
                         placeholder=""
                         value={formData.phone}
                         onChange={(phone) => {
@@ -242,7 +250,6 @@ function PartnerPopup({ isPopupOpen, closePopup }) {
                       name="message"
                       value={formData.message}
                       onChange={handleChange}
-                      required
                       className="w-full border-b border-gray-300 bg-transparent py-2 text-gray-900 placeholder-transparent focus:outline-none focus:border-gray-900 resize-none"
                       placeholder="Tell Us About Your Project"
                     />

@@ -3,7 +3,7 @@
 import Script from "next/script";
 
 export default function RedditPixel() {
-  const pixelId = "a2_hzse89lydm1c"; // Replace this with your actual Reddit Pixel ID
+  const pixelId = process.env.NEXT_PUBLIC_PIXEL_ID;
 
   return (
     <Script

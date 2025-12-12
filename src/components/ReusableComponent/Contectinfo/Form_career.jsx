@@ -64,13 +64,18 @@ export default function Form_career({ data = [] }) {
 
     try {
       setIsLoading(true);
-      const res = await fetch(
-        "https://devdemo.peliswan.com/api/send-career-email",
-        {
-          method: "POST",
-          body: formDataToSend,
-        }
-      );
+      // const res = await fetch(
+      //   "https://devdemo.peliswan.com/api/send-career-email",
+      //   {
+      //     method: "POST",
+      //     body: formDataToSend,
+      //   }
+      // );
+
+      const res = await fetch("/api/carrer", {
+        method: "POST",
+        body: formDataToSend,
+      });
 
       if (!res.ok) {
         const data = await res.json();

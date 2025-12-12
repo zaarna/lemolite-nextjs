@@ -788,14 +788,14 @@ const Header = () => {
           </span>
           <span className="absolute left-0 top-0 h-full w-0 bg-black transition-all duration-500 group-hover:w-full"></span>
         </Link> */}
-        <Grediantbutton
+        {/* <Grediantbutton
           variant="green"
           btntext=" Book a call"
           targetBlank="true"
           onClick={() => {
             openPopup();
           }}
-        />
+        /> */}
 
         {/* Mobile Menu Toggle */}
         <button

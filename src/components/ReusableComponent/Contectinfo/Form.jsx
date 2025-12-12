@@ -7,7 +7,6 @@ import parsePhoneNumber from "libphonenumber-js";
 import { toast } from "react-toastify";
 
 export default function Form() {
-  console.log("Footer Form");
   const [isLoading, setIsLoading] = useState(false);
   const [value, setValue] = useState("");
   const [formData, setFormData] = useState({
@@ -56,28 +55,31 @@ export default function Form() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsLoading(true);
-    "Submitting form data:", formData;
 
     try {
-      if (typeof window !== "undefined" && window.rdt) {
-        window.rdt("track", "Lead");
-        console.log("✅ Reddit Lead event fired!");
-      } else {
-        console.log("❌ Reddit Pixel not loaded");
-      }
+      // const response = await fetch(
+      //   "https://devdemo.peliswan.com/api/send-email",
+      //   {
+      //     method: "POST",
+      //     headers: { "Content-Type": "application/json" },
+      //     body: JSON.stringify(formData),
+      //   }
+      // );
 
-      const response = await fetch(
-        "https://devdemo.peliswan.com/api/send-email",
-        {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(formData),
-        }
-      );
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
 
       const data = await response.json();
 
       if (!response.ok) throw new Error(data.message || "An error occurred");
+      if (typeof window !== "undefined" && window.rdt) {
+        window.rdt("track", "Lead");
+      } else {
+        console.log("❌ Reddit Pixel not loaded");
+      }
 
       toast.success(data.message || "Form submitted successfully!");
       "Form submitted successfully:", data;
