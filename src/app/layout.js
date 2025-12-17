@@ -123,6 +123,11 @@ export default function RootLayout({ children }) {
             }),
           }}
         />
+
+        <meta
+          name="google-site-verification"
+          content="9UlZyhZWCgkFm4iVSWoyzFIvBUyD0Gn2PbANAyTItyM"
+        />
       </head>
       <body className={`${outfit.variable} antialiased`}>
         <noscript>
