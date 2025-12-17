@@ -138,7 +138,7 @@ export default function RootLayout({ children }) {
           ></iframe>
         </noscript>
         <RedditPixel />
-        {/* <PopupTimer>
+        <PopupTimer>
           <Header />
           <ToastContainer />
           {children}
@@ -156,7 +156,7 @@ export default function RootLayout({ children }) {
           />
           <WhatsAppIcon />
           <Footer />
-        </PopupTimer> */}
+        </PopupTimer>
       </body>
     </html>
   );
