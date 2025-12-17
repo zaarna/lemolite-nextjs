@@ -7,9 +7,7 @@ import WhyLemolite from "../WhyLemolite/WhyLemolite";
 import Position_card from "../Card/Position_card";
 import LifeatLemolite from "./LifeAtLemolite";
 
-
 const CareersScrollWrapper = () => {
-
   const data = [
     {
       title: "SEO / Digital Marketing Executive",
@@ -41,7 +39,7 @@ const CareersScrollWrapper = () => {
         content={"Your Next Career Starts Here"}
         btntext={"See Openings"}
         clickit={scrollToFooter}
-        src={"/careerpage.webp"}
+        src={"/careerpage (2).webp"}
         alt={"Career at Lemoloite Technologies"}
       />
       <WhyLemolite />

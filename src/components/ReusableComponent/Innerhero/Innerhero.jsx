@@ -33,7 +33,6 @@ function Innerhero({
   return (
     <section className={`${padding}`}>
       <div className="container">
-        
         {/* ✅ Breadcrumb at top only for contact page */}
         {location === "/contact-us" && (
           <div className="mb-6">

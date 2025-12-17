@@ -853,7 +853,7 @@ Partner with a <a target="_blank" href="https://lemolite.com/services/hire-react
       {
         type: "image",
         src: "/beyondscreens.webp",
-        alt: "Privacy By Design in Mobile App Development",
+        alt: "ar in e-commerce",
       },
       {
         type: "tag",
