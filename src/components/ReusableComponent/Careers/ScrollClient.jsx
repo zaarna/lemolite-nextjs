@@ -19,11 +19,11 @@ const CareersScrollWrapper = () => {
       hire: "1+ YEARS",
       link: "/current-openings/mern",
     },
-    {
-      title: "Flutter Developer",
-      hire: "2+ YEARS",
-      link: "/current-openings/flutter",
-    },
+    // {
+    //   title: "Flutter Developer",
+    //   hire: "2+ YEARS",
+    //   link: "/current-openings/flutter",
+    // },
   ];
   const footerRef = useRef(null); // Create a reference for the footer
 
