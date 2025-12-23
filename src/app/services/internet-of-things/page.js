@@ -1,0 +1,67 @@
+import Ctasection from "@/components/ReusableComponent/Cta_Section/CtaSection";
+import FAQ from "@/components/ReusableComponent/HireDevelopers/FAQ";
+import Innerhero from "@/components/ReusableComponent/Innerhero/Innerhero";
+import InnerSlider from "@/components/ReusableComponent/Slider/InnerSlider";
+import WhatWeOfferAccordion from "@/components/ReusableComponent/What_we_Offer_accordian/What_we_Offer_accordian";
+import Why_choose_us from "@/components/ReusableComponent/WhyChooseUs/WhyChooseUs";
+import { iot } from "@/data/breadcrumsdata";
+import { iotdata, iotfaqData, iotsystem, slidesiot } from "@/data/services";
+import React from "react";
+import { pagesMeta } from "@/data/pagesMeta";
+
+
+export const metadata = {
+  title: pagesMeta["internet-of-things"].title,
+  description: pagesMeta["internet-of-things"].description,
+  keywords: pagesMeta["internet-of-things"].keywords,
+  alternates: {
+    canonical: pagesMeta["internet-of-things"].canonical,
+  },
+};
+
+const IoTDevelopmentPage = () => {
+  return (
+    <div className="min-h-screen">
+      <Innerhero
+        padding="py-8 md:py-10 lg:py-20"
+        breadcrumbs={iot}
+        title={"IoT App Development Services"}
+        content={
+          "Connect your world effortlessly with our smart IoT solutions. Simplify your business, enhance user experiences, and trust us to deliver secure, reliable technology that works for you."
+        }
+        btntext={"Innovate With IoT"}
+        link={"/contact-us"}
+        src={"/iot.webp"}
+        alt={"IoT App Development Services"}
+      />
+      <WhatWeOfferAccordion
+        padding="top-bottom"
+        title={"What We Offer"}
+        layout="full"
+        stepData={iotdata}
+        bg="bg-gradient-to-r from-[#2EC4F3]/30 to-[#BFD633]/30"
+      />
+      <InnerSlider
+        title={"Why Lemolite?"}
+        padding="top-bottom"
+        data={slidesiot}
+        bg="bg-[#F1F1F1]"
+      />
+      <Why_choose_us
+        title={"Benefits of IoT Systems"}
+        data={iotsystem}
+        columns={2}
+      />
+      <Ctasection
+        title={"Make Your Systems Smarter with IoT"}
+        text={"Build Smarter Today"}
+        link={"/contact-us"}
+        image="/ctagreadiant.webp"
+        bg="bg-[#F1F1F1]"
+      />
+      <FAQ questions={iotfaqData} />
+    </div>
+  );
+};
+
+export default IoTDevelopmentPage;
