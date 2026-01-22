@@ -531,6 +531,51 @@ const BlogSectionTable = React.forwardRef((props, ref) => {
         marginBottom: "0",
       },
     },
+    4: {
+      container: { margin: "2rem 0" },
+      grid: {
+        display: "grid",
+        gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
+        gap: "1.5rem",
+        border: "1px solid #000",
+      },
+      column: {
+        borderRight: "1px solid #000",
+        padding: "1.5rem",
+      },
+      lastColumn: {
+        padding: "1.5rem",
+      },
+      title: {
+        fontSize: "1.25rem",
+        fontWeight: "700",
+        textAlign: "center",
+        marginBottom: "0.25rem",
+      },
+      subtitle: {
+        fontStyle: "italic",
+        textAlign: "center",
+        marginBottom: "1rem",
+        color: "#333",
+      },
+      list: {
+        listStyle: "none",
+        padding: 0,
+        margin: 0,
+      },
+      listItem: {
+        display: "flex",
+        alignItems: "flex-start",
+        gap: "8px",
+        marginBottom: "0.6rem",
+        fontSize: "15px",
+        lineHeight: "1.5",
+      },
+      check: {
+        color: "#22c55e",
+        fontWeight: "700",
+      },
+    },
   };
 
   const currentDesign = designs[design] || designs["1"];
@@ -663,6 +708,39 @@ const BlogSectionTable = React.forwardRef((props, ref) => {
               </tr>
             </tbody>
           </table>
+        </div>
+      </div>
+    );
+  }
+  // ========== DESIGN 4 ==========
+  if (design === "4") {
+    return (
+      <div ref={ref} style={currentDesign.container}>
+        <div style={currentDesign.grid}>
+          {comparisonColumns.map((col, i) => (
+            <div
+              key={i}
+              style={
+                i === comparisonColumns.length - 1
+                  ? currentDesign.lastColumn
+                  : currentDesign.column
+              }
+            >
+              <h3 style={currentDesign.title}>{col.title}</h3>
+              {col.subtitle && (
+                <div style={currentDesign.subtitle}>{col.subtitle}</div>
+              )}
+
+              <ul style={currentDesign.list}>
+                {col.points?.map((point, j) => (
+                  <li key={j} style={currentDesign.listItem}>
+                    <span style={currentDesign.check}>✅</span>
+                    <span dangerouslySetInnerHTML={{ __html: point }} />
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
       </div>
     );
@@ -840,6 +918,104 @@ const BlogSectionBox = React.forwardRef((props, ref) => {
         dangerouslySetInnerHTML={{ __html: content }}
       />
     </div>
+  );
+});
+
+const BlogSectionBoxGrid = React.forwardRef((props, ref) => {
+  const {
+    sectionHeading,
+    sectionDescription,
+    columns = 2, // desktop columns
+    gap = "1.5rem",
+    items = [],
+    sectionStyle,
+    headingStyle,
+    descriptionStyle,
+    gridStyle,
+  } = props;
+
+  return (
+    <section
+      ref={ref}
+      style={{
+        margin: "2rem 0",
+        ...sectionStyle,
+      }}
+    >
+      {/* 🔹 Section Heading */}
+      {sectionHeading && (
+        <h2
+          style={{
+            fontSize: "2rem",
+            fontWeight: "700",
+            marginBottom: "0.75rem",
+            color: "#222",
+            ...headingStyle,
+          }}
+        >
+          {sectionHeading}
+        </h2>
+      )}
+
+      {/* 🔹 Section Description */}
+      {sectionDescription && (
+        <div
+          style={{
+            fontSize: "18px",
+            lineHeight: "1.7",
+            color: "#696969",
+            marginBottom: "1.5rem",
+            ...descriptionStyle,
+          }}
+          dangerouslySetInnerHTML={{ __html: sectionDescription }}
+        />
+      )}
+
+      {/* 🔹 Responsive Grid */}
+      <div
+        className="blog-section-box-grid"
+        style={{
+          "--desktop-columns": columns,
+          display: "grid",
+          gap,
+          ...gridStyle,
+        }}
+      >
+        {items.map((item, index) => (
+          <BlogSectionBox
+            key={index}
+            heading={item.heading}
+            subheading={item.subheading}
+            content={item.content}
+            boxStyle={item.boxStyle}
+            headingStyle={item.headingStyle}
+            subheadingStyle={item.subheadingStyle}
+            contentStyle={item.contentStyle}
+          />
+        ))}
+      </div>
+
+      {/* 🔹 Responsive CSS */}
+      <style>
+        {`
+          .blog-section-box-grid {
+            grid-template-columns: 1fr; /* 📱 Mobile */
+          }
+
+          @media (min-width: 640px) {
+            .blog-section-box-grid {
+              grid-template-columns: repeat(2, minmax(0, 1fr)); /* 📱 Tablet */
+            }
+          }
+
+          @media (min-width: 1024px) {
+            .blog-section-box-grid {
+              grid-template-columns: repeat(var(--desktop-columns), minmax(0, 1fr)); /* 🖥 Desktop */
+            }
+          }
+        `}
+      </style>
+    </section>
   );
 });
 
@@ -1144,6 +1320,7 @@ const sectionMap = {
   cards: BlogSectionCards,
   blockquote: BlogSectionBlockquote,
   "image-with-text": BlogSectionImageWithText,
+  boxGrid: BlogSectionBoxGrid,
 };
 
 const BlogDynamicPage = () => {
@@ -1159,9 +1336,9 @@ const BlogDynamicPage = () => {
           ? Array(section.items.length)
               .fill()
               .map(() => React.createRef())
-          : null
+          : null,
       ) || [],
-    [blog]
+    [blog],
   );
 
   const filteredBlogs = blogs.filter((b) => b.id !== blogId);
@@ -1237,10 +1414,10 @@ const BlogDynamicPage = () => {
             >
               {trendingBlogs.map((b) => {
                 const firstImage = b.sections.find(
-                  (s) => s.type === "image"
+                  (s) => s.type === "image",
                 )?.src;
                 const firstParagraph = b.sections.find(
-                  (s) => s.type === "paragraph"
+                  (s) => s.type === "paragraph",
                 )?.content;
                 return (
                   <Link key={b.id} href={`/blog/${b.id}`}>

@@ -82,8 +82,7 @@ export const blogCards = [
   },
   {
     id: "saas-for-eCommerce-platform",
-    title:
-      "How to Choose the Right SaaS eCommerce Platform",
+    title: "How to Choose the Right SaaS eCommerce Platform",
     author: "Swetketu Trivedi",
     date: "October 06, 2025",
     tag: "E-commerce",
@@ -106,8 +105,7 @@ export const blogCards = [
   },
   {
     id: "ai-as-a-Service",
-    title:
-      "AI-as-a-Service Your Blueprint for Smarter, Faster Business Growth",
+    title: "AI-as-a-Service Your Blueprint for Smarter, Faster Business Growth",
     author: "Swetketu Trivedi",
     date: "November 11, 2025",
     tag: "AI/ML",
@@ -116,5 +114,15 @@ export const blogCards = [
       "Hey there! Let’s start with a simple question: have you ever wished your business could think...",
     link: "/blog/ai-as-a-Service",
   },
-  
+  {
+    id: "choosing-the-right-tech-stack-2026",
+    title: "Choosing the Right Tech Stack in 2026: A Complete Guide",
+    author: "Swetketu Trivedi",
+    date: "January 21, 2026",
+    tag: "App Development",
+    image: "/HowPerfect.webp",
+    excerpt:
+      "Hey there! Let’s start with a simple question: have you ever wished your business could think...",
+    link: "/blog/choosing-the-right-tech-stack-2026",
+  },
 ];
