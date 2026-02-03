@@ -1,5 +1,8 @@
 import Ctasection from "@/components/ReusableComponent/Cta_Section/CtaSection";
 
+import EquityModelSection from "@/components/Startup/EquityModelSection";
+import InnerBanner from "@/components/Startup/InnerBanner";
+import ProblemSolutionSection from "@/components/Startup/ProblemSolutionSection";
 import React from "react";
 import { pagesMeta } from "@/data/pagesMeta";
 import HowEngagementSection from "@/components/startups/HowEngagementSection";
@@ -18,6 +21,9 @@ import StartupEcosystemSection from "@/components/startups/StartupEcosystemSecti
 const startupsPage = () => {
   return (
     <div className="min-h-screen">
+      <InnerBanner />
+      <ProblemSolutionSection />
+      <EquityModelSection />
       <StartupEcosystemSection />
       <AgenciesWhySection />
       <HowEngagementSection />
