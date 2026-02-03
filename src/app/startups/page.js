@@ -9,14 +9,14 @@ import HowEngagementSection from "@/components/startups/HowEngagementSection";
 import AgenciesWhySection from "@/components/startups/AgenciesWhySection";
 import StartupEcosystemSection from "@/components/startups/StartupEcosystemSection";
 
-// export const metadata = {
-//   title: pagesMeta["ai-ml-development"].title,
-//   description: pagesMeta["ai-ml-development"].description,
-//   keywords: pagesMeta["ai-ml-development"].keywords,
-//   alternates: {
-//     canonical: pagesMeta["ai-ml-development"].canonical,
-//   },
-// };
+export const metadata = {
+  title: pagesMeta["startups"].title,
+  description: pagesMeta["startups"].description,
+  keywords: pagesMeta["startups"].keywords,
+  alternates: {
+    canonical: pagesMeta["startups"].canonical,
+  },
+};
 
 const startupsPage = () => {
   return (
