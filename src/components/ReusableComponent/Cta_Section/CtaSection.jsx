@@ -8,6 +8,7 @@ export default function Ctasection({
   padding = "top-bottom",
   paddinginner = "top-bottom",
   title,
+  content,
   text,
   link,
   image,
@@ -30,8 +31,8 @@ export default function Ctasection({
           )}
 
           {/* Content */}
-          <div className="sm:max-w-[1144px] w-full max-w-[350px] z-[1]">
-            <Titlecontent title={title} />
+          <div className="md:max-w-3xl max-w-[350px] z-[1]">
+            <Titlecontent title={title} content={content} />
           </div>
 
           <div className="pt-4">
