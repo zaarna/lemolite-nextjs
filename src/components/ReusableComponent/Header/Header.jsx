@@ -271,8 +271,8 @@ const Header = () => {
   }, []);
 
   const toggleMenu = (menu) => {
-    "Toggle Menu", menu;
-    "activeMenu Menu", activeMenu;
+    ("Toggle Menu", menu);
+    ("activeMenu Menu", activeMenu);
     setActiveMenu(activeMenu === menu ? null : menu);
   };
 
@@ -283,6 +283,7 @@ const Header = () => {
   };
 
   const menus = [
+    { title: "Startups", href: "/startups" },
     {
       title: "Services",
       description:
@@ -768,7 +769,7 @@ const Header = () => {
                   {hasDropdown &&
                     activeMenu === menu.title &&
                     ["Services", "Tech Stack", "Company"].includes(
-                      menu.title
+                      menu.title,
                     ) &&
                     renderMegaMenu(menu)}
                 </li>
