@@ -242,6 +242,7 @@ import Image from "next/image";
 import Grediantbutton from "../Button/Grediantbutton";
 import PartnerPopup from "../PartnerPopup/PartnerPopup";
 import { usePopup } from "@/components/PopupTimer";
+import { usePathname } from "next/navigation";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -252,6 +253,8 @@ const Header = () => {
 
   const { openPopup } = usePopup();
 
+  const pathname = usePathname();
+  const [headerBg, setHeaderBg] = useState("white");
   useEffect(() => {
     const handleClickOutside = (e) => {
       if (menuRef.current && !menuRef.current.contains(e.target)) {
@@ -259,6 +262,7 @@ const Header = () => {
       }
     };
     document.addEventListener("mousedown", handleClickOutside);
+    setHeaderBg(pathname.includes("startups") ? "transparent" : "white");
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
@@ -271,8 +275,8 @@ const Header = () => {
   }, []);
 
   const toggleMenu = (menu) => {
-    "Toggle Menu", menu;
-    "activeMenu Menu", activeMenu;
+    ("Toggle Menu", menu);
+    ("activeMenu Menu", activeMenu);
     setActiveMenu(activeMenu === menu ? null : menu);
   };
 
@@ -283,6 +287,7 @@ const Header = () => {
   };
 
   const menus = [
+    { title: "Startups", href: "/startups" },
     {
       title: "Services",
       description:
@@ -471,7 +476,9 @@ const Header = () => {
       "Category 3",
     ];
     return (
-      <div className="absolute left-0 right-0 m-auto top-full bg-white overflow-hidden shadow-xl md:w-[700px] lg:w-[850px] xl:w-[1100px] rounded-bl-lg rounded-br-lg border-t-[1px] border-[#f1f1f1] z-50">
+      <div
+        className={`absolute left-0 right-0 m-auto top-full bg-white overflow-hidden shadow-xl md:w-[700px] lg:w-[850px] xl:w-[1100px] rounded-bl-lg rounded-br-lg border-t-[1px] border-[#f1f1f1] z-50`}
+      >
         {/* Content Section */}
 
         <div className="grid grid-cols-4 gap-6 p-4">
@@ -677,7 +684,7 @@ const Header = () => {
       className={`w-full top-0 z-50 transition-all duration-500 pb-4 md:p-0 ${
         isSticky
           ? "fixed bg-white/70 backdrop-blur-md shadow-md"
-          : "relative bg-white"
+          : `relative bg-${headerBg}`
       }`}
     >
       <div className="container mx-auto px-6 flex justify-between items-center py-4 transition-all duration-500">
@@ -768,7 +775,7 @@ const Header = () => {
                   {hasDropdown &&
                     activeMenu === menu.title &&
                     ["Services", "Tech Stack", "Company"].includes(
-                      menu.title
+                      menu.title,
                     ) &&
                     renderMegaMenu(menu)}
                 </li>
