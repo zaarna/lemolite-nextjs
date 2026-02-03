@@ -454,92 +454,92 @@ software solutions and development processes."
         </section>
       </div>
     );
-  else if (id == "flutter")
-    return (
-      <div>
-        <CareerBanner
-          breddata={seo}
-          title={"Flutter Developer"}
-          btntext={"Apply"}
-          onclick={scrollToFooter}
-          stats={feaureoffflutter}
-        />
-        <section className="career-inner">
-          <div className="container">
-            <SectionBlock
-              title="Job Overview"
-              content="We are hiring an experienced Flutter Developer to build and maintain high-quality cross-platform mobile applications. The candidate should have a strong portfolio of Flutter projects and experience integrating APIs, Firebase, and third-party plugins."
-            />
+  // else if (id == "flutter")
+  //   return (
+  //     <div>
+  //       <CareerBanner
+  //         breddata={seo}
+  //         title={"Flutter Developer"}
+  //         btntext={"Apply"}
+  //         onclick={scrollToFooter}
+  //         stats={feaureoffflutter}
+  //       />
+  //       <section className="career-inner">
+  //         <div className="container">
+  //           <SectionBlock
+  //             title="Job Overview"
+  //             content="We are hiring an experienced Flutter Developer to build and maintain high-quality cross-platform mobile applications. The candidate should have a strong portfolio of Flutter projects and experience integrating APIs, Firebase, and third-party plugins."
+  //           />
 
-            <SectionBlock
-              title="Responsibilities"
-              list={[
-                {
-                  text: "Develop and maintain mobile applications for Android and iOS using Flutter.",
-                },
-                {
-                  text: "Translate UI/UX designs into responsive, functional interfaces.",
-                },
-                {
-                  text: "Integrate REST APIs and Firebase services (Auth, Firestore, Push Notifications).",
-                },
-                {
-                  text: "Ensure performance, quality, and responsiveness of applications.",
-                },
-                {
-                  text: "Debug, test, and deploy updates as required.",
-                },
-                {
-                  text: "Collaborate with backend developers and designers for seamless app functionality.",
-                },
-                {
-                  text: "Keep up with the latest Flutter updates and mobile development trends.",
-                },
-              ]}
-            />
+  //           <SectionBlock
+  //             title="Responsibilities"
+  //             list={[
+  //               {
+  //                 text: "Develop and maintain mobile applications for Android and iOS using Flutter.",
+  //               },
+  //               {
+  //                 text: "Translate UI/UX designs into responsive, functional interfaces.",
+  //               },
+  //               {
+  //                 text: "Integrate REST APIs and Firebase services (Auth, Firestore, Push Notifications).",
+  //               },
+  //               {
+  //                 text: "Ensure performance, quality, and responsiveness of applications.",
+  //               },
+  //               {
+  //                 text: "Debug, test, and deploy updates as required.",
+  //               },
+  //               {
+  //                 text: "Collaborate with backend developers and designers for seamless app functionality.",
+  //               },
+  //               {
+  //                 text: "Keep up with the latest Flutter updates and mobile development trends.",
+  //               },
+  //             ]}
+  //           />
 
-            <SectionBlock
-              title="Requirements"
-              list={[
-                "Bachelor’s degree in Computer Science, IT, or related field.",
-                "At least 2 years of experience developing mobile apps with Flutter & Dart.",
-                "Familiarity with REST APIs and Firebase (Auth, Firestore, Notifications).",
-                "Basic understanding of UI/UX principles and responsive layouts.",
-                "Knowledge of Git for version control.",
-              ]}
-            />
+  //           <SectionBlock
+  //             title="Requirements"
+  //             list={[
+  //               "Bachelor’s degree in Computer Science, IT, or related field.",
+  //               "At least 2 years of experience developing mobile apps with Flutter & Dart.",
+  //               "Familiarity with REST APIs and Firebase (Auth, Firestore, Notifications).",
+  //               "Basic understanding of UI/UX principles and responsive layouts.",
+  //               "Knowledge of Git for version control.",
+  //             ]}
+  //           />
 
-            <SectionBlock
-              title="Preferred Skills"
-              list={[
-                "Experience with GetX, Riverpod, or BLoC state management.",
-                "Familiarity with native Android/iOS code (Java/Kotlin/Swift).",
-                "Experience publishing apps to Play Store and App Store.",
-                "Understanding of app performance optimization and push notifications.",
-                "Exposure to CI/CD, App Center, or Crashlytics.",
-              ]}
-            />
+  //           <SectionBlock
+  //             title="Preferred Skills"
+  //             list={[
+  //               "Experience with GetX, Riverpod, or BLoC state management.",
+  //               "Familiarity with native Android/iOS code (Java/Kotlin/Swift).",
+  //               "Experience publishing apps to Play Store and App Store.",
+  //               "Understanding of app performance optimization and push notifications.",
+  //               "Exposure to CI/CD, App Center, or Crashlytics.",
+  //             ]}
+  //           />
 
-            <SectionBlock
-              title="Company Overview"
-              content="At Lemolite Technologies LLP, we're committed to delivering innovative tech solutions and exceptional service to our clients. Our dedication to excellence propels us to push the boundaries of AI/ML and digital transformation."
-            />
+  //           <SectionBlock
+  //             title="Company Overview"
+  //             content="At Lemolite Technologies LLP, we're committed to delivering innovative tech solutions and exceptional service to our clients. Our dedication to excellence propels us to push the boundaries of AI/ML and digital transformation."
+  //           />
 
-            <SectionBlock
-              title="Benefits"
-              list={[
-                "Competitive salary based on experience and skills.",
-                "Opportunities for professional growth and career advancement.",
-                "Flexible work hours and remote work options (if required).",
-                "Collaborative and supportive work environment fostering innovation and creativity.",
-              ]}
-            />
-          </div>
-        </section>
-      </div>
-    );
+  //           <SectionBlock
+  //             title="Benefits"
+  //             list={[
+  //               "Competitive salary based on experience and skills.",
+  //               "Opportunities for professional growth and career advancement.",
+  //               "Flexible work hours and remote work options (if required).",
+  //               "Collaborative and supportive work environment fostering innovation and creativity.",
+  //             ]}
+  //           />
+  //         </div>
+  //       </section>
+  //     </div>
+  //   );
 
-  return <p>No Opening Found</p>;
+  return <p className="text-center p-10 text-[40px]">No Opening Found</p>;
 }
 
 export default Page;

@@ -39,12 +39,12 @@ export async function POST(req) {
       return NextResponse.json(
         {
           message: `The following fields are required: ${missingFields.join(
-            ", "
+            ", ",
           )}`,
         },
         {
           status: 400,
-        }
+        },
       );
     }
 
@@ -80,7 +80,9 @@ export async function POST(req) {
         : [],
     };
 
-    await transporter.sendMail(mailOptions);
+    console.log("mailOptions", mailOptions);
+    let res = await transporter.sendMail(mailOptions);
+    console.log("Res", res);
     return NextResponse.json(
       {
         message:
@@ -88,7 +90,7 @@ export async function POST(req) {
       },
       {
         status: 200,
-      }
+      },
     );
   } catch (err) {
     console.log("Error", err);
@@ -98,7 +100,7 @@ export async function POST(req) {
       },
       {
         status: 500,
-      }
+      },
     );
   }
 }

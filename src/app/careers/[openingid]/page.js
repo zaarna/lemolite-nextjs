@@ -2,7 +2,6 @@ import SectionBlock from "@/components/ReusableComponent/SectionBlock";
 
 function Opening({ params }) {
   const { id } = params;
-  "id", id;
   return (
     <section className="career-inner">
       <div className="container">
