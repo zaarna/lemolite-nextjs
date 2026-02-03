@@ -4,7 +4,7 @@ import Image from "next/image";
 
 function InnerBanner() {
   return (
-    <div className="relative overflow-hidden max-h-screen">
+    <div className="overflow-hidden md:h-[calc(100vh-90px)]">
       {/* Background Image - Line pattern */}
       <div
         className="absolute inset-0 -z-10"
@@ -17,7 +17,7 @@ function InnerBanner() {
       />
 
       {/* Content Container */}
-      <div className="container mx-auto px-4  relative flex items-center h-auto md:h-[calc(100vh-80px)]">
+      <div className="container mx-auto px-4  relative flex items-center h-auto md:h-[calc(100vh-90px)]">
         <div className="max-w-5xl mx-auto text-center w-full py-12 md:py-0">
           {/* Blue Badge */}
           <div className="inline-block mb-4 md:mb-6">

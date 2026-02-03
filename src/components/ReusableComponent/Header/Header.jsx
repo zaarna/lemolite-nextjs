@@ -249,6 +249,7 @@ const Header = () => {
   const [activeMenu, setActiveMenu] = useState(null);
   const [isSticky, setIsSticky] = useState(false);
   const [showPopup, setShowPopup] = useState(false);
+  const [navPos, setNavPos] = useState("static");
   const menuRef = useRef();
 
   const { openPopup } = usePopup();
@@ -263,6 +264,7 @@ const Header = () => {
     };
     document.addEventListener("mousedown", handleClickOutside);
     setHeaderBg(pathname.includes("startups") ? "transparent" : "white");
+    setNavPos(pathname.includes("startups") && "absolute");
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
@@ -683,8 +685,8 @@ const Header = () => {
       ref={menuRef}
       className={`w-full top-0 z-50 transition-all duration-500 pb-4 md:p-0 ${
         isSticky
-          ? "fixed bg-white/70 backdrop-blur-md shadow-md"
-          : `relative bg-${headerBg}`
+          ? "sticky bg-white/70 backdrop-blur-md shadow-md"
+          : `relative bg-${headerBg} ${navPos}`
       }`}
     >
       <div className="container mx-auto px-6 flex justify-between items-center py-4 transition-all duration-500">
