@@ -12,6 +12,21 @@ export const pagesMeta = {
       canonical: "https://lemolite.com",
     },
   },
+  startups: {
+    title:
+      "Startup MVP & Custom Software Development Partner | Lemolite Technologies",
+    description:
+      "We help founders turn ideas into real products with MVP development, fractional CTO support, and flexible equity partnerships.",
+    keywords: [
+      "Startup MVP development company",
+      "custom software development for startups",
+      "fractional CTO services",
+      "MVP development partner",
+      "tech partner for founders",
+      "startup product development",
+    ],
+    canonical: "https://lemolite.com/startups",
+  },
 
   services: {
     title: "Custom App & AI/ML Solutions by Lemolite Technologies",
