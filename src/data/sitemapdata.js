@@ -1,6 +1,7 @@
 export const sitedata = [
   { label: "Home", path: "/" },
   { label: "About", path: "/about-us" },
+  { label: "Startup", path: "/startup" },
   { label: "Services", path: "/services" },
   { label: "Tech Stack", path: "/techstack" },
   { label: "Case Study", path: "/casestudy" },

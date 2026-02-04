@@ -15,7 +15,7 @@ export default function EcosystemAccordian() {
       bg: "bg-[#BFD633]",
       dot: "bg-[#BFD633]",
       line: "bg-[#BFD633]",
-      bullet: "#BFD633E",
+      bullet: "#BFD633",
     },
     {
       bg: "bg-[#2EC4F3]",
@@ -32,7 +32,7 @@ export default function EcosystemAccordian() {
         <>
           <Item
             title="CTO as a Service:"
-            desc="Get senior-level technical leadership without the long-term cost of a $200k-per-hire. We define your roadmap, architecture, and technology stack to ensure scalability and investor readiness."
+            desc="Get senior-level technical leadership without the long-term cost of a $200k-per-year hire. We define your roadmap, architecture, and technology stack to ensure scalability and investor readiness. Fast MVP Development"
             color={color.bullet}
           />
           <Item
@@ -90,7 +90,7 @@ export default function EcosystemAccordian() {
             {/* Header */}
             <button
               onClick={() => setActive(isActive ? null : index)}
-              className="flex items-center gap-3 w-full text-left text-black"
+              className="flex items-center gap-3 w-full text-left text-black cursor-pointer"
             >
               {/* Chevron */}
               <span
