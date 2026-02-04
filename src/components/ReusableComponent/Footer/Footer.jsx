@@ -116,6 +116,7 @@ export default function Footer() {
         { href: "/blog", label: "Blog" },
         { href: "/careers", label: "Careers" },
         { href: "/about-us", label: "About Us" },
+        { href: "/startups", label: "Startups" },
         { href: "/contact-us", label: "Contact Us" },
         { href: "/life-at-lemolite", label: "Life@Lemolite" },
         // { href: '/sitemap', label: 'Sitemap' },

@@ -10,7 +10,7 @@ export default function sitemap() {
     "careers",
     "life-at-lemolite",
     "casestudy",
-    "startup",
+    "startups",
     "services",
     "techstack",
     "blog", // blog listing page
