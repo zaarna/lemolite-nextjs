@@ -289,7 +289,8 @@ const Header = () => {
   };
 
   const menus = [
-    { title: "Startups", href: "/startups" },
+    { title: "Startups", href: "/startups", isHighlighted: true },
+
     {
       title: "Services",
       description:
@@ -685,7 +686,7 @@ const Header = () => {
       ref={menuRef}
       className={`w-full top-0 z-50 transition-all duration-500 pb-4 md:p-0 ${
         isSticky
-          ? "sticky bg-white/70 backdrop-blur-md shadow-md"
+          ? "sticky bg-white backdrop-blur-md shadow-md"
           : `relative bg-${headerBg} ${navPos}`
       }`}
     >
@@ -700,48 +701,11 @@ const Header = () => {
             className="object-contain"
           />
         </Link>
-
         {/* Desktop Menu */}
-        {/* <div className="hidden md:flex space-x-8 text-gray-700 font-medium justify-center flex-1">
-          <ul className="flex space-x-8 text-gray-700 font-medium static">
-            {menus.map((menu) => (
-              <li key={menu.title} className="static group">
-                <div className="flex items-center gap-1">
-                  <Link
-                    href={menu.href}
-                    className="text-[#212121]/80 hover:text-black transition"
-                  >
-                    {menu.title}
-                  </Link>
-
-                  {menu.items && menu.items.length > 0 && (
-                    <button
-                      onClick={() => toggleMenu(menu.title)}
-                      className="p-1 text-[#212121]/80 hover:text-black transition"
-                    >
-                      <ChevronDown
-                        size={16}
-                        className={`transition-transform ${
-                          activeMenu === menu.title ? "rotate-180" : ""
-                        }`}
-                      />
-                    </button>
-                  )}
-                </div>
-
-                {menu.items &&
-                  activeMenu === menu.title &&
-                  ["Services", "Techstack", "Company"].includes(menu.title) &&
-                  renderMegaMenu(menu)}
-              </li>
-            ))}
-          </ul>
-        </div> */}
         {/* <div className="hidden md:flex space-x-8 text-gray-700 font-medium justify-center flex-1"> */}
         <div className="hidden lg:flex space-x-8 text-gray-700 font-medium justify-center flex-1">
           <ul className="flex space-x-8 text-gray-700 font-medium static">
             {menus.map((menu) => {
-              // Detect if the menu has items or columns
               const hasDropdown =
                 (menu.items && menu.items.length > 0) ||
                 (menu.columns && menu.columns.length > 0);
@@ -752,10 +716,15 @@ const Header = () => {
                   <div className="flex items-center gap-1">
                     <Link
                       href={menu.href}
-                      className="text-[#212121]/80 hover:text-black transition"
                       onClick={closeDropdown}
+                      className={`relative inline-block pb-1 transition-colors duration-200
+                ${menu.isHighlighted ? "is-highlighted" : ""}
+              `}
                     >
                       {menu.title}
+
+                      {/* Animated bottom line */}
+                      <span className="menu-underline" />
                     </Link>
 
                     {hasDropdown && (
@@ -785,18 +754,8 @@ const Header = () => {
             })}
           </ul>
         </div>
-
         {/* CTA Button */}
-        {/* <Link
-          target="blank"
-          href="https://calendly.com/lemolite-sales/product-demo?month=2025-06"
-          className="hidden md:inline-block ml-4 relative overflow-hidden bg-[#BFD633] text-black hover:text-white font-semibold px-5 py-2 rounded-[10px] transition-all duration-500 group"
-        >
-          <span className="relative z-20 transition-all duration-300 capitalize">
-            Book a call
-          </span>
-          <span className="absolute left-0 top-0 h-full w-0 bg-black transition-all duration-500 group-hover:w-full"></span>
-        </Link> */}
+
         <div className="hidden lg:block">
           <Grediantbutton
             variant="green"
@@ -807,7 +766,6 @@ const Header = () => {
             }}
           />
         </div>
-
         {/* Mobile Menu Toggle */}
         <button
           onClick={() => setIsOpen(!isOpen)}
