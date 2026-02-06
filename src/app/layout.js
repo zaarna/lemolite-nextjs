@@ -11,7 +11,7 @@ import PopupTimer from "@/components/PopupTimer";
 import WhatsAppIcon from "@/components/ReusableComponent/WhatsAppIcon/WhatsAppIcon";
 import Script from "next/script";
 import RedditPixel from "@/components/RedditPixel";
-
+import GoogleTag from "@/components/GoogleTag";
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
 //   subsets: ["latin"],
@@ -42,7 +42,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         {/* Google Tag Manager  */}
-
+        <GoogleTag />
         <Script id="gtm-script" strategy="afterInteractive">
           {`
     (function(w,d,s,l,i){
