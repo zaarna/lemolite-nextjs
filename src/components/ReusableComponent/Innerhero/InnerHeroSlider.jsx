@@ -7,7 +7,7 @@ import styles from "../../../app/page.module.css";
 function InnerHeroSlider() {
   const logos = [
     "/color_bootroom.svg",
-    "/color_botButler.svg",
+    "/botButlerlogo.svg",
     "/color_forSent.svg",
     "/color_vomax.png",
     "/color_Gdd.svg",

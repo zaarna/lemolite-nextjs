@@ -13,21 +13,21 @@ export default function Contectinfo({
   addresses = [],
 }) {
   const openings = [
-    {
-      title: "SEO / Digital Marketing Executive",
-      hire: "1+ YEARS",
-      link: "/current-openings/seo",
-    },
-    {
-      title: "MERN Stack Developer",
-      hire: "1+ YEARS",
-      link: "/current-openings/mern",
-    },
-    {
-      title: "Flutter Developer",
-      hire: "2+ YEARS",
-      link: "/current-openings/flutter",
-    },
+    // {
+    //   title: "SEO / Digital Marketing Executive",
+    //   hire: "1+ YEARS",
+    //   link: "/current-openings/seo",
+    // },
+    // {
+    //   title: "MERN Stack Developer",
+    //   hire: "1+ YEARS",
+    //   link: "/current-openings/mern",
+    // },
+    // {
+    //   title: "Flutter Developer",
+    //   hire: "2+ YEARS",
+    //   link: "/current-openings/flutter",
+    // },
   ];
 
   const pathname = usePathname();

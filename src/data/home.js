@@ -11,7 +11,7 @@ export const logos = [
   { src: "/napchief.webp", alt: "Napchief" },
   { src: "/ostrichees.webp", alt: "Ostriches" },
   { src: "/nexstaff.webp", alt: "Nexstaff" },
-  { src: "/botbutler.webp", alt: "Botbutler" },
+  { src: "/botButlerlogo.svg", alt: "Botbutler" },
   // { src: "/sq.webp", alt: "Security Quarks" },
   { src: "/relybluesvg.webp", alt: "Security Quarks" },
 ];
@@ -201,17 +201,16 @@ export const projects = [
   {
     id: 4,
     title: "Botbutler",
-    bgColor: "bg-[#FFFADE]",
-    headingColor:
-      "bg-gradient-to-r from-[#FFD701] to-[#F4C809] bg-clip-text text-transparent",
+    bgColor: "bg-[#EBECD5]",
+    headingColor: "text-[#A9AB74]",
     upHeading: "Food Ordering",
-    upHeadingColor: "text-[#FFE186]",
-    imgSrc: "/bot.webp",
+    upHeadingColor: "text-[#A9AB74]",
+    imgSrc: "/bot.png",
     imgAlt: "Botbutler Client Work",
     textAlign: "text-center",
     textPadding: "sm:pt-8",
     imgClass: "healthcare_image",
-    imgWrapper: "flex flex-col items-center justify-center",
+    imgWrapper: "flex flex-col items-center justify-between h-full",
     widthClass: "sm:w-1/2 md:w-5/12",
   },
 ];
