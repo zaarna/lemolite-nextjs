@@ -27,6 +27,11 @@ export const metadata = {
   alternates: {
     canonical: pagesMeta.home.alternates.canonical,
   },
+  verification: {
+    other: {
+      "msvalidate.01": ["C7DD06452CE1C81AB5F940FA8EACA1CE"],
+    },
+  },
 };
 
 // This will be replaced with your actual HomePage component when migrated

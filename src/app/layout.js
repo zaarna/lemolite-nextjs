@@ -127,7 +127,7 @@ export default function RootLayout({ children }) {
           name="google-site-verification"
           content="9UlZyhZWCgkFm4iVSWoyzFIvBUyD0Gn2PbANAyTItyM"
         />
-        <meta name="msvalidate.01" content="C7DD06452CE1C81AB5F940FA8EACA1CE" />
+        {/* <meta name="msvalidate.01" content="C7DD06452CE1C81AB5F940FA8EACA1CE" /> */}
       </head>
       <body className={`${outfit.variable} antialiased`}>
         <noscript>
