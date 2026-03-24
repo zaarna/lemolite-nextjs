@@ -51,7 +51,7 @@ const BlogSectionTitle = React.forwardRef((props, ref) => {
   const { content } = props;
   return (
     <div ref={ref} style={{ margin: "1rem 0" }}>
-      <h1
+      <h2
         style={{
           fontSize: "2.5rem",
           fontWeight: "700",
@@ -60,7 +60,7 @@ const BlogSectionTitle = React.forwardRef((props, ref) => {
         }}
       >
         {content}
-      </h1>
+      </h2>
     </div>
   );
 });
