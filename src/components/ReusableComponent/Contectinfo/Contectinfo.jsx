@@ -12,23 +12,7 @@ export default function Contectinfo({
   content,
   addresses = [],
 }) {
-  const openings = [
-    // {
-    //   title: "SEO / Digital Marketing Executive",
-    //   hire: "1+ YEARS",
-    //   link: "/current-openings/seo",
-    // },
-    // {
-    //   title: "MERN Stack Developer",
-    //   hire: "1+ YEARS",
-    //   link: "/current-openings/mern",
-    // },
-    // {
-    //   title: "Flutter Developer",
-    //   hire: "2+ YEARS",
-    //   link: "/current-openings/flutter",
-    // },
-  ];
+  const openings = [];
 
   const pathname = usePathname();
 

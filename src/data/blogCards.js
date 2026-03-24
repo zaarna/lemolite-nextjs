@@ -11,7 +11,7 @@ export const blogCards = [
     link: "/blog/ai-myth-busting",
   },
   {
-    id: "custom-software-development-services",
+    id: "what-is-custom-software-development",
     title: "The Ultimate Guide to Custom Software Development Services",
     author: "Swetketu Trivedi",
     date: "July 09, 2025",
@@ -19,7 +19,7 @@ export const blogCards = [
     image: "/csds.webp",
     excerpt:
       "Custom software development services are tailored solutions designed to meet the unique needs of businesses...",
-    link: "/blog/custom-software-development-services",
+    link: "/blog/what-is-custom-software-development",
   },
   {
     id: "mobile-app-development-services",
@@ -104,7 +104,7 @@ export const blogCards = [
     link: "/blog/how-to-hire-mobile-app-developer-in-dubai",
   },
   {
-    id: "ai-as-a-Service",
+    id: "ai-as-a-service",
     title: "AI-as-a-Service Your Blueprint for Smarter, Faster Business Growth",
     author: "Swetketu Trivedi",
     date: "November 11, 2025",
@@ -112,7 +112,7 @@ export const blogCards = [
     image: "/aiasservice.webp",
     excerpt:
       "Hey there! Let’s start with a simple question: have you ever wished your business could think...",
-    link: "/blog/ai-as-a-Service",
+    link: "/blog/ai-as-a-service",
   },
   {
     id: "choosing-the-right-tech-stack-2026",

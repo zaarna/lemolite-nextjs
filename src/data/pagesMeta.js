@@ -1,8 +1,8 @@
 export const pagesMeta = {
   home: {
-    title: "Custom Software Development Company | Lemolite Technologies",
+    title: "Custom Software Development Company | Lemolite",
     description:
-      "Build smart, scalable apps with a trusted custom software development company. Lemolite Technologies turns your ideas into digital success. Call us today!",
+      "'Lemolite builds custom software for startups. 80+ startups across UK, Dubai & India. Book a free call.'",
     keywords: [
       "custom software development company",
       "custom software development services",
@@ -13,12 +13,11 @@ export const pagesMeta = {
     },
   },
   startups: {
-    title:
-      "Startup MVP & Custom Software Development Partner | Lemolite Technologies",
+    title: "Startup Tech Partner | MVP Development | Lemolite",
     description:
-      "We help founders turn ideas into real products with MVP development, fractional CTO support, and flexible equity partnerships.",
+      "Lemolite is your dedicated startup tech partner. MVP development, equity partnerships, and full-stack builds. 80+ startups launched globally.",
     keywords: [
-      "Startup MVP development company",
+      "startup tech partner MVP development",
       "custom software development for startups",
       "fractional CTO services",
       "MVP development partner",
@@ -29,11 +28,11 @@ export const pagesMeta = {
   },
 
   services: {
-    title: "Custom App & AI/ML Solutions by Lemolite Technologies",
+    title: "Software Development Services | Lemolite Technologies",
     description:
-      "Build smarter with Lemolite Technologies. We design custom apps and AI/ML solutions to boost growth and efficiency. Start your digital transformation today.",
+      "Explore custom software, AI/ML, mobile apps, web development & e-commerce solutions from Lemolite. UK · Dubai · India. Get a free quote.",
     keywords: [
-      "AI & ML Development Services",
+      "software development services",
       "AI/ML Development Company",
       "Custom Software company",
       "Custom Software Development Company",
@@ -42,9 +41,9 @@ export const pagesMeta = {
   },
 
   "ui-ux-design": {
-    title: "UI UX Design Services Company",
+    title: "UI/UX Design Services | Interface Design | Lemolite",
     description:
-      "Transform your ideas into stunning digital experiences with Lemolite Technologies. Explore our tailored UI/UX design services today and elevate your brand.",
+      "Intuitive, beautiful UI/UX design for web and mobile apps. User research, wireframes, prototypes & design systems from Lemolite. View our portfolio.",
     keywords: [
       "UI/UX Design Services",
       "UX/UI Designers",
@@ -55,12 +54,11 @@ export const pagesMeta = {
   },
 
   "e-commerce": {
-    title: "E-Commerce Services | eCommerce App Development Company",
+    title: "eCommerce Development | Shopify & Custom | Lemolite",
     description:
-      "Experience seamless shopping apps with Lemolite Technologies, your reliable eCommerce app development company. Launch your app with us!",
+      "Build fast, secure eCommerce stores with Lemolite. Shopify, WooCommerce & custom platforms. Trusted by UK & UAE retailers. Book a free consultation.",
     keywords: [
-      "e-Commerce Services",
-      "eCommerce Development Services",
+      "ecommerce development services",
       "eCommerce Website Development Company",
       "e-Commerce Software Development",
       "eCommerce Application Development Services",
@@ -69,19 +67,19 @@ export const pagesMeta = {
   },
 
   "web-development": {
-    title: "Web Development Services | Web App Development Company",
+    title: "Web Development Services | Custom Web Apps | Lemolite",
     description:
-      "Transform your ideas into stunning, high-performing websites with Lemolite Technologies. Get expert web development services tailored to your business goals.",
-    keywords: ["Web Development Services,", "Web App Development company,"],
+      "Custom websites and web applications built by Lemolite. React, Node.js, Laravel, PHP. From business sites to complex platforms. Get a free project quote",
+    keywords: ["web development services,", "Web App Development company,"],
     canonical: "https://lemolite.com/services/web-development",
   },
 
   "mobile-app-development": {
-    title: "Mobile App Development Services| Mobile App Development",
+    title: "Mobile App Development | iOS & Android | Lemolite",
     description:
-      "Lemolite Technologies delivers mobile app development services that drive growth and engagement. Build your next powerful app with our expert team today!",
+      "Custom iOS, Android & cross-platform mobile apps. Built for startups and enterprises. Fast delivery, scalable code. UK · Dubai · India. Book a free call. ",
     keywords: [
-      "Mobile app development services",
+      "mobile app development services",
       "Mobile App Development",
       "Mobile app development solutions",
       "Mobile app development technologies",
@@ -90,11 +88,11 @@ export const pagesMeta = {
   },
 
   "custom-software-development": {
-    title: "Best Custom Software Development Services",
+    title: "Custom Software Development Services | Lemolite",
     description:
-      "Lemolite Technologies crafts custom software that drives growth and innovation. Unlock your business’s potential with tailored solutions get started now!",
+      "Lemolite delivers custom software development tailored to your business. MVPs to enterprise systems. 80+ startups trust us. UK · Dubai · India. Free quote.",
     keywords: [
-      "Custom Software Development Services,",
+      "custom software development services",
       "Custom software company",
       "Custom Software Development Consulting",
       "Custom Web Application Development Company",
@@ -103,12 +101,11 @@ export const pagesMeta = {
   },
 
   "ot-cybersecurity": {
-    title: "Industrial Cybersecurity Insights: OT Roadmap by Lemolite",
+    title: "OT Cybersecurity Services | Secure Product Lifecycle | Lemolite",
     description:
-      "Discover innovative OT cybersecurity solutions with an expert IEC 62443-4-1 gap assessment. Start your secure journey with Lemolite Technologies today!",
+      "Secure your operational technology with Lemolite's OT cybersecurity solutions. Product lifecycle security for industrial and enterprise environments. ",
     keywords: [
-      "AI & ML Development Services",
-      "AI/ML Development Company",
+      "OT cybersecurity services",
       "Custom Software company",
       "Custom Software Development Company",
     ],
@@ -116,11 +113,11 @@ export const pagesMeta = {
   },
 
   "ai-ml-development": {
-    title: "AI/ML Development Company | AI/ML Development Services",
+    title: "AI & ML Development Services | Lemolite Technologies",
     description:
-      "Empower your brand with AI/ML development services by Lemolite Technologies. Build smart, data-driven solutions that redefine efficiency and growth.",
+      "Build custom AI and ML solutions with Lemolite. Predictive analytics, NLP, computer vision & automation. Start your AI journey today. UK · Dubai · India.",
     keywords: [
-      "AI & ML Development Services",
+      "AI ML development services",
       "AI Software Development Services",
       "AI/ML Development Company",
       "AI and ML developers",
@@ -130,11 +127,11 @@ export const pagesMeta = {
   },
 
   "internet-of-things": {
-    title: "IoT App Development Services | IoT App Development Company",
+    title: "IoT Development Services | Internet of Things | Lemolite",
     description:
-      "Build connected, data-smart IoT apps with Lemolite Technologies. We create secure, scalable IoT solutions that power innovation. Get your app built today.",
+      "Custom IoT solutions for predictive maintenance, smart devices & connected systems. Industrial and commercial IoT development. UK · Dubai · India",
     keywords: [
-      "IoT App Development Services",
+      "IoT development services",
       "Custom IoT App Development Services",
       "IoT App Development Companys",
     ],
@@ -142,9 +139,9 @@ export const pagesMeta = {
   },
 
   "chatbot-development": {
-    title: "Chatbot Development Services | Chatbot Development Company",
+    title: "Chatbot Development Services | AI Chatbots | Lemolite",
     description:
-      "Boost engagement with smart, AI-powered chatbot development services. Lemolite Technologies builds bots that connect and simplify your customer support.",
+      "Custom chatbot development for customer support, lead generation & automation. NLP-powered bots for web, WhatsApp & Messenger. Get a free demo.",
     keywords: [
       "Chatbot development services",
       "AI chatbot development company",
@@ -153,20 +150,20 @@ export const pagesMeta = {
   },
 
   "voicebot-development": {
-    title: "AI Voicebot Development Services Company",
+    title: "Voicebot Development | AI Voice Assistants | Lemolite",
     description:
-      "Create smart AI voicebots that boost engagement and streamline support. Choose Lemolite Technologies for cutting-edge voicebot development services today.",
+      "Build smart voice assistants and IVR systems with Lemolite. NLP-driven voicebots for customer service & automation. UK · Dubai · India.",
     keywords: [
-      "AI voicebot development services",
+      "voicebot development services",
       "AI Voicebot Development Company",
     ],
     canonical: "https://lemolite.com/services/voicebot-development",
   },
 
   "hire-python-developer": {
-    title: "Hire Python Developers | Hire Dedicated Python Developers",
+    title: "Hire Python Developers | Dedicated Python Team | Lemolite",
     description:
-      "Hire dedicated Python developers to build fast, reliable apps with Lemolite Technologies. Strengthen your team with top talent — get a quote today!",
+      "Hire experienced Python developers for AI, web & data projects. Vetted talent, flexible models, 48hr onboarding. Trusted by 80+ startups globally.",
     keywords: [
       "best Python development services",
       "Hire Python Developers",
@@ -176,9 +173,9 @@ export const pagesMeta = {
   },
 
   "hire-mern-developer": {
-    title: "Hire MERN Stack Developers | Hire MERN Developers",
+    title: "Hire MERN Stack Developers | Full-Stack Team | Lemolite",
     description:
-      "Build high-performance web apps using MERN Stack expertise. Hire MERN developers from Lemolite Technologies to accelerate your next digital project.",
+      "Hire MERN stack developers (MongoDB, Express, React, Node) for full-stack web apps. Vetted team, flexible models. UK · UAE · India. Start in 48hrs.",
     keywords: [
       "MERN stack development services",
       "Hire MERN Stack Developers",
@@ -189,9 +186,9 @@ export const pagesMeta = {
   },
 
   "hire-reactjs-developer": {
-    title: "Hire ReactJS Developers | Hire Dedicated ReactJS Developers",
+    title: "Hire React JS Developers | ReactJS Team | Lemolite",
     description:
-      "Bring ideas to life with interactive, SEO-friendly ReactJS solutions. Hire dedicated React developers from Lemolite Technologies to grow your business online.",
+      "Hire vetted React JS developers from India. Full-time, part-time or hourly. Start in 48 hours. 9+ years experience. UK · Dubai · India clients served.",
     keywords: [
       "React JS development services",
       "Hire ReactJS Developers",
@@ -201,9 +198,9 @@ export const pagesMeta = {
   },
 
   "hire-nodejs-developer": {
-    title: "Hire NodeJS Developers | NodeJS Development Services",
+    title: "Hire Node JS Developers | Backend Experts | Lemolite",
     description:
-      "ower your platform with fast and secure server-side development. Hire NodeJS experts from Lemolite Technologies to streamline your digital operations.",
+      "Hire dedicated Node.js developers for scalable backend systems. REST APIs, real-time apps & microservices. Start in 48hrs. UK · UAE · India.",
     keywords: [
       "NodeJS Development Services",
       "Hire dedicated Node.js developers",
@@ -214,9 +211,9 @@ export const pagesMeta = {
   },
 
   "hire-php-developer": {
-    title: "Hire PHP Developers | Hire Skilled PHP Developers",
+    title: "Hire PHP Developers | Dedicated PHP Experts | Lemolite",
     description:
-      "Deploy secure and scalable websites with our professional PHP developers. Lemolite Technologies offers skilled PHP experts to ensure lasting performance.",
+      "Hire skilled PHP developers for custom web development. WordPress, Laravel, Symfony expertise. Flexible engagement. Vetted & ready to start in 48hrs.",
     keywords: [
       "Hire PHP Developers",
       "PHP developers for hire",
@@ -226,9 +223,9 @@ export const pagesMeta = {
   },
 
   "hire-laravel-developer": {
-    title: "Hire Dedicated Laravel Developers | Hire Laravel Developers",
+    title: "Hire Laravel Developers | Laravel Team | Lemolite",
     description:
-      "Simplify your development journey with expert Laravel talent. Lemolite Technologies provides dedicated developers ready to craft tailor-made web applications.",
+      "Hire expert Laravel developers for secure, scalable web apps. Full-time or part-time. Vetted team. 48hr onboarding. UK · UAE · India clients.",
     keywords: [
       "Laravel Development Services",
       "Hire Dedicated Laravel developers",
@@ -239,9 +236,9 @@ export const pagesMeta = {
   },
 
   "hire-angular-developer": {
-    title: "Hire Angularjs Developers | AngularJS developers",
+    title: "Hire Angular Developers | Frontend Specialists | Lemolite",
     description:
-      "Strengthen your web apps with AngularJS development expertise. Lemolite Technologies connects you with dedicated AngularJS developers ready to deliver results.",
+      "Hire dedicated Angular developers for enterprise-grade SPAs and dashboards. Vetted, experienced, available in 48hrs. Flexible models. ",
     keywords: [
       "AngularJS developers",
       "hire angularjs developers",
@@ -251,9 +248,9 @@ export const pagesMeta = {
   },
 
   "hire-vuejs-developer": {
-    title: "Hire Vue JS Developers | Hire Dedicated Vue JS Developer",
+    title: "Hire Vue JS Developers | Dedicated Vue Team | Lemolite",
     description:
-      "Create responsive and interactive web experiences with VueJS. Lemolite Technologies offers dedicated developers who turn UI concepts into real results.",
+      "Hire experienced Vue.js developers for modern, reactive web applications. Full-time, part-time or hourly. 48hr start. UK · UAE · India.",
     keywords: [
       "Vue js development services",
       "Hire vuejs developers",
@@ -262,17 +259,17 @@ export const pagesMeta = {
     canonical: "https://lemolite.com/services/hire-vuejs-developer",
   },
   "hire-flutter-developer": {
-    title: "Hire Flutter Developers | Hire Flutter App Developers",
+    title: "Hire Flutter Developers | Cross-Platform App Experts | Lemolite",
     description:
-      "Launch mobile apps faster with Flutter specialists from Lemolite Technologies. Hire Flutter app developers to deliver seamless experiences on iOS and Android.",
+      "Hire Flutter developers to build iOS & Android apps from one codebase. Vetted talent, fast onboarding, flexible engagement. UK · UAE clients served.",
     keywords: ["Hire Flutter Developer", "Hire Flutter App Developer"],
     canonical: "https://lemolite.com/services/hire-flutter-developer",
   },
 
   "hire-shopify-developer": {
-    title: "Hire Shopify Developers | Hire Dedicated Shopify Developer",
+    title: "Hire Shopify Developers | eCommerce Specialists | Lemolite",
     description:
-      "Enhance your online store with Shopify development pros. Lemolite Technologies helps you hire skilled Shopify experts for design, setup, and optimization.",
+      "Hire dedicated Shopify developers for custom themes, apps & store setup. Expert Shopify team. 48hr start. Trusted by UK & UAE eCommerce brands.",
     keywords: [
       "Hire Shopify Developers",
       "hire dedicated shopify developer",
@@ -403,26 +400,26 @@ export const pagesMeta = {
   },
 
   aboutus: {
-    title: "About US - Lemolite Technologies LLP",
+    title: "About Lemolite | Software Development Company Since 2016",
     description:
-      "With 9+ years of experience, Lemolite Technologies drives growth with innovative IT solutions. Learn about our vision, mission, team, and approach.",
-    keywords: ["About us"],
+      "Lemolite Technologies — custom software development company founded in 2016. 80+ startups built. Offices in UK, Dubai, Qatar & India. Meet our team.",
+    keywords: ["about lemolite technologies"],
     canonical: "https://lemolite.com/about-us",
   },
 
   blog: {
-    title: "Blogs on Latest Software and IT Services- Lemolite Technologies",
+    title: "Software Development Blog | Startup Tech Insights | Lemolite",
     description:
-      "Discover the latest insights and trends in technology with Lemolite’s blog. Stay informed with expert analysis, industry news, and innovative solutions.",
-    keywords: ["Blogs"],
+      "Expert insights on software development, AI/ML, mobile apps and startup tech from the Lemolite team. New articles published weekly.",
+    keywords: ["software development blog"],
     canonical: "https://lemolite.com/blog",
   },
 
   careers: {
-    title: "Current Opportunities and Job Openings at Lemolite Technologies",
+    title: "Careers at Lemolite | Join Our Tech Team",
     description:
-      "Lemolite Technologies offers a chance to work with leading technologies, grow your IT career, and enhance your passion. Kickstart your journey with us today!",
-    keywords: ["Current Job Openings", "Job Openings"],
+      "Join Lemolite Technologies — a fast-growing software development company with offices in UK, Dubai & India. View open roles and apply today.",
+    keywords: ["careers at lemolite", "Job Openings"],
     canonical: "https://lemolite.com/careers",
   },
 
@@ -434,18 +431,18 @@ export const pagesMeta = {
   },
 
   casestudy: {
-    title: "Our Projects Case Studies - Lemolite Technologies",
+    title: "Software Development Case Studies | Client Results | Lemolite",
     description:
-      "Explore the innovative tech solutions Lemolite Technologies has developed for a global clientele. Get an insider’s look at our impactful work.",
-    keywords: ["Case Studies"],
+      "Real results from real clients. Explore Lemolite's software development case studies across eCommerce, IoT, SaaS, mobile apps & more.",
+    keywords: ["software development case studies"],
     canonical: "https://lemolite.com/casestudy",
   },
 
   contactus: {
-    title: "Contact Us | Lemolite Technologies",
+    title: "Contact Lemolite | UK · Dubai · India · Qatar",
     description:
-      "Connect with Lemolite Technology to discover how we can support you. Get expert solutions and assistance from our tech support team today!",
-    keywords: ["Contact Us"],
+      "Get in touch with Lemolite Technologies. Offices in London, Dubai, Doha & Ahmedabad. Book a free 30-min strategy call or send a project brief.",
+    keywords: ["contact lemolite technologies"],
     canonical: "https://lemolite.com/contact-us",
   },
 

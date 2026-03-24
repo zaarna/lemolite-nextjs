@@ -8,23 +8,7 @@ import Position_card from "../Card/Position_card";
 import LifeatLemolite from "./LifeAtLemolite";
 
 const CareersScrollWrapper = () => {
-  const data = [
-    // {
-    //   title: "SEO / Digital Marketing Executive",
-    //   hire: "1+ YEARS",
-    //   link: "/current-openings/seo",
-    // },
-    // {
-    //   title: "MERN Stack Developer",
-    //   hire: "1+ YEARS",
-    //   link: "/current-openings/mern",
-    // },
-    // {
-    //   title: "Flutter Developer",
-    //   hire: "2+ YEARS",
-    //   link: "/current-openings/flutter",
-    // },
-  ];
+  const data = [];
   const footerRef = useRef(null); // Create a reference for the footer
 
   const scrollToFooter = () => {
