@@ -1,0 +1,94 @@
+# Lemolite Technologies LLP
+
+> A dedicated custom software development company that consults, designs, builds, and scales startups and businesses into industry leaders.
+
+## About
+Lemolite Technologies LLP is a full-service custom software development company with 9+ years of experience and 80+ startups built. We serve clients across the UK, Dubai, Doha, and India. Our expertise spans web development, mobile apps, AI/ML, IoT, e-commerce, and intelligent automation — helping businesses across industries transform their digital vision into reality.
+
+## Core Services
+- [Custom Software Development](https://lemolite.com/services/custom-software-development): Tailored software solutions built for your unique business needs
+- [Web Development](https://lemolite.com/services/web-development): Fast, scalable, and SEO-optimized websites and web apps
+- [Mobile App Development](https://lemolite.com/services/mobile-app-development): iOS and Android apps built for performance and scale
+- [UI/UX Design](https://lemolite.com/services/ui-ux-design): User-first interfaces that drive engagement and conversions
+- [E-Commerce Development](https://lemolite.com/services/e-commerce): Conversion-optimized online stores and platforms
+- [AI & ML Development](https://lemolite.com/services/ai-ml-development): Intelligent automation and machine learning solutions
+- [IoT Development](https://lemolite.com/services/internet-of-things): Connected device solutions for smart businesses
+- [Chatbot Development](https://lemolite.com/services/chatbot-development): AI-powered chatbots for customer support and automation
+- [Voicebot Development](https://lemolite.com/services/voicebot-development): Voice-enabled automation solutions
+- [OT Cybersecurity](https://lemolite.com/services/ot-cybersecurity): Secure product lifecycle solutions
+
+## Hire Dedicated Developers
+- [Hire Python Developers](https://lemolite.com/services/hire-python-developer)
+- [Hire React JS Developers](https://lemolite.com/services/hire-reactjs-developer)
+- [Hire Node JS Developers](https://lemolite.com/services/hire-nodejs-developer)
+- [Hire MERN Developers](https://lemolite.com/services/hire-mern-developer)
+- [Hire PHP Developers](https://lemolite.com/services/hire-php-developer)
+- [Hire Laravel Developers](https://lemolite.com/services/hire-laravel-developer)
+- [Hire Angular Developers](https://lemolite.com/services/hire-angular-developer)
+- [Hire Vue JS Developers](https://lemolite.com/services/hire-vuejs-developer)
+- [Hire Flutter Developers](https://lemolite.com/services/hire-flutter-developer)
+- [Hire Shopify Developers](https://lemolite.com/services/hire-shopify-developer)
+
+## Tech Stack Expertise
+- [React JS Development](https://lemolite.com/techstack/reactjs-development)
+- [Node JS Development](https://lemolite.com/techstack/nodejs-development)
+- [Python Development](https://lemolite.com/techstack/python-development)
+- [Laravel Development](https://lemolite.com/techstack/laravel-development)
+- [Flutter Development](https://lemolite.com/techstack/flutter-development)
+- [Shopify Development](https://lemolite.com/techstack/shopify-development)
+- [MERN Development](https://lemolite.com/techstack/mern-development)
+- [Angular Development](https://lemolite.com/techstack/angular-development)
+- [Vue JS Development](https://lemolite.com/techstack/vuejs-development)
+- [PHP Development](https://lemolite.com/techstack/php-development)
+
+## Industries We Serve
+- Manufacturing
+- E-Commerce
+- Healthcare
+- Banking & Finance
+- Agriculture
+- Education
+- Energy & Utilities
+- Hospitality
+- Automobile
+
+## Key Pages
+- [Home](https://lemolite.com/): Custom software development for startups and businesses
+- [About Us](https://lemolite.com/about-us): Our story, team, and mission
+- [Services](https://lemolite.com/services): Full list of development services
+- [Startups](https://lemolite.com/startups): How we help startups scale
+- [Case Studies](https://lemolite.com/casestudy): Real client projects and results
+- [Tech Stack](https://lemolite.com/techstack): Technologies we specialize in
+- [Blog](https://lemolite.com/blog): Guides and insights on software, AI, and startups
+- [Careers](https://lemolite.com/careers): Join the Lemolite team
+- [Contact Us](https://lemolite.com/contact-us): Get in touch for a free consultation
+
+## Recent Blog Posts
+- [Choosing the Right Tech Stack in 2026: A Complete Guide](https://lemolite.com/blog/choosing-the-right-tech-stack-2026)
+- [AI-as-a-Service: Your Blueprint for Smarter, Faster Business Growth](https://lemolite.com/blog/ai-as-a-service)
+- [How to Hire Mobile App Developers in Dubai](https://lemolite.com/blog/how-to-hire-mobile-app-developer-in-dubai)
+- [How to Choose the Right SaaS eCommerce Platform](https://lemolite.com/blog/saas-for-eCommerce-platform)
+- [Why High-Growth Businesses Rely on Django with React](https://lemolite.com/blog/django-with-react)
+
+## Company Stats
+- 80+ Startups Built
+- 9+ Years in Business
+- 4+ Countries Served
+- Rated on Clutch: https://clutch.co/profile/lemolite-technologies-llp
+
+## Offices & Contact
+- **UK**: 6 Denmark Road, Kingston Upon Thames, London, KT1 2RU | +44 7551 316937 | jainam@lemolite.com
+- **Dubai**: Office No. 2045, Business Tower, Near Burjuman Mall, Dubai, UAE | +974 7794 0018 | abdul@lemolite.com
+- **Doha**: Al Nasser Tower, Corniche Westbay, Doha Qatar | +974 7794 0018 | abdul@lemolite.com
+- **India**: 1101-1104, Colonnade, Iskcon Cross Road, Satellite, Ahmedabad, Gujarat, India 380059 | +91 93138 34815 | sales@lemolite.com
+
+## Key Topics
+- Custom software development for startups
+- Web and mobile app development
+- AI and machine learning integration
+- Hiring dedicated remote developers
+- E-commerce platform development
+- Full-stack development services
+- IoT and intelligent automation
+- Software development company India
+- Tech partner for startups UK and Dubai

@@ -1,5 +1,56 @@
-# https://www.robotstxt.org/robotstxt.html
-User-agent: *
-Disallow:
+# robots.txt for Lemolite Technologies LLP
+# https://lemolite.com/
 
+# Allow all major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# Allow AI crawlers (for LLM visibility)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+# Block all bots from sensitive/unnecessary pages
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /login/
+Disallow: /register/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /cdn-cgi/
+Disallow: /private/
+Disallow: /thank-you/
+Disallow: /404/
+Disallow: /500/
+
+# Block specific file types
+Disallow: /*.json$
+Disallow: /*.xml$
+
+# Sitemap location
 Sitemap: https://lemolite.com/sitemap.xml
