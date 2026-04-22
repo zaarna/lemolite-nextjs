@@ -12,7 +12,7 @@ export default function BlogPageSection() {
 
   // Sort newest first
   const sortedBlogs = [...blogs].sort(
-    (a, b) => new Date(b.date) - new Date(a.date)
+    (a, b) => new Date(b.date) - new Date(a.date),
   );
 
   const featuredBlog = sortedBlogs[0];
@@ -63,7 +63,8 @@ export default function BlogPageSection() {
                   <p className="text-gray-600 mb-4 line-clamp-3">
                     {featuredBlog.sections
                       .find((s) => s.type === "paragraph")
-                      ?.content?.slice(0, 200)}
+                      ?.content?.replace(/<[^>]*>/g, "") // 🔥 removes all HTML tags
+                      ?.slice(0, 180)}
                     ...
                   </p>
                   <div className="flex justify-between items-center text-sm text-gray-500">
@@ -87,10 +88,10 @@ export default function BlogPageSection() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {otherBlogs.map((blog) => {
                 const firstImage = blog.sections.find(
-                  (s) => s.type === "image"
+                  (s) => s.type === "image",
                 )?.src;
                 const firstParagraph = blog.sections.find(
-                  (s) => s.type === "paragraph"
+                  (s) => s.type === "paragraph",
                 )?.content;
 
                 return (
