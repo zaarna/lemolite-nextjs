@@ -328,6 +328,7 @@ const BlogSectionTable = React.forwardRef((props, ref) => {
     rows = [],
     design = "1",
     brandColor = "#BFD633",
+    headingBackground = "",
     firstRowBackground = "",
     firstColumnBackground = "",
     title,
@@ -357,7 +358,7 @@ const BlogSectionTable = React.forwardRef((props, ref) => {
       header: {
         border: "1px solid #ccc",
         padding: "12px 10px",
-        background: "#bcbdbd",
+        background: headingBackground || "#bcbdbd",
         fontWeight: 700,
         fontSize: 16,
         textAlign: "left",

@@ -125,4 +125,15 @@ export const blogCards = [
       "Hey there! Let’s start with a simple question: have you ever wished your business could think...",
     link: "/blog/choosing-the-right-tech-stack-2026",
   },
+  {
+    id: "how-to-choose-an-ai-ml-development-company",
+    title: "How to Choose an AI/ML Development Company",
+    author: "Swetketu Trivedi",
+    date: "April 22, 2026",
+    tag: "AI/ML Development",
+    image: "/DevelopCompany.webp",
+    excerpt:
+      "The demand for AI and ML development services has exploded. With that surge comes an overwhelming...",
+    link: "/blog/how-to-choose-an-ai-ml-development-company",
+  },
 ];
