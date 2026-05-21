@@ -69,7 +69,7 @@ export const pagesMeta = {
 
   "web-development": {
     title:
-      "Web DeWeb Development Services | Custom Web Apps | UK · UAE · India | Lemolite",
+      "Web Development Services | Custom Web Apps | UK · UAE · India | Lemolite",
     description:
       "Scalable web apps, SaaS platforms and CMS solutions built by expert developers. Trusted by 80+ startups across UK, UAE and India. Start your project today.",
     keywords: ["web development services,", "Web App Development company,"],
