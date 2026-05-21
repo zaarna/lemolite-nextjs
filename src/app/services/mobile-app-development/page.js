@@ -36,7 +36,9 @@ const MobileAppDevelopmentPage = () => {
         btntext={"Launch Your App"}
         link={"/contact-us"}
         src={"/mobile.webp"}
-        alt={"Mobile app development Services"}
+        alt={
+          "Mobile app development services — iOS, Android and cross-platform apps by Lemolite"
+        }
       />
       <WhyHireSection
         title={"Our Expertise"}

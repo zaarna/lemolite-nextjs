@@ -6,22 +6,22 @@ import "swiper/css/mousewheel";
 import styles from "../../../app/page.module.css";
 function InnerHeroSlider() {
   const logos = [
-    "/color_bootroom.svg",
-    "/botButlerlogo.svg",
-    "/color_forSent.svg",
-    "/color_vomax.png",
-    "/color_Gdd.svg",
-    "/color_laboucle.svg",
-    "/color_maya.svg",
-    "/color_napchief.svg",
-    "/color_nexstaff.svg",
-    "/color_nikben.svg",
-    "/color_obm.svg",
-    "/color_rs.png",
-    "/color_s2h.svg",
-    // "/color_secrure.svg",
-    "/relybluesvg.svg",
-    // "/color_zirotix.svg",
+    { src: "/color_bootroom.svg", alt: "Bootroom" },
+    { src: "/botButlerlogo.svg", alt: "Bot Butler" },
+    { src: "/color_forSent.svg", alt: "ForSent" },
+    { src: "/color_vomax.png", alt: "VOMax" },
+    { src: "/color_Gdd.svg", alt: "GDD" },
+    { src: "/color_laboucle.svg", alt: "La Boucle" },
+    { src: "/color_maya.svg", alt: "Maya" },
+    { src: "/color_napchief.svg", alt: "NapChief" },
+    { src: "/color_nexstaff.svg", alt: "NexStaff" },
+    { src: "/color_nikben.svg", alt: "Nikben" },
+    { src: "/color_obm.svg", alt: "OBM" },
+    { src: "/color_rs.png", alt: "RS" },
+    { src: "/color_s2h.svg", alt: "S2H" },
+    // { src: "/color_secrure.svg", alt: "Secrure" },
+    { src: "/relybluesvg.svg", alt: "RelyBlue" },
+    // { src: "/color_zirotix.svg", alt: "Zirotix" },
   ];
   const containerRef = useRef(null);
   const x = useRef(0);
@@ -51,9 +51,9 @@ function InnerHeroSlider() {
           <div className={styles.sliderWrapper}>
             <div className={styles.sliderMask}>
               <div className={styles.sliderTrack} ref={containerRef}>
-                {[...logos, ...logos].map((src, index) => (
+                {[...logos, ...logos].map((logo, index) => (
                   <div className={styles.slide} key={index}>
-                    <img src={src} alt={`logo-${index}`} />
+                    <img src={logo.src} alt={logo.alt} />
                   </div>
                 ))}
               </div>

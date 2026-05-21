@@ -14,7 +14,6 @@ import { whyhiremern } from "@/data/whyhiredev";
 import React from "react";
 import { pagesMeta } from "@/data/pagesMeta";
 
-
 export const metadata = {
   title: pagesMeta["hire-mern-developer"].title,
   description: pagesMeta["hire-mern-developer"].description,
@@ -37,7 +36,7 @@ const HireMERNDeveloperPage = () => {
         btntext={"Get Started Today"}
         link={"/contact-us"}
         src={"/mern.webp"}
-        alt={"Hire Mern Developers"}
+        alt={"Hire MERN stack developers — full-stack web development team"}
       />
       <HireOurTeam hireourteam={hireourteammern} />
       <Hireproccess

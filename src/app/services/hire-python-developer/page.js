@@ -14,7 +14,6 @@ import FAQ from "@/components/ReusableComponent/HireDevelopers/FAQ";
 import { hirefaqpython } from "@/data/faqhire";
 import { pagesMeta } from "@/data/pagesMeta";
 
-
 export const metadata = {
   title: pagesMeta["hire-python-developer"].title,
   description: pagesMeta["hire-python-developer"].description,
@@ -37,7 +36,7 @@ const HirePythonDeveloperPage = () => {
         btntext={"Get Started Today"}
         link={"/contact-us"}
         src={"/python.webp"}
-        alt={"Hire Python Developers"}
+        alt={"Hire Python developers — AI, ML and backend specialists"}
       />
       <HireOurTeam hireourteam={hireourteamphython} />
       <Hireproccess
@@ -73,7 +72,6 @@ const HirePythonDeveloperPage = () => {
         bg="bg-gradient-to-r from-[#2ec4f3]/30 to-[#bfd633]/30"
       />
       <FAQ questions={hirefaqpython} />
-
     </div>
   );
 };

@@ -16,7 +16,6 @@ import {
 import React from "react";
 import { pagesMeta } from "@/data/pagesMeta";
 
-
 export const metadata = {
   title: pagesMeta["ai-ml-development"].title,
   description: pagesMeta["ai-ml-development"].description,
@@ -39,7 +38,9 @@ const AIMLDevelopmentPage = () => {
         btntext={"Start Your AI Journey"}
         link={"/contact-us"}
         src={"/aiml.webp"}
-        alt={"AI & ML Development Services"}
+        alt={
+          "AI and machine learning development services — Lemolite Technologies"
+        }
       />
       <Experties
         bg="bg-gradient-to-r from-[#2ec4f3]/30 to-[#bfd633]/30"

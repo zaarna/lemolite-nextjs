@@ -1,54 +1,63 @@
 export const custombexpert = [
   {
     icon: "/custom1.svg",
+    alt: "Customized Software Development",
     title: "Customized Software Development",
     description:
       "We design software solutions from scratch that are built specifically for your business. With a clear development process, we ensure timely delivery of high-quality software that aligns with your goals.",
   },
   {
     icon: "/custom2.svg",
+    alt: "Cloud Application Development",
     title: "Cloud Application Development",
     description:
       "Our cloud-based software solutions help businesses scale and stay agile. As a custom web application development company, We create secure and flexible applications that grow with your business and keep you ahead in a competitive market.",
   },
   {
     icon: "/custom3.svg",
+    alt: "Software Consulting",
     title: "Software Consulting",
     description:
       "Our team of experts provides custom software development consulting to help you choose the right software. We use our knowledge of the latest technologies to recommend solutions that fit your goals and help your business succeed.",
   },
   {
     icon: "/custom4.svg",
+    alt: "SaaS Development",
     title: "SaaS Development",
     description:
       "We specialize in building software-as-a-service platforms that are cost-effective, scalable, and user-friendly. Whether creating a new platform or improving an existing one, we ensure your SaaS meets modern demands.",
   },
   {
     icon: "/custom5.svg",
+    alt: "API Development and Software Integration",
     title: "API Development and Software Integration",
     description:
       "We develop custom APIs and help integrate third-party solutions to enhance your software’s functionality. Our services ensure seamless communication between different systems and applications.",
   },
   {
     icon: "/custom6.svg",
+    alt: "Software Modernization",
     title: "Software Modernization",
     description:
       "We update and improve old systems to meet modern standards. As a trusted custom software company, we add new features, improve security, and enhance performance, ensuring your software stays relevant and efficient.",
   },
   {
     icon: "/custom7.svg",
+    alt: "Product Customization",
     title: "Product Customization",
     description:
       "We tailor software products to fit your unique business needs. Whether it’s updating features or adding AI capabilities, our custom software development consulting ensures solutions that align with your goals and industry trends.",
   },
   {
     icon: "/custom8.svg",
+    alt: "Enterprise Automation",
     title: "Enterprise Automation",
     description:
       "We automate repetitive tasks and processes to save time and reduce errors. Using AI and machine learning, our custom enterprise software development services help improve efficiency and streamline your business operations.",
   },
   {
     icon: "/custom9.svg",
+    alt: "Data Analytics and Visualization",
     title: "Data Analytics and Visualization",
     description:
       "We help you turn raw data into meaningful insights. With clear, visual reports, you can make smarter decisions and drive your business forward.",

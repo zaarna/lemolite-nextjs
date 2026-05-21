@@ -7,7 +7,6 @@ import { uiux } from "@/data/breadcrumsdata";
 import { uiuxfaqData, uiuxprocessSteps } from "@/data/services";
 import { pagesMeta } from "@/data/pagesMeta";
 
-
 export const metadata = {
   title: pagesMeta["ui-ux-design"].title,
   description: pagesMeta["ui-ux-design"].description,
@@ -30,19 +29,21 @@ const UIUXDesignPage = () => {
         btntext={"Boost Your Brand"}
         link={"/contact-us"}
         src={"/ui.webp"}
-        alt={"UI/UX Design Services"}
+        alt={"UI UX design services — user-centred design for web and mobile"}
       />
       <Our_Expertise_ui_ux />
       <Devlopmentprocess
         title={"Our Design Process"}
         processSteps={uiuxprocessSteps}
       />
-      <Ctasection title={"Ready to Elevate Your Design?"}
-              text={"Let's Create Together"}
-              link={"/contact-us"}
-              image="/ctagreadiant.webp"
-              bg='bg-[#F1F1F1]' />
-              <FAQ questions={uiuxfaqData} />
+      <Ctasection
+        title={"Ready to Elevate Your Design?"}
+        text={"Let's Create Together"}
+        link={"/contact-us"}
+        image="/ctagreadiant.webp"
+        bg="bg-[#F1F1F1]"
+      />
+      <FAQ questions={uiuxfaqData} />
     </div>
   );
 };

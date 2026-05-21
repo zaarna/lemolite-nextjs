@@ -13,7 +13,6 @@ import { nodebenefit } from "@/data/keybenifit";
 import { whyhirenodejs } from "@/data/whyhiredev";
 import { pagesMeta } from "@/data/pagesMeta";
 
-
 export const metadata = {
   title: pagesMeta["hire-nodejs-developer"].title,
   description: pagesMeta["hire-nodejs-developer"].description,
@@ -36,7 +35,9 @@ const HireNodJsDeveloperPage = () => {
         btntext={"Get Started Today"}
         link={"/contact-us"}
         src={"/node.webp"}
-        alt={"Hire Node Js Developers"}
+        alt={
+          "Hire Node.js developers — backend and API specialists from Lemolite"
+        }
       />
       <HireOurTeam hireourteam={hireourteamnode} />
       <Hireproccess

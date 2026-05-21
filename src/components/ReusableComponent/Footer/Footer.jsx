@@ -183,7 +183,7 @@ export default function Footer() {
             >
               <Image
                 src="/googlereview.svg"
-                alt="Google review"
+                alt="Lemolite Technologies — 5-star Google Reviews"
                 width={96}
                 height={40}
                 className="object-contain"
@@ -196,7 +196,7 @@ export default function Footer() {
             >
               <Image
                 src="/clutchreview.svg"
-                alt="Clutch review"
+                alt="Lemolite Technologies — Top-Rated on Clutch.co'uk"
                 width={96}
                 height={40}
                 className="object-contain"

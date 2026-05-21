@@ -429,6 +429,7 @@ export const aimlprocessSteps = [
     description:
       "We start by understanding your requirements and challenges through discussions that clarify your goals. This initial step is vital to ensure we tailor our approach effectively to meet your specific needs.",
     image: "/uiux1.svg",
+    alt: "Understanding Your Needs",
     arrowImage: "/vectorleft.svg",
     isReversed: false,
     isFirst: true,
@@ -439,6 +440,7 @@ export const aimlprocessSteps = [
     description:
       "We define success for your project by identifying the right AI solution, determining the necessary data, and establishing specific outcomes. This clarity helps us align our strategies with your vision for success.",
     image: "/ai2.svg",
+    alt: "Defining Success",
     arrowImage: "/vectorright.svg",
     isReversed: true,
     isFirst: false,
@@ -449,6 +451,7 @@ export const aimlprocessSteps = [
     description:
       "Our AI and ML developers check the availability of the required data for your project. If it’s available, we proceed to clean it. If not, we explore alternative sources or create data to ensure you have what you need.",
     image: "/ai3.svg",
+    alt: "Gathering the Right Data",
     arrowImage: "/vectorleft.svg",
     isReversed: false,
     isFirst: false,
@@ -459,6 +462,7 @@ export const aimlprocessSteps = [
     description:
       "We carefully clean your data by removing duplicates, correcting errors, and filling in any missing information. This step is essential for achieving reliable results with your AI solution.",
     image: "/ai4.svg",
+    alt: "Cleaning the Data",
     arrowImage: "/vectorright.svg",
     isReversed: true,
     isFirst: false,
@@ -469,6 +473,7 @@ export const aimlprocessSteps = [
     description:
       "We select the best approach for your project, whether it involves using existing models or developing a custom solution tailored to your specific needs.",
     image: "/ai5.svg",
+    alt: "Choosing the Right Model",
     arrowImage: "/vectorleft.svg",
     isReversed: false,
     isFirst: false,
@@ -479,6 +484,7 @@ export const aimlprocessSteps = [
     description:
       "We test the model to evaluate its performance. If it meets your expectations, we proceed with deployment. If not, we will make adjustments and retrain it to ensure optimal performance.",
     image: "/ai6.svg",
+    alt: "Testing the Model",
     arrowImage: "/vectorright.svg",
     isReversed: true,
     isFirst: true,
@@ -489,6 +495,7 @@ export const aimlprocessSteps = [
     description:
       "Once we are confident in the model’s performance, we integrate it into your system, preparing it for real-world use.",
     image: "/ai7.svg",
+    alt: "Deploying Your Solution",
     arrowImage: "/vectorleft.svg",
     isReversed: false,
     isFirst: false,
@@ -499,6 +506,7 @@ export const aimlprocessSteps = [
     description:
       "After deployment, we conduct thorough testing to ensure everything works smoothly and meets your objectives. Your satisfaction is our top priority throughout this process.",
     image: "/ai8.svg",
+    alt: "Final Testing",
     arrowImage: "/vectorright.svg",
     isReversed: true,
     isFirst: false,
@@ -641,80 +649,90 @@ export const ecommercefaqData = [
   },
 ];
 export const servicesempower = [
-  { icon: "/nexticon1.svg", title: "Ultra-Fast Performance" },
-  { icon: "/nexticon2.svg", title: "Seamless Navigation" },
-  { icon: "/nexticon3.svg", title: "Advanced Product Visualization" },
-  { icon: "/nexticon4.svg", title: "Secure Payment Integration" },
-  { icon: "/nexticon5.svg", title: "Personalized Shopping Experiences" },
-  { icon: "/nexticon6.svg", title: "SEO-Optimized Framework" },
-  { icon: "/nexticon7.svg", title: "Mobile-First Design" },
-  { icon: "/nexticon8.svg", title: "Efficient Inventory Management" },
-  { icon: "/nexticon9.svg", title: "Real-Time Order Updates" },
-  { icon: "/nexticon10.svg", title: "Smart Search Functionality" },
-  { icon: "/nexticon11.svg", title: "Optimized Checkout Process" },
-  { icon: "/nexticon12.svg", title: "Omnichannel Synchronization" },
-  { icon: "/nexticon13.svg", title: "Comprehensive Analytics Tools" },
-  { icon: "/nexticon14.svg", title: "Automated Marketing Solutions" },
-  { icon: "/nexticon15.svg", title: "Scalable Architecture" },
+  { icon: "/nexticon1.svg", alt: "Ultra-Fast Performance", title: "Ultra-Fast Performance" },
+  { icon: "/nexticon2.svg", alt: "Seamless Navigation", title: "Seamless Navigation" },
+  { icon: "/nexticon3.svg", alt: "Advanced Product Visualization", title: "Advanced Product Visualization" },
+  { icon: "/nexticon4.svg", alt: "Secure Payment Integration", title: "Secure Payment Integration" },
+  { icon: "/nexticon5.svg", alt: "Personalized Shopping Experiences", title: "Personalized Shopping Experiences" },
+  { icon: "/nexticon6.svg", alt: "SEO-Optimized Framework", title: "SEO-Optimized Framework" },
+  { icon: "/nexticon7.svg", alt: "Mobile-First Design", title: "Mobile-First Design" },
+  { icon: "/nexticon8.svg", alt: "Efficient Inventory Management", title: "Efficient Inventory Management" },
+  { icon: "/nexticon9.svg", alt: "Real-Time Order Updates", title: "Real-Time Order Updates" },
+  { icon: "/nexticon10.svg", alt: "Smart Search Functionality", title: "Smart Search Functionality" },
+  { icon: "/nexticon11.svg", alt: "Optimized Checkout Process", title: "Optimized Checkout Process" },
+  { icon: "/nexticon12.svg", alt: "Omnichannel Synchronization", title: "Omnichannel Synchronization" },
+  { icon: "/nexticon13.svg", alt: "Comprehensive Analytics Tools", title: "Comprehensive Analytics Tools" },
+  { icon: "/nexticon14.svg", alt: "Automated Marketing Solutions", title: "Automated Marketing Solutions" },
+  { icon: "/nexticon15.svg", alt: "Scalable Architecture", title: "Scalable Architecture" },
 ];
 
 export const commerceexpert = [
   {
     icon: "/commerce1.svg",
+    alt: "Custom Web Design",
     title: "Custom Web Design",
     description:
       "We create stunning, custom-designed websites that go beyond aesthetics. As an e-commerce website development company, we ensure that your online store reflects your brand and delivers an exceptional user experience.",
   },
   {
     icon: "/commerce2.svg",
+    alt: "Store Customization",
     title: "Store Customization",
     description:
       "Your online store should represent your brand perfectly. We customize every detail of your storefront to align with your brand identity, creating a seamless shopping experience. This personalization helps attract and retain customers while building a strong connection with your target audience.",
   },
   {
     icon: "/commerce3.svg",
+    alt: "Shopping Cart Development",
     title: "Shopping Cart Development",
     description:
       "A smooth checkout process is essential for any e-commerce store. We design and implement intuitive shopping cart systems that make buying simple and hassle-free for your customers. This streamlined process reduces cart abandonment and boosts your conversion rates.",
   },
   {
     icon: "/commerce4.svg",
+    alt: "Marketplace Development",
     title: "Marketplace Development",
     description:
       "We develop dynamic, feature-rich online marketplaces designed to handle seamless transactions and interactions. Whether it's a niche marketplace or a large-scale platform, we help create a thriving ecosystem tailored to your needs.",
   },
   {
     icon: "/commerce5.svg",
+    alt: "Store Migration",
     title: "Store Migration",
     description:
       "Our e-commerce software consultants handle the entire migration process for you. From transferring data to optimizing features, we ensure a smooth transition without any disruption to your business operations. Your new store will be fully functional, secure, and ready to perform.",
   },
   {
     icon: "/commerce6.svg",
+    alt: "Plugin & Module Development",
     title: "Plugin & Module Development",
     description:
       "We create custom plugins and modules tailored to your specific needs. These tools enhance your website’s functionality, integrate seamlessly with third-party systems, and improve the overall user experience.",
   },
   {
     icon: "/commerce7.svg",
+    alt: "Responsive Website Development",
     title: "Responsive Website Development",
     description:
       "In today’s mobile-first world, your e-commerce store needs to work perfectly on all devices. We specialize in developing responsive websites that provide a consistent and optimized user experience across smartphones, tablets, and desktops. This ensures your store reaches more customers and performs flawlessly everywhere.",
   },
   {
     icon: "/commerce8.svg",
+    alt: "E-Commerce App Development",
     title: "E-Commerce App Development",
     description:
       "Go beyond the website with a custom e-commerce app. We design and develop mobile apps for iOS and Android that deliver a cutting-edge shopping experience. These apps are tailored to your brand and provide a convenient, engaging way for customers to shop on the go.",
   },
   {
     icon: "/commerce9.svg",
+    alt: "AI-Driven Personalization",
     title: "AI-Driven Personalization",
     description:
       "Give your customers a personalized shopping experience with AI. By analyzing user behavior, we help you customize product recommendations, optimize pricing, and deliver tailored offers. This boosts customer satisfaction and significantly improves your sales conversions.",
   },
   {
     icon: "/commerce10.svg",
+    alt: "Payment Gateway Integration",
     title: "Payment Gateway Integration",
     description:
       "A secure and reliable payment system is key to customer trust. We integrate trusted payment gateways into your store to ensure smooth and secure transactions. With our expertise, your customers can shop with confidence, enhancing their overall experience.",
@@ -723,24 +741,28 @@ export const commerceexpert = [
 export const mobilebexpert = [
   {
     icon: "/mob1.svg",
+    alt: "Android App Development",
     title: "Android App Development",
     description:
       "Our team creates advanced Android applications utilizing the latest tools and programming languages, including Java, Kotlin, Jetpack, and Fastlane. We create robust mobile app development solutions that ensure smooth performance on any Android device with enhanced functionality and a user-friendly design.",
   },
   {
     icon: "/mob2.svg",
+    alt: "iOS App Development",
     title: "iOS App Development",
     description:
       "We specialize in developing reliable, future-ready iOS applications that align with your business goals. Our team is proficient in Swift and Objective-C, building secure and high-performance applications for iPhone, iPad, and Apple Watch that meet and exceed user expectations.",
   },
   {
     icon: "/mob3.svg",
+    alt: "Cross-Platform App Development",
     title: "Cross-Platform App Development",
     description:
       "Expand your reach efficiently with cross-platform applications. Using frameworks such as Flutter and React Native, we build apps that seamlessly function across iOS and Android, delivering consistent performance while optimizing costs and development time.",
   },
   {
     icon: "/mob4.svg",
+    alt: "Progressive Web Application Development",
     title: "Progressive Web Application Development",
     description:
       "Elevate your digital presence with progressive web applications (PWAs) that blend the best of web and mobile technologies. Our PWAs are designed to provide a smooth, app-like experience, even in low-connectivity environments, ensuring broad accessibility and an optimized user experience.",
@@ -777,36 +799,42 @@ export const webdevlopmentfaqData = [
 export const webexpert = [
   {
     icon: "/webexpert1.svg",
+    alt: "Custom Web Development",
     title: "Custom Web Development",
     description:
       "Every business is different, and your website should be too. As a custom web application development company, we provide custom web development services tailored to your specific requirements. By understanding your business goals, we create websites that align with your vision and stand out in a crowded online landscape.",
   },
   {
     icon: "/webexpert2.svg",
+    alt: "E-commerce Solutions",
     title: "E-commerce Solutions",
     description:
       "Building a successful e-commerce platform requires expertise in e-commerce web application development.  We develop robust e-commerce websites that offer seamless shopping experiences, integrated payment gateways, and efficient inventory management to help you drive sales and grow your business.",
   },
   {
     icon: "/webexpert3.svg",
+    alt: "CMS Development",
     title: "CMS Development",
     description:
       "Content management shouldn’t be a hassle. With our CMS development services, you can easily manage and update your website without needing technical expertise. Whether it’s WordPress, Shopify, or a custom CMS, we ensure that your platform is user-friendly and designed for growth.",
   },
   {
     icon: "/webexpert4.svg",
+    alt: "Front-end Development",
     title: "Front-end Development",
     description:
       "A website’s front-end is its face to the world. We specialize in creating responsive, interactive, and visually engaging interfaces that provide a smooth and intuitive user experience. Using the latest technologies like HTML5, CSS3, and JavaScript, our front-end developers ensure that your website looks great and works flawlessly on all devices.",
   },
   {
     icon: "/webexpert5.svg",
+    alt: "Back-end Development",
     title: "Back-end Development",
     description:
       "Behind every well-functioning website is a powerful back-end. Our developers create a robust, scalable, and secure back-end architecture using technologies such as Node.JS, PHP, and Python, ensuring your website performs efficiently, regardless of the number of visitors or the complexity of operations.",
   },
   {
     icon: "/webexpert6.svg",
+    alt: "API Integration and Development",
     title: "API Integration & Development",
     description:
       "We can help extend the functionality of your website through seamless integration with third-party services via APIs. From payment gateways and social media platforms to CRM and analytics tools, our developers can integrate the necessary systems to optimize your website’s performance and user experience.",
@@ -988,14 +1016,14 @@ export const aimalexpert = [
     textcontent:
       "AI enables machines to simulate human intelligence and perform tasks like decision-making, problem-solving, and data analysis. As a leading AI software development services provider, we develop AI solutions that automate workflows, improve efficiency, and generate new insights for your business.",
     image: "/ai.webp",
-    alt: "Artificial Intelligence",
+    alt: "Artificial Intelligence development — custom AI solutions for business",
   },
   {
     texttitle: "Machine Learning (ML)",
     textcontent:
       "ML is a branch of AI that allows systems to learn from data, adapt, and improve over time. Our team of AI/ML developers builds custom ML models that deliver accurate predictions, optimize processes, and evolve with your business needs.",
     image: "/ml.webp",
-    alt: "Machine Learning",
+    alt: "Machine Learning model development services",
   },
 ];
 export const iotfaqData = [
@@ -1068,48 +1096,56 @@ export const iotsystem = [
 export const whatweoffer = [
   {
     icon: "/design.webp",
+    alt: "Chatbot Design and Development",
     title: "Chatbot Design and Development",
     description:
       "We craft tailored chatbot solutions with user-friendly interfaces and advanced AI integration, enhancing customer engagement and delivering seamless experiences.",
   },
   {
     icon: "/integration.webp",
+    alt: "Chatbot Integration Services",
     title: "Chatbot Integration Services",
     description:
       "Seamlessly integrate chatbots into mobile apps, back-end systems, and databases to optimize business processes and provide personalized user interactions.",
   },
   {
     icon: "/process.webp",
+    alt: "Business Process Automation",
     title: "Business Process Automation",
     description:
       "Automate key business functions such as customer service, sales, and marketing with chatbots that integrate effortlessly into existing workflows.",
   },
   {
     icon: "/multilingual.webp",
+    alt: "GPT-based and Multilingual Chatbots",
     title: "GPT-based and Multilingual Chatbots",
     description:
       "Utilize GPT-powered chatbots for advanced natural language processing and multilingual bots to enable culturally relevant, native-language interactions, boosting engagement and conversions.",
   },
   {
     icon: "/custom.webp",
+    alt: "Custom CRM/ERP/CM Bots",
     title: "Custom CRM/ERP/CM Bots",
     description:
       "Develop intelligent bots that integrate with CRM, ERP, and CM systems to automate tasks, provide real-time insights, and enhance operational efficiency.",
   },
   {
     icon: "/reporting.webp",
+    alt: "Transactional, Reporting, and Statistical Bots",
     title: "Transactional, Reporting, and Statistical Bots",
     description:
       "Facilitate seamless transactions, generate real-time reports, and deliver actionable insights with our transactional, reporting, and statistical bots.",
   },
   {
     icon: "/aivoice.webp",
+    alt: "AI Voice Assistants",
     title: "AI Voice Assistants",
     description:
       "Revolutionize interactions with AI voice assistants that respond accurately to user queries, improving engagement and customer support.",
   },
   {
     icon: "/technology.webp",
+    alt: "Technology Consulting and Strategy Building",
     title: "Technology Consulting and Strategy Building",
     description:
       "Receive expert guidance in selecting the right chatbot technologies and creating tailored strategies for successful implementation.",

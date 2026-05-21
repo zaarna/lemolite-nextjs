@@ -35,7 +35,7 @@ const WebDevelopmentPage = () => {
         btntext={" Code Your Dreams!"}
         link={"/contact-us"}
         src={"/webservices.webp"}
-        alt={"Web Development Services"}
+        alt={"Web development services — scalable web apps and SaaS platforms"}
       />
       <WhyHireSection
         title={"Our Expertise"}

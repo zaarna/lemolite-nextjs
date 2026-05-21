@@ -48,7 +48,7 @@ export default function BlogPageSection() {
                     featuredBlog.sections.find((s) => s.type === "image")
                       ?.src || "/default-blog.jpg"
                   }
-                  alt={featuredBlog.title}
+                  alt={`${featuredBlog.title} — Lemolite Technologies blog`}
                   width={800}
                   height={450}
                   className="w-full object-cover"
@@ -101,7 +101,7 @@ export default function BlogPageSection() {
                   >
                     <Image
                       src={firstImage || "/default-blog.jpg"}
-                      alt={blog.title}
+                      alt={`${blog.title} — Lemolite Technologies blog`}
                       width={600}
                       height={400}
                       className="w-full h-auto object-cover"
@@ -161,7 +161,7 @@ export default function BlogPageSection() {
                     trendingBlog.sections.find((s) => s.type === "image")
                       ?.src || "/default-blog.jpg"
                   }
-                  alt={trendingBlog.title}
+                  alt={`${trendingBlog.title} — Lemolite Technologies blog`}
                   width={800}
                   height={450}
                   className="w-full h-auto object-cover"

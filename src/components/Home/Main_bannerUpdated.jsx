@@ -69,7 +69,7 @@ function Main_bannerUpdated() {
               <div className="relative z-10 flex justify-center lg:justify-end">
                 <img
                   src="/Hero_Updated_Vector.svg"
-                  alt="Developer working on laptop"
+                  alt="Hero Updated Vector"
                   className="w-full max-w-[400px] sm:max-w-[450px] md:max-w-[500px] lg:max-w-lg"
                 />
               </div>

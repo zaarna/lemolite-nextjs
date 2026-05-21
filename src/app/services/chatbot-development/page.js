@@ -8,7 +8,6 @@ import { chatbotstep, iotsystem, specialize } from "@/data/services";
 import React from "react";
 import { pagesMeta } from "@/data/pagesMeta";
 
-
 export const metadata = {
   title: pagesMeta["chatbot-development"].title,
   description: pagesMeta["chatbot-development"].description,
@@ -31,14 +30,16 @@ const ChatBotDevelopmentPage = () => {
         btntext={"AI That Chats"}
         link={"/contact-us"}
         src={"/chatbot.webp"}
-        alt={"Chatbot Development Services"}
+        alt={
+          "AI chatbot development services — NLP-powered bots for customer support and automation"
+        }
       />
-      <Why_choose_us
+      {/* <Why_choose_us
         title={"What We Offer"}
         data={iotsystem}
         columns={2}
         bg="bg-[#F1F1F1]"
-      />
+      /> */}
       <Why_choose_us
         title={"Chatbots We Specialize in Developing"}
         data={specialize}
@@ -51,7 +52,13 @@ const ChatBotDevelopmentPage = () => {
         text={"Create Yours Today"}
         link={"/contact-us"}
       />
-      <WhatWeOfferAccordion layout="split" title={"Capabilities of Our Chatbot Solutions"} bg="bg-gradient-to-r from-[#2ec4f3]/30 to-[#bfd633]/30" padding="top-bottom" stepData={chatbotstep}/>
+      <WhatWeOfferAccordion
+        layout="split"
+        title={"Capabilities of Our Chatbot Solutions"}
+        bg="bg-gradient-to-r from-[#2ec4f3]/30 to-[#bfd633]/30"
+        padding="top-bottom"
+        stepData={chatbotstep}
+      />
       <Chatbot_into_Website />
     </div>
   );

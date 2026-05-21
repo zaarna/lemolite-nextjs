@@ -1,6 +1,7 @@
 export const hireourteamphython = [
   {
     img: "/handshak.svg",
+    alt: "Handshake icon for top Python experts",
     title: "Access the Top Global Python Experts",
     description:
       "We connect you with the best Python developers worldwide. Each professional undergoes a rigorous vetting process to ensure technical excellence, aligning with your project’s objectives. Our Python development company ensures optimal results tailored to your business needs.",
@@ -9,6 +10,7 @@ export const hireourteamphython = [
   },
   {
     img: "/massagetik.svg",
+    alt: "Icon representing smooth team integration",
     title: "Smooth Team Integration",
     description:
       "Our Python developers integrate smoothly into your existing team and workflow, ensuring efficient communication and collaboration. Whether you need to hire Python developers for short or long-term projects, we ensure minimal disruption and maximum efficiency.",
@@ -27,6 +29,7 @@ export const hireourteamphython = [
 export const hireourteammern = [
   {
     img: "/handshak.svg",
+    alt: "Handshake icon for top MERN experts",
     title: "Access the Top Global MERN Experts",
     description:
       "We connect you with the top 3.5% of IT talent from around the world. Every MERN stack developer undergoes a rigorous vetting process to ensure their skills and expertise in MERN stack development services. Our developers align with your project goals, delivering outstanding results.",
@@ -35,6 +38,7 @@ export const hireourteammern = [
   },
   {
     img: "/massagetik.svg",
+    alt: "Icon representing smooth team integration",
     title: "Seamless Integration into Your Team",
     description:
       "Our dedicated MERN stack developers integrate smoothly into your existing team and workflow, ensuring efficient communication and collaboration. Whether you need to hire MERN full-stack developers for short or long-term projects, we ensure minimal disruption and maximum efficiency.",
@@ -53,6 +57,7 @@ export const hireourteammern = [
 export const hireourteamreact = [
   {
     img: "/handshak.svg",
+    alt: "Handshake icon for top React experts",
     title: "Access the Top Global React Experts",
     description:
       "Every ReactJS developer undergoes a rigorous vetting process to ensure they meet the highest industry standards. Whether you need a dedicated React development team or an individual remote React developer, our experts align with your project’s goals to help you achieve outstanding results.",
@@ -61,6 +66,7 @@ export const hireourteamreact = [
   },
   {
     img: "/massagetik.svg",
+    alt: "Icon representing smooth team integration",
     title: "Seamless Integration into Your Team",
     description:
       "Our top ReactJS developers integrate smoothly into your existing team and workflows, whether for short-term projects or long-term collaborations. They quickly adapt to your tools and processes, ensuring seamless communication and collaboration, minimizing disruptions, and accelerating project success.",
@@ -79,6 +85,7 @@ export const hireourteamreact = [
 export const hireourteamnode = [
   {
     img: "/handshak.svg",
+    alt: "Handshake icon for top Node JS experts",
     title: "Access the Top Global Node JS Experts",
     description:
       "We connect you with the top NodeJS developers for hire from around the world. Each dedicated Node JS developer undergoes a rigorous vetting process to ensure their skills and expertise meet the highest industry standards. Our experts bring both technical excellence and strategic alignment with your project’s goals to drive outstanding results.",
@@ -87,6 +94,7 @@ export const hireourteamnode = [
   },
   {
     img: "/massagetik.svg",
+    alt: "Icon representing smooth team integration",
     title: "Seamless Integration into Your Team",
     description:
       "Our Node JS development team integrates smoothly into your existing setup, whether for short-term projects or long-term collaborations. They quickly adapt to your workflow and tools, ensuring seamless communication and collaboration. This minimizes any disruption and accelerates your project’s success.",
@@ -105,6 +113,7 @@ export const hireourteamnode = [
 export const hireourteamangular = [
   {
     img: "/handshak.svg",
+    alt: "Handshake icon for top Angular experts",
     title: "Access the Top Global Node JS Experts",
     description:
       "We connect you with the top NodeJS developers for hire from around the world. Each dedicated Node JS developer undergoes a rigorous vetting process to ensure their skills and expertise meet the highest industry standards. Our experts bring both technical excellence and strategic alignment with your project’s goals to drive outstanding results.",
@@ -113,6 +122,7 @@ export const hireourteamangular = [
   },
   {
     img: "/massagetik.svg",
+    alt: "Icon representing smooth team integration",
     title: "Seamless Integration into Your Team",
     description:
       "Our Node JS development team integrates smoothly into your existing setup, whether for short-term projects or long-term collaborations. They quickly adapt to your workflow and tools, ensuring seamless communication and collaboration. This minimizes any disruption and accelerates your project’s success.",
@@ -131,14 +141,16 @@ export const hireourteamangular = [
 export const hireourteamflutter = [
   {
     img: "/handshak.svg",
+    alt: "Handshake icon for top Flutter experts",
     title: "Access the Top Global Flutter Experts",
     description:
-      "Fingent pairs you up with pre-vetted dedicated Flutter app developers who are experts in creating scalable, visually appealing, high-performance mobile apps. Each Flutter programmer on the list of yours has been also carefully screened to make sure they fit those requirements.",
+      "Fingent pairs you up with pre-vetted dedicated Flutter app developers who are experts in creating scalable, visually appealing, high-performance mobile apps. Each Flutter programmer on the list of yours has been also carefully screened to make sure they fit those requirements.",
     number: "100+",
     stats: "Completed Projects",
   },
   {
     img: "/massagetik.svg",
+    alt: "Icon representing smooth team integration",
     title: "Smooth Team Integration",
     description:
       "Our Flutter experts become a part of your team and integrated in the entire development process to ensure easy access, communication and collaboration. You can get in touch to hire Flutter developers for short term and long term projects. Our experts will fit all into your procedures, habits and tools to provide effective work.",
@@ -157,6 +169,7 @@ export const hireourteamflutter = [
 export const hireourteamvue = [
   {
     img: "/handshak.svg",
+    alt: "Handshake icon for top Vue JS experts",
     title: "Access the Top Global Vue JS Experts",
     description:
       "We provide access to the industry’s best VueJS developers, carefully vetted for their skills and experience. Our experts stay updated with the latest Vue JS frameworks and best practices, ensuring your projects are built with cutting-edge technology.",
@@ -165,6 +178,7 @@ export const hireourteamvue = [
   },
   {
     img: "/massagetik.svg",
+    alt: "Icon representing smooth team integration",
     title: "Seamless Integration into Your Team",
     description:
       "Our Vue JS developers integrate smoothly into your existing team and processes, whether for short-term projects or long-term collaborations. They adapt quickly to your workflow and tools, ensuring smooth communication and collaboration while minimizing disruptions.",
@@ -183,6 +197,7 @@ export const hireourteamvue = [
 export const hireourteamphp = [
   {
     img: "/handshak.svg",
+    alt: "Handshake icon for top PHP experts",
     title: "Access the Top Global PHP Experts",
     description:
       "Each PHP Developer undergoes a rigorous vetting process to ensure their skills and expertise meet the highest industry standards. Our PHP development company ensures you get not only technical excellence but also developers who align with your project’s goals, helping you achieve outstanding results.",
@@ -191,6 +206,7 @@ export const hireourteamphp = [
   },
   {
     img: "/massagetik.svg",
+    alt: "Icon representing smooth team integration",
     title: "Seamless Integration into Your Team",
     description:
       "Our developers integrate smoothly into your existing team and processes, whether for short-term projects or long-term collaborations. They quickly adapt to your workflow and tools, ensuring seamless communication and collaboration. This minimizes any disruption and accelerates your project’s success.",
@@ -209,6 +225,7 @@ export const hireourteamphp = [
 export const hireourteamlaravel = [
   {
     img: "/handshak.svg",
+    alt: "Handshake icon for top Laravel experts",
     title: "Access the Top Global Laravel Experts",
     description:
       "Each dedicated Laravel developer undergoes a rigorous vetting process to ensure their skills and expertise meet the highest industry standards. Our developers bring not only technical excellence but also a deep understanding of your project goals, helping you achieve outstanding results.",
@@ -217,6 +234,7 @@ export const hireourteamlaravel = [
   },
   {
     img: "/massagetik.svg",
+    alt: "Icon representing smooth team integration",
     title: "Seamless Integration into Your Team",
     description:
       "Our Laravel development services ensure that our developers integrate effortlessly into your existing team and processes, whether for short-term projects or long-term collaborations. They quickly adapt to your workflow and tools, ensuring smooth communication and collaboration.",
@@ -235,6 +253,7 @@ export const hireourteamlaravel = [
 export const hireourteamshopify = [
   {
     img: "/handshak.svg",
+    alt: "Handshake icon for top Shopify experts",
     title: "Access the Top Global Shopify Experts",
     description:
       "Each dedicated Shopify developer undergoes a rigorous vetting process to ensure their skills and expertise meet the highest industry standards. Whether you need to hire a Shopify app developer or a full-stack expert, our professionals bring technical excellence while aligning with your project goals to deliver outstanding results.",
@@ -243,6 +262,7 @@ export const hireourteamshopify = [
   },
   {
     img: "/massagetik.svg",
+    alt: "Icon representing smooth team integration",
     title: "Seamless Integration into Your Team",
     description:
       "Our developers integrate smoothly into your existing team and workflows, whether for short-term projects or long-term collaborations. When you hire Shopify developers, they quickly adapt to your tools and processes, ensuring seamless communication and efficient teamwork to minimize disruptions and accelerate project success.",

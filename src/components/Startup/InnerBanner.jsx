@@ -80,7 +80,11 @@ function InnerBanner() {
           }}
         /> */}
         <div className="absolute bottom-0 left-0 w-full h-[150px] md:h-[180px] lg:h-[170px] -z-10 hidden md:block pointer-events-none">
-          <Image src="/lemolitetext.webp" alt="Lemolite Text" fill />
+          <Image
+            src="/lemolitetext.webp"
+            alt="MVP development for startups — Lemolite Technologies tech partner"
+            fill
+          />
         </div>
       </div>
     </div>
