@@ -4,7 +4,6 @@ import Image from "next/image";
 import Titlecontent from "@/components/ReusableComponent/Titlecontent/Titlecontent";
 import Grediantbutton from "../components/ReusableComponent/Button/Grediantbutton";
 
-
 export default function Our_Expertise_ui_ux() {
   const expertiseData = [
     {
@@ -22,12 +21,36 @@ export default function Our_Expertise_ui_ux() {
   ];
 
   const services = [
-    { img: "/ui-ux-box-1.webp", text: "Web UI/UX Design" },
-    { img: "/ui-ux-box-2.webp", text: "App and Website Redesign" },
-    { img: "/ui-ux-box-3.webp", text: "Mobile UI/UX Design" },
-    { img: "/ui-ux-box-4.webp", text: "Design Prototyping Development" },
-    { img: "/ui-ux-box-5.webp", text: "PSD to HTML Development" },
-    { img: "/ui-ux-box-6.webp", text: "Responsive Design Development" },
+    {
+      img: "/ui-ux-box-1.webp",
+      text: "Web UI/UX Design",
+      alt: "Web UI/UX Design",
+    },
+    {
+      img: "/ui-ux-box-2.webp",
+      text: "App and Website Redesign",
+      alt: "App and Website Redesign",
+    },
+    {
+      img: "/ui-ux-box-3.webp",
+      text: "Mobile UI/UX Design",
+      alt: "Mobile UI/UX Design",
+    },
+    {
+      img: "/ui-ux-box-4.webp",
+      text: "Design Prototyping Development",
+      alt: "Design Prototyping Development",
+    },
+    {
+      img: "/ui-ux-box-5.webp",
+      text: "PSD to HTML Development",
+      alt: "PSD to HTML Development",
+    },
+    {
+      img: "/ui-ux-box-6.webp",
+      text: "Responsive Design Development",
+      alt: "Responsive Design Development",
+    },
   ];
 
   return (

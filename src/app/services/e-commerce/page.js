@@ -16,7 +16,6 @@ import {
 } from "@/data/services";
 import { pagesMeta } from "@/data/pagesMeta";
 
-
 export const metadata = {
   title: pagesMeta["e-commerce"].title,
   description: pagesMeta["e-commerce"].description,
@@ -39,7 +38,9 @@ const ECommercePage = () => {
         btntext={"Sell Smarter Today!"}
         link={"/contact-us"}
         src={"/ecom.webp"}
-        alt={"E-commerce Services"}
+        alt={
+          "eCommerce development services — Shopify and WooCommerce development"
+        }
       />
       <WhyHireSection
         title={"Our Expertise"}

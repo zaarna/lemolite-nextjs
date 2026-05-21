@@ -14,7 +14,7 @@ export default function BlogCard({
   padding = "top-bottom",
 }) {
   const sortedBlogCards = [...blogCards].sort(
-    (a, b) => new Date(b.date) - new Date(a.date)
+    (a, b) => new Date(b.date) - new Date(a.date),
   );
 
   const [emblaRef, emblaApi] = useEmblaCarousel({
@@ -27,11 +27,11 @@ export default function BlogCard({
 
   const scrollPrev = useCallback(
     () => emblaApi && emblaApi.scrollPrev(),
-    [emblaApi]
+    [emblaApi],
   );
   const scrollNext = useCallback(
     () => emblaApi && emblaApi.scrollNext(),
-    [emblaApi]
+    [emblaApi],
   );
 
   const onSelect = useCallback(() => {
@@ -66,7 +66,10 @@ export default function BlogCard({
                       <div className="h-full flex flex-col">
                         <Image
                           src={card.image}
-                          alt={card.title}
+                          alt={
+                            card.alt ||
+                            `${card.title} — Lemolite Technologies blog`
+                          }
                           width={600}
                           height={400}
                           className="rounded-[10px] w-full object-cover mb-3"

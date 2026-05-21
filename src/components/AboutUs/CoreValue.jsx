@@ -3,25 +3,25 @@ import Titlecontent from "../ReusableComponent/Titlecontent/Titlecontent";
 const imageData = [
   {
     light: "/storyimage1.webp",
-    alt: "Innovation",
+    alt: "Innovation — core value at Lemolite Technologies",
     icon: "storyicon1.svg",
     text: "Innovation",
   },
   {
     light: "/storyimage2.webp",
-    alt: "Integrity",
+    alt: "Integrity — core value at Lemolite Technologies",
     icon: "storyicon2.svg",
     text: "Integrity",
   },
   {
     light: "/storyimage3.webp",
-    alt: "Customer Focus",
+    alt: "Customer-Centricity — core value at Lemolite Technologies",
     icon: "storyicon3.svg",
     text: "Customer-Centricity",
   },
   {
     light: "/storyimage4.webp",
-    alt: "Collaboration",
+    alt: "Collaboration — core value at Lemolite Technologies",
     icon: "storyicon4.svg",
     text: "Collaboration",
   },

@@ -9,7 +9,6 @@ import { voicebotstep, voicespecialize } from "@/data/services";
 import React from "react";
 import { pagesMeta } from "@/data/pagesMeta";
 
-
 export const metadata = {
   title: pagesMeta["voicebot-development"].title,
   description: pagesMeta["voicebot-development"].description,
@@ -32,10 +31,18 @@ const VoiceBotDevelopmentPage = () => {
         btntext={"Voice Your Vision"}
         link={"/contact-us"}
         src={"/voice.webp"}
-        alt={"AI Voicebot Development Services"}
+        alt={"AI voicebot development services — NLP-powered voice assistants"}
       />
       <OfferVoicebot />
-      <WhatWeOfferAccordion bg="bg-[#F1F1F1]" layout="split" title={"Choose the Right Voicebot for Your Business Need"} content={"You may assume all voicebots are the same, but that's not the case. While they all provide voice interaction, their features and use cases differ significantly. Let’s break down the various types of voice bots, each designed for specific needs and offering distinct advantages:"} stepData={voicebotstep} />
+      <WhatWeOfferAccordion
+        bg="bg-[#F1F1F1]"
+        layout="split"
+        title={"Choose the Right Voicebot for Your Business Need"}
+        content={
+          "You may assume all voicebots are the same, but that's not the case. While they all provide voice interaction, their features and use cases differ significantly. Let’s break down the various types of voice bots, each designed for specific needs and offering distinct advantages:"
+        }
+        stepData={voicebotstep}
+      />
       <Ctasection
         title={"Take Your Customer Experience to the Next Level"}
         text={"Create Your Voicebot"}
@@ -43,9 +50,11 @@ const VoiceBotDevelopmentPage = () => {
         image="/ctawhite.webp"
         bg="bg-gradient-to-r from-[#2ec4f3]/30 to-[#bfd633]/30"
       />
-      <Why_choose_us title={"Capabilities of Our Voicebot Solutions"}
-      columns={3}
-      data={voicespecialize} />
+      <Why_choose_us
+        title={"Capabilities of Our Voicebot Solutions"}
+        columns={3}
+        data={voicespecialize}
+      />
       <BetterOption />
     </div>
   );

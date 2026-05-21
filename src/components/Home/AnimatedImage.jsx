@@ -7,7 +7,13 @@ const style = {
 
 function AnimatedImage() {
   // return <img src="./lwrhome.gif" alt="Animated GIF" style={style} />;
-  return <img src="./lwrHomeNew.png" alt="Animated GIF" style={style} />;
+  return (
+    <img
+      src="./lwrHomeNew.png"
+      alt="Custom software development company for startups"
+      style={style}
+    />
+  );
 }
 
 export default AnimatedImage;

@@ -120,7 +120,7 @@ export const developers = [
   },
   {
     img: "react.svg",
-    alt: "React",
+    alt: "Hire React JS developers — frontend and SPA development specialists",
     title: "Hire React Js Developer",
     description:
       "Boost your web applications with React JS developers who specialize in creating fast, interactive user interfaces and seamless user experiences.",

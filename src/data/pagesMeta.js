@@ -1,8 +1,8 @@
 export const pagesMeta = {
   home: {
-    title: "Custom Software Development Company | Lemolite",
+    title: "Custom Software Development Company | UK · UAE · India | Lemolite",
     description:
-      "'Lemolite builds custom software for startups. 80+ startups across UK, Dubai & India. Book a free call.'",
+      "'Lemolite builds custom software, AI/ML systems & mobile apps for 80+ startups across the UK, UAE & India. Book your free 30-min strategy call today.'",
     keywords: [
       "custom software development company",
       "custom software development services",
@@ -13,9 +13,10 @@ export const pagesMeta = {
     },
   },
   startups: {
-    title: "Startup Tech Partner | MVP Development | Lemolite",
+    title:
+      "MVP Development for Startups | Equity Model | Tech Partner | Lemolite",
     description:
-      "Lemolite is your dedicated startup tech partner. MVP development, equity partnerships, and full-stack builds. 80+ startups launched globally.",
+      "Lemolite builds MVPs for early-stage founders. Get a tech partner who ships fast, thinks strategically, and offers equity-based engagement. Book a strategy call.",
     keywords: [
       "startup tech partner MVP development",
       "custom software development for startups",
@@ -28,9 +29,9 @@ export const pagesMeta = {
   },
 
   services: {
-    title: "Software Development Services | Lemolite Technologies",
+    title: "Software Development Services | AI, Web, Mobile & More | Lemolite",
     description:
-      "Explore custom software, AI/ML, mobile apps, web development & e-commerce solutions from Lemolite. UK · Dubai · India. Get a free quote.",
+      "Custom software, AI/ML, web development, mobile apps & dedicated dev teams. Serving startups and enterprises across UK, UAE, US and India. Get a free quote.",
     keywords: [
       "software development services",
       "AI/ML Development Company",
@@ -41,9 +42,9 @@ export const pagesMeta = {
   },
 
   "ui-ux-design": {
-    title: "UI/UX Design Services | Interface Design | Lemolite",
+    title: "UI/UX Design Services | User-Centered Design Company | Lemolite",
     description:
-      "Intuitive, beautiful UI/UX design for web and mobile apps. User research, wireframes, prototypes & design systems from Lemolite. View our portfolio.",
+      "User-centered UI/UX design for web and mobile apps. From wireframe to production-ready interface. Design that converts. UK · UAE · India. Get a free review.",
     keywords: [
       "UI/UX Design Services",
       "UX/UI Designers",
@@ -54,9 +55,9 @@ export const pagesMeta = {
   },
 
   "e-commerce": {
-    title: "eCommerce Development | Shopify & Custom | Lemolite",
+    title: "eCommerce Development Services | Shopify · WooCommerce | Lemolite",
     description:
-      "Build fast, secure eCommerce stores with Lemolite. Shopify, WooCommerce & custom platforms. Trusted by UK & UAE retailers. Book a free consultation.",
+      "Custom Shopify, WooCommerce & Laravel eCommerce development. 150+ online stores built for clients across UK, UAE and India. Sell smarter — get a quote today.",
     keywords: [
       "ecommerce development services",
       "eCommerce Website Development Company",
@@ -67,17 +68,19 @@ export const pagesMeta = {
   },
 
   "web-development": {
-    title: "Web Development Services | Custom Web Apps | Lemolite",
+    title:
+      "Web DeWeb Development Services | Custom Web Apps | UK · UAE · India | Lemolite",
     description:
-      "Custom websites and web applications built by Lemolite. React, Node.js, Laravel, PHP. From business sites to complex platforms. Get a free project quote",
+      "Scalable web apps, SaaS platforms and CMS solutions built by expert developers. Trusted by 80+ startups across UK, UAE and India. Start your project today.",
     keywords: ["web development services,", "Web App Development company,"],
     canonical: "https://lemolite.com/services/web-development",
   },
 
   "mobile-app-development": {
-    title: "Mobile App Development | iOS & Android | Lemolite",
+    title:
+      "Mobile App Development Services | iOS & Android | UK · UAE | Lemolite",
     description:
-      "Custom iOS, Android & cross-platform mobile apps. Built for startups and enterprises. Fast delivery, scalable code. UK · Dubai · India. Book a free call. ",
+      "iOS, Android and cross-platform mobile app development for startups and enterprises. Proven team, on-time delivery. UK · UAE · India. Book a free call.",
     keywords: [
       "mobile app development services",
       "Mobile App Development",
@@ -88,9 +91,9 @@ export const pagesMeta = {
   },
 
   "custom-software-development": {
-    title: "Custom Software Development Services | Lemolite",
+    title: "Custom Software Development Services | UK · UAE · US | Lemolite",
     description:
-      "Lemolite delivers custom software development tailored to your business. MVPs to enterprise systems. 80+ startups trust us. UK · Dubai · India. Free quote.",
+      "Need bespoke software? Lemolite delivers custom-built software for startups and enterprises across the UK, UAE and US. End-to-end development from spec to launch.",
     keywords: [
       "custom software development services",
       "Custom software company",
@@ -113,9 +116,10 @@ export const pagesMeta = {
   },
 
   "ai-ml-development": {
-    title: "AI & ML Development Services | Lemolite Technologies",
+    title:
+      "AI/ML Development Company | Machine Learning Services 2026 | Lemolite",
     description:
-      "Build custom AI and ML solutions with Lemolite. Predictive analytics, NLP, computer vision & automation. Start your AI journey today. UK · Dubai · India.",
+      "Build Production-grade AI/ML development: custom ML models, MLOps, NLP & computer vision. Serving clients in UK, UAE, US and India. Book a free discovery call.",
     keywords: [
       "AI ML development services",
       "AI Software Development Services",
@@ -139,9 +143,10 @@ export const pagesMeta = {
   },
 
   "chatbot-development": {
-    title: "Chatbot Development Services | AI Chatbots | Lemolite",
+    title:
+      "Chatbot Development Services | AI-Powered Chatbots | US · UAE | Lemolite",
     description:
-      "Custom chatbot development for customer support, lead generation & automation. NLP-powered bots for web, WhatsApp & Messenger. Get a free demo.",
+      "NLP-powered AI chatbots for customer support, lead gen & automation. WhatsApp, Messenger & web-ready. Serving US, UK & UAE clients. Get a free chatbot demo.",
     keywords: [
       "Chatbot development services",
       "AI chatbot development company",
@@ -150,9 +155,10 @@ export const pagesMeta = {
   },
 
   "voicebot-development": {
-    title: "Voicebot Development | AI Voice Assistants | Lemolite",
+    title:
+      "AI Voicebot Development | NLP Voice Assistants for Business | Lemolite",
     description:
-      "Build smart voice assistants and IVR systems with Lemolite. NLP-driven voicebots for customer service & automation. UK · Dubai · India.",
+      "Custom AI voicebots and IVR systems for customer service automation. NLP-driven, omnichannel-ready. UK · UAE · US. Talk to our voice AI team today.",
     keywords: [
       "voicebot development services",
       "AI Voicebot Development Company",
@@ -161,9 +167,10 @@ export const pagesMeta = {
   },
 
   "hire-python-developer": {
-    title: "Hire Python Developers | Dedicated Python Team | Lemolite",
+    title:
+      "Hire Python Developers | AI & Backend Specialists | UK · UAE · US | Lemolite",
     description:
-      "Hire experienced Python developers for AI, web & data projects. Vetted talent, flexible models, 48hr onboarding. Trusted by 80+ startups globally.",
+      "Hire expert Python developers for AI, ML, backend and automation projects. Vetted talent, flexible models. UK · UAE · US · India. Start in 48 hours.",
     keywords: [
       "best Python development services",
       "Hire Python Developers",
@@ -173,9 +180,10 @@ export const pagesMeta = {
   },
 
   "hire-mern-developer": {
-    title: "Hire MERN Stack Developers | Full-Stack Team | Lemolite",
+    title:
+      "Hire MERN Stack Developers | Full-Stack Web Apps | UK · UAE · US | Lemolite",
     description:
-      "Hire MERN stack developers (MongoDB, Express, React, Node) for full-stack web apps. Vetted team, flexible models. UK · UAE · India. Start in 48hrs.",
+      "Hire dedicated MERN stack developers (MongoDB, Express, React, Node). Full-stack web apps, fast delivery. UK · UAE · US · India. Start in 48 hours.",
     keywords: [
       "MERN stack development services",
       "Hire MERN Stack Developers",
@@ -186,9 +194,10 @@ export const pagesMeta = {
   },
 
   "hire-reactjs-developer": {
-    title: "Hire React JS Developers | ReactJS Team | Lemolite",
+    title:
+      "Hire React JS Developers | Frontend & SPA Experts | UK · UAE | Lemolite",
     description:
-      "Hire vetted React JS developers from India. Full-time, part-time or hourly. Start in 48 hours. 9+ years experience. UK · Dubai · India clients served.",
+      "Hire React JS developers for SPAs, dashboards and component libraries. Fast, clean UI code. Vetted team. UK · UAE · India. Start in 48 hours.",
     keywords: [
       "React JS development services",
       "Hire ReactJS Developers",
@@ -198,9 +207,10 @@ export const pagesMeta = {
   },
 
   "hire-nodejs-developer": {
-    title: "Hire Node JS Developers | Backend Experts | Lemolite",
+    title:
+      "Hire Node.js Developers | Scalable Backend Experts | UK · UAE · US | Lemolite",
     description:
-      "Hire dedicated Node.js developers for scalable backend systems. REST APIs, real-time apps & microservices. Start in 48hrs. UK · UAE · India.",
+      "Hire senior Node.js developers for REST APIs, real-time apps & microservices. Start in 48hrs. Flexible models. Serving UK, UAE, US & India. Get vetted candidates.",
     keywords: [
       "NodeJS Development Services",
       "Hire dedicated Node.js developers",
@@ -400,17 +410,18 @@ export const pagesMeta = {
   },
 
   aboutus: {
-    title: "About Lemolite | Software Development Company Since 2016",
+    title:
+      "About Lemolite Technologies | Custom Software & AI/ML Company Since 2016",
     description:
-      "Lemolite Technologies — custom software development company founded in 2016. 80+ startups built. Offices in UK, Dubai, Qatar & India. Meet our team.",
+      "Founded in 2016, Lemolite Technologies delivers custom software, AI/ML and mobile solutions to startups and enterprises across UK, UAE, US and India.",
     keywords: ["about lemolite technologies"],
     canonical: "https://lemolite.com/about-us",
   },
 
   blog: {
-    title: "Software Development Blog | Startup Tech Insights | Lemolite",
+    title: "Software Development Blog | AI/ML & Startup Tech | Lemolite",
     description:
-      "Expert insights on software development, AI/ML, mobile apps and startup tech from the Lemolite team. New articles published weekly.",
+      "Expert articles on AI/ML, custom software, mobile apps and startup tech. Published by the Lemolite engineering team. New posts monthly.",
     keywords: ["software development blog"],
     canonical: "https://lemolite.com/blog",
   },
@@ -431,9 +442,10 @@ export const pagesMeta = {
   },
 
   casestudy: {
-    title: "Software Development Case Studies | Client Results | Lemolite",
+    title:
+      "Software Development Case Studies | AI, IoT & Web Projects | Lemolite",
     description:
-      "Real results from real clients. Explore Lemolite's software development case studies across eCommerce, IoT, SaaS, mobile apps & more.",
+      "See how Lemolite built AI, IoT, SaaS and eCommerce products for clients across UK, UAE and India. Real projects, real outcomes. Explore our case studies.",
     keywords: ["software development case studies"],
     canonical: "https://lemolite.com/casestudy",
   },

@@ -70,12 +70,7 @@ export default function Contectinfo({
                     <div className="space-y-3">
                       {/* Phone */}
                       <div className="flex items-center gap-3">
-                        <Image
-                          src="/call.png"
-                          alt="Call icon"
-                          width={25}
-                          height={25}
-                        />
+                        <Image src="/call.png" alt="" width={25} height={25} />
                         <a
                           href={address.phoneLink}
                           className="text-base hover:text-green-600 transition-colors"
@@ -86,12 +81,7 @@ export default function Contectinfo({
 
                       {/* Email */}
                       <div className="flex items-center gap-3">
-                        <Image
-                          src="/email.png"
-                          alt="Email icon"
-                          width={25}
-                          height={25}
-                        />
+                        <Image src="/email.png" alt="" width={25} height={25} />
                         <a
                           href={address.emailLink}
                           className="text-base hover:text-green-600 transition-colors"
@@ -104,7 +94,7 @@ export default function Contectinfo({
                       <div className="flex items-start gap-3">
                         <Image
                           src="/location.png"
-                          alt="Location icon"
+                          alt=""
                           width={25}
                           height={25}
                         />
@@ -126,12 +116,7 @@ export default function Contectinfo({
               <h6 className="font-semibold text-xl mt-3">HR Inquiry</h6>
               <div className="flex flex-wrap sm:flex-row flex-col sm:items-center mt-3 text-gray-800 gap-4">
                 <div className="flex items-center gap-3">
-                  <Image
-                    src="/call.png"
-                    alt="Call icon"
-                    width={25}
-                    height={25}
-                  />
+                  <Image src="/call.png" alt="" width={25} height={25} />
                   <a
                     href="tel:+918849280647"
                     className="text-base hover:text-green-600 transition-colors"
@@ -142,12 +127,7 @@ export default function Contectinfo({
 
                 {/* Email */}
                 <div className="flex items-center gap-3">
-                  <Image
-                    src="/email.png"
-                    alt="Email icon"
-                    width={25}
-                    height={25}
-                  />
+                  <Image src="/email.png" alt="" width={25} height={25} />
                   <a
                     href="mailto:hr@lemolite.com"
                     className="text-base hover:text-green-600 transition-colors"

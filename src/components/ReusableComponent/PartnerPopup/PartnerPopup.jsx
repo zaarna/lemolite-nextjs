@@ -324,7 +324,7 @@ function PartnerPopup({ isPopupOpen, closePopup }) {
 
                 <div className="flex items-center gap-3">
                   <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center flex-shrink-0">
-                    <Image src="/uk.png" alt="flag" width={32} height={32} />
+                    <Image src="/uk.png" alt="" width={32} height={32} />
                   </div>
                   <div className="flex space-x-2 items-center">
                     <Phone className="w-5 h-5 text-white" />
@@ -339,7 +339,7 @@ function PartnerPopup({ isPopupOpen, closePopup }) {
 
                 <div className="flex items-center gap-3">
                   <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center flex-shrink-0">
-                    <Image src="/Dubai.png" alt="flag" width={32} height={32} />
+                    <Image src="/Dubai.png" alt="" width={32} height={32} />
                   </div>
                   <div className="flex space-x-2 items-center">
                     <Phone className="w-5 h-5 text-white" />
@@ -354,7 +354,7 @@ function PartnerPopup({ isPopupOpen, closePopup }) {
 
                 <div className="flex items-center gap-3">
                   <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center flex-shrink-0">
-                    <Image src="/india.png" alt="flag" width={32} height={32} />
+                    <Image src="/india.png" alt="" width={32} height={32} />
                   </div>
                   <div className="flex space-x-2 items-center">
                     <Phone className="w-5 h-5 text-white" />

@@ -29,7 +29,9 @@ const AboutUsPage = () => {
         title={"Empowering Innovation, One Solution  at a Time"}
         content={"Where Technology Meets Vision"}
         src={"/about-banner.webp"}
-        alt={"About Us"}
+        alt={
+          "Lemolite Technologies team — custom software and AI development company since 2016"
+        }
         btntext="Partner With Us In Your Digital Journey"
       />
       <MissionVission />
