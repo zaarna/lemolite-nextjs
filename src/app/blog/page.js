@@ -1,6 +1,8 @@
 import BlogPageSection from "@/components/ReusableComponent/blog/MainBlogCard";
 import React from "react";
 import { pagesMeta } from "@/data/pagesMeta";
+import JsonLd from "@/components/JsonLd";
+import { getPageSchemas } from "@/lib/schema";
 
 export const metadata = {
   title: pagesMeta.blog.title,
@@ -14,6 +16,7 @@ export const metadata = {
 const BlogPage = () => {
   return (
     <div className="min-h-screen">
+      <JsonLd schemas={getPageSchemas("/blog")} />
       <BlogPageSection />
     </div>
   );

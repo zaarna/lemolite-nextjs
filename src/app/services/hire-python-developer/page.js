@@ -13,6 +13,8 @@ import Key_benifit from "@/components/ReusableComponent/HireDevelopers/key_benif
 import FAQ from "@/components/ReusableComponent/HireDevelopers/FAQ";
 import { hirefaqpython } from "@/data/faqhire";
 import { pagesMeta } from "@/data/pagesMeta";
+import JsonLd from "@/components/JsonLd";
+import { getPageSchemasWithFaqs } from "@/lib/schema";
 
 export const metadata = {
   title: pagesMeta["hire-python-developer"].title,
@@ -26,6 +28,12 @@ export const metadata = {
 const HirePythonDeveloperPage = () => {
   return (
     <div className="min-h-screen">
+      <JsonLd
+        schemas={getPageSchemasWithFaqs(
+          "/services/hire-python-developer",
+          hirefaqpython,
+        )}
+      />
       <Innerhero
         padding="py-8 md:py-10 lg:py-20"
         breadcrumbs={python}

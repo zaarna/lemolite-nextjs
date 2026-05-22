@@ -32,7 +32,7 @@ export const mobile = [
   { name: "Home", href: "/" },
   { name: "Services", href: "/services" },
   // { name: 'Offerings', href: '#' },
-  { name: "Secure Product Lifecycle Solutions", current: true },
+  { name: "Mobile App Development", current: true },
 ];
 export const softwere = [
   { name: "Home", href: "/" },

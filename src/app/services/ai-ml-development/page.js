@@ -15,6 +15,8 @@ import {
 } from "@/data/services";
 import React from "react";
 import { pagesMeta } from "@/data/pagesMeta";
+import JsonLd from "@/components/JsonLd";
+import { getPageSchemasWithFaqs } from "@/lib/schema";
 
 export const metadata = {
   title: pagesMeta["ai-ml-development"].title,
@@ -28,6 +30,12 @@ export const metadata = {
 const AIMLDevelopmentPage = () => {
   return (
     <div className="min-h-screen">
+      <JsonLd
+        schemas={getPageSchemasWithFaqs(
+          "/services/ai-ml-development",
+          aimlfaqData,
+        )}
+      />
       <Innerhero
         padding="py-8 md:py-10 lg:py-20"
         breadcrumbs={aiml}

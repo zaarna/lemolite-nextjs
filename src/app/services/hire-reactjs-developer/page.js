@@ -13,7 +13,8 @@ import { reactbenefit } from "@/data/keybenifit";
 import { whyhirereactjs } from "@/data/whyhiredev";
 import React from "react";
 import { pagesMeta } from "@/data/pagesMeta";
-
+import JsonLd from "@/components/JsonLd";
+import { getPageSchemasWithFaqs } from "@/lib/schema";
 
 export const metadata = {
   title: pagesMeta["hire-reactjs-developer"].title,
@@ -27,6 +28,12 @@ export const metadata = {
 const HireReactJSDeveloperPage = () => {
   return (
     <div className="min-h-screen bg-gray-50">
+      <JsonLd
+        schemas={getPageSchemasWithFaqs(
+          "/services/hire-reactjs-developer",
+          hirefaqreactjs,
+        )}
+      />
       <Innerhero
         padding="py-8 md:py-10 lg:py-20"
         breadcrumbs={react}

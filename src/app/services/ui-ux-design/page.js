@@ -6,6 +6,8 @@ import Innerhero from "@/components/ReusableComponent/Innerhero/Innerhero";
 import { uiux } from "@/data/breadcrumsdata";
 import { uiuxfaqData, uiuxprocessSteps } from "@/data/services";
 import { pagesMeta } from "@/data/pagesMeta";
+import JsonLd from "@/components/JsonLd";
+import { getPageSchemasWithFaqs } from "@/lib/schema";
 
 export const metadata = {
   title: pagesMeta["ui-ux-design"].title,
@@ -19,6 +21,9 @@ export const metadata = {
 const UIUXDesignPage = () => {
   return (
     <div className="min-h-screen">
+      <JsonLd
+        schemas={getPageSchemasWithFaqs("/services/ui-ux-design", uiuxfaqData)}
+      />
       <Innerhero
         padding="py-8 md:py-10 lg:py-20"
         breadcrumbs={uiux}

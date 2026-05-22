@@ -4,6 +4,8 @@ import GradientScrollSection from '@/components/GradientScrollSection';
 import React from 'react';
 import { pagesMeta } from "@/data/pagesMeta";
 import { projectdata } from '@/data/casestudy';
+import JsonLd from "@/components/JsonLd";
+import { getPageSchemas } from "@/lib/schema";
 
 export const metadata = {
   title: pagesMeta.casestudy.title,
@@ -17,6 +19,7 @@ export const metadata = {
 const CaseStudyPage = () => {
   return (
     <div className="min-h-screen">
+      <JsonLd schemas={getPageSchemas("/casestudy")} />
       <CaseStudyHead />
       <AllCaseStudy steps={projectdata} />
       <GradientScrollSection />

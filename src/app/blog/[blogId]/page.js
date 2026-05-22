@@ -1,20 +1,14 @@
-// app/blog/[blogId]/page.tsx
-
 import { blogs } from "@/data/blog";
 import BlogDynamicPage from "@/components/ReusableComponent/blog/BlogDynamicPage";
-import { Metadata } from "next";
+import JsonLd from "@/components/JsonLd";
+import { getBlogPostSchemas } from "@/lib/schema";
 
-// THIS IS THE HOLY GRAIL — KEEP THIS
 export const generateStaticParams = () => {
   return blogs.map((blog) => ({
     blogId: blog.id,
   }));
 };
 
-// export const dynamic = "force-static";
-// export const revalidate = false;
-
-// KEEP THIS — your perfect metadata
 export async function generateMetadata({ params }) {
   const { blogId } = await params;
   const blog = blogs.find((b) => b.id === blogId);
@@ -32,16 +26,24 @@ export async function generateMetadata({ params }) {
     alternates: {
       canonical: `https://lemolite.com/blog/${blogId}`,
     },
-    // Optional: add OG if you want
   };
 }
 
-// REMOVE THE async/await HERE — make it normal sync component
-export default function BlogPostPage({ params }) {
-  const { blogId } = params;
+export default async function BlogPostPage({ params }) {
+  const { blogId } = await params;
+  const blog = blogs.find((b) => b.id === blogId);
+
+  if (!blog) {
+    return (
+      <div className="min-h-screen">
+        <BlogDynamicPage blogId={blogId} />
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen">
+      <JsonLd schemas={getBlogPostSchemas(blog)} />
       <BlogDynamicPage blogId={blogId} />
     </div>
   );

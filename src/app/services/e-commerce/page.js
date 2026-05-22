@@ -15,6 +15,8 @@ import {
   servicesempower,
 } from "@/data/services";
 import { pagesMeta } from "@/data/pagesMeta";
+import JsonLd from "@/components/JsonLd";
+import { getPageSchemasWithFaqs } from "@/lib/schema";
 
 export const metadata = {
   title: pagesMeta["e-commerce"].title,
@@ -28,6 +30,9 @@ export const metadata = {
 const ECommercePage = () => {
   return (
     <div className="min-h-screen">
+      <JsonLd
+        schemas={getPageSchemasWithFaqs("/services/e-commerce", ecommercefaqData)}
+      />
       <Innerhero
         padding="py-8 md:py-10 lg:py-20"
         breadcrumbs={commarce}

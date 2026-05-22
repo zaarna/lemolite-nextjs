@@ -6,10 +6,12 @@ import OurWork from "@/components/AboutUs/OurWork";
 import Ctasection from "@/components/ReusableComponent/Cta_Section/CtaSection";
 import VisionAndExpertise from "@/components/ReusableComponent/ExpertiseSection/VisionAndExpertise";
 import Innerhero from "@/components/ReusableComponent/Innerhero/Innerhero";
+import JsonLd from "@/components/JsonLd";
 import { about } from "@/data/breadcrumsdata";
 import { projects, services } from "@/data/home";
 import React from "react";
 import { pagesMeta } from "@/data/pagesMeta";
+import { getPageSchemas } from "@/lib/schema";
 
 export const metadata = {
   title: pagesMeta.aboutus.title,
@@ -23,6 +25,7 @@ export const metadata = {
 const AboutUsPage = () => {
   return (
     <div className="min-h-screen ">
+      <JsonLd schemas={getPageSchemas("/about-us")} />
       <Innerhero
         padding="pb-8 md:pb-5 lg:pb-0"
         breadcrumbs={about}

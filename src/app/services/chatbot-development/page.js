@@ -4,9 +4,11 @@ import Innerhero from "@/components/ReusableComponent/Innerhero/Innerhero";
 import WhatWeOfferAccordion from "@/components/ReusableComponent/What_we_Offer_accordian/What_we_Offer_accordian";
 import Why_choose_us from "@/components/ReusableComponent/WhyChooseUs/WhyChooseUs";
 import { Chatbot } from "@/data/breadcrumsdata";
-import { chatbotstep, iotsystem, specialize } from "@/data/services";
+import { chatbotstep, specialize } from "@/data/services";
 import React from "react";
 import { pagesMeta } from "@/data/pagesMeta";
+import JsonLd from "@/components/JsonLd";
+import { getPageSchemas } from "@/lib/schema";
 
 export const metadata = {
   title: pagesMeta["chatbot-development"].title,
@@ -20,6 +22,7 @@ export const metadata = {
 const ChatBotDevelopmentPage = () => {
   return (
     <div className="min-h-screen">
+      <JsonLd schemas={getPageSchemas("/services/chatbot-development")} />
       <Innerhero
         padding="py-8 md:py-10 lg:py-20"
         breadcrumbs={Chatbot}

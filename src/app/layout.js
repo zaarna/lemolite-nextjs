@@ -67,7 +67,7 @@ export default function RootLayout({ children }) {
               "@type": "Organization",
               name: "Lemolite Technologies LLP",
               url: "https://lemolite.com/",
-              logo: "https://lemolite.com/assets/logo-C8ojSocg.png",
+              logo: "https://lemolite.com/logo.svg",
               sameAs: [
                 "https://www.facebook.com/lemolitetech",
                 "https://www.instagram.com/lemolite.tech/",
@@ -86,9 +86,11 @@ export default function RootLayout({ children }) {
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
               name: "Lemolite Technologies LLP",
-              image: "https://lemolite.com/assets/logo-C8ojSocg.png",
+              logo: "https://lemolite.com/logo.svg",
+              image: "https://lemolite.com/logo.svg",
               "@id": "",
               url: "https://lemolite.com/",
+              foundingDate: "2016",
               telephone: "9313834815",
               address: {
                 "@type": "PostalAddress",
@@ -98,6 +100,7 @@ export default function RootLayout({ children }) {
                 postalCode: "380059",
                 addressCountry: "IN",
               },
+              areaServed: ["IN", "GB", "AE", "US"],
               geo: {
                 "@type": "GeoCoordinates",
                 latitude: 23.0259629,

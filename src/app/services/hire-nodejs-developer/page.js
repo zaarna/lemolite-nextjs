@@ -12,6 +12,8 @@ import { hireourteamnode } from "@/data/hiringDevelopers";
 import { nodebenefit } from "@/data/keybenifit";
 import { whyhirenodejs } from "@/data/whyhiredev";
 import { pagesMeta } from "@/data/pagesMeta";
+import JsonLd from "@/components/JsonLd";
+import { getPageSchemasWithFaqs } from "@/lib/schema";
 
 export const metadata = {
   title: pagesMeta["hire-nodejs-developer"].title,
@@ -25,6 +27,12 @@ export const metadata = {
 const HireNodJsDeveloperPage = () => {
   return (
     <div className="min-h-screen bg-gray-50">
+      <JsonLd
+        schemas={getPageSchemasWithFaqs(
+          "/services/hire-nodejs-developer",
+          hirefaqnodejs,
+        )}
+      />
       <Innerhero
         padding="py-8 md:py-10 lg:py-20"
         breadcrumbs={node}

@@ -14,6 +14,8 @@ import {
   mobileprocessSteps,
 } from "@/data/services";
 import { pagesMeta } from "@/data/pagesMeta";
+import JsonLd from "@/components/JsonLd";
+import { getPageSchemasWithFaqs } from "@/lib/schema";
 
 export const metadata = {
   title: pagesMeta["mobile-app-development"].title,
@@ -26,6 +28,12 @@ export const metadata = {
 const MobileAppDevelopmentPage = () => {
   return (
     <div className="min-h-screen">
+      <JsonLd
+        schemas={getPageSchemasWithFaqs(
+          "/services/mobile-app-development",
+          mobileappfaqData,
+        )}
+      />
       <Innerhero
         padding="py-8 md:py-10 lg:py-20"
         breadcrumbs={mobile}

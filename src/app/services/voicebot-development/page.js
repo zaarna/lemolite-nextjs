@@ -8,6 +8,8 @@ import { Voicebot } from "@/data/breadcrumsdata";
 import { voicebotstep, voicespecialize } from "@/data/services";
 import React from "react";
 import { pagesMeta } from "@/data/pagesMeta";
+import JsonLd from "@/components/JsonLd";
+import { getPageSchemas } from "@/lib/schema";
 
 export const metadata = {
   title: pagesMeta["voicebot-development"].title,
@@ -21,6 +23,7 @@ export const metadata = {
 const VoiceBotDevelopmentPage = () => {
   return (
     <div className="min-h-screen bg-gray-50">
+      <JsonLd schemas={getPageSchemas("/services/voicebot-development")} />
       <Innerhero
         padding="py-8 md:py-10 lg:py-20"
         breadcrumbs={Voicebot}

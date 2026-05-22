@@ -13,6 +13,8 @@ import { mernbenefit } from "@/data/keybenifit";
 import { whyhiremern } from "@/data/whyhiredev";
 import React from "react";
 import { pagesMeta } from "@/data/pagesMeta";
+import JsonLd from "@/components/JsonLd";
+import { getPageSchemasWithFaqs } from "@/lib/schema";
 
 export const metadata = {
   title: pagesMeta["hire-mern-developer"].title,
@@ -26,6 +28,12 @@ export const metadata = {
 const HireMERNDeveloperPage = () => {
   return (
     <div className="min-h-screen ">
+      <JsonLd
+        schemas={getPageSchemasWithFaqs(
+          "/services/hire-mern-developer",
+          hirefaqmern,
+        )}
+      />
       <Innerhero
         padding="py-8 md:py-10 lg:py-20"
         breadcrumbs={mern}

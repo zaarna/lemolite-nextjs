@@ -6,6 +6,8 @@ import ProblemSolutionSection from "@/components/Startup/ProblemSolutionSection"
 import React from "react";
 import { pagesMeta } from "@/data/pagesMeta";
 import HowEngagementSection from "@/components/startups/HowEngagementSection";
+import JsonLd from "@/components/JsonLd";
+import { getPageSchemas } from "@/lib/schema";
 import AgenciesWhySection from "@/components/startups/AgenciesWhySection";
 import StartupEcosystemSection from "@/components/startups/StartupEcosystemSection";
 
@@ -21,6 +23,7 @@ export const metadata = {
 const startupsPage = () => {
   return (
     <div className="min-h-screen">
+      <JsonLd schemas={getPageSchemas("/startups")} />
       <InnerBanner />
       <ProblemSolutionSection />
       <EquityModelSection />
