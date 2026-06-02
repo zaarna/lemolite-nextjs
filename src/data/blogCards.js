@@ -148,4 +148,16 @@ export const blogCards = [
       "The demand for AI and ML development services has exploded. With that surge comes an overwhelming...",
     link: "/blog/how-to-choose-an-ai-ml-development-company",
   },
+  {
+    id: "voice-bot-development-guide",
+    title: "Voice Bot Development: The Complete 2026 Guide",
+    author: "Swetketu Trivedi",
+    date: "June 2, 2026",
+    tag: "Voice Bot Development",
+    image: "/voice.webp",
+    alt: "Voice Bot Development: The Complete 2026 Guide",
+    excerpt:
+      "Voice bot development has moved from novelty to necessity. Learn how voice bots work, the right tech stack, top use cases, costs...",
+    link: "/blog/voice-bot-development-guide",
+  },
 ];

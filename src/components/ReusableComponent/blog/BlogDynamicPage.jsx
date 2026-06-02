@@ -1092,10 +1092,10 @@ const BlogSectionCards = React.forwardRef((props, ref) => {
             <div
               key={index}
               style={{
-                border: "1px solid #e0e0e0",
+                border: card.border || "1px solid #e0e0e0",
                 borderRadius: "12px",
                 padding: "1rem",
-                backgroundColor: "#fff",
+                backgroundColor: card.backgroundColor || "#fff",
                 boxShadow: "0 2px 8px rgba(0, 0, 0, 0.05)",
                 transition: "transform 0.2s ease, box-shadow 0.2s ease",
               }}
