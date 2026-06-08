@@ -4184,7 +4184,7 @@ Partner with a <a target="_blank" href="https://lemolite.com/services/hire-react
       },
       {
         type: "numbered-list",
-        heading: "5 Things to Look For When Eval uating a Vendor",
+        heading: "5 Things to Look For When Evaluating a Vendor",
         items: [
           {
             title: "Depth of In-House Expertise",
