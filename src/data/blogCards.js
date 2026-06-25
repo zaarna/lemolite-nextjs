@@ -160,4 +160,17 @@ export const blogCards = [
       "Voice bot development has moved from novelty to necessity. Learn how voice bots work, the right tech stack, top use cases, costs...",
     link: "/blog/voice-bot-development-guide",
   },
+  {
+    id: "ai-ml-development-cost-guide",
+    title:
+      "How Much Does AI/ML Development Cost in 2026? A Complete Budget Guide",
+    author: "Swetketu Trivedi",
+    date: "June 25, 2026",
+    tag: "AI/ML development services",
+    image: "/aiml-budgetcost.png",
+    alt: "AI/ML Development Cost Guide",
+    excerpt:
+      "If you have already read our guide on how to choose an AI/ML development company, the next question is almost always the same...",
+    link: "/blog/ai-ml-development-cost-guide",
+  },
 ];

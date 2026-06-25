@@ -100,7 +100,7 @@ const BlogSectionAuthorDate = React.forwardRef((props, ref) => {
 
 // Paragraph Section
 const BlogSectionParagraph = React.forwardRef((props, ref) => {
-  const { content, heading, subheading } = props;
+  const { content, heading, subheading, items, brandColor = "#BFD633" } = props;
   return (
     <div ref={ref} style={{ margin: "0.5rem 0" }}>
       {heading && (
@@ -125,15 +125,53 @@ const BlogSectionParagraph = React.forwardRef((props, ref) => {
           dangerouslySetInnerHTML={{ __html: subheading }}
         />
       )}
-      <p
-        style={{
-          fontSize: "18px",
-          lineHeight: "1.7",
-          color: "#696969",
-          margin: "1rem 0",
-        }}
-        dangerouslySetInnerHTML={{ __html: content }}
-      />
+      {content && (
+        <p
+          style={{
+            fontSize: "18px",
+            lineHeight: "1.7",
+            color: "#696969",
+            margin: "1rem 0",
+          }}
+          dangerouslySetInnerHTML={{ __html: content }}
+        />
+      )}
+      {Array.isArray(items) && items.length > 0 && (
+        <ul style={{ paddingLeft: 0, marginTop: "0.5rem" }}>
+          {items.map((item, i) => (
+            <li
+              key={i}
+              style={{
+                display: "flex",
+                alignItems: "flex-start",
+                gap: 8,
+                marginBottom: "0.5rem",
+                fontSize: 18,
+                color: "#696969",
+                fontWeight: 400,
+                lineHeight: "1.7",
+                listStyle: "none",
+                paddingLeft: "12px",
+              }}
+            >
+              <span
+                style={{
+                  fontSize: 24,
+                  color: brandColor,
+                  lineHeight: "30px",
+                  fontWeight: "bold",
+                }}
+              >
+                •
+              </span>
+              <span
+                style={{ flex: 1 }}
+                dangerouslySetInnerHTML={{ __html: item }}
+              ></span>
+            </li>
+          ))}
+        </ul>
+      )}
     </div>
   );
 });
@@ -849,6 +887,31 @@ const BlogSectionNumberedList = React.forwardRef((props, ref) => {
               style={{ color: "#696969" }}
               dangerouslySetInnerHTML={{ __html: item.content }}
             />
+            {Array.isArray(item.items) && item.items.length > 0 && (
+              <ul
+                style={{
+                  paddingLeft: 24,
+                  margin: "0.5rem 0 0",
+                  listStyleType: "disc",
+                }}
+              >
+                {item.items.map((sub, j) => (
+                  <li
+                    key={j}
+                    style={{
+                      display: "list-item",
+                      listStyleType: "disc",
+                      marginBottom: "0.4rem",
+                      fontSize: 18,
+                      fontWeight: 400,
+                      lineHeight: "1.7",
+                    }}
+                    dangerouslySetInnerHTML={{ __html: sub }}
+                  />
+                ))}
+              </ul>
+            )}
+            {item.table && <BlogSectionTable {...item.table} />}
           </li>
         ))}
       </ol>

@@ -90,9 +90,9 @@ export default function BlogPageSection() {
                 const firstImage = blog.sections.find(
                   (s) => s.type === "image",
                 )?.src;
-                const firstParagraph = blog.sections.find(
-                  (s) => s.type === "paragraph",
-                )?.content;
+                const firstParagraph = blog.sections
+                  .find((s) => s.type === "paragraph")
+                  ?.content?.replace(/<[^>]*>/g, ""); // removes all HTML tags
 
                 return (
                   <div
@@ -176,7 +176,8 @@ export default function BlogPageSection() {
                   <p className="text-gray-600 text-sm mb-3 line-clamp-3">
                     {trendingBlog.sections
                       .find((s) => s.type === "paragraph")
-                      ?.content?.slice(0, 120)}
+                      ?.content?.replace(/<[^>]*>/g, "") // removes all HTML tags
+                      ?.slice(0, 120)}
                     ...
                   </p>
                   <div className="flex justify-between items-center text-xs text-gray-500">
