@@ -4726,7 +4726,7 @@ For more insights and updates, follow us on <a href="https://x.com/lemolite_tech
           },
           {
             title: "Post-launch costs are invisible at kickoff",
-            content: `Deploying a model to production, monitoring it, and retraining it as data drifts are separate cost centres that rarely appear in the initial quote. See how Lemolite handles this in our <a target="_blank" href="https://lemolite.com/blog/how-to-choose-an-ai-ml-development-company" style="color:#3ABEFF;text-decoration:underline;">MLOps & AI/ML development services</a>`,
+            content: `Deploying a model to production, monitoring it, and retraining it as data drifts are separate cost centres that rarely appear in the initial quote. See how Lemolite handles this in our <a target="_blank" href="https://lemolite.com/services/ai-ml-development" style="color:#3ABEFF;text-decoration:underline;">MLOps & AI/ML development services</a>`,
           },
         ],
       },
