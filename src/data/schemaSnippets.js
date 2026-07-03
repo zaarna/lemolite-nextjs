@@ -301,32 +301,32 @@ export const pageSchemas = {
     }),
   ],
 
-  "/casestudy": [
+  "/portfolio": [
     schema({
       "@type": "ItemList",
-      name: "Software Development Case Studies",
-      url: `${SITE}/casestudy`,
+      name: "Lemolite Software Development Portfolio",
+      url: `${SITE}/portfolio`,
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
-          name: "IoT Predictive Maintenance",
+          name: "Tamanna — BNPL Fintech Website",
         },
         {
           "@type": "ListItem",
           position: 2,
-          name: "NexStaff Platform",
+          name: "Bot Butler — QR Dining PWA",
         },
         {
           "@type": "ListItem",
           position: 3,
-          name: "GO DinDin",
+          name: "Depoter — Logistics Website",
         },
       ],
     }),
     breadcrumb([
       CRUMB_HOME,
-      { name: "Case Studies", item: `${SITE}/casestudy` },
+      { name: "Portfolio", item: `${SITE}/portfolio` },
     ]),
   ],
 

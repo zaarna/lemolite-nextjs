@@ -4,7 +4,7 @@ export const sitedata = [
   { label: "Startup", path: "/startups" },
   { label: "Services", path: "/services" },
   { label: "Tech Stack", path: "/techstack" },
-  { label: "Case Study", path: "/casestudy" },
+  { label: "Portfolio", path: "/portfolio" },
   { label: "Careers", path: "/careers" },
   { label: "Blog", path: "/blog" },
   { label: "Life@Lemolite", path: "/life-at-lemolite" },

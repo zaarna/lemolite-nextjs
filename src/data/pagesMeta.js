@@ -441,13 +441,13 @@ export const pagesMeta = {
     canonical: "https://lemolite.com/life-at-lemolite",
   },
 
-  casestudy: {
+  portfolio: {
     title:
-      "Software Development Case Studies | AI, IoT & Web Projects | Lemolite",
+      "Portfolio | AI, Web, PWA & Software Projects | Lemolite Technologies",
     description:
-      "See how Lemolite built AI, IoT, SaaS and eCommerce products for clients across UK, UAE and India. Real projects, real outcomes. Explore our case studies.",
-    keywords: ["software development case studies"],
-    canonical: "https://lemolite.com/casestudy",
+      "Explore Lemolite's portfolio — custom software, AI, PWA, web and mobile products delivered for clients across UK, UAE, Qatar and India. Real projects, real outcomes.",
+    keywords: ["software development portfolio", "web development portfolio"],
+    canonical: "https://lemolite.com/portfolio",
   },
 
   contactus: {

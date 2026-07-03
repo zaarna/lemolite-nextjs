@@ -76,7 +76,7 @@ const HomePage = () => {
         title={"Our Recent Work"}
         projects={projects}
         btntext={"View All Work"}
-        link={"/casestudy"}
+        link={"/portfolio"}
       />
       <CtaSection
         bg="bg-gradient-to-r from-[#2ec4f3]/30 to-[#bfd633]/30"

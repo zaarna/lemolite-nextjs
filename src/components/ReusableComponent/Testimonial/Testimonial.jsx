@@ -55,7 +55,7 @@ export default function Testimonial({ testimonials = [], title }) {
     "/about-us",
     "/services",
     "/techstack",
-    "/casestudy",
+    "/portfolio",
     "/blog",
     "/privacy-policy",
     "/terms-conditions",

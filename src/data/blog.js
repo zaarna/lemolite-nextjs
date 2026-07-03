@@ -336,7 +336,7 @@ For more insights and updates, follow us on <a href="https://x.com/lemolite_tech
         type: "cta",
         heading: "Want to see what we’ve built?",
         text: "View Portfolio",
-        link: "https://lemolite.com/casestudy",
+        link: "https://lemolite.com/portfolio",
       },
       {
         type: "table",
@@ -4180,7 +4180,7 @@ Partner with a <a target="_blank" href="https://lemolite.com/services/hire-react
       },
       {
         type: "paragraph",
-        content: `The bottom line: if AI/ML is a core feature of your product — not a minor integration — you need a specialist AI/ML partner. A generalist agency building an ML model is like hiring a web designer to do structural engineering. Browse <a target="_blank" href="https://lemolite.com/casestudy" style="color:#3ABEFF;text-decoration:underline;"> Lemolite's case studies </a> to see production AI/ML work.`,
+        content: `The bottom line: if AI/ML is a core feature of your product — not a minor integration — you need a specialist AI/ML partner. A generalist agency building an ML model is like hiring a web designer to do structural engineering. Browse <a target="_blank" href="https://lemolite.com/portfolio" style="color:#3ABEFF;text-decoration:underline;"> Lemolite's case studies </a> to see production AI/ML work.`,
       },
       {
         type: "numbered-list",

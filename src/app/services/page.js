@@ -75,7 +75,7 @@ const ServicesPage = () => {
         title={"Our Recent Work"}
         projects={projects}
         btntext={"View all work"}
-        link={"/casestudy"}
+        link={"/portfolio"}
       />
       <FAQ questions={serviesfaqData} padding="top-bottom" bg="bg-gray-50" />
     </div>

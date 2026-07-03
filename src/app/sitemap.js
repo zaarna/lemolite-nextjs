@@ -9,7 +9,7 @@ export default function sitemap() {
     "contact-us",
     "careers",
     "life-at-lemolite",
-    "casestudy",
+    "portfolio",
     "startups",
     "services",
     "techstack",

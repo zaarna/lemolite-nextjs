@@ -46,7 +46,7 @@ const AboutUsPage = () => {
         title={"Our Recent Work"}
         projects={projects}
         btntext={"View all work"}
-        link={"/casestudy"}
+        link={"/portfolio"}
       />
       <Ctasection
         bg="bg-gradient-to-r from-[#2EC4F3]/30 to-[#BFD633]/30"

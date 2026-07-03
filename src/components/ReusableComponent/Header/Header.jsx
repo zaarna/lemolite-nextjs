@@ -225,7 +225,7 @@ const Header = () => {
         },
       ],
     },
-    { title: "Case Study", href: "/casestudy" },
+    { title: "Portfolio", href: "/portfolio" },
     { title: "Contact Us", href: "/contact-us" },
   ];
 

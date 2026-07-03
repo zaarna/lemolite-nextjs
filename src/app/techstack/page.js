@@ -51,7 +51,7 @@ function TechStack() {
         title={"Our Recent Work"}
         projects={projects}
         btntext={"View all work"}
-        link={"/casestudy"}
+        link={"/portfolio"}
       />
     </div>
   );
