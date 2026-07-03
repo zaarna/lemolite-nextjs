@@ -142,7 +142,7 @@ export const portfolioData = [
     url: "https://rishcloudtech.com/",
     thumbLabel: "cloud services site · web",
     services: "Web Development · Cloud Solutions UX",
-    stacks: ["React", "Node.js", "AWS"],
+    stacks: ["React", "Node.js", "MongoDB"],
     tagline: "A modern technology website that generates enterprise leads.",
     problem:
       "Rish Cloud Tech needed to clearly communicate technical cloud and IT services to enterprise buyers and turn that clarity into a steady pipeline of qualified consultations.",
