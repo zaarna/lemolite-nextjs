@@ -76,7 +76,7 @@ export const portfolioData = [
     url: "https://depoter.com/",
     thumbLabel: "logistics website · web",
     services: "Web Development · UI/UX · SEO",
-    stacks: ["React", "Node.js", "Express", "MongoDB"],
+    stacks: ["React", "Next.js", "Node.js"],
     tagline: "A conversion-focused, bilingual logistics website for the GCC.",
     problem:
       "Depoter wanted to build trust among global D2C, B2B and marketplace brands and capture leads within 30 seconds of a visit, while ranking highly across Gulf Cooperation Council markets. Its prior presence read like a brochure and did little to convert.",
@@ -120,7 +120,7 @@ export const portfolioData = [
     url: "https://relyblue.com/",
     thumbLabel: "OT security site · web",
     services: "UI/UX · Web Development · Conversion Optimization",
-    stacks: ["Javascript", "PHP", "MySQL", "Html", "CSS"],
+    stacks: ["WordPress"],
     tagline: "A premium services website for an OT cybersecurity advisory.",
     problem:
       "RelyBlue offers complex operational-technology (OT) cybersecurity services to industrial clients, but needed to communicate them clearly, build trust, and convert visitors into qualified, high-intent leads.",

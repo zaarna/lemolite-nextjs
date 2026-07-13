@@ -383,40 +383,45 @@ function PartnerPopup({ isPopupOpen, closePopup }) {
                 <h3 className="text-lg font-bold mb-4">
                   Trusted by Leading Brands
                 </h3>
-                <div className="flex items-center space-x-1">
-                  <div className="px-2">
-                    <Image
-                      src="/botform.svg"
-                      alt="logo"
-                      width={90}
-                      height={32}
+                {/* eslint-disable @next/next/no-img-element */}
+                <div className="grid grid-cols-3 items-center justify-items-start gap-x-3 gap-y-3">
+                  {[
+                    { src: "/botform.svg", name: "Bot Butler", cap: "max-h-6" },
+                    {
+                      src: "/tamannaform.svg",
+                      name: "Tamanna",
+                      cap: "max-h-12",
+                    },
+                    {
+                      src: "/depoterform.svg",
+                      name: "Depoter",
+                      cap: "max-h-7",
+                    },
+                    {
+                      src: "/relyblueform.svg",
+                      name: "RelyBlue",
+                      cap: "max-h-7",
+                    },
+                    {
+                      src: "/agbform.svg",
+                      name: "AGB Petrochemicals",
+                      cap: "max-h-7",
+                    },
+                    {
+                      src: "/sarvadeskform.svg",
+                      name: "SarvaDesk",
+                      cap: "max-h-6",
+                    },
+                  ].map((logo) => (
+                    <img
+                      key={logo.src}
+                      src={logo.src}
+                      alt={`${logo.name} logo`}
+                      className={`${logo.cap} h-auto w-auto max-w-full object-contain`}
                     />
-                  </div>
-                  <div className="px-2">
-                    <Image
-                      src="/shiftform.svg"
-                      alt="logo"
-                      width={58}
-                      height={40}
-                    />
-                  </div>
-                  <div className="px-2">
-                    <Image
-                      src="/depoterform.svg"
-                      alt="logo"
-                      width={90}
-                      height={17}
-                    />
-                  </div>
-                  <div className="px-2">
-                    <Image
-                      src="/botroomform.svg"
-                      alt="logo"
-                      width={85}
-                      height={30}
-                    />
-                  </div>
+                  ))}
                 </div>
+                {/* eslint-enable @next/next/no-img-element */}
               </div>
             </div>
           </div>
