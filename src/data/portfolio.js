@@ -5,19 +5,20 @@
 export const portfolioData = [
   {
     id: "peliswan",
-    title: "Peliswan CRM",
+    title: "Sarvadesk",
     industry: "Real Estate",
     image: "/peliswan-crm-banner-hd.png",
     thumbLabel: "property platform · web",
     services: "UI/UX Design · Web Development · SEO",
     stacks: ["React", "Node.js", "SEO"],
-    tagline: "A lead-driven property platform for a growing real-estate brand.",
+    tagline:
+      "A corporate web platform for Peliswan Impex — industrial fuels manufacturer & exporter.",
     problem:
-      "Alderbasti needed to increase property inquiries and modernize a dated browsing experience. Listings were hard to navigate and there was no structured way to capture and qualify leads from visitors.",
+      "Peliswan Impex Private Limited — a leading manufacturer, importer, supplier, trader and exporter of industrial fuels, custom fuels, biofuels, biodiesel, Mineral Oil, MHO, Mineral Turpentine Oil, Naphtha, C9, LDO and more — lacked a digital presence that matched the scale of their operations. Their outdated website failed to communicate product range to international B2B buyers or capture structured trade enquiries, leaving the sales team relying on scattered emails and calls.",
     solution:
-      "Lemolite designed and built a responsive real-estate platform with rich, filterable property listings and conversion-focused lead-capture flows, paired with on-page SEO to grow organic visibility and inbound enquiries.",
+      "Lemolite designed and built Sarvadesk — a modern, conversion-focused corporate platform for Peliswan Impex that clearly presents its full product catalog, establishes credibility with global trade partners, and routes product-specific enquiries directly to the sales team with full context.",
     description:
-      "A fast, responsive website featuring an advanced property-listing experience, detailed property pages, enquiry and lead-capture forms, and an SEO foundation tuned to drive qualified traffic and improve engagement.",
+      "A responsive corporate website featuring a structured product catalog spanning industrial fuels, biofuels, mineral oils and solvents, a company profile with mission and values, HSE policy content, multilingual-ready architecture, downloadable spec sheets, and a product-linked B2B inquiry form with sales-team routing and SLA tracking.",
     results: [
       { value: "+180%", label: "Lead generation" },
       { value: "+65%", label: "User engagement" },
