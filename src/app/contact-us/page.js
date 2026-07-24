@@ -34,7 +34,7 @@ const ContactUsPage = () => {
         alt={"Contact us"}
         features={featurescontact}
       />
-      <TrustedAndCaseStudy logos={logos} steps={projectdata}  />
+      {/* <TrustedAndCaseStudy logos={logos} steps={projectdata}  /> */}
       {/* <HaveanIdea />
       <OurPresence /> */}
     </div>
