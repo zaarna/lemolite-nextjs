@@ -1,21 +1,20 @@
 import nodemailer from "nodemailer";
 
-// Put these in your root .env.local
-const email = process.env.SMTP_USER;
-const pass = process.env.SMTP_PASSWORD;
-const hrEmail = process.env.HR_EMAIL;
-
 export const transporter = nodemailer.createTransport({
-  host: "smtp.gmail.com",
-  port: 465,
-  secure: true,
+  host: process.env.SMTP_HOST,
+  port: Number(process.env.SMTP_PORT),
+  secure: process.env.SMTP_SECURE === "true",
   auth: {
-    user: email,
-    pass: pass,
+    user: process.env.SMTP_USER,
+    pass: process.env.SMTP_PASS,
   },
 });
 
-export const mailOptions = {
-  from: email,
-  to: process.env.HR_EMAIL,
-};
+// Verify SMTP connection (optional but recommended)
+transporter.verify((error, success) => {
+  if (error) {
+    console.error("❌ SMTP Connection Error:", error);
+  } else {
+    console.log("✅ SMTP Server is ready to send emails.");
+  }
+});

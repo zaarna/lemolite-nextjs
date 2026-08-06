@@ -4,54 +4,102 @@ import {
 } from "@/data/emailBody";
 import { transporter } from "@/lib/Transporter";
 import { NextResponse } from "next/server";
+
 export async function POST(req) {
   try {
-    const { name, email, countrycode, phone, compnay, message, services } =
+    const { name, email, country, phone, compnay, message, services } =
       await req.json();
+
+    // ============================
+    // Server-side Validation
+    // ============================
+    if (!name || !email || !phone || !compnay) {
+      return NextResponse.json(
+        {
+          success: false,
+          message: "Required fields are missing.",
+        },
+        {
+          status: 400,
+        },
+      );
+    }
+
+    // ============================
+    // Read Recipient Emails
+    // ============================
+    const recipients = (process.env.RECIPIENT_EMAIL || "")
+      .split(",")
+      .map((item) => item.trim())
+      .filter(Boolean);
+
+    if (!recipients.length) {
+      console.error("RECIPIENT_EMAIL is not configured.");
+
+      return NextResponse.json(
+        {
+          success: false,
+          message: "Recipient email is not configured.",
+        },
+        {
+          status: 500,
+        },
+      );
+    }
+
+    // ============================
+    // Generate HTML
+    // ============================
     const htmlBody = generateInquiryHtmlBody({
       name,
       email,
-      countrycode,
+      country,
       phone,
       compnay,
       message,
       services,
     });
 
-    const rawRecipients = process.env.RECIPIENT_EMAIL;
-    const recipients = rawRecipients
-      ? rawRecipients
-          .split(",")
-          .map((email) => email.trim())
-          .filter((email) => email)
-      : [];
-
-    if (!recipients.length) {
-      console.error(
-        "No valid RECIPIENT_EMAIL configured in environment variables."
-      );
-      return reply
-        .status(500)
-        .send({ message: "No valid recipients configured on server." });
-    }
+    // ============================
+    // Send Admin Email
+    // ============================
     const mailOptions = {
-      from: `"${name}" <${email}>`,
+      from: `"Lemolite Website" <${process.env.SMTP_USER}>`,
+      replyTo: email,
       to: recipients,
       subject: `Lemolite - New Contact Form Submission (${compnay})`,
       html: htmlBody,
     };
 
-    await transporter.sendMail(mailOptions);
+    try {
+      await transporter.sendMail(mailOptions);
+      console.log("✅ Admin email sent successfully.");
+    } catch (mailError) {
+      console.error("❌ Failed to send admin email:", mailError);
 
+      return NextResponse.json(
+        {
+          success: false,
+          message: "Failed to send contact email.",
+        },
+        {
+          status: 500,
+        },
+      );
+    }
+
+    // ============================
+    // Send Acknowledgement Email
+    // ============================
     const acknowledgmentMail = {
-      from: `Lemolite Support`,
+      from: `"Lemolite Support" <${process.env.SMTP_USER}>`,
       to: email,
       subject:
         "Thank You – We've Received Your Inquiry and Will Be in Touch Soon",
       html: acknowledgmentMailBody({
         name,
         email,
-        countrycode,
+        country,
         phone,
         compnay,
         message,
@@ -59,24 +107,38 @@ export async function POST(req) {
       }),
     };
 
-    await transporter.sendMail(acknowledgmentMail);
+    try {
+      await transporter.sendMail(acknowledgmentMail);
+      console.log("✅ Acknowledgement email sent.");
+    } catch (ackError) {
+      console.error("❌ Failed to send acknowledgement email:", ackError);
+      // Do not fail the request if acknowledgement email fails
+    }
+
+    // ============================
+    // Success Response
+    // ============================
     return NextResponse.json(
       {
-        message: "Contact Submitted SuccessFully",
+        success: true,
+        message: "Contact submitted successfully.",
       },
       {
         status: 200,
-      }
+      },
     );
   } catch (err) {
-    console.log("Error", err);
+    console.error("=========== API ERROR ===========");
+    console.error(err);
+
     return NextResponse.json(
       {
-        message: err.message || "Something Went Wrong",
+        success: false,
+        message: err.message || "Something went wrong.",
       },
       {
         status: 500,
-      }
+      },
     );
   }
 }

@@ -9,6 +9,54 @@ import LifeatLemolite from "./LifeAtLemolite";
 
 const CareersScrollWrapper = () => {
   const data = [];
+
+  // const data = [
+  //   {
+  //     title: "Frontend Developer",
+  //     hire: "2 Open Positions",
+  //     link: "/careers/frontend-developer",
+  //   },
+  //   {
+  //     title: "Backend Developer",
+  //     hire: "1 Open Position",
+  //     link: "/careers/backend-developer",
+  //   },
+  //   {
+  //     title: "UI/UX Designer",
+  //     hire: "3 Open Positions",
+  //     link: "/careers/ui-ux-designer",
+  //   },
+  //   {
+  //     title: "React.js Developer",
+  //     hire: "2 Open Positions",
+  //     link: "/careers/react-developer",
+  //   },
+  //   {
+  //     title: "Next.js Developer",
+  //     hire: "1 Open Position",
+  //     link: "/careers/nextjs-developer",
+  //   },
+  //   {
+  //     title: "Node.js Developer",
+  //     hire: "2 Open Positions",
+  //     link: "/careers/nodejs-developer",
+  //   },
+  //   {
+  //     title: "Full Stack Developer",
+  //     hire: "4 Open Positions",
+  //     link: "/careers/fullstack-developer",
+  //   },
+  //   {
+  //     title: "QA Engineer",
+  //     hire: "2 Open Positions",
+  //     link: "/careers/qa-engineer",
+  //   },
+  //   {
+  //     title: "Digital Marketing Executive",
+  //     hire: "1 Open Position",
+  //     link: "/careers/digital-marketing",
+  //   },
+  // ];
   const footerRef = useRef(null); // Create a reference for the footer
 
   const scrollToFooter = () => {

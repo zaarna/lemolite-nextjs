@@ -1,7 +1,21 @@
-// lib/processFormData.js   (create this file in your project root or lib/)
+// lib/processFormData.js
 
 import fs from "fs";
 import path from "path";
+import crypto from "crypto";
+
+const MAX_FILE_SIZE = 5 * 1024 * 1024; // 5 MB
+
+const ALLOWED_FILE_TYPES = [
+  "image/jpeg",
+  "image/jpg",
+  "image/png",
+  "image/webp",
+  "image/svg+xml",
+  "application/pdf",
+  "application/msword",
+  "application/vnd.openxmlformats-officedocument.wordprocessingml.document", // docx
+];
 
 const parseJsonField = (value, fieldname, expectedType = "object") => {
   if (typeof value === "string" && value.trim() === "[object Object]") {
@@ -9,6 +23,7 @@ const parseJsonField = (value, fieldname, expectedType = "object") => {
   }
 
   let parsed;
+
   try {
     parsed = typeof value === "string" ? JSON.parse(value) : value;
   } catch (err) {
@@ -30,22 +45,37 @@ export const processFormData = async (formDataInstance) => {
   const formData = {};
   const fileData = [];
 
-  // Create uploads folder
+  // Create uploads directory if it doesn't exist
   const uploadDir = path.join(process.cwd(), "public", "uploads");
-  if (!fs.existsSync(uploadDir)) {
-    fs.mkdirSync(uploadDir, { recursive: true });
-  }
 
-  // Loop through all form fields
+  await fs.promises.mkdir(uploadDir, {
+    recursive: true,
+  });
+
   for (const [key, value] of formDataInstance.entries()) {
-    // ← native FormData
+    // -----------------------------
+    // FILES
+    // -----------------------------
     if (value instanceof File && value.size > 0) {
-      // ─── HANDLE FILE ─────────────────────
+      // Validate file size
+      if (value.size > MAX_FILE_SIZE) {
+        throw new Error("File size should not exceed 5MB.");
+      }
+
+      // Validate file type
+      if (!ALLOWED_FILE_TYPES.includes(value.type)) {
+        throw new Error(`Unsupported file type: ${value.type || "Unknown"}`);
+      }
+
       const buffer = Buffer.from(await value.arrayBuffer());
-      const filename = `${Date.now()}-${value.name.replace(/\s+/g, "-")}`;
+
+      const cleanName = value.name.replace(/[^a-zA-Z0-9.-]/g, "-");
+
+      const filename = `${Date.now()}-${crypto.randomUUID()}-${cleanName}`;
+
       const filepath = path.join(uploadDir, filename);
 
-      fs.writeFileSync(filepath, buffer);
+      await fs.promises.writeFile(filepath, buffer);
 
       const url = `/uploads/${filename}`;
 
@@ -59,10 +89,12 @@ export const processFormData = async (formDataInstance) => {
         size: value.size,
       });
 
-      // Optional: store URL in formData too
       formData[key] = url;
     }
-    // ─── HANDLE TEXT / JSON FIELDS ───────
+
+    // -----------------------------
+    // TEXT FIELDS
+    // -----------------------------
     else {
       const stringValue = value.toString();
 
@@ -79,27 +111,32 @@ export const processFormData = async (formDataInstance) => {
     }
   }
 
-  // ─── RECONSTRUCT sections[] array (exactly like your old code) ───────
+  // -----------------------------
+  // Reconstruct sections[]
+  // -----------------------------
   const sectionEntries = Object.entries(formData)
-    .filter(([k]) => k.startsWith("sections["))
+    .filter(([key]) => key.startsWith("sections["))
     .sort(([a], [b]) => {
-      const aIdx = parseInt(a.match(/\[(\d+)\]/)[1], 10);
-      const bIdx = parseInt(b.match(/\[(\d+)\]/)[1], 10);
-      return aIdx - bIdx;
+      const aIndex = parseInt(a.match(/\[(\d+)\]/)[1], 10);
+      const bIndex = parseInt(b.match(/\[(\d+)\]/)[1], 10);
+
+      return aIndex - bIndex;
     });
 
-  if (sectionEntries.length > 0) {
-    formData.sections = sectionEntries.map(([, v]) => {
+  if (sectionEntries.length) {
+    formData.sections = sectionEntries.map(([, value]) => {
       try {
-        return JSON.parse(v);
+        return JSON.parse(value);
       } catch {
-        return v; // keep raw if not JSON
+        return value;
       }
     });
 
-    // Clean up raw sections[0] keys
-    sectionEntries.forEach(([k]) => delete formData[k]);
+    sectionEntries.forEach(([key]) => delete formData[key]);
   }
 
-  return { formData, fileData };
+  return {
+    formData,
+    fileData,
+  };
 };

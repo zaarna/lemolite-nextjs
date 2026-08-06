@@ -1,7 +1,7 @@
 export const generateInquiryHtmlBody = ({
   name,
   email,
-  countrycode,
+  country,
   phone,
   compnay,
   message,
@@ -13,7 +13,7 @@ export const generateInquiryHtmlBody = ({
     <p><strong>Name:</strong> ${name}</p>
     <p><strong>Email:</strong> ${email}</p>
     ${compnay ? `<p><strong>Company Name:</strong> ${compnay}</p>` : ""}
-    <p><strong>Country Code:</strong> ${countrycode || "N/A"}</p>
+    <p><strong>Country:</strong> ${country || "N/A"}</p>
     <p><strong>Phone Number:</strong> ${phone || "N/A"}</p>
     <p><strong>Message:</strong></p>
     <p style="background-color: #f9f9f9; padding: 10px; border-radius: 5px;">${message}</p>
@@ -34,7 +34,7 @@ export const generateInquiryHtmlBody = ({
 export const acknowledgmentMailBody = ({
   name,
   email,
-  countrycode,
+  country,
   phone,
   compnay,
   message,
@@ -161,7 +161,7 @@ export const acknowledgmentMailBody = ({
     <body>
       <div class="container__client">
         <div class="logo">
-          <img id="logo-img" src="https://leadbot.lemolite.com/static/Top_Banner_for_client_email.png" alt="Lemolite Technologies Logo" />
+          <img id="logo-img" src="https://lemolite.com/logo.svg" alt="Lemolite Technologies Logo" />
         </div>
         <div class="message">
           <p>Dear ${name},</p>
@@ -179,7 +179,7 @@ export const acknowledgmentMailBody = ({
           </div>
           <div class="info-section">
             <div class="info-label">Phone Number</div>
-            <div class="info-value">${countrycode || ""} ${phone}</div>
+            <div class="info-value">${country || ""} ${phone}</div>
           </div>
           ${
             compnay
@@ -206,17 +206,17 @@ export const acknowledgmentMailBody = ({
           <p>We look forward to working with you!</p>
         </div>
         <div class="footer_client">
-          <img id="footer_client-logo" src="https://leadbot.lemolite.com/static/Lemolite_Logo.png" alt="Footer Logo" />
+          <img id="footer_client-logo" src="https://lemolite.com/logo.svg" alt="Footer Logo" />
           <h3>
             <a href="https://lemolite.com/" class="footer_link">Lemolite Technologies LLP</a>
           </h3>
           <div class="social-icons">
-            <a href="https://www.linkedin.com/company/lemolite-technologies-llp" target="_blank"><img src="https://leadbot.lemolite.com/static/Linkedin.png" alt="LinkedIn" /></a>
-            <a href="https://www.facebook.com/lemolitetech" target="_blank"><img src="https://leadbot.lemolite.com/static/Facebook.png" alt="Facebook" /></a>
-            <a href="https://www.instagram.com/lemolite.tech/" target="_blank"><img src="https://leadbot.lemolite.com/static/Instagram.png" alt="Instagram" /></a>
-            <a href="https://x.com/lemolite_ai" target="_blank"><img src="https://leadbot.lemolite.com/static/Twitter.png" alt="Twitter" /></a>
-            <a href="https://dribbble.com/lemolitetechnologies" target="_blank"><img src="https://leadbot.lemolite.com/static/Drrrible.png" alt="Dribbble" /></a>
-            <a href="https://www.behance.net/lemolitetechnologies" target="_blank"><img src="https://leadbot.lemolite.com/static/Behance.png" alt="Behance" /></a>
+            <a href="https://www.linkedin.com/company/lemolite-technologies-llp" target="_blank"><img src="https://lemolite.com/linkedinmail.png" alt="LinkedIn" /></a>
+            <a href="https://www.facebook.com/lemolitetech" target="_blank"><img src="https://lemolite.com/facebookmail.png" alt="Facebook" /></a>
+            <a href="https://www.instagram.com/lemolite.tech/" target="_blank"><img src="https://lemolite.com/instagrammail.png" alt="Instagram" /></a>
+            <a href="https://x.com/lemolite_ai" target="_blank"><img src="https://lemolite.com/twittermail.png" alt="Twitter" /></a>
+            <a href="https://dribbble.com/lemolitetechnologies" target="_blank"><img src="https://lemolite.com/dribblemail.png" alt="Dribbble" /></a>
+            <a href="https://www.behance.net/lemolitetechnologies" target="_blank"><img src="https://lemolite.com/behancemail.png" alt="Behance" /></a>
           </div>
         </div>
       </div>

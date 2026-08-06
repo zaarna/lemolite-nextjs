@@ -21,7 +21,7 @@ export default function Form_career({ data = [] }) {
     name: "",
     lastname: "",
     email: "",
-    countrycode: "",
+    country: "",
     phone: "",
     message: "",
     position: "",
@@ -41,12 +41,35 @@ export default function Form_career({ data = [] }) {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
+  const MAX_FILE_SIZE = 5 * 1024 * 1024;
+
+  const allowedTypes = [
+    "application/pdf",
+    "application/msword",
+    "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+  ];
+
   const handleFileChange = (e) => {
-    const imagefile = e.target.files[0];
-    if (imagefile) {
-      setFormData((prev) => ({ ...prev, image: imagefile }));
-      setImageName(imagefile.name);
+    const file = e.target.files?.[0];
+
+    if (!file) return;
+
+    if (!allowedTypes.includes(file.type)) {
+      toast.error("Only PDF or Word documents are allowed.");
+      return;
     }
+
+    if (file.size > MAX_FILE_SIZE) {
+      toast.error("Resume should not exceed 5MB.");
+      return;
+    }
+
+    setFormData((prev) => ({
+      ...prev,
+      image: file,
+    }));
+
+    setImageName(file.name);
   };
 
   const handleFileDelete = () => {
@@ -58,19 +81,23 @@ export default function Form_career({ data = [] }) {
     e.preventDefault();
 
     const formDataToSend = new FormData();
-    Object.entries(formData).forEach(([key, value]) => {
-      formDataToSend.append(key, value);
-    });
 
+    Object.entries(formData).forEach(([key, value]) => {
+      if (value !== null && value !== undefined) {
+        formDataToSend.append(key, value);
+      }
+    });
     try {
+      if (!formData.image) {
+        toast.error("Please upload your resume.");
+        return;
+      }
+
+      if (!formData.phone) {
+        toast.error("Please enter your phone number.");
+        return;
+      }
       setIsLoading(true);
-      // const res = await fetch(
-      //   "https://devdemo.peliswan.com/api/send-career-email",
-      //   {
-      //     method: "POST",
-      //     body: formDataToSend,
-      //   }
-      // );
 
       const res = await fetch("/api/carrer", {
         method: "POST",
@@ -95,6 +122,7 @@ export default function Form_career({ data = [] }) {
         name: "",
         lastname: "",
         email: "",
+        country: "",
         phone: "",
         message: "",
         position: "",
@@ -185,11 +213,14 @@ export default function Form_career({ data = [] }) {
               value={value}
               onChange={(phone) => {
                 setValue(phone);
+
                 const phoneNumber = phone ? parsePhoneNumber(phone) : null;
+
                 setFormData((prev) => ({
                   ...prev,
                   phone: phone || "",
-                  countrycode: phoneNumber?.countryCallingCode,
+                  countrycode: phoneNumber?.countryCallingCode || "",
+                  country: phoneNumber?.country || "",
                 }));
               }}
               defaultCountry="US"
@@ -291,6 +322,7 @@ export default function Form_career({ data = [] }) {
                     type="file"
                     id="image"
                     name="image"
+                    accept=".pdf,.doc,.docx"
                     onChange={handleFileChange}
                     className="hidden"
                   />
@@ -310,7 +342,12 @@ export default function Form_career({ data = [] }) {
           <button
             type="submit"
             disabled={isLoading}
-            className="block w-full text-center py-5 bg-[#D8E8C5] text-black rounded-md font-bold cursor-pointer"
+            className={`block w-full py-5 rounded-md font-bold transition-all
+${
+  isLoading
+    ? "bg-gray-400 cursor-not-allowed"
+    : "bg-[#D8E8C5] hover:bg-[#c7ddb2] cursor-pointer"
+}`}
           >
             {isLoading ? "Submitting..." : "Submit"}
           </button>

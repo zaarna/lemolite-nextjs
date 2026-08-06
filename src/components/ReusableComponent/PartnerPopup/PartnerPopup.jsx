@@ -31,7 +31,7 @@ function PartnerPopup({ isPopupOpen, closePopup }) {
     name: "",
     companyname: "",
     email: "",
-    countrycode: "",
+    country: "",
     phone: "",
     aboutus: "",
     pageurl: "",
@@ -56,13 +56,7 @@ function PartnerPopup({ isPopupOpen, closePopup }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsLoading(true);
-    // fetch("https://devdemo.peliswan.com/api/send-partner-with-us", {
-    //   method: "POST",
-    //   headers: {
-    //     "Content-Type": "application/json",
-    //   },
-    //   body: JSON.stringify(formData),
-    // })
+
     fetch("/api/partner", {
       method: "POST",
       headers: {
@@ -82,7 +76,7 @@ function PartnerPopup({ isPopupOpen, closePopup }) {
           name: "",
           companyname: "",
           email: "",
-          countrycode: "",
+          country: "",
           phone: "",
           aboutus: "",
           pageurl: "",
@@ -223,10 +217,15 @@ function PartnerPopup({ isPopupOpen, closePopup }) {
                           const phoneNumber = phone
                             ? parsePhoneNumber(phone)
                             : null;
+
                           setFormData((prev) => ({
                             ...prev,
-                            phone: phone,
-                            countrycode: phoneNumber?.countryCallingCode,
+                            phone: phone || "",
+                            country: phoneNumber?.country
+                              ? new Intl.DisplayNames(["en"], {
+                                  type: "region",
+                                }).of(phoneNumber.country)
+                              : "",
                           }));
                         }}
                         defaultCountry="US"

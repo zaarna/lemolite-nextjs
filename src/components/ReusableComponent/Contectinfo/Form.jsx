@@ -13,7 +13,7 @@ export default function Form() {
     name: "",
     email: "",
     compnay: "",
-    countrycode: "",
+    country: "",
     phone: "",
     message: "",
     services: [],
@@ -57,15 +57,6 @@ export default function Form() {
     setIsLoading(true);
 
     try {
-      // const response = await fetch(
-      //   "https://devdemo.peliswan.com/api/send-email",
-      //   {
-      //     method: "POST",
-      //     headers: { "Content-Type": "application/json" },
-      //     body: JSON.stringify(formData),
-      //   }
-      // );
-
       const response = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -73,6 +64,7 @@ export default function Form() {
       });
 
       const data = await response.json();
+      console.log("data:", data);
 
       if (!response.ok) throw new Error(data.message || "An error occurred");
       if (typeof window !== "undefined" && window.rdt) {
@@ -82,13 +74,13 @@ export default function Form() {
       }
 
       toast.success(data.message || "Form submitted successfully!");
-      "Form submitted successfully:", data;
+      ("Form submitted successfully:", data);
 
       setFormData({
         name: "",
         email: "",
         compnay: "",
-        countrycode: "",
+        country: "",
         phone: "",
         message: "",
         services: [],
@@ -176,19 +168,33 @@ export default function Form() {
               id="phone"
               placeholder=""
               value={value}
+              defaultCountry="US"
+              className="w-full border-b text-black border-gray-300 py-2 focus:outline-none"
               onChange={(phone) => {
                 setValue(phone);
-                const phoneNumber = phone ? parsePhoneNumber(phone) : null;
-                console.log(phoneNumber?.countryCallingCode);
+
+                let country = "";
+
+                if (phone) {
+                  const phoneNumber = parsePhoneNumber(phone);
+
+                  if (phoneNumber?.country) {
+                    const regionNames = new Intl.DisplayNames(["en"], {
+                      type: "region",
+                    });
+
+                    country = regionNames.of(phoneNumber.country);
+                  }
+                }
+
                 setFormData((prevData) => ({
                   ...prevData,
                   phone: phone || "",
-                  countrycode: phoneNumber?.countryCallingCode,
+                  country,
                 }));
               }}
-              defaultCountry="US"
-              className="w-full border-b text-black  border-gray-300 py-2 focus:outline-none"
             />
+
             <label
               htmlFor="phone"
               className={`text-[#D9D9D9] absolute top-0 h-full flex items-center text-sm transition-all transform ${
