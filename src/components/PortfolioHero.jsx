@@ -4,14 +4,24 @@ import React from "react";
 import Link from "next/link";
 
 const stats = [
-  { value: "08+", label: "Projects delivered" },
-  { value: "08", label: "Industries served" },
+  { value: "27+", label: "Projects delivered" },
+  { value: "16", label: "Industries served" },
   { value: "04+", label: "Countries worldwide" },
 ];
 
 export default function PortfolioHero() {
   return (
     <header className="relative container mx-auto px-4 pt-16 pb-4">
+      {/* Eyebrow */}
+      <p className="mb-3 font-medium uppercase tracking-[0.12em] text-[#6b7280] text-[clamp(12px,1.2vw,14px)]">
+        Lemolite Technologies — Portfolio
+      </p>
+
+      {/* Locations */}
+      <p className="mb-5 font-medium text-[#4b5563] text-[clamp(13px,1.4vw,16px)]">
+        UK · UAE · Qatar · India
+      </p>
+
       {/* Headline */}
       <h1 className="m-0 font-bold leading-[0.98] tracking-[-0.03em] max-w-[16ch] text-[clamp(32px,8.4vw,78px)]">
         Work that ships, scales, and{" "}
@@ -26,7 +36,6 @@ export default function PortfolioHero() {
         designed and delivered for clients across fintech, logistics,
         healthcare, real estate and beyond. Explore the case studies below.
       </p>
-
       {/* CTAs */}
       <div className="flex flex-wrap gap-3.5 mt-8">
         <Link

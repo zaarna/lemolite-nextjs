@@ -293,7 +293,7 @@ export default function AllPortfolio({ projects = [] }) {
                 <div className="relative border-b border-[#eef0e7] ">
                   <img
                     src={openProject.image}
-                    alt={`${openProject.title} banner`}
+                    alt={`${openProject.alt}`}
                     className="block w-full h-[360px] object-cover object-top"
                   />
                 </div>
